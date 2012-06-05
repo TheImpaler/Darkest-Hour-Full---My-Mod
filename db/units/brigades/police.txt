@@ -1,0 +1,38 @@
+# 0 - 1870
+model = {
+	cost 			= 1
+	buildtime	 	= 70
+	manpower 		= 2
+	defaultorganisation = 3
+	suppression		= 3
+	supplyconsumption = 0.1
+	fuelconsumption		= 0	
+	upgrade_time_factor = 1.0
+	upgrade_cost_factor = 1.0
+}
+
+# 1 - 1921
+model = {
+	cost 			= 1.5
+	buildtime	 	= 90
+	manpower 		= 2
+	defaultorganisation = 4
+	suppression		= 5
+	supplyconsumption = 0.2
+	fuelconsumption		= 0.1
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+
+# 2 - 1944
+model = {
+	cost 			= 1.5
+	buildtime	 	= 110
+	manpower 		= 2
+	defaultorganisation = 5
+	suppression		= 7
+	supplyconsumption = 0.3
+	fuelconsumption		= 0.2
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}

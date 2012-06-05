@@ -1,0 +1,80 @@
+UKR;Ruling Cabinet - Start;Name;Start Year;End Year;Ideology;Personality;Loyalty;Picturename;X
+;Replacements;;;;;;;;X
+545001;Head of State;Nikita Kruschev;1933;1964;ST;Stern Imperialist;High;M518001;X
+545002;Head of Government;Lazar Kaganovich;1933;1964;ST;Flamboyant Tough Guy;High;M518002;X
+545003;Foreign Minister;Vlas Chubar;1933;1964;ST;Apologetic Clerk;High;M518003;X
+545004;Minister of Armament;Mikhail Bondarenko;1933;1964;ST;Air Superiority Proponent;Medium;M518004;X
+545005;Minister of Security;Khrystian G. Rakovsky;1933;1964;ST;Back Stabber;Medium;M518005;X
+545006;Head of Military Intelligence;Demyan Korotchenko;1933;1964;ST;Logistics Specialist;Medium;M518006;X
+545007;Chief of Staff;Oleg Golovnev;1933;1964;ST;School of Manoeuvre;Medium;M518007;X
+545008;Chief of Army;Vladimir Strelnikov;1933;1964;ST;Elastic Defence Doctrine;Medium;M518008;X
+545009;Chief of Navy;Ivan Isakov;1933;1964;ST;Base Control Doctrine;Medium;M518009;X
+545010;Chief of Air Force;Mihai Aladyin;1933;1964;ST;Army Aviation Doctrine;Medium;M518010;X
+545011;Head of State;Stepjan Bandera;1933;1964;SD;Die-hard Reformer;High;M518011;X
+545012;Head of State;Augustin Voloshyn;1933;1964;SL;Benevolent Gentleman;High;M518012;X
+545013;Head of State;Andrij Melnyk;1933;1964;SC;Autocratic Charmer;High;M518013;X
+545015;Head of Government;Yaroslav Stetsko;1933;1964;SD;Political Protege;High;M518015;X
+545016;Head of Government;Omelyan Senyk;1933;1964;SL;Corporate Suit;High;M518016;X
+545017;Head of Government;Stjepjan Lenkawski;1933;1964;SC;Naive Optimist;High;M518017;X
+545018;Head of Government;Erich Koch;1933;1964;NS;Ambitious Union Boss;High;M518018;X
+545019;Foreign Minister;Stanislav Kosior;1933;1964;ST;The Cloak N Dagger Schemer;High;M518019;X
+545020;Foreign Minister;Mykola O. Skrypnyk;1933;1964;SD;Ideological Crusader;High;M518020;X
+545021;Foreign Minister;Jevgennij Konovalets;1933;1964;SD;Iron Fisted Brute;High;M518021;X
+545022;Foreign Minister;Yulian Revay;1933;1964;SL;Apologetic Clerk;High;M518022;X
+545023;Foreign Minister;Mikola Lebed;1933;1964;SC;The Cloak N Dagger Schemer;High;M518023;X
+545024;Foreign Minister;Yurij Linden-Lypa;1933;1964;SC;General Staffer;High;M518024;X
+545025;Foreign Minister;Fritz von der Schulenburg;1933;1964;NS;Great Compromiser;High;M518025;X
+545026;Foreign Minister;Roland Popeguschiy;1933;1964;NS;Iron Fisted Brute;High;M518026;X
+545027;Foreign Minister;Georgij Shilenkov;1933;1964;NS;General Staffer;High;M518027;X
+545028;Minister of Armament;Panas P. Lyubchenko;1933;1964;ST;Resource Industrialist;Medium;M518028;X
+545029;Minister of Armament;Mikola Sciborski;1933;1964;ST;Military Entrepreneur;Medium;M518029;X
+545030;Minister of Armament;Oleska Hasyn-Tarap;1933;1964;SD;Administrative Genius;Medium;M518030;X
+545031;Minister of Armament;Grygory Leonidovych;1933;1964;SL;Infantry Proponent;Medium;M518031;X
+545032;Minister of Armament;Evheniya Bosch;1933;1964;SL;laissez-faire capitalist;Medium;M518032;X
+545033;Minister of Armament;Taras Bulba;1933;1964;SC;Resource Industrialist;Medium;M518033;X
+545034;Minister of Armament;Grigorij Petrovsky;1933;1964;SC;Tank Proponent;Medium;M518034;X
+545035;Minister of Armament;Dimitru Klachkiwski;1933;1964;NS;Infantry Proponent;Medium;M518035;X
+545036;Minister of Armament;Hans Heinrich Lammers;1933;1964;NS;Resource Industrialist;Medium;M518036;X
+545037;Minister of Security;Emanoil Kviring;1933;1964;ST;Efficient Sociopath;Medium;M518037;X
+545038;Minister of Security;Leonid Melnikov;1933;1964;ST;Silent Lawyer;Medium;M518038;X
+545039;Minister of Security;Mikhaylo Kolodzinsky;1933;1964;SD;Crooked Kleptocrat;Medium;M518039;X
+545040;Minister of Security;Nil Khasevich;1933;1964;SL;Crime Fighter;Medium;M518040;X
+545041;Minister of Security;Zenon Kossack-Tarnowski;1933;1964;SL;Compassionate Gentleman;Medium;M518041;X
+545042;Minister of Security;Sergei Kubiyovich;1933;1964;SC;Prince of Terror;Medium;M518042;X
+545043;Minister of Security;His Beatitude Sheptitskiy;1933;1964;SC;Compassionate Gentleman;Medium;M518043;X
+545044;Minister of Security;Curt von Gottberg;1933;1964;NS;Prince of Terror;Medium;M517034;X
+545045;Minister of Security;Karl Hermann Frank;1933;1964;NS;Efficient Sociopath;Medium;M518045;X
+545046;Head of Military Intelligence;Leonid Korniyets;1933;1964;ST;Industrial Specialist;Medium;M518046;X
+545047;Head of Military Intelligence;Yevgennij Paton;1933;1964;ST;Technical Specialist;Medium;M518047;X
+545048;Head of Military Intelligence;Olena Teliha;1933;1964;SD;Dismal Enigma;Medium;M518048;X
+545049;Head of Military Intelligence;Vasil Sydor-Rustek;1933;1964;SD;Naval Intelligence Specialist;Medium;M518049;X
+545050;Head of Military Intelligence;Sholom Schwartzbard;1933;1964;SL;Technical Specialist;Medium;M518050;X
+545051;Head of Military Intelligence;Mikhaylo Soroka;1933;1964;SL;Industrial Specialist;Medium;M518051;X
+545052;Head of Military Intelligence;Oleg Olzhych;1933;1964;SC;Technical Specialist;Medium;M518052;X
+545053;Head of Military Intelligence;Ulban Griniokh;1933;1964;NS;Political Specialist;Medium;M518053;X
+545054;Head of Military Intelligence;Erhard Kröger;1933;1964;NS;Industrial Specialist;Medium;M518054;X
+545055;Head of Military Intelligence;Vassilj Malyschkin;1933;1964;NS;Logistics Specialist;Medium;M518055;X
+545056;Chief of Staff;Oleg Yefimov;1933;1964;ST;School of Defence;Medium;M518056;X
+545057;Chief of Staff;Mikhailo Duda;1933;1964;SD;School of Fire Support;Medium;M518057;X
+545058;Chief of Staff;Kiril Osmak;1933;1964;SL;School of Psychology;Medium;M518058;X
+545059;Chief of Staff;Leonid Skoropadsky;1933;1964;SC;School of Psychology;Medium;M518059;X
+545060;Chief of Staff;Konstantin Kromiadi;1933;1964;NS;School of Manoeuvre;Medium;M518060;X
+545061;Chief of Staff;Eberhard Kinzel;1933;1964;NS;School of Defence;Medium;M518061;X
+545062;Chief of Army;Nikita Kruschev;1933;1964;ST;Static Defence Doctrine;Medium;M518062;X
+545063;Chief of Army;Roman Shukhevich;1933;1964;SD;Guns and Butter Doctrine;Medium;M518063;X
+545064;Chief of Army;Veniamin Ruvinski;1933;1964;SL;Decisive Battle Doctrine;Medium;M518064;X
+545065;Chief of Army;Pavlo Shandruk;1933;1964;SC;Elastic Defence Doctrine;Medium;M518065;X
+545066;Chief of Army;Petar N. Krasnov;1933;1964;SC;Static Defence Doctrine;Medium;M518066;X
+545067;Chief of Army;Georgij Shilenkov;1933;1964;NS;Armoured Spearhead Doctrine;Medium;M518067;X
+545068;Chief of Navy;Sergei Gorshkov;1933;1964;ST;Decisive Naval Battle Doctrine;Medium;M518068;X
+545069;Chief of Navy;Glorya Stetsko;1933;1964;SD;Open Seas Doctrine;Medium;M518069;X
+545070;Chief of Navy;Avram Z. Dushin;1933;1964;SL;Indirect Approach Doctrine;Medium;M518070;X
+545071;Chief of Navy;Vladimir Pilipenko;1933;1964;SC;Base Control Doctrine;Medium;M518071;X
+545072;Chief of Navy;Wolf von Trotha;1933;1964;NS;Power Projection Doctrine;Medium;M518072;X
+545073;Chief of Air Force;Avram Z. Dushin;1933;1964;ST;Naval Aviation Doctrine;Medium;M518070;X
+545074;Chief of Air Force;Petar Fedun-Poltava;1933;1964;SD;Carpet Bombing Doctrine;Medium;M518074;X
+545075;Chief of Air Force;Avhustyn Shtefan;1933;1964;SL;Army Aviation Doctrine;Medium;M518075;X
+545076;Chief of Air Force;Dimitri Myron;1933;1964;SC;Vertical Envelopment Doctrine;Medium;M518076;X
+545077;Chief of Air Force;Viktor Maltsev;1933;1964;NS;Air Superiority Doctrine;Medium;M518077;X
+545078;Chief of Staff;Petro Dyachenko;1941;1964;PA;School of Defence;High;6092;x
+545079;Chief of Staff;Mykhailo Omelianovych-Pavlenko;1933;1964;PA;School of Manoeuvre;very High;6093;x

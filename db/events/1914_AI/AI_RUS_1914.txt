@@ -1,0 +1,106 @@
+
+########################################################## START OF REAL Russian AI 1914
+###############################################
+## Russia is at war with Central Powers
+## Austria-Hungary is allied with germany, italy is neutral
+## Russia has 4 great Warplans and chooses one of them to battle the central powers
+## Plan 1	  	GrandDuke attack Prussia at the very start of WWI, without waiting for mobilization
+## Plan 2		Czar  focus on Galizia
+## Plan 3		Berlin   focus on Germany / Prussia
+## Plan 4		Rasputin  wait until the mobilization is finished
+################################################
+
+
+event = {
+	id = 3104501
+	random = no
+	country = RUS
+	persistent = yes		
+	
+	trigger = {
+		ai = yes
+		
+		NOT = { flag = RUS1914StartupDone }
+		war = { country = FRA country = U08 }
+		war = { country = RUS country = U08 }
+		NOT = { war = { country = U09 country = U08 } }		
+		NOT = { alliance = { country = U08  country = ITA } } 
+		
+		
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 1
+	deathdate = { day = 30 month = december year = 1925 }
+
+	action_a = 
+		{
+			name = "AI_EVENT"
+			ai_chance = 60
+			command = { type = ai which = "switch/RUS1914GrandDuke_setup.ai" }	
+			command = { type = setflag which = RUS1914StartupDone }
+			command = { type = setflag which = RUS1914GrandDuke }
+		}
+	action_b = 
+		{
+			name = "AI_EVENT"
+			ai_chance = 15
+			
+			command = { type = setflag which = RUS1914Czar }
+			command = { type = ai which = "switch/RUS1914Czar_setup.ai" }	
+			command = { type = setflag which = RUS1914StartupDone }			
+		}
+	action_c = 
+		{
+			name = "AI_EVENT"
+			ai_chance = 15
+		
+			command = { type = setflag which = RUS1914Berlin }
+			command = { type = ai which = "switch/RUS1914Berlin_setup.ai" }			
+			command = { type = setflag which = RUS1914StartupDone }
+		}
+			
+	action_d = {
+			name = "AI_EVENT"
+			ai_chance = 10
+	
+			command = { type = setflag which = RUS1914Rasputin_setup }
+			command = { type = ai which = "switch/RUS1914Rasputin_setup.ai" }	
+			command = { type = setflag which = RUS1914StartupDone }			
+			}
+}
+###
+# we have lost riga and or minsk
+# lets build a second line of defence
+event = {
+	id = 3104502
+	random = no 
+	country = RUS
+	persistent = yes
+	trigger = {
+					ai = yes					
+					NOT = { flag = RUS1914_2ndLineOfDefence }
+			
+					OR ={
+								NOT = { control = { province = 264 data = RUS }}
+								NOT = { control = { province = 599 data = RUS }}
+						}
+				}									
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 30 month = 5 year = 1914 }
+	offset = 1 # Check for trigger conditions day
+	deathdate = { day = 29 month = december year = 1925 }
+
+	action_a = { #
+		name = "AI_EVENT"	
+		command = { type = setflag which = RUS1914_2ndLineOfDefence }
+		command = { type = ai which = "switch/RUS1914_2ndLineOfDefence.ai" }
+		
+	}
+}

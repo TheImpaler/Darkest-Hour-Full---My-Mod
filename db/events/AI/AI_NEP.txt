@@ -1,0 +1,138 @@
+####################################
+# Nepal AI events by Lothos
+####################################
+################
+# Minister of Security Section 
+#############################################
+event = { # Juddha Rana takes power
+	id = 3080001
+	random = no 
+	country = NEP
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 395005 # Juddha Rana
+		NOT = { InCabinet = 395005 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ministerofsecurity which = 395005 }
+		command = { type = dissent value = -1 }
+	}
+}
+################
+# Chief of Staff Section
+#############################################
+event = { # L.M. Potter takes power
+	id = 3080002
+	random = no 
+	country = NEP
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 395046 # L.M. Potter
+		NOT = { InCabinet = 395046 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = chiefofstaff which = 395046 }
+		command = { type = dissent value = -1 }
+	}
+}
+################
+# Head of Intelligence Section
+#############################################
+event = { # Baber Rana takes power
+	id = 3080003
+	random = no 
+	country = NEP
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 395006 # Baber Rana
+		NOT = { InCabinet = 395006 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ministerofintelligence which = 395006 }
+		command = { type = dissent value = -1 }
+	}
+}
+################
+# Chief of the Army Section
+#############################################
+event = { # L.M. Potter takes power
+	id = 3080004
+	random = no 
+	country = NEP
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 395049 # L.M. Potter
+		NOT = { InCabinet = 395049 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = chiefofarmy which = 395049 }
+		command = { type = dissent value = -1 }
+	}
+}
+################
+# Armament Minister Section
+#############################################
+event = { # Mohan Rana takes power
+	id = 3080005
+	random = no 
+	country = NEP
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 395004 # Mohan Rana
+		NOT = { InCabinet = 395004 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = armamentminister which = 395004 }
+		command = { type = dissent value = -1 }
+	}
+}

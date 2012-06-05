@@ -1,0 +1,1671 @@
+###
+### German events (U08 - 191)
+###
+### By Rhysaxiel
+###
+### 2191500  U08  Russia mobilizes !
+### 2191501  U08  Russia keeps mobilizing
+### 2191503  U08  War on Russia ?
+### 2191504  U08  Ask France for neutrality
+### 2191505  U08  France refuses to stay neutral
+### 2191506  U08  Secret alliance pact with Ottomans
+### 2191507  U08  Secret alliance pact with Ottomans signed
+### 2191508  U08  The Fall of Serbia
+### 2191509  U08  Bulgaria joins the CP
+### 2191510  U09  Promises to Bulgaria
+### 2191511  U08  Send Lenin back to Russia 
+### 2191514  U08  Military defeat
+### 2191515  U08  Kiel Sailor's mutiny !
+### 2191516  U08  The Revolt spreads !
+### 2191517  U08  Two republics proclaimed...
+### 2191518  U08  Creation of Council of the People's Deputies
+### 2191519  U08  Official abdication of Wilhelm the IInd
+### 2191520  U08  Armistice
+### 2191524  U08  Koenigsberg is lost !
+### 2191525  U08  Breslau is lost !
+### 2191526  U08  France advances in Alsace Moselle
+### 2191527  U08  France storms Alsace Moselle
+### 2191528  U08  Essen is lost !
+### 2191529  U08  Stuttgart is lost !
+### 2191530  U08  Munchen is lost !
+### 2191531  U08  Hamburg is lost !
+### 2191532  U08  The Fall of Berlin (1914 only)
+### 2191533  U08  Revolution in Russia
+### 2191534  U08  Propose a soft peace to the Bolsheviks
+### 2191535  U08  Bolsheviks bows to our initial conditions
+### 2191536  U08  Rumors of a Russia military buildup
+### 2191537  U08  Confirmed rumors of a Russia military buildup
+### 2191538  U08  Confirmed rumors of a Russia military buildup
+### 2191539  U08  Launch operation Friedrich (preemptive striker on Russia)
+### 2191540  U08  Japanese Ultimatum
+### 2191541  U08  British blockade
+### 2191542  U08  Blockade British trade
+### 2191543  U08  Unrestricted submarine warfare
+### 2191544  U08  The sink of the Lusitania
+### 2191545  U08  The Zimmerman Telegram
+### 2191556  U08  The Zimmerman Telegram
+### 2191546  U08  Falkenhayn Nomination
+### 2191547  U08  The Escape of SMS Goeben and SMS Breslau
+### 2191552  U08  Armistice with France
+### 2191553  U08  Armistice with Italy
+### 2191554  U08  Armistice with Russia
+###
+# War entry
+event = {
+	id = 2191500	# Russia mobilizes !
+	random = no
+	country = U08
+
+	#triggered by RUS 2104501
+   
+	name = "EVT1914_2191500_NAME"
+	desc = "EVT1914_2191500_DESC" 
+	style = 2
+	picture = "German_mobilization2"
+	
+	action = {
+		name = "EVT1914_2191500_ACTIONA" # Send ultimatum
+		command = { type = relation which = RUS value = -20 }
+	}
+}
+event = {
+	id = 2191501	# Russia keeps mobilizing
+	random = no
+	country = U08
+
+	#triggered by RUS 2104502
+   
+	name = "EVT1914_2191501_NAME"
+	desc = "EVT1914_2191501_DESC" 
+	style = 2
+	picture = "German_mobilization2"
+	
+	action = {
+		name = "EVT1914_2191501_ACTIONA" # So be it...
+		command = { type = relation which = RUS value = -30 }
+	}
+}
+event = {
+	id = 2191503	# War on Russia ?
+	random = no
+	country = U08
+
+	decision = { 
+		OR = {
+			event = 2191501 # Russia keeps mobilizing
+			event = 2104542 #RUS Support anti-Austro-Hungarian movements in Serbia
+		}
+		NOT = { 
+			war = { country = U08 country = RUS } 
+			war = { country = U08 country = U09 }
+			alliance = { country = U08 country = U09 }
+			event = 2191514 # U08 Military defeat
+			event = 2191520 # U08 Armistice
+			event = 2191532 # U08 The Fall of Berlin (1914 only)
+			event = 2001546 # ENG Germany accepted our proposal
+			event = 2011505 # JAP Germany accepted our proposal
+			event = 2049534 # USA Germany accepted our proposal
+		}
+	}	
+	decision_trigger = { }
+	trigger = { 
+		OR = {
+			event = 2191501 # Russia keeps mobilizing
+			event = 2104542 #RUS Support anti-Austro-Hungarian movements in Serbia
+		}
+		NOT = { 
+			war = { country = U08 country = RUS } 
+			war = { country = U08 country = U09 }
+			alliance = { country = U08 country = U09 }
+			event = 2191514 # U08 Military defeat
+			event = 2191520 # U08 Armistice
+			event = 2191532 # U08 The Fall of Berlin (1914 only)
+			event = 2001546 # ENG Germany accepted our proposal
+			event = 2011505 # JAP Germany accepted our proposal
+			event = 2049534 # USA Germany accepted our proposal
+		}			
+	}
+   
+	name = "EVT1914_2191503_NAME"
+	desc = "EVT1914_2191503_DESC" 
+	style = 2
+	picture = "German_mobilization"
+
+	date = { day = 0 month = august year = 1914 }
+	offset = 1
+	deathdate = { day = 30 month = june year = 1916 }
+
+	action = {
+	name = "EVT1914_2191503_ACTIONA" # Declare War
+		command = { type = alliance which = U09 }
+		command = { type = belligerence value = 10 }
+		command = { trigger = { NOT = { event = 2104534 } } type = trigger which = 2002500 } #FRA - Mobilization (if not already at war)
+		command = { trigger = { NOT = { policy = { type = professional_army value = 7 } } } type = trigger which = 1350007 } #Mobilize?
+	}
+}
+event = {
+   id = 2191504	# Ask France for neutrality
+   random = no
+   country = U08
+
+	#triggered by FRA 1014
+   
+	name = "EVT1914_2191504_NAME"
+	desc = "EVT1914_2191504_DESC" 
+	style = 2
+	
+	action = {
+		name = "EVT1914_2191504_ACTIONA" # Ask for neutrality
+		command = { type = alliance_leader which = U08 where = 1 } #Germany restored as leader of Central Powers (and of the war)
+		command = { type = trigger which = 2002501 }# FRA "Germany demands neutrality"
+	}
+}
+event = {
+	id = 2191505	# France refuses to stay neutral
+	random = no
+	country = U08
+
+	#triggered by FRA 1016
+   
+	name = "EVT1914_2191505_NAME"
+	desc = "EVT1914_2191505_DESC" 
+	style = 2
+	#picture = "Mobilisation_1914"
+
+	action = { 
+		name = "EVT1914_2191505_ACTIONA" # Konprinz Plan
+		command = { type = belligerence value = 5 }
+		command = { type = war which = FRA }
+		command = { trigger = { NOT = { policy = { type = professional_army value = 7 } } } type = trigger which = 1350007 } #Mobilize?
+		command = { type = trigger which = 2002556 } #The Franco-Russian Alliance
+	}
+	action = { 
+                trigger = { ai = no }
+		name = "EVT1914_2191505_ACTIONB" # Schlieffen Plan
+		command = { type = belligerence value = 10 }
+		command = { type = war which = FRA }
+		command = { type = war which = BEL }
+		command = { type = war which = LUX }
+		command = { trigger = { NOT = { policy = { type = professional_army value = 7 } } } type = trigger which = 1350007 } #Mobilize?
+		command = { type = trigger which = 2002556 } #The Franco-Russian Alliance
+	}
+	action = { trigger = { ai = no }
+		name = "EVT1914_2191505_ACTIOND" # Expanded chlieffen Plan
+		command = { type = belligerence value = 15 }
+		command = { type = war which = FRA }
+		command = { type = war which = BEL }
+		command = { type = war which = LUX }
+		command = { type = war which = HOL }
+		command = { trigger = { NOT = { policy = { type = professional_army value = 7 } } } type = trigger which = 1350007 } #Mobilize?
+		command = { type = trigger which = 2002556 } #The Franco-Russian Alliance		
+	}
+	action = { trigger = { ai = no }
+		name = "EVT1914_2191505_ACTIONC" # Rupprecht Plan
+		command = { type = belligerence value = 5 }
+		command = { type = war which = FRA }
+		command = { type = war which = SCH }
+		command = { trigger = { NOT = { policy = { type = professional_army value = 7 } } } type = trigger which = 1350007 } #Mobilize?
+		command = { type = trigger which = 2002556 } #The Franco-Russian Alliance		
+	}
+}
+# Ottoman alliance
+event = {
+	id = 2191506	# Secret alliance pact with Ottomans
+	random = no
+	country = U08
+
+	decision = { 
+		war = { country = U08 country = RUS }
+		NOT = { alliance = { country = TUR country = RUS } }
+		NOT = { alliance = { country = TUR country = U08 } }
+		NOT = { alliance = { country = TUR country = U09 } }
+
+	}
+	decision_trigger = { 
+		OR = {
+			event = 2191547 #The Escape of SMS Goeben and SMS Breslau
+			AND = {
+				relation = { which = OTT value = 100 } 
+				OR = { 
+					NOT = { division_exists = { type = 10100 id = 642 } }
+					NOT = { division_exists = { type = 10100 id = 643 } }
+				}
+			}		
+		}
+	}
+	trigger = { 
+		war = { country = U08 country = RUS }
+		random = 40
+		NOT = { alliance = { country = TUR country = RUS } }
+		NOT = { alliance = { country = TUR country = U08 } }
+		NOT = { alliance = { country = TUR country = U09 } }
+		OR = {
+			event = 2191547 #The Escape of SMS Goeben and SMS Breslau
+			AND = {
+				relation = { which = OTT value = 100 } 
+				OR = { 
+					NOT = { division_exists = { type = 10100 id = 642 } }
+					NOT = { division_exists = { type = 10100 id = 643 } }
+				}
+			}		
+		}
+	}
+
+	date = { day = 1 month = august year = 1914 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1918 }
+	
+	name = "EVT1914_2191506_NAME"
+	desc = "EVT1914_2191506_DESC" 
+	style = 2
+	picture = "diplomatic_campaign"
+	decision_picture = "decision_diplomatic_campaign"
+	
+	action_a = {
+		ai_chance = 100
+		name = "EVT1914_2191506_ACTIONA" # Propose alliance
+		command = { type = trigger which = 2145500 }
+	}
+	action_b = { trigger = { ai = yes }
+		ai_chance = 0
+		name = "EVT1914_2191506_ACTIONB" # Do not propose alliance
+		command = {  }
+	}
+}
+event = {
+	id = 2191507	# Secret alliance pact with Ottomans signed
+	random = no
+	country = U08
+	
+	
+	#triggered by OTT 2001
+   
+	name = "EVT1914_2191507_NAME"
+	desc = "EVT1914_2191507_DESC" 
+	style = 2
+	picture = "diplomatic_campaign"
+	
+	action = {
+		name = "ACTION_NAME_GREAT" # Great !
+		command = { type = relation which = OTT value = 10 }
+		command = { type = sleepleader which = 855038 } #Souchon	
+	}
+}
+#Bulgaria
+event = {
+	id = 2191508	# The Fall of Serbia
+	country = U08
+
+	decision = { 
+		exists = BUL
+		NOT = { exists = SER } 
+		atwar = U08
+		NOT = { war = { country = BUL  country = U08 } } 
+		NOT = { event = 2002534 } #The Versailles Treaty
+	}
+	decision_trigger = { 
+		NOT = { alliance = { country = BUL country = U08 } }
+		NOT = { alliance = { country = BUL country = FRA } }		
+	}
+	trigger = {
+		random = 10
+		exists = BUL
+		NOT = { exists = SER } 
+		atwar = U08
+		NOT = { war = { country = BUL  country = U08 } } 
+		NOT = { event = 2002534 } #The Versailles Treaty
+		NOT = { alliance = { country = BUL country = U08 } }
+		NOT = { alliance = { country = BUL country = FRA } }		
+	}
+   
+	name = "EVT1914_2191508_NAME"
+	desc = "EVT1914_2191508_DESC" 
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 28 month = june year = 1914 }
+	offset = 3
+	deathdate = { day = 30 month = december year = 1914 }
+
+	action_a = {
+		name = "EVT1914_2191508_ACTIONA" # Propose an alliance
+		ai_chance = 100
+		command = { type = trigger which = 2020500 } # BUL "The fall of Serbia, German diplomatic mission"
+	}
+	action_b = { trigger = { ai = yes }
+		name = "EVT1914_2191508_ACTIONB" # Ignore Bulgaria
+		ai_chance = 0
+		command = {  }
+	}
+}
+event = {
+	id = 2191509	# Bulgaria joins the CP
+	random = no
+	country = U08
+	
+	#triggered by BUL 4002
+	
+	name = "EVT1914_2191509_NAME"
+	desc = "EVT1914_2191509_DESC" 
+	style = 2
+	picture = "news_paper"
+	
+	action = {
+		name = "EVT1914_2192506_ACTIONA" # Great
+		command = { type = relation which = BUL value = 10 }
+		command = { type = trigger which = 2019502  } # GRE "BUL joined CP"
+	}
+}
+event = {
+	id = 2191510	# Promises to Bulgaria
+	country = U09
+
+	decision = {
+		exists = SER
+		exists = BUL
+		NOT = { 
+			event = 2145502  # OTT capitulation
+			alliance = { country = U09 country = BUL }
+			alliance = { country = SER country = BUL }
+			war = { country = U09 country = BUL }
+		}
+	}
+	decision_trigger = {
+		OR = {
+			event = 2145501 # OTT joins CP
+			alliance = { country = U09 country = OTT }
+		}
+	}
+	trigger = {
+		random = 8
+		exists = SER
+		exists = BUL
+		NOT = { 
+			event = 2145502  # OTT capitulation
+			alliance = { country = U09 country = BUL }
+			alliance = { country = SER country = BUL }
+			war = { country = U09 country = BUL }
+		}		
+		OR = {
+			event = 2145501 # OTT joins CP
+			alliance = { country = U09 country = OTT }
+		}
+	}
+   
+	name = "EVT1914_2191510_NAME"
+	desc = "EVT1914_2191510_DESC" 
+	style = 2
+	picture = "news_paper"
+	
+	date = { day = 12 month = november year = 1914 }
+	offset = 14
+	deathdate = { day = 30 month = december year = 1914 }
+
+	action_a = {
+		ai_chance = 100
+		name = "EVT1914_2191510_ACTIONA" # Propose a deal to Bulgaria
+		command = { type = trigger which = 2020501 } #BUL "CP's proposal"
+	}
+	action_b = { trigger = { ai = yes }
+		ai_chance = 0
+		name = "EVT1914_2191510_ACTIONB" # Forget Bulgaria
+		command = {  }
+	}
+}
+event = {
+	id = 2191511	# Send Lenin back to Russia 
+	country = U08
+
+	decision = { 
+		exists = RUS
+		event = 2104521 # Kerensky into power
+	}
+	decision_trigger = { 
+	}
+	trigger = {
+		random = 25
+		event = 2104521 # Kerensky into power
+	}
+   
+	name = "EVT1914_2191511_NAME"
+	desc = "EVT1914_2191511_DESC" 
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 12 month = november year = 1914 }
+	offset = 7
+	deathdate = { day = 30 month = december year = 1925 }
+
+	action_a = {
+		ai_chance = 100
+		name = "EVT1914_2191511_ACTIONA" # Allow him to go back to Russia
+		command = { type = relation which = RUS value = -5 }
+		command = { type = trigger which = 2104522 } #RUS "Lenin is back"
+	}
+	action_b = { 
+		trigger = { ai = yes } #force the player to send Lenin back so that SOV can appear
+		ai_chance = 0
+		name = "EVT1914_2191511_ACTIONB" # Force him to stay in Switzerland
+		command = { type = relation which = RUS value = 5 }
+	}
+}
+### 2191512, 2191513
+event = {
+	id = 2191514   # Military defeat
+	country = U08
+
+	trigger = {
+		OR = {
+			war = { country = U08 country = FRA }
+			war = { country = U08 country = RUS }
+			war = { country = U08 country = ENG }
+			war = { country = U08 country = USA }
+			war = { country = U08 country = ITA }
+			war = { country = U08 country = SOV }
+		}
+		OR = {
+			#first of all, if Berlin is lost
+			AND = {
+				dissent = 35
+				NOT = { control = { province = 163 data = U08 } }
+				OR = {
+					lost_VP = { value = 20 }
+					lost_IC = { value = 20 }	
+					}
+			}
+			AND = {
+				dissent = 25
+				NOT = { control = { province = 163 data = U08 } }
+				OR = {
+					lost_VP = { value = 30 }
+					lost_IC = { value = 30 }	
+				}
+			}
+			AND = {
+				dissent = 20
+				NOT = { control = { province = 163 data = U08 } }
+				OR = {
+					lost_VP = { value = 35 }
+					lost_IC = { value = 35 }	
+				}
+			}			
+			AND = {
+				OR = {
+					dissent = 10
+					random = 25
+				}
+				NOT = { control = { province = 163 data = U08 } }
+				OR = {
+					lost_VP = { value = 40 }
+					lost_IC = { value = 40 }	
+				}
+			}
+			#many provinces lost and high dissent
+			AND = {
+				dissent = 35
+				OR = {
+					lost_VP = { value = 50 }
+					lost_IC = { value = 50 }	
+				}
+			}
+			AND = {
+				dissent = 30
+				OR = {
+					lost_VP = { value = 55 }
+					lost_IC = { value = 55 }	
+				}
+			}
+			AND = {
+				dissent = 25
+				OR = {
+					lost_VP = { value = 60 }
+					lost_IC = { value = 60 }	
+				}
+			}
+			AND = {
+				dissent = 20
+				OR = {
+					lost_VP = { value = 65 }
+					lost_IC = { value = 65 }	
+				}
+			}						
+		}
+	}
+   
+	name = "EVT1914_2191514_NAME"
+	desc = "EVT1914_2191514_DESC" 
+	style = 2
+	picture = "news_paper"
+	
+	date = { day = 16 month = november year = 1914 }
+	offset = 3
+	deathdate = { day = 30 month = december year = 1925 }
+	
+	action = {
+		name = "EVT1914_2191514_ACTIONA" # We have been defeated
+		command = { type = dissent value = 15 }
+		command = { type = sleepevent which = 2191532 } #The Fall of Berlin (1914 only)
+		command = { type = leave_alliance }
+		command = { trigger = { exists = U09 } type = end_access which = U09 }
+		command = { trigger = { exists = AUS } type = end_access which = AUS }
+		command = { trigger = { war = { country = U08 country = RUS } } type = trigger which = 2104544 } #RUS Armistice with Germany
+		command = { trigger = { war = { country = U08 country = FRA } } type = trigger which = 2002558 } #FRA Armistice with Germany
+		command = { trigger = { war = { country = U08 country = ENG } } type = trigger which = 2001564 } #ENG Armistice with Germany
+		command = { trigger = { war = { country = U08 country = RUS } } type = peace which = RUS value = 1 }
+		command = { trigger = { war = { country = U08 country = FRA } } type = peace which = FRA value = 1 }
+		command = { trigger = { war = { country = U08 country = ENG } } type = peace which = ENG value = 1 }
+		command = { trigger = { war = { country = U08 country = USA } } type = peace which = USA value = 1 }
+		command = { trigger = { war = { country = U08 country = ITA } } type = peace which = ITA value = 1 }
+		command = { trigger = { war = { country = U08 country = SOV } } type = peace which = SOV value = 1 }
+		command = { trigger = { war = { country = U08 country = SER } } type = peace which = SER value = 1 }		
+		command = { type = embargo which = SWE where = ENG value = 0 } #removes all embargoes on UK
+		command = { type = embargo which = NOR where = ENG value = 0 }
+		command = { type = embargo which = SPA where = ENG value = 0 }
+		command = { type = embargo which = POR where = ENG value = 0 }
+		command = { type = embargo which = USA where = ENG value = 0 }
+		command = { type = embargo which = CAN where = ENG value = 0 }
+		command = { type = embargo which = MEX where = ENG value = 0 }
+		command = { type = embargo which = BRA where = ENG value = 0 }
+		command = { type = embargo which = ARG where = ENG value = 0 }
+		command = { type = embargo which = CHL where = ENG value = 0 }
+		command = { type = embargo which = ENG where = U08 value = 0 } #removes all embargoes on Germany
+		command = { type = embargo which = SWE where = U08 value = 0 }
+		command = { type = embargo which = NOR where = U08 value = 0 }
+		command = { type = embargo which = SPA where = U08 value = 0 }
+		command = { type = embargo which = POR where = U08 value = 0 }
+		command = { type = embargo which = GRE where = U08 value = 0 }
+		command = { type = embargo which = ALB where = U08 value = 0 }
+		command = { type = embargo which = USA where = U08 value = 0 }
+		command = { type = embargo which = CAN where = U08 value = 0 }
+		command = { type = embargo which = MEX where = U08 value = 0 }
+		command = { type = embargo which = BRA where = U08 value = 0 }
+		command = { type = embargo which = ARG where = U08 value = 0 }
+		command = { type = embargo which = CHL where = U08 value = 0 }
+		command = { type = embargo which = CHI where = U08 value = 0 }
+		command = { type = embargo which = JAP where = U08 value = 0 }
+		command = { type = embargo which = AST where = U08 value = 0 }
+		command = { type = embargo which = HOL where = U08 value = 0 }	
+	}
+}
+#### Process for Kaiser's abdication, revolution and forced peace
+event = {
+	id = 2191515   # Kiel Sailor's mutiny !
+	country = U08
+
+	trigger = { 
+		random = 25
+		dissent = 35
+		OR = {
+			atwar = yes
+			event = 2191532 #Fall of Berlin '14
+			event = 2191514 #Military defeat
+		}
+	}
+
+	name = "EVT1914_2191515_NAME"
+	desc = "EVT1914_2191515_DESC" 
+	style = 2
+	picture = "news_paper"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 5
+	deathdate = { day = 30 month = december year = 1925 }
+	
+	action = {
+		name = "ACTION_NAME_DAMN" # Damn !
+		command = { type = dissent value = 6 }
+	}
+}
+event = {
+	id = 2191516   # The Revolt spreads !
+	country = U08
+
+	trigger = { 
+		random = 75
+		event = 2191515 # Kiel Sailor's mutiny !
+		dissent = 30
+	}
+	
+	name = "EVT1914_2191516_NAME"
+	desc = "EVT1914_2191516_DESC" 
+	style = 2
+	picture = "news_paper"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 2
+	deathdate = { day = 30 month = december year = 1925 }
+	
+	action = {
+		name = "EVT1914_2191516_ACTIONA" # Uh oh !
+		command = { type = dissent value = 6 }
+	}
+}
+event = {
+	id = 2191517   # Two republics proclaimed...
+	country = U08
+
+	trigger = { 
+		random = 75
+		event = 2191516 # The Revolt spreads !
+		dissent = 30
+	}
+   
+	name = "EVT1914_2191517_NAME"
+	desc = "EVT1914_2191517_DESC" 
+	style = 2
+	picture = "news_paper"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 3
+	deathdate = { day = 30 month = december year = 1925 }
+	
+	action = {
+		name = "EVT1914_2191517_ACTIONA" # This is Mayhem !
+		command = { type = dissent value = 5 }
+	}
+}
+event = {
+	id = 2191518   # Creation of Council of the People's Deputies
+	country = U08
+
+	trigger = { 
+		random = 75
+		event = 2191517 # Two republics proclaimed...
+		dissent = 30
+	}
+   
+	name = "EVT1914_2191518_NAME"
+	desc = "EVT1914_2191518_DESC" 
+	style = 2
+	picture = "news_paper"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 3
+	deathdate = { day = 30 month = december year = 1925 }
+	
+	action = {
+		name = "ACTION_NAME_OK" # Ok
+		command = { type = dissent value = 1 }
+	}
+}
+event = {
+	id = 2191519   # Official abdication of Wilhelm the IInd
+	country = U08
+
+	trigger = { 
+		random = 20
+		event = 2191516  # The Revolt spreads !
+	}
+   
+	name = "EVT1914_2191519_NAME"
+	desc = "EVT1914_2191519_DESC" 
+	style = 2
+	picture = "news_paper"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 5
+	deathdate = { day = 30 month = december year = 1925 }
+	
+	action = {
+		name = "EVT1914_2191519_ACTIONA" # The end of German Empire ?
+		command = { type = dissent value = -5 }
+		command = { type = flag_ext where = U08 which = "_weimar" }
+		command = { type = set_domestic which = democratic value = 8 } #democracy
+		command = { type = set_domestic which = political_left value = 7 } #social liberal			
+		command = { type = headofstate which = 855200 } #Vollzugsrat
+		command = { type = headofgovernment which = 855203 } #Friedrich Ebert
+		command = { type = foreignminister which = 855212 } #Hugo Haase
+		command = { type = armamentminister which = 855222 } #Philipp Heinrich Scheidemann
+		command = { type = ministerofsecurity which = 855241 } #Friedrich Ebert
+		command = { type = ministerofintelligence which = 855251 } #Martin Braune
+		command = { type = chiefofstaff which = 855255 } #Paul von Hindenburg
+		command = { type = chiefofarmy which = 855259 } #Wilhelm Groener
+		command = { type = chiefofnavy which = 855262 } #Maximilian Rogge
+		command = { type = chiefofair which = 855268 } #Ernst von Hoeppner
+	}
+}
+event = {
+   id = 2191520   # Armistice
+   country = U08
+
+	trigger = { 
+		event = 2191518 # Creation of Council of the People's Deputies
+		event = 2191519 # Official abdication of Wilhelm the IInd
+        OR = {
+			war = { country = U08 country = FRA }
+			war = { country = U08 country = RUS }
+			war = { country = U08 country = ENG }
+			war = { country = U08 country = USA }
+			war = { country = U08 country = ITA }
+			war = { country = U08 country = SOV }
+		}
+	}
+   
+	name = "EVT1914_2191520_NAME"
+	desc = "EVT1914_2191520_DESC" 
+	style = 2
+	picture = "Peace_conference"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 2
+	deathdate = { day = 30 month = december year = 1925 }
+
+	action = {
+		name = "EVT1914_2191520_ACTIONA" # Peace, at last
+		command = { type = leave_alliance }
+		command = { trigger = { war = { country = U08 country = RUS } } type = trigger which = 2104544 } #RUS Armistice with Germany
+		command = { trigger = { war = { country = U08 country = FRA } } type = trigger which = 2002558 } #FRA Armistice with Germany
+		command = { trigger = { war = { country = U08 country = ENG } } type = trigger which = 2001564 } #ENG Armistice with Germany	
+		command = { trigger = { war = { country = U08 country = RUS } } type = peace which = RUS value = 1 }
+		command = { trigger = { war = { country = U08 country = FRA } } type = peace which = FRA value = 1 }
+		command = { trigger = { war = { country = U08 country = ENG } } type = peace which = ENG value = 1 }
+		command = { trigger = { war = { country = U08 country = USA } } type = peace which = USA value = 1 }
+		command = { trigger = { war = { country = U08 country = ITA } } type = peace which = ITA value = 1 }
+		command = { trigger = { war = { country = U08 country = SOV } } type = peace which = SOV value = 1 }
+		command = { trigger = { war = { country = U08 country = SER } } type = peace which = SER value = 1 }
+		command = { type = dissent value = -10 }
+		command = { type = setflag which = German_EndWWI }
+		command = { 
+		trigger = { 
+			NOT = { exists = POL exists = RUS} 
+			control = { province = 232 data = U08 } #Warsaw
+		} 
+		type = independence which = POL value = 1 when = 1 } # Regency Council breaks free
+		command = { trigger = { exists = POL } type = secederegion which = POL value = "Poland" } # Regency Council breaks free
+		command = { trigger = { NOT = { event = 2193500 } } type = trigger which = 2193500 } # The Republic of Poland
+		command = { type = embargo which = SWE where = ENG value = 0 } #removes all embargoes on UK
+		command = { type = embargo which = NOR where = ENG value = 0 }
+		command = { type = embargo which = SPA where = ENG value = 0 }
+		command = { type = embargo which = POR where = ENG value = 0 }
+		command = { type = embargo which = USA where = ENG value = 0 }
+		command = { type = embargo which = CAN where = ENG value = 0 }
+		command = { type = embargo which = MEX where = ENG value = 0 }
+		command = { type = embargo which = BRA where = ENG value = 0 }
+		command = { type = embargo which = ARG where = ENG value = 0 }
+		command = { type = embargo which = CHL where = ENG value = 0 }
+		command = { type = embargo which = ENG where = U08 value = 0 } #removes all embargoes on Germany
+		command = { type = embargo which = SWE where = U08 value = 0 }
+		command = { type = embargo which = NOR where = U08 value = 0 }
+		command = { type = embargo which = SPA where = U08 value = 0 }
+		command = { type = embargo which = POR where = U08 value = 0 }
+		command = { type = embargo which = GRE where = U08 value = 0 }
+		command = { type = embargo which = ALB where = U08 value = 0 }
+		command = { type = embargo which = USA where = U08 value = 0 }
+		command = { type = embargo which = CAN where = U08 value = 0 }
+		command = { type = embargo which = MEX where = U08 value = 0 }
+		command = { type = embargo which = BRA where = U08 value = 0 }
+		command = { type = embargo which = ARG where = U08 value = 0 }
+		command = { type = embargo which = CHL where = U08 value = 0 }
+		command = { type = embargo which = CHI where = U08 value = 0 }
+		command = { type = embargo which = JAP where = U08 value = 0 }
+		command = { type = embargo which = AST where = U08 value = 0 }
+		command = { type = embargo which = HOL where = U08 value = 0 }			
+	}
+}
+# 2191521, 2191522, 2191523
+# territorial losses
+event = {
+	id = 2191524   # Koenigsberg is lost !
+	country = U08
+	
+	trigger = { atwar = yes NOT = { control = { province = 184 data = -1 } } }
+	
+	name = "EVT1914_2191524_NAME"
+	desc = "EVT1914_2191524_DESC" 
+	style = 2
+	picture = "news_paper"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 5
+	deathdate = { day = 30 month = december year = 1925 }
+	
+	action = {
+		name = "ACTION_NAME_DAMN" # Damn !
+		command = { type = dissent value = 5 }
+	}
+}
+event = {
+	id = 2191525   # Breslau is lost !
+	country = U08
+	
+	trigger = { atwar = yes NOT = { control = { province = 167 data = -1 } } }
+	
+	name = "EVT1914_2191525_NAME"
+	desc = "EVT1914_2191525_DESC" 
+	style = 2
+	picture = "news_paper"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 5
+	deathdate = { day = 30 month = december year = 1925 }
+	
+	action = {
+		name = "ACTION_NAME_DAMN" # Damn !
+		command = { type = dissent value = 2 }
+	}
+}
+event = {
+	id = 2191526   # France advances in Alsace Moselle
+	country = U08
+
+	# Triggered
+	
+	name = "EVT1914_2191526_NAME"
+	desc = "EVT1914_2191526_DESC" 
+	style = 2
+	picture = "news_paper"
+	
+	action = {
+		name = "ACTION_NAME_DAMN" # Damn !
+		command = { type = dissent value = 3 }
+	}
+}
+event = {
+	id = 2191527   # France storms Alsace Moselle
+	country = U08
+	
+	# Triggered
+	
+	name = "EVT1914_2191527_NAME"
+	desc = "EVT1914_2191527_DESC" 
+	style = 2
+	picture = "news_paper"
+	
+	action = {
+		name = "EVT1914_2191527_ACTIONA" # Scheisse !
+		command = { type = dissent value = 6 }
+	}
+}
+event = {
+	id = 2191528   # Essen is lost !
+	country = U08
+	
+	trigger = { atwar = yes NOT = { control = { province = 145 data = -1 } } }
+	
+	name = "EVT1914_2191528_NAME"
+	desc = "EVT1914_2191528_DESC" 
+	style = 2
+	picture = "news_paper"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 5
+	deathdate = { day = 30 month = december year = 1925 }
+	
+	action = {
+		name = "ACTION_NAME_DAMN" # Damn !
+		command = { type = dissent value = 2 }
+	}
+}
+event = {
+	id = 2191529   # Stuttgart is lost !
+	country = U08
+
+	trigger = { atwar = yes NOT = { control = { province = 134 data = -1 } } }
+	
+	name = "EVT1914_2191529_NAME"
+	desc = "EVT1914_2191529_DESC" 
+	style = 2
+	picture = "news_paper"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 5
+	deathdate = { day = 30 month = december year = 1925 }
+	
+	action = {
+		name = "ACTION_NAME_DAMN" # Damn !
+		command = { type = dissent value = 2 }
+	}
+}
+event = {
+	id = 2191530   # Munchen is lost !
+	country = U08
+
+	trigger = { atwar = yes NOT = { control = { province = 179 data = -1 } } }
+	
+	name = "EVT1914_2191530_NAME"
+	desc = "EVT1914_2191530_DESC" 
+	style = 2
+	picture = "news_paper"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 5
+	deathdate = { day = 30 month = december year = 1925 }
+	
+	action = {
+		name = "ACTION_NAME_DAMN" # Damn !
+		command = { type = dissent value = 3 }
+	}
+}
+event = {
+	id = 2191531   # Hamburg is lost !
+	country = U08
+
+	trigger = { atwar = yes NOT = { control = { province = 154 data = -1 } } }
+	
+	name = "EVT1914_2191531_NAME"
+	desc = "EVT1914_2191531_DESC" 
+	style = 2
+	picture = "news_paper"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 5
+	deathdate = { day = 30 month = december year = 1925 }
+	
+	action = {
+		name = "ACTION_NAME_DAMN" # Damn !
+		command = { type = dissent value = 2 }
+	}
+}
+event = {
+	id = 2191532   # The Fall of Berlin (1914 only)
+	country = U08
+
+	trigger = { 
+		OR = {
+			war = { country = U08 country = FRA }
+			war = { country = U08 country = RUS }
+			war = { country = U08 country = ENG }
+			war = { country = U08 country = USA }
+			war = { country = U08 country = ITA }
+			war = { country = U08 country = SOV }
+		}
+		random = 20
+		NOT = { control = { province = 163 data = -1 } }
+	}
+   
+	name = "EVT1914_2191532_NAME"
+	desc = "EVT1914_2191532_DESC" 
+	style = 2
+	picture = "Peace_conference"
+   
+	date = { day = 1 month = january year = 1914 }
+	offset = 3
+	deathdate = { day = 15 month = november year = 1914 }
+
+	action = {
+		name = "EVT1914_2191532_ACTIONA" # We have been defeated
+		command = { type = dissent value = 15 }
+		command = { type = sleepevent which = 2191514 } # Military defeat
+		command = { type = leave_alliance }			
+		command = { trigger = { exists = U09 } type = end_access which = U09 }
+		command = { trigger = { exists = AUS } type = end_access which = AUS }
+		command = { trigger = { war = { country = U08 country = RUS } } type = trigger which = 2104544 } #RUS Armistice with Germany
+		command = { trigger = { war = { country = U08 country = FRA } } type = trigger which = 2002558 } #FRA Armistice with Germany
+		command = { trigger = { war = { country = U08 country = ENG } } type = trigger which = 2001564 } #ENG Armistice with Germany		
+		command = { trigger = { war = { country = U08 country = RUS } } type = peace which = RUS value = 1 }
+		command = { trigger = { war = { country = U08 country = FRA } } type = peace which = FRA value = 1 }
+		command = { trigger = { war = { country = U08 country = ENG } } type = peace which = ENG value = 1 }
+		command = { trigger = { war = { country = U08 country = USA } } type = peace which = USA value = 1 }
+		command = { trigger = { war = { country = U08 country = ITA } } type = peace which = ITA value = 1 }
+		command = { trigger = { war = { country = U08 country = SOV } } type = peace which = SOV value = 1 }
+		command = { trigger = { war = { country = U08 country = SER } } type = peace which = SER value = 1 }
+		command = { type = embargo which = SWE where = ENG value = 0 } #removes all embargoes on UK
+		command = { type = embargo which = NOR where = ENG value = 0 }
+		command = { type = embargo which = SPA where = ENG value = 0 }
+		command = { type = embargo which = POR where = ENG value = 0 }
+		command = { type = embargo which = USA where = ENG value = 0 }
+		command = { type = embargo which = CAN where = ENG value = 0 }
+		command = { type = embargo which = MEX where = ENG value = 0 }
+		command = { type = embargo which = BRA where = ENG value = 0 }
+		command = { type = embargo which = ARG where = ENG value = 0 }
+		command = { type = embargo which = CHL where = ENG value = 0 }
+		command = { type = embargo which = ENG where = U08 value = 0 } #removes all embargoes on Germany
+		command = { type = embargo which = SWE where = U08 value = 0 }
+		command = { type = embargo which = NOR where = U08 value = 0 }
+		command = { type = embargo which = SPA where = U08 value = 0 }
+		command = { type = embargo which = POR where = U08 value = 0 }
+		command = { type = embargo which = GRE where = U08 value = 0 }
+		command = { type = embargo which = ALB where = U08 value = 0 }
+		command = { type = embargo which = USA where = U08 value = 0 }
+		command = { type = embargo which = CAN where = U08 value = 0 }
+		command = { type = embargo which = MEX where = U08 value = 0 }
+		command = { type = embargo which = BRA where = U08 value = 0 }
+		command = { type = embargo which = ARG where = U08 value = 0 }
+		command = { type = embargo which = CHL where = U08 value = 0 }
+		command = { type = embargo which = CHI where = U08 value = 0 }
+		command = { type = embargo which = JAP where = U08 value = 0 }
+		command = { type = embargo which = AST where = U08 value = 0 }
+		command = { type = embargo which = HOL where = U08 value = 0 }			
+	}
+}
+event = {
+	id = 2191533   # Revolution in Russia
+	country = U08
+
+	#Triggered by RUS 2104530
+   
+	name = "EVT1914_2191533_NAME"
+	desc = "EVT1914_2191533_DESC" 
+	style = 2
+	picture = "news_paper"
+	
+	action = {
+		name = "ACTION_NAME_OK" # Ok !
+		command = {  }
+	}
+}
+event = {
+	id = 2191534   # Propose a soft peace to the Bolsheviks
+	country = U08
+
+	decision = { 
+		war = { country = U08 country = SOV }
+		event = 2191533 # Revolution in Russia
+		NOT = { event = 2007503 } #SOV Seek for peace (classic Brest Litovsk)
+	}
+
+	decision_trigger = { 
+		dissent = 10 
+	}
+
+	trigger = { 
+		random = 30
+		war = { country = U08 country = SOV }
+		event = 2191533 # Revolution in Russia
+		NOT = { event = 2007503 } #SOV Seek for peace (classic Brest Litovsk)
+		dissent = 10 		
+	}
+	
+	name = "EVT1914_2191534_NAME"
+	desc = "EVT1914_2191534_DESC"
+	style = 2
+	picture = "news_paper"
+	
+	date = { day = 1 month = june year = 1916 }
+	offset = 10
+	deathdate = { day = 30 month = december year = 1925 }
+	
+	action = {
+		name = "EVT1914_2191534_ACTIONA" # Propose armistice to the soviets (soft Brest-Litovsk)
+		command = { type = trigger which = 2007502 }
+	}
+}
+event = {
+	id = 2191535   # Bolsheviks bows to our initial conditions
+	country = U08
+
+	#triggered by SOV 2007503
+   
+	name = "EVT1914_2191535_NAME"
+	desc = "EVT1914_2191535_DESC" 
+	style = 1
+	picture = "news_paper"
+
+	action_a = {
+		ai_chance = 90
+		name = "EVT1914_2191535_ACTIONA" # Impose Brest-Litovsk treaty (Historical)
+		command = { trigger = { NOT = { exists = FIN } } type = independence which = FIN value = 1 }
+		#If these provinces (which may be owned by Volunteers' Army) are controlled by Germany, they are giving back to the Soviets
+		command = { trigger = { control = { province = 552 data = U08 } } type = secedeprovince which = SOV value = 552 when = 1 } #Gdov
+		command = { trigger = { control = { province = 566 data = U08 } } type = secedeprovince which = SOV value = 566 when = 1 } #Pskov
+		command = { type = trigger which = 2007516 } #peace with SOV
+		command = { type = event which = 2007505 where = SOV when = 1 } # The Brest Litovsk Treaty : harsh conditions
+	}
+	action_b = {
+		ai_chance = 6
+		name = "EVT1914_2191535_ACTIONB" # Impose soft conditions
+		command = { trigger = { NOT = { exists = FIN } } type = independence which = FIN value = 1 }
+		#If these provinces (which may be owned by Volunteers' Army) are controlled by Germany, they are giving back to the Soviets
+		command = { trigger = { control = { province = 552 data = U08 } } type = secedeprovince which = SOV value = 552 when = 1 } #Gdov
+		command = { trigger = { control = { province = 566 data = U08 } } type = secedeprovince which = SOV value = 566 when = 1 } #Pskov
+		command = { type = trigger which = 2007516 } #peace with SOV
+		command = { type = event which = 2007504 where = SOV when = 1 } # The Brest Litovsk Treaty : soft conditions
+	}
+	action_c = {
+		ai_chance = 4
+		name = "EVT1914_2191535_ACTIONC" # Crush the reds till the end
+		command = { type = dissent value = 10 }
+	}
+}
+#### Serbia accepts ultumatim
+event = {
+	id = 2191536   # Rumors of a Russia military buildup
+	country = U08
+
+	trigger = { 
+		flag = 1915_WWI
+		intelligence = { country = RUS value = 20 }
+		NOT = { intelligence = { country = RUS value = 30 } }
+		random = 10
+		NOT = { event = 2191538 } #U08 Confirmed rumors of a Russia military buildup
+		NOT = { war = { country = U08 country = RUS } } 
+	}
+   
+	name = "EVT1914_2192524_NAME"
+	desc = "EVT1914_2192524_DESC" 
+	style = 2
+	picture = "news_paper"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 5
+	deathdate = { day = 30 month = december year = 1925 }
+	
+	action_a = {
+		name = "EVT1914_2192524_ACTIONA" # Threat Russia
+		command = { type = trigger which = 2104539 }
+	}
+	action_b = {
+		name = "EVT1914_2192524_ACTIONB" # Acknowledge
+		command = { type = relation which = RUS value = 10 }
+	}
+}
+event = {
+	id = 2191537   # Confirmed rumors of a Russia military buildup
+	country = U08
+
+	trigger = { 
+		flag = 1915_WWI
+		intelligence = { country = RUS value = 30 } 
+		random = 10
+		NOT = { event = 2191538 } #U08 Confirmed rumors of a Russia military buildup
+		NOT = { war = { country = U08 country = RUS } } 
+	}
+   
+	name = "EVT1914_2192525_NAME"
+	desc = "EVT1914_2192525_DESC" 
+	style = 2
+	picture = "news_paper"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 5
+	deathdate = { day = 30 month = december year = 1925 }
+	
+	action_a = {
+		name = "EVT1914_2192525_ACTIONA" # Threat Russia
+		command = { type = trigger which = 2104540 }
+	}
+	action_b = {
+		name = "EVT1914_2192525_ACTIONB" # Acknowledge and build up to counterattack
+		command = { type = peacetime_ic_mod value = 20 }
+		command = { type = trigger which = 2192526 }
+	}
+}
+event = {
+	id = 2191538   # Confirmed rumors of a Russia military buildup
+	country = U08
+
+	# Triggered by U09 2192525
+	
+	name = "EVT1914_2192525_NAME"
+	desc = "EVT1914_2192525_DESC" 
+	style = 2
+	picture = "news_paper"   
+	
+	action_a = {
+		name = "EVT1914_2192525_ACTIONB" # Acknowledge and build up to counterattack
+		command = { type = peacetime_ic_mod value = 20 }
+	}
+}
+event = {
+	id = 2191539	# Launch operation Friedrich (preemptive striker on Russia)
+	country = U08
+
+	decision = { 
+		flag = 1915_WWI 
+		OR = { 
+			event = 2191538 #U08 Confirmed rumors of a Russia military buildup
+			event = 2192526 #U09 Confirmed rumors of a Russia military buildup
+		}
+		NOT = { war = { country = U08 country = RUS } } 
+	}
+	decision_trigger = { 
+		AND = {
+			month = 2	# Try in March... ?
+			year = 1915
+		}
+	}
+	trigger = { 
+		flag = 1915_WWI
+		event = 2192526
+		NOT = { war = { country = U08 country = RUS } } 		
+		AND = {
+			month = 3	# Wait for april's unfreezings
+			year = 1915
+		}
+		random = 15
+	}	 
+   
+	name = "EVT1914_2192528_NAME"
+	desc = "EVT1914_2192528_DESC" 
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 28 month = june year = 1914 }
+	offset = 10
+	deathdate = { day = 30 month = june year = 1916 }
+
+	action = {
+		name = "EVT1914_2192528_ACTIONA" # Declare war
+		command = { trigger = { NOT = { war = { country = U08 country = U09 } } } type = alliance which = U09 }
+		command = { type = belligerence value = 20 }
+		command = { type = war which = RUS }
+		command = { type = clrflag which = 1915_WWI }
+		command = { type = clrflag which = FTL_serbia_accepted }
+	}
+}
+#####
+event = {
+	id = 2191540   # Japanese Ultimatum
+	country = U08
+
+	# Triggered by JAP
+   
+	name = "EVT1914_2191540_NAME"
+	desc = "EVT1914_2191540_DESC" 
+	style = 2
+	picture = "news_paper"   
+
+	action_a = {
+		name = "EVT1914_2191540_ACTIONA" # Do not even bother answering
+		ai_chance = 99
+		command = { type = trigger which = 2011501 }
+	}
+	action_b = {
+		name = "ACTION_NAME_AGREE" # Agree
+		ai_chance = 1
+		command = { type = trigger which = 2011502 } # JAP
+		command = { type = dissent value = 5 }
+		command = { type = secederegion which = JAP value = "China" }
+		command = { type = secederegion which = JAP value = "Asian Pacific" }
+		command = { trigger = { flag = JAP_ultimatum_extended } type = secederegion which = JAP value = "American Pacific" }
+		command = { trigger = { flag = JAP_ultimatum_extended } type = secederegion which = JAP value = "New Guinea" }
+		command = { trigger = { flag = JAP_ultimatum_extended } type = secederegion which = JAP value = "Bismarck Archipelago" }
+		command = { trigger = { flag = JAP_ultimatum_extended } type = secederegion which = JAP value = "North Solomon Islands" }
+	}
+}
+##### Blocus management
+event = {
+	id = 2191541   # British blockade
+	country = U08
+
+	# Triggered by ENG
+   
+	name = "EVT1914_2191541_NAME"
+	desc = "EVT1914_2191541_DESC" 
+	style = 2
+	picture = "news_paper"   
+
+	action = {
+		name = "EVT1914_2191541_ACTIONA" # Damn them
+		command = { type = dissent value = 10 }
+		command = { type = wartime_ic_mod value = -10 }
+		command = { type = stockpile which = all when = war value = -20 }
+		command = { type = embargo which = ENG where = U08 value = 3 }
+		command = { type = embargo which = SWE where = U08 value = 3 }
+		command = { type = embargo which = NOR where = U08 value = 3 }
+		command = { type = embargo which = SPA where = U08 value = 3 }
+		command = { type = embargo which = POR where = U08 value = 3 }
+		command = { type = embargo which = GRE where = U08 value = 3 }
+		command = { type = embargo which = ALB where = U08 value = 3 }
+		command = { type = embargo which = USA where = U08 value = 3 }
+		command = { type = embargo which = CAN where = U08 value = 3 }
+		command = { type = embargo which = MEX where = U08 value = 3 }
+		command = { type = embargo which = BRA where = U08 value = 3 }
+		command = { type = embargo which = ARG where = U08 value = 3 }
+		command = { type = embargo which = CHL where = U08 value = 3 }
+		command = { type = embargo which = CHI where = U08 value = 3 }
+		command = { type = embargo which = JAP where = U08 value = 3 }
+		command = { type = embargo which = AST where = U08 value = 3 }
+		command = { type = embargo which = HOL where = U08 value = 3 }
+	}
+}
+event = {
+	id = 2191542   # Blockade British trade
+	country = U08
+
+	decision = { 
+		war = { country = U08 country = ENG } 
+		event = 2001530 #Blockade against Germany
+	}
+	decision_trigger = { 
+		submarine = { value = 7 when = now }
+	}
+	trigger = { 
+		war = { country = U08 country = ENG } 
+		event = 2001530 #Blockade against Germany
+		OR = {
+			#easier conditions for the AI
+			AND = {	
+				ai = no
+				submarine = { value = 7 when = now } 
+			}
+			AND = {
+				ai = yes
+				submarine = { value = 1 when = now } 
+			}
+		}
+		random = 30 
+	}
+   
+	name = "EVT1914_2191542_NAME"
+	desc = "EVT1914_2191542_DESC" 
+	style = 2
+	picture = "news_paper"
+	
+	date = { day = 28 month = june year = 1914 }
+	offset = 2
+	deathdate = { day = 30 month = december year = 1925 }
+	
+	action = {
+	name = "EVT1914_2191542_ACTIONA" # Make them pay
+		command = { type = belligerence value = 5 }
+		command = { type = dissent value = -5 }
+		command = { type = wartime_ic_mod value = 10 }
+		command = { type = gain_tech which = 8600 } #Trade Interdiction Submarine
+		command = { type = trigger which = 2001531 } #ENG
+	}
+}
+event = {
+	id = 2191543   # Unrestricted submarine warfare
+	country = U08
+
+	decision = { 
+		war = { country = U08 country = ENG } 
+		event = 2191542 # Blockade British trade
+	}
+	decision_trigger = { 
+		submarine = { value = 10 when = now }
+	}
+	trigger = { 
+		war = { country = U08 country = ENG } 
+		event = 2191542 # Blockade British trade
+		OR = {
+			#easier conditions for the AI
+			AND = {	
+				ai = no
+				submarine = { value = 10 when = now } 
+			}
+			AND = {
+				ai = yes
+				submarine = { value = 3 when = now } 
+			}
+		}		
+		year = 1916 
+		random = 15 
+	}
+   
+	name = "EVT1914_2191543_NAME"
+	desc = "EVT1914_2191543_DESC" 
+	style = 2
+	picture = "news_paper"
+	
+	date = { day = 28 month = june year = 1914 }
+	offset = 10
+	deathdate = { day = 30 month = december year = 1925 }
+	
+	action = {
+		name = "EVT1914_2191543_ACTIONA" # Issue order
+		command = { type = belligerence value = 8 }
+		command = { type = relation which = USA value = -50 }
+		command = { type = relation which = BRA value = -50 }
+		command = { type = gain_tech which = 8610 } #Unrestricted Submarine Warfare
+		command = { type = trigger which = 2001534 } #ENG
+		command = { type = trigger which = 2049502 } #USA
+	}
+}
+event = {
+	id = 2191544   # The sink of the Lusitania
+	country = U08
+	
+	trigger = { 
+		war = { country = U08 country = ENG } 
+		event = 2001530 #Blockade against Germany
+		OR = {
+			#easier conditions for the AI
+			AND = {	
+				ai = no
+				submarine = { value = 10 when = now } 
+			}
+			AND = {
+				ai = yes
+				submarine = { value = 3 when = now } 
+			}
+		}
+		random = 2
+	}
+   
+	name = "EVT1914_2191544_NAME"
+	desc = "EVT1914_2191544_DESC" 
+	style = 2
+	picture = "news_paper"
+	
+	date = { day = 28 month = june year = 1914 }
+	offset = 7
+	deathdate = { day = 30 month = december year = 1925 }
+	
+	action = {
+		name = "EVT1914_2191543_ACTIONA" # Uh oh
+		command = { trigger = { intel_diff = { country = U08 country = ENG value = 10 } } type = trigger which = 2049501 } # USA - The Lusitatia was carrying weapons !
+		command = { trigger = { intel_diff = { country = U08 country = ENG value = 10 } } type = trigger which = 2001533 } # ENG - The Lusitania - The Germans got us
+		command = { trigger = { NOT = { intel_diff = { country = U08 country = ENG value = 10 } } }  type = trigger which = 2049500 } # USA - The sink of the Lusitania
+		command = { trigger = { NOT = { intel_diff = { country = U08 country = ENG value = 10 } } }  type = trigger which = 2001532 } # ENG - The sink of the Lusitania
+	}
+}
+event = {
+	id = 2191545   # The Zimmerman Telegram
+	country = U08
+	
+	decision = { 
+		war = { country = U08 country = ENG } 
+		exists = MEX
+		NOT = { exists = U57 } #Constitucionalistas
+		NOT = {
+			event = 2191556 # The Zimmerman Telegram
+			war = { country = U08 country = USA } 
+			war = { country = U08 country = MEX } 
+			war = { country = USA country = MEX } 
+			alliance = { country = U08 country = MEX } 
+			alliance = { country = USA country = MEX } 
+		}
+	}
+	decision_trigger = { 
+		policy = { country = USA type = interventionism value = 5 } # It's a "last chance" trigger
+	}
+	trigger = { 
+		war = { country = U08 country = ENG } 
+		NOT = { 
+			war = { country = U08 country = USA } 
+			war = { country = U08 country = MEX } 
+			war = { country = USA country = MEX } 
+			alliance = { country = U08 country = MEX } 
+			alliance = { country = USA country = MEX } 
+		}
+		policy = { country = USA type = interventionism value = 5 } # It's a "last chance" trigger
+	}
+   
+	name = "EVT1914_2191545_NAME"
+	desc = "EVT1914_2191545_DESC" 
+	style = 2
+	picture = "news_paper"
+	
+	date = { day = 28 month = june year = 1917 }
+	offset = 2
+	deathdate = { day = 30 month = december year = 1925 }
+	
+	action = {
+		name = "EVT1914_2191545_ACTIONA" # Issue order
+		command = { type = belligerence value = 2 }
+		command = { type = trigger which = 2038500 } # MEX - The Zimmerman Telegram
+		# Telegram discovery
+		command = { trigger = { intel_diff = { country = ENG country = U08 value = 1 } } type = trigger which = 2049503 } # USA - The Zimmerman Telegram
+		command = { trigger = { intel_diff = { country = ENG country = U08 value = 1 } } type = trigger which = 2001535 } # ENG - The Zimmerman Telegram - we got'em
+		command = { type = sleepevent which = 2191556 } # The Zimmerman Telegram for U57
+	}
+}
+event = {
+	id = 2191556   # The Zimmerman Telegram
+	country = U08
+	
+	decision = { 
+		exists = U57 #Constitucionalistas
+		NOT = { exists = MEX }
+		war = { country = U08 country = ENG } 
+		NOT = { 
+			event = 2191545 # The Zimmerman Telegram
+			war = { country = U08 country = USA } 
+			war = { country = U08 country = U57 } 
+			war = { country = USA country = U57 } 
+			alliance = { country = U08 country = U57 } 
+			alliance = { country = USA country = U57 } 
+		}
+	}
+	decision_trigger = { 
+		policy = { country = USA type = interventionism value = 5 } # It's a "last chance" trigger
+	}
+	trigger = { 
+		war = { country = U08 country = ENG } 
+		NOT = { 
+			war = { country = U08 country = USA } 
+			war = { country = U08 country = U57 } 
+			war = { country = USA country = U57 } 
+			alliance = { country = U08 country = U57 } 
+			alliance = { country = USA country = U57 } 
+		}
+	policy = { country = USA type = interventionism value = 5 } # It's a "last chance" trigger
+	}
+   
+	name = "EVT1914_2191545_NAME"
+	desc = "EVT1914_2191545_DESC" 
+	style = 2
+	picture = "news_paper"
+	
+	date = { day = 28 month = june year = 1917 }
+	offset = 2
+	deathdate = { day = 30 month = december year = 1925 }
+	
+	action = {
+		name = "EVT1914_2191545_ACTIONA" # Issue order
+		command = { type = belligerence value = 2 }
+		command = { type = trigger which = 2038500 } # U57 - The Zimmerman Telegram
+		# Telegram discovery
+		command = { trigger = { intel_diff = { country = ENG country = U08 value = 1 } } type = trigger which = 2049503 } # USA - The Zimmerman Telegram
+		command = { trigger = { intel_diff = { country = ENG country = U08 value = 1 } } type = trigger which = 2001535 } # ENG - The Zimmerman Telegram - we got'em
+		command = { type = sleepevent which = 2191545 } # The Zimmerman Telegram for MEX
+	}
+}
+### Falkenhayn Nomination
+event = {
+	id = 2191546 # Falkenhayn Nomination
+	country = U08
+
+	decision = { 
+		NOT = { incabinet = 855073 } # Erich von Falkenhayn
+		war = { country = U08 country = FRA }  
+	}
+	decision_trigger = { 
+		NOT = { control = { province = 55 data = U08 } } # Paris
+	}
+	trigger = { 
+		random = 40
+		NOT = { incabinet = 855073 } # Erich von Falkenhayn
+		war = { country = U08 country = FRA }  
+		NOT = { control = { province = 55 data = U08 } } # Paris
+	}
+   
+	name = "EVT1914_2191546_NAME"
+	desc = "EVT1914_2191546_DESC" 
+	style = 2
+	picture = "news_paper"
+	decision_picture = "decision_wargames"
+	
+	date = { day = 28 month = december year = 1914 }
+	offset = 20
+	deathdate = { day = 30 month = december year = 1915 }
+	
+	action = {
+		name = "EVT1914_2191546_ACTIONA"
+		command = { type = chiefofstaff which = 855073 } #Erich von Falkenhayn
+		command = { type = chiefofarmy which = 855081 }
+		command = { type = add_leader_skill which = 855019 value = 1 } #  increase leader skill } #von Falkenhayn Erich
+		command = { type = sleepminister which = 855072 } #Moltke's health broke down and basically retired 
+		command = { type = sleepleader which = 855020 }
+		command = { type = dissent value = -2 }
+	}
+}
+### The Escape of SMS Goeben and SMS Breslau
+event = {
+	id = 2191547 # The Escape of SMS Goeben and SMS Breslau
+	country = U08
+
+	decision = {
+		division_exists = { type = 10100 id = 642 }
+		division_exists = { type = 10100 id = 643 }
+	}
+	decision_trigger = { 
+		war = { country = U08 country = FRA }
+		war = { country = U08 country = ENG }
+		division_in_province = { id = { type = 10100 id = 642 } province = 2742 }
+		division_in_province = { id = { type = 10100 id = 643 } province = 2742 }
+	}
+	trigger = { 
+		random = 40
+		war = { country = U08 country = FRA }
+		war = { country = U08 country = ENG }    
+	}
+   
+	name = "EVT1914_2191547_NAME"
+	desc = "EVT1914_2191547_DESC" 
+	style = 2
+	picture = "news_paper"
+	decision_picture = "decision_wargames"
+	
+	date = { day = 28 month = june year = 1914 }
+	offset = 20
+	deathdate = { day = 30 month = december year = 1914 }
+	
+	action = {
+		name = "EVT1914_2191547_ACTIONA"
+		command = { type = remove_division which = 10100 value = 642 }
+		command = { type = remove_division which = 10100 value = 643 }
+		command = { type = relation which = OTT value = 20 } 
+		command = { type = trigger which = 2145512 }
+	}
+}
+
+### Armistice with France
+event = {
+	id = 2191552
+	country = U08	
+	
+	name = "EVT1914_2191552_NAME"
+	desc = "EVT1914_2191552_DESC" 
+	style = 2
+	picture = "diplomatic_campaign"
+	
+	action = {
+		name = "ACTION_NAME_GREAT" 
+		command = { type = dissent value = -3 } 
+	}
+}
+
+### Armistice with Italy
+event = {
+	id = 2191553
+	country = U08	
+	
+	name = "EVT1914_2002559_NAME"
+	desc = "EVT1914_2002559_DESC" 
+	style = 2
+	picture = "diplomatic_campaign"
+	
+	action = {
+		name = "ACTION_NAME_GREAT" 
+		command = { type = dissent value = -3 } 
+	}
+}
+
+### Armistice with Russia
+event = {
+	id = 2191554
+	country = U08	
+	
+	name = "EVT1914_2191554_NAME"
+	desc = "EVT1914_2191554_DESC" 
+	style = 2
+	picture = "diplomatic_campaign"
+	
+	action = {
+		name = "ACTION_NAME_GREAT" 
+		command = { type = dissent value = -3 } 
+	}
+}

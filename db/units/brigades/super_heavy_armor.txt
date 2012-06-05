@@ -1,0 +1,34 @@
+# WW1 super heavy 1917
+model = {
+	cost				= 15
+	buildtime			= 180
+	manpower			= 3
+	defensiveness		= 6
+	toughness			= 4
+	maxspeed			= -3
+	softness			= -20
+	hardattack			= 2
+	softattack			= 4
+	supplyconsumption 	= 1.0
+	fuelconsumption		= 2
+	upgrade_time_factor = 1.0
+	upgrade_cost_factor = 1.0
+	anti_tank			= 0		# Upgrade to 1924 Medium Armor Brigade
+	upgrade_time_boost 	= no 	# Do not reduce upgrade time on obsolete models 
+}
+# WW2 Super heavy 1944
+model = {
+	cost 				= 10
+	buildtime	 		= 180
+	manpower 			= 2
+	defensiveness 		= 8
+	toughness 			= 2
+	maxspeed 			= -4
+	softness			= -20
+	hardattack			= 8
+	softattack			= 7
+	supplyconsumption 	= 0.6
+	fuelconsumption		= 2
+	upgrade_time_factor = 1.0
+	upgrade_cost_factor = 1.0
+}

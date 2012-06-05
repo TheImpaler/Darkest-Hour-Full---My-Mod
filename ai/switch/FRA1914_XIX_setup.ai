@@ -1,0 +1,111 @@
+# French 1914 XIX Warplan Setup & Phase1
+# French  attacks Alsace-Lorraine and after winning that 
+# moves deeper into germany & Austria
+#####################################
+# 0.49vrc2 by Spocky
+
+max_front_ratio = 1.2
+max_front_ratios = { 	
+	U08 = 5.0
+	U09 = 2.0
+	OTT = 2.0
+	
+}
+max_garrison_prop = 0.60
+min_garrison_prop = 0.20
+neutrality = 20.000 
+war = 50
+target = {  
+	# against Germany
+	104 = 100	
+	107 = 100
+	105 = 100
+	145 = 100
+	
+	
+	
+	# against AEIOU
+	189 = 10
+	192 = 10
+	
+	
+}
+
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+garrison = {
+	defend_overseas_beaches = no
+	home_multiplier 	= 1.0
+	overseas_multiplier 	= 1.0
+	home_peace_cap 		= 10
+	war_zone_odds 		= 2.0
+	key_point_prio_mult	= 0.0
+	revolt_risk_mult	= 0.1
+
+	# PRIORITIES:
+	beach			= 20	# Beach level 2
+	capital			= 100	# Our capital
+	human_border	= 0	# Ignored for allied human players
+	war_target		= 30	# The next country targeted for attack by this AI
+	reserves 		= 5	# bonus for provinces just behind a frontline.
+	
+	opposing_alliance	= 0	# For neutrals, all alliances are "opposing"
+	claim_threat		= 0	# If we are neutral, countries with claims on us get this
+	unstable_border		= 0	# Bordering countries at war with someone else get this
+
+	# Borders with specific countries
+	country_priorities = {
+		
+		U08 = 15
+		U09 = 10
+		
+	}
+	
+	
+	
+}
+front = { 
+	recklessness 		= 1 # 0-3
+	distrib_vs_ai 		= defensive
+	distrib_vs_human 	= defensive
+
+	base_attack_odds	= 1.3
+	min_attack_odds		= 1.1
+	max_attack_odds		= 3.0
+	reinforce_odds		= 1.3
+	withdraw_odds		= 0.6
+ 
+	enemy_handicap = {
+		
+	} 
+    passivity = {
+
+	}
+	province_priorities = {
+	
+	# against Germany
+	104 = 100	
+	107 = 100
+	105 = 100
+	145 = 100
+	
+	
+	
+	# against AEIOU
+	189 = 10
+	192 = 10
+
+	
+	# belgian/german border
+		108 = -1		
+		111 = -1
+		113 = -1
+		115 = -1
+		117 = -1
+		
+	}
+}
+
+
+###EOF

@@ -1,0 +1,189 @@
+########################## Medium Tank Brigades ################
+# 0 - Early Medium Tank
+model = {
+	cost 				= 8
+	buildtime	 		= 140
+	manpower 			= 2.5
+	maxspeed 			= -2
+	defensiveness 		= 4
+	toughness 			= 5
+	defaultorganisation = 0
+	softness			= -10
+	hardattack			= 4
+	softattack			= 2
+	supplyconsumption 	= 0.5
+	fuelconsumption		= 2.0
+	upgrade_time_factor = 1.20
+	upgrade_cost_factor = 1.60
+}
+# 1 - Early Medium Tank
+model = {
+	cost 				= 8
+	buildtime	 		= 140
+	manpower 			= 2.5
+	maxspeed 			= -1
+	defensiveness 		= 5
+	toughness 			= 6
+	defaultorganisation = 0
+	softness			= -10
+	hardattack			= 4
+	softattack			= 3
+	supplyconsumption 	= 0.5
+	fuelconsumption		= 2.0
+	upgrade_time_factor = 1.20
+	upgrade_cost_factor = 1.60
+}
+# 2 -  Medium Tank
+model = {
+	cost 				= 8
+	buildtime	 		= 140
+	manpower 			= 2.5
+	maxspeed 			= -1
+	defensiveness 		= 5
+	toughness 			= 7
+	defaultorganisation = 0
+	softness			= -10
+	hardattack			= 4
+	softattack			= 4
+	supplyconsumption 	= 0.5
+	fuelconsumption		= 2.0
+	upgrade_time_factor = 1.20
+	upgrade_cost_factor = 1.60
+}
+# 3 -Basic Medium Tank
+model = {
+	cost 				= 8
+	buildtime	 		= 140
+	manpower 			= 2.5
+	maxspeed 			= 0
+	defensiveness 		= 5
+	toughness 			= 7
+	defaultorganisation = 5
+	softness			= -10
+	hardattack			= 4
+	softattack			= 4
+	supplyconsumption 	= 0.5
+	fuelconsumption		= 2.0
+	upgrade_time_factor = 1.20
+	upgrade_cost_factor = 1.60
+}
+# 4 - Improved Medium Tank
+model = {
+	cost 				= 8.5
+	buildtime	 		= 140
+	manpower 			= 2.5
+	maxspeed 			= 0
+	defensiveness 		= 6
+	toughness 			= 8
+	defaultorganisation = 5
+	softness			= -10
+	hardattack			= 5
+	softattack			= 5
+	supplyconsumption 	= 0.5
+	fuelconsumption		= 2.0
+	upgrade_time_factor = 1.20
+	upgrade_cost_factor = 1.60
+}
+# 5 - Advanced medium Tank
+model = {
+	cost 				= 9
+	buildtime	 		= 140
+	manpower 			= 2.5
+	maxspeed 			= 0
+	defensiveness 		= 6
+	toughness 			= 8
+	defaultorganisation = 5
+	softness			= -10
+	hardattack			= 6
+	softattack			= 6
+	supplyconsumption 	= 0.5
+	fuelconsumption		= 2.0
+	upgrade_time_factor = 1.20
+	upgrade_cost_factor = 1.60
+}
+
+# 6 - Semi-Modern medium Tank
+model = {
+	cost 					= 10
+	buildtime	 		= 140
+	manpower 			= 2.5
+	maxspeed 			= 0
+	defensiveness 		= 6
+	toughness 			= 8
+	defaultorganisation = 5
+	softness			= -10
+	hardattack			= 7
+	softattack			= 7
+	supplyconsumption 	= 0.5
+	fuelconsumption		= 2.0
+	upgrade_time_factor = 1.20
+	upgrade_cost_factor = 1.60
+}
+# 7 - Early MBT
+model = {
+	cost 					= 11
+	buildtime	 		= 140
+	manpower 			= 2.5
+	maxspeed 			= 0
+	defensiveness 		= 6
+	toughness 			= 8
+	defaultorganisation = 5
+	softness			= -10
+	hardattack			= 8
+	softattack			= 8
+	supplyconsumption 	= 0.5
+	fuelconsumption		= 2.0
+	upgrade_time_factor = 1.20
+	upgrade_cost_factor = 1.60
+}
+# 8 - Basic MBT
+model = {
+	cost 					= 12
+	buildtime	 		= 140
+	manpower 			= 2.5
+	maxspeed 			= 0
+	defensiveness 		= 6
+	toughness 			= 8
+	defaultorganisation = 5
+	softness			= -10
+	hardattack			= 9
+	softattack			= 9
+	supplyconsumption 	= 0.5
+	fuelconsumption		= 2.0
+	upgrade_time_factor = 1.20
+	upgrade_cost_factor = 1.60
+}
+# 9 - Advanced MBT
+model = {
+	cost 					= 13
+	buildtime	 		= 140
+	manpower 			= 2.5
+	maxspeed 			= 0
+	defensiveness 		= 6
+	toughness 			= 8
+	defaultorganisation = 5
+	softness			= -10
+	hardattack			= 10
+	softattack			= 10
+	supplyconsumption 	= 0.5
+	fuelconsumption		= 2.0
+	upgrade_time_factor = 1.20
+	upgrade_cost_factor = 1.60
+}
+# 10 - Modern MBT
+model = {
+	cost 					= 14
+	buildtime	 		= 140
+	manpower 			= 2.5
+	maxspeed 			= 0
+	defensiveness 		= 6
+	toughness 			= 8
+	defaultorganisation = 5
+	softness			= -10
+	hardattack			= 11
+	softattack			= 11
+	supplyconsumption 	= 0.5
+	fuelconsumption		= 2.0
+	upgrade_time_factor = 1.20
+	upgrade_cost_factor = 1.60
+}

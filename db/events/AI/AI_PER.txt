@@ -1,0 +1,178 @@
+####################################
+# PERivia AI events by Lothos
+####################################
+################
+# Minister of Security Section
+#############################################
+event = { # Mohammed Ali Foroughi takes power
+	id = 3031001
+	random = no 
+	country = PER
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 150090 # Mohammed Ali Foroughi
+		NOT = { InCabinet = 150090 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ministerofsecurity which = 150090 }
+		command = { type = dissent value = -1 }
+	}
+}
+event = { # Soleiman Mirza takes power
+	id = 3031002
+	random = no 
+	country = PER
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 150049 # Soleiman Mirza
+		NOT = { InCabinet = 150049 }
+		NOT = { minister = 150090 } # Mohammed Ali Foroughi
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ministerofsecurity which = 150049 }
+		command = { type = dissent value = -1 }
+	}
+}
+################
+# Chief of Staff Section
+#############################################
+################
+# Head of Intelligence Section
+#############################################
+event = { # Dinshah Irani takes power
+	id = 3031003
+	random = no 
+	country = PER
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 150060 # Dinshah Irani
+		NOT = { InCabinet = 150060 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ministerofintelligence which = 150060 }
+		command = { type = dissent value = -1 }
+	}
+}
+
+################
+# Armament Minister Section
+#############################################
+event = { # Reza Mizani takes power
+	id = 3031004
+	random = no 
+	country = PER
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 150035 # Reza Mizani
+		NOT = { InCabinet = 150035 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = armamentminister which = 150035 }
+		command = { type = dissent value = -1 }
+	}
+}
+################
+# Chief of Air Minister Section
+#############################################
+event = { # Sadegh Khan Koopal takes power
+	id = 3031005
+	random = no 
+	country = PER
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 150085 # Sadegh Khan Koopal
+		NOT = { InCabinet = 150085 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = chiefofair which = 150085 }
+		command = { type = dissent value = -1 }
+	}
+}
+
+
+
+
+
+#############################################
+# Regular AI Events
+#############################################
+################
+# Shift Production
+#############################################
+event = {
+	id = 3031006
+	random = no 
+	country = PER
+	
+	trigger = {
+		ai = yes
+		OR = {
+			atwar = yes
+			atwar = TUR
+			atwar = AFG
+			lost_national = { country = SOV value = 40 }
+			lost_national = { country = IRQ value = 2 }
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ai which = "switch/Minor_Gear_Up.ai" }
+	}
+}

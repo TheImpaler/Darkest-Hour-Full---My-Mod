@@ -1,0 +1,468 @@
+####################################
+# Canada AI by Lothos
+####################################
+################
+# Minister of Security Section
+#############################################
+event = { # Thomas A. Crerar takes power
+	id = 3045001
+	random = no 
+	country = CAN
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 220043 # Thomas A. Crerar
+		NOT = { InCabinet = 220043 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ministerofsecurity which = 220043 }
+		command = { type = dissent value = -1 }
+	}
+}
+event = { # Ernest Lapointe takes power
+	id = 3045002
+	random = no 
+	country = CAN
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 220005 #Ernest Lapointe
+		NOT = { InCabinet = 220005 }
+		NOT = { minister = 220043 } # Thomas A. Crerar
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ministerofsecurity which = 220005 }
+		command = { type = dissent value = -1 }
+	}
+}
+################
+# Chief of Staff Section
+#############################################
+event = { # Frederick M.W. Harvey takes power
+	id = 3045003
+	random = no 
+	country = CAN
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 220075 # Frederick M.W. Harvey
+		NOT = { InCabinet = 220075 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = chiefofstaff which = 220075 }
+		command = { type = dissent value = -1 }
+	}
+}
+event = { # Kenneth Stuart takes power
+	id = 3045004
+	random = no 
+	country = CAN
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 220072 # Kenneth Stuart
+		NOT = { InCabinet = 220072 }
+		NOT = { minister = 220075 } # Frederick M.W. Harvey
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = chiefofstaff which = 220072 }
+		command = { type = dissent value = -1 }
+	}
+}
+################
+# Head of Intelligence Section
+#############################################
+event = { # René St. Pierre takes power
+	id = 3045005
+	random = no 
+	country = CAN
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 220064 # René St. Pierre
+		NOT = { InCabinet = 220064 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ministerofintelligence which = 220064 }
+		command = { type = dissent value = -1 }
+	}
+}
+event = { # Henry Crerar takes power
+	id = 3045006
+	random = no 
+	country = CAN
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 220006 # Henry Crerar
+		NOT = { InCabinet = 220006 }
+		NOT = { minister = 220064 } # René St. Pierre
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ministerofintelligence which = 220006 }
+		command = { type = dissent value = -1 }
+	}
+}
+################
+# Chief of the Army Section
+#############################################
+event = { # Ernest Ashton takes power
+	id = 3045007
+	random = no 
+	country = CAN
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 220008 # Ernest Ashton
+		NOT = { InCabinet = 220008 }
+		OR = {
+			atwar = no
+			NOT = { minister = 220080 } # Kenneth Stuart
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = chiefofarmy which = 220008 }
+		command = { type = dissent value = -1 }
+	}
+}
+event = { # Kenneth Stuart takes power
+	id = 3045008
+	random = no 
+	country = CAN
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 220080 # Kenneth Stuart
+		NOT = { InCabinet = 220080 }
+		OR = {
+			atwar = yes
+			NOT = { minister = 220008 } # Ernest Ashton
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = chiefofarmy which = 220080 }
+		command = { type = dissent value = -1 }
+	}
+}
+################
+# Armament Minister Section
+#############################################
+event = { # Ian A. MacKenzie takes power
+	id = 3045009
+	random = no 
+	country = CAN
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 220004 # Ian A. MacKenzie
+		NOT = { InCabinet = 220004 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = armamentminister which = 220004 }
+		command = { type = dissent value = -1 }
+	}
+}
+event = { # Arthur Meighen takes power
+	id = 3045010
+	random = no 
+	country = CAN
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 220031 # Arthur Meighen
+		NOT = { InCabinet = 220031 }
+		NOT = { minister = 220004 } # Ian A. MacKenzie
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = armamentminister which = 220031 }
+		command = { type = dissent value = -1 }
+	}
+}
+################
+# Chief of Air Minister Section
+#############################################
+event = { # Joseph Roméo Vachon takes power
+	id = 3045011
+	random = no 
+	country = CAN
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 220090 # Joseph Roméo Vachon
+		NOT = { InCabinet = 220090 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = chiefofair which = 220090 }
+		command = { type = dissent value = -1 }
+	}
+}
+################
+# Chief of Navy Minister Section
+#############################################
+event = { # Percy Nelles takes power
+	id = 3045012
+	random = no 
+	country = CAN
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 220009 # Percy Nelles
+		NOT = { InCabinet = 220009 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = chiefofnavy which = 220009 }
+		command = { type = dissent value = -1 }
+	}
+}
+
+#############################################
+# Regular AI Events
+#############################################
+################
+# Canada Load D-Day AI
+#############################################
+event = {
+	id = 3045013
+	random = no 
+	country = CAN
+	
+	trigger = {
+		ai = yes
+		alliance = { country = CAN country = USA }
+		OR = {
+			event = 3049005 # USA Loaded D-Day
+			region = { region = "Germany" country = -3 value = 1 }
+			region = { region = "Benelux" country = -3 value = 1 }
+			region = { region = "Denmark" country = -3 value = 1 }
+			region = { region = "France" country = -3 value = 1 }
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 0 month = january year = 1936 }
+	offset = 14
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ai which = "switch/CAN_Dday.ai" }
+		command = { type = ai which = "Air_Ground.ai" }
+	}
+}
+################
+# Canada Air AI
+#############################################
+event = {
+	id = 3045014
+	random = no 
+	country = CAN
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		NOT = { local_flag = CANGroundAir }
+		lost_national = { country = CAN value = 1 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = local_setflag which = CANGroundAir }
+		command = { type = local_clrflag which = CANStrategicAir }
+		command = { type = ai which = "Air_Ground.ai" }
+	}
+}
+event = {
+	id = 3045015
+	random = no 
+	country = CAN
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		NOT = { local_flag = CANStrategicAir }
+		NOT = { lost_national = { country = CAN value = 1 } }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = local_clrflag which = CANGroundAir }
+		command = { type = local_setflag which = CANStrategicAir }
+		command = { type = ai which = "Air_Strategic.ai" }
+	}
+}
+################
+# Shift Production
+#############################################
+event = {
+	id = 3045016
+	random = no 
+	country = CAN
+	
+	trigger = {
+		ai = yes
+		OR = {
+			atwar = yes
+			atwar = GER
+			atwar = ENG
+			atwar = FRA
+			atwar = USA
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ai which = "switch/Minor_Gear_Up.ai" }
+	}
+}
+################
+# War AI help UK
+#############################################
+event = {
+	id = 3045017
+	random = no 
+	country = CAN
+	
+	trigger = {
+		ai = yes
+		atwar = yes
+		alliance = { country = CAN country = ENG }
+		}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ai which = "switch/Can_atwar.ai" }
+	}
+}

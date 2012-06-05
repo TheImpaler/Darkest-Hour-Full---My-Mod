@@ -1,0 +1,1187 @@
+####################################
+# Soviet Spheres adjustments events by Lothos
+####################################
+################
+#SCANDANAVIA COUNTRIES
+#
+# Finland
+#############################################
+event = {
+	id = 3030018
+	random = no 
+	country = FIN
+	
+	trigger = {
+		ai = yes
+		NOT = { government = communist }
+		NOT = { event = 2030001 } # Winter War
+		NOT = { war = { country = FIN country = ENG } }
+		NOT = { alliance = { country = FIN country = SOV } }
+		NOT = { alliance = { country = FIN country = GER } }
+		OR = {
+			attack = SOV
+			flag = SOV_Aggresion_Scandanavia
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = setflag which = SOV_Aggresion_Scandanavia }
+		command = { type = ai which = "switch/SOV_Aggression_Scandanavia.ai" }
+		command = { type = ai which = "Air_Ground.ai" }
+	}
+}
+################
+# Sweden
+#############################################
+event = {
+	id = 3009012
+	random = no 
+	country = SWE
+	
+	trigger = {
+		ai = yes
+		NOT = { government = communist }
+		NOT = { event = 2030001 } # Winter War
+		NOT = { war = { country = SWE country = ENG } }
+		NOT = { alliance = { country = SWE country = SOV } }
+		NOT = { alliance = { country = SWE country = GER } }
+		OR = {
+			attack = SOV
+			flag = SOV_Aggresion_Scandanavia
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = setflag which = SOV_Aggresion_Scandanavia }
+		command = { type = ai which = "switch/SOV_Aggression_Scandanavia.ai" }
+		command = { type = ai which = "Air_Ground.ai" }
+	}
+}
+################
+# Norway
+#############################################
+event = {
+	id = 3014001
+	random = no 
+	country = NOR
+	
+	trigger = {
+		ai = yes
+		NOT = { government = communist }
+		NOT = { war = { country = NOR country = ENG } }
+		NOT = { alliance = { country = NOR country = SOV } }
+		NOT = { alliance = { country = NOR country = GER } }
+		OR = {
+			attack = SOV
+			flag = SOV_Aggresion_Scandanavia
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = setflag which = SOV_Aggresion_Scandanavia }
+		command = { type = ai which = "switch/SOV_Aggression_Scandanavia.ai" }
+		command = { type = ai which = "Air_Ground.ai" }
+	}
+}
+################
+# Denmark
+#############################################
+event = {
+	id = 3016001
+	random = no 
+	country = DEN
+	
+	trigger = {
+		ai = yes
+		NOT = { government = communist }
+		NOT = { war = { country = DEN country = ENG } }
+		NOT = { alliance = { country = DEN country = SOV } }
+		NOT = { alliance = { country = DEN country = GER } }
+		attack = SOV
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = setflag which = SOV_Aggresion_Scandanavia }
+		command = { type = ai which = "switch/SOV_Aggression_Scandanavia.ai" }
+		command = { type = ai which = "Air_Ground.ai" }
+	}
+}
+################
+#Eastern Europe COUNTRIES
+#
+# Poland
+#############################################
+event = {
+	id = 3013011
+	random = no 
+	country = POL
+	
+	trigger = {
+		ai = yes
+		NOT = { government = communist }
+		NOT = { war = { country = POL country = GER } }
+		NOT = { alliance = { country = POL country = SOV } }
+		NOT = { alliance = { country = POL country = GER } }
+		OR = {
+			attack = SOV
+			flag = SOV_Aggresion_Europe
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = setflag which = SOV_Aggresion_Europe }
+		command = { type = ai which = "switch/SOV_Aggression_EasternEurope.ai" }
+		command = { type = ai which = "Air_Ground.ai" }
+	}
+}
+################
+# Czechloslavakia 
+#############################################
+event = {
+	id = 3025001
+	random = no 
+	country = CZE
+	
+	trigger = {
+		ai = yes
+		NOT = { government = communist }
+		NOT = { war = { country = CZE country = GER } }
+		NOT = { alliance = { country = CZE country = SOV } }
+		NOT = { alliance = { country = CZE country = GER } }
+		OR = {
+			attack = SOV
+			flag = SOV_Aggresion_Europe 
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = setflag which = SOV_Aggresion_Europe }
+		command = { type = ai which = "switch/SOV_Aggression_EasternEurope.ai" }
+		command = { type = ai which = "Air_Ground.ai" }
+	}
+}
+################
+# Austria 
+#############################################
+event = {
+	id = 3024001
+	random = no 
+	country = AUS
+	
+	trigger = {
+		ai = yes
+		NOT = { government = communist }
+		NOT = { war = { country = AUS country = GER } }
+		NOT = { alliance = { country = AUS country = SOV } }
+		NOT = { alliance = { country = AUS country = GER } }
+		OR = {
+			attack = SOV
+			flag = SOV_Aggresion_Europe 
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = setflag which = SOV_Aggresion_Europe }
+		command = { type = ai which = "switch/SOV_Aggression_EasternEurope.ai" }
+		command = { type = ai which = "Air_Ground.ai" }
+	}
+}
+################
+#BAKLANS COUNTRIES
+#
+# Romania
+#############################################
+event = {
+	id = 3023014
+	random = no 
+	country = ROM
+	
+	trigger = {
+		ai = yes
+		NOT = { government = communist }
+		NOT = { event = 2023003 } # Soviets claim Bessarabia
+		NOT = { war = { country = ROM country = GER } }
+		NOT = { alliance = { country = ROM country = SOV } }
+		NOT = { alliance = { country = ROM country = GER } }
+		OR = {
+			attack = SOV
+			flag = SOV_Aggresion_Europe
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = setflag which = SOV_Aggresion_Europe }
+		command = { type = ai which = "switch/SOV_Aggression_Baklans.ai" }
+		command = { type = ai which = "Air_Ground.ai" }
+	}
+}
+################
+# Hungary
+#############################################
+event = {
+	id = 3022025
+	random = no 
+	country = HUN
+	
+	trigger = {
+		ai = yes
+		NOT = { government = communist }
+		NOT = { war = { country = HUN country = GER } }
+		NOT = { alliance = { country = HUN country = SOV } }
+		NOT = { alliance = { country = HUN country = GER } }
+		OR = {
+			attack = SOV
+			flag = SOV_Aggresion_Europe
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = setflag which = SOV_Aggresion_Europe }
+		command = { type = ai which = "switch/SOV_Aggression_Baklans.ai" }
+		command = { type = ai which = "Air_Ground.ai" }
+	}
+}
+################
+# Bulgaria
+#############################################
+event = {
+	id = 3020012
+	random = no 
+	country = BUL
+	
+	trigger = {
+		ai = yes
+		NOT = { government = communist }
+		NOT = { war = { country = BUL country = GER } }
+		NOT = { alliance = { country = BUL country = SOV } }
+		NOT = { alliance = { country = BUL country = GER } }
+		OR = {
+			attack = SOV
+			flag = SOV_Aggresion_Europe
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = setflag which = SOV_Aggresion_Europe }
+		command = { type = ai which = "switch/SOV_Aggression_Baklans.ai" }
+		command = { type = ai which = "Air_Ground.ai" }
+	}
+}
+################
+# Yugoslavia
+#############################################
+event = {
+	id = 3021007
+	random = no 
+	country = YUG
+	
+	trigger = {
+		ai = yes
+		NOT = { government = communist }
+		NOT = { war = { country = YUG country = GER } }
+		NOT = { alliance = { country = YUG country = SOV } }
+		NOT = { alliance = { country = YUG country = GER } }
+		OR = {
+			attack = SOV
+			flag = SOV_Aggresion_Europe
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = setflag which = SOV_Aggresion_Europe }
+		command = { type = ai which = "switch/SOV_Aggression_Baklans.ai" }
+		command = { type = ai which = "Air_Ground.ai" }
+	}
+}
+################
+# Greece
+#############################################
+event = {
+	id = 3019001
+	random = no 
+	country = GRE
+	
+	trigger = {
+		ai = yes
+		NOT = { government = communist }
+		NOT = { war = { country = GRE country = GER } }
+		NOT = { alliance = { country = GRE country = SOV } }
+		NOT = { alliance = { country = GRE country = GER } }
+		OR = {
+			attack = SOV
+			flag = SOV_Aggresion_Europe
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = setflag which = SOV_Aggresion_Europe }
+		command = { type = ai which = "switch/SOV_Aggression_Baklans.ai" }
+		command = { type = ai which = "Air_Ground.ai" }
+	}
+}
+################
+# Slovakia
+#############################################
+event = {
+	id = 3057001
+	random = no 
+	country = SLO
+	
+	trigger = {
+		ai = yes
+		NOT = { government = communist }
+		NOT = { war = { country = SLO country = GER } }
+		NOT = { alliance = { country = SLO country = SOV } }
+		NOT = { alliance = { country = SLO country = GER } }
+		OR = {
+			attack = SOV
+			flag = SOV_Aggresion_Europe
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = setflag which = SOV_Aggresion_Europe }
+		command = { type = ai which = "switch/SOV_Aggression_Baklans.ai" }
+		command = { type = ai which = "Air_Ground.ai" }
+	}
+}
+################
+# Albania
+#############################################
+event = {
+	id = 3058001
+	random = no 
+	country = ALB
+	
+	trigger = {
+		ai = yes
+		NOT = { government = communist }
+		NOT = { war = { country = ALB country = GER } }
+		NOT = { alliance = { country = ALB country = SOV } }
+		NOT = { alliance = { country = ALB country = GER } }
+		attack = SOV
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = setflag which = SOV_Aggresion_Europe }
+		command = { type = ai which = "switch/SOV_Aggression_Baklans.ai" }
+		command = { type = ai which = "Air_Ground.ai" }
+	}
+}
+################
+#Low COUNTRIES
+#
+# Holland
+#############################################
+event = {
+	id = 3004013
+	random = no 
+	country = HOL
+	
+	trigger = {
+		ai = yes
+		NOT = { government = communist }
+		NOT = { war = { country = HOL country = ENG } }
+		NOT = { alliance = { country = HOL country = SOV } }
+		NOT = { alliance = { country = HOL country = GER } }
+		attack = SOV
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = setflag which = SOV_Aggresion_Europe }
+		command = { type = ai which = "switch/SOV_Aggression_WesternEurope.ai" }
+		command = { type = ai which = "Air_Ground.ai" }
+	}
+}
+################
+# Belgium
+#############################################
+event = {
+	id = 3015008
+	random = no 
+	country = BEL
+	
+	trigger = {
+		ai = yes
+		NOT = { government = communist }
+		NOT = { war = { country = BEL country = ENG } }
+		NOT = { alliance = { country = BEL country = SOV } }
+		NOT = { alliance = { country = BEL country = GER } }
+		OR = {
+			attack = SOV
+			flag = SOV_Aggresion_Europe
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = setflag which = SOV_Aggresion_Europe }
+		command = { type = ai which = "switch/SOV_Aggression_WesternEurope.ai" }
+		command = { type = ai which = "Air_Ground.ai" }
+	}
+}
+################
+# Luxemburg
+#############################################
+event = {
+	id = 3078001
+	random = no 
+	country = LUX
+	
+	trigger = {
+		ai = yes
+		NOT = { government = communist }
+		NOT = { war = { country = LUX country = ENG } }
+		NOT = { alliance = { country = LUX country = SOV } }
+		NOT = { alliance = { country = LUX country = GER } }
+		OR = {
+			attack = SOV
+			flag = SOV_Aggresion_Europe
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = setflag which = SOV_Aggresion_Europe }
+		command = { type = ai which = "switch/SOV_Aggression_WesternEurope.ai" }
+		command = { type = ai which = "Air_Ground.ai" }
+	}
+}
+################
+#Central and Western Europe
+#
+# Switzerland
+#############################################
+event = {
+	id = 3017008
+	random = no 
+	country = SCH
+	
+	trigger = {
+		ai = yes
+		NOT = { government = communist }
+		NOT = { war = { country = SCH country = ENG } }
+		NOT = { alliance = { country = SCH country = SOV } }
+		NOT = { alliance = { country = SCH country = GER } }
+		attack = SOV
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = setflag which = SOV_Aggresion_Europe }
+		command = { type = ai which = "switch/SOV_Aggression_WesternEurope.ai" }
+		command = { type = ai which = "Air_Ground.ai" }
+	}
+}
+################
+# Italy
+#############################################
+event = {
+	id = 3006036
+	random = no 
+	country = ITA
+	
+	trigger = {
+		ai = yes
+		NOT = { government = communist }
+		NOT = { war = { country = ITA country = GER } }
+		NOT = { alliance = { country = ITA country = SOV } }
+		NOT = { alliance = { country = ITA country = GER } }
+		OR = {
+			attack = SOV
+			flag = SOV_Aggresion_Europe
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = setflag which = SOV_Aggresion_Europe }
+		command = { type = ai which = "switch/SOV_Aggression_EasternEurope.ai" }
+		command = { type = ai which = "Air_Ground.ai" }
+	}
+}
+################
+# Republic of Spain
+#############################################
+event = {
+	id = 3052014
+	random = no 
+	country = SPR
+	
+	trigger = {
+		ai = yes
+		NOT = { government = communist }
+		NOT = { war = { country = SPR country = GER } }
+		NOT = { war = { country = SPR country = SPA } }
+		NOT = { alliance = { country = SPR country = SOV } }
+		NOT = { alliance = { country = SPR country = GER } }
+		OR = {
+			attack = SOV
+			flag = SOV_Aggresion_Europe
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = setflag which = SOV_Aggresion_Europe }
+		command = { type = ai which = "switch/SOV_Aggression_WesternEurope.ai" }
+		command = { type = ai which = "Air_Ground.ai" }
+	}
+}
+################
+# Spanish Nationalist
+#############################################
+event = {
+	id = 3008013
+	random = no 
+	country = SPA
+	
+	trigger = {
+		ai = yes
+		NOT = { government = communist }
+		NOT = { war = { country = SPA country = GER } }
+		NOT = { war = { country = SPR country = SPA } }
+		NOT = { alliance = { country = SPA country = SOV } }
+		NOT = { alliance = { country = SPA country = GER } }
+		OR = {
+			attack = SOV
+			flag = SOV_Aggresion_Europe
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = setflag which = SOV_Aggresion_Europe }
+		command = { type = ai which = "switch/SOV_Aggression_EasternEurope.ai" }
+		command = { type = ai which = "Air_Ground.ai" }
+	}
+}
+################
+# Portugal
+#############################################
+event = {
+	id = 3005002
+	random = no 
+	country = POR
+	
+	trigger = {
+		ai = yes
+		NOT = { government = communist }
+		NOT = { war = { country = POR country = GER } }
+		NOT = { war = { country = SPR country = SPA } }
+		NOT = { alliance = { country = POR country = SOV } }
+		NOT = { alliance = { country = POR country = GER } }
+		OR = {
+			attack = SOV
+			flag = SOV_Aggresion_Europe
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = setflag which = SOV_Aggresion_Europe }
+		command = { type = ai which = "switch/SOV_Aggression_EasternEurope.ai" }
+		command = { type = ai which = "Air_Ground.ai" }
+	}
+}
+################
+# Middle East
+#
+#    Turkey
+#############################################
+event = {
+	id = 3010010
+	random = no 
+	country = TUR
+	
+	trigger = {
+		ai = yes
+		NOT = { government = communist }
+		NOT = { war = { country = TUR country = ENG } }
+		NOT = { alliance = { country = TUR country = SOV } }
+		NOT = { alliance = { country = TUR country = GER } }
+		OR = {
+			attack = SOV
+			flag = SOV_Aggresion_MiddleEast
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = setflag which = SOV_Aggresion_Europe }
+		command = { type = setflag which = SOV_Aggresion_MiddleEast }
+		command = { type = ai which = "switch/SOV_Aggression_WesternEurope.ai" }
+		command = { type = ai which = "Air_Ground.ai" }
+	}
+}
+################
+#    Persia
+#############################################
+event = {
+	id = 3031007
+	random = no 
+	country = PER
+	
+	trigger = {
+		ai = yes
+		NOT = { government = communist }
+		NOT = { war = { country = PER country = ENG } }
+		NOT = { alliance = { country = PER country = SOV } }
+		NOT = { alliance = { country = PER country = GER } }
+		OR = {
+			attack = SOV
+			flag = SOV_Aggresion_MiddleEast
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = setflag which = SOV_Aggresion_Europe }
+		command = { type = setflag which = SOV_Aggresion_MiddleEast }
+		command = { type = ai which = "switch/SOV_Aggression_WesternEurope.ai" }
+		command = { type = ai which = "Air_Ground.ai" }
+	}
+}
+################
+#    Saudi Arabia
+#############################################
+event = {
+	id = 3060006
+	random = no 
+	country = SAU
+	
+	trigger = {
+		ai = yes
+		NOT = { government = communist }
+		NOT = { war = { country = SAU country = ENG } }
+		NOT = { alliance = { country = SAU country = SOV } }
+		NOT = { alliance = { country = SAU country = GER } }
+		attack = SOV
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = setflag which = SOV_Aggresion_Europe }
+		command = { type = setflag which = SOV_Aggresion_MiddleEast }
+		command = { type = ai which = "switch/SOV_Aggression_WesternEurope.ai" }
+		command = { type = ai which = "Air_Ground.ai" }
+	}
+}
+################
+#    Afghanistan
+#############################################
+event = {
+	id = 3032002
+	random = no 
+	country = AFG
+	
+	trigger = {
+		ai = yes
+		NOT = { government = communist }
+		NOT = { war = { country = AFG country = ENG } }
+		NOT = { alliance = { country = AFG country = SOV } }
+		NOT = { alliance = { country = AFG country = GER } }
+		attack = SOV
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = setflag which = SOV_Aggresion_Europe }
+		command = { type = setflag which = SOV_Aggresion_MiddleEast }
+		command = { type = ai which = "switch/SOV_Aggression_WesternEurope.ai" }
+		command = { type = ai which = "Air_Ground.ai" }
+	}
+}
+################
+# Asia/Pacific
+#
+#    Sikiang
+#############################################
+event = {
+	id = 3085012
+	random = no 
+	country = SIK
+	
+	trigger = {
+		ai = yes
+		NOT = { government = communist }
+		NOT = { war = { country = SIK country = CHI } }
+		NOT = { alliance = { country = SIK country = SOV } }
+		OR = {
+			attack = SOV
+			flag = SOV_Aggresion_Asia
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = setflag which = SOV_Aggresion_Asia }
+		command = { type = ai which = "switch/SOV_Aggression_China.ai" }
+		command = { type = ai which = "Air_Ground.ai" }
+		command = { type = sleepevent which = 2011022 }
+	}
+}
+################
+#    Xibei San Maa
+#############################################
+event = {
+	id = 3123016
+	random = no 
+	country = CXB
+	
+	trigger = {
+		ai = yes
+		NOT = { government = communist }
+		NOT = { war = { country = CXB country = CHI } }
+		NOT = { alliance = { country = CXB country = SOV } }
+		OR = {
+			attack = SOV
+			flag = SOV_Aggresion_Asia
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = setflag which = SOV_Aggresion_Asia }
+		command = { type = ai which = "switch/SOV_Aggression_China.ai" }
+		command = { type = ai which = "Air_Ground.ai" }
+		command = { type = sleepevent which = 2011022 }
+	}
+}
+################
+#    Shanxi
+#############################################
+event = {
+	id = 312205
+	random = no 
+	country = CSX
+	
+	trigger = {
+		ai = yes
+		NOT = { government = communist }
+		NOT = { war = { country = CSX country = CHI } }
+		NOT = { alliance = { country = CSX country = SOV } }
+		OR = {
+			attack = SOV
+			flag = SOV_Aggresion_Asia
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = setflag which = SOV_Aggresion_Asia }
+		command = { type = ai which = "switch/SOV_Aggression_China.ai" }
+		command = { type = ai which = "Air_Ground.ai" }
+		command = { type = sleepevent which = 2011022 }
+	}
+}
+################
+#    Yunnan 
+#############################################
+event = {
+	id = 3124016
+	random = no 
+	country = CYN
+	
+	trigger = {
+		ai = yes
+		NOT = { government = communist }
+		NOT = { war = { country = CYN country = CHI } }
+		NOT = { alliance = { country = CYN country = SOV } }
+		OR = {
+			attack = SOV
+			flag = SOV_Aggresion_Asia
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = setflag which = SOV_Aggresion_Asia }
+		command = { type = ai which = "switch/SOV_Aggression_China.ai" }
+		command = { type = ai which = "Air_Ground.ai" }
+		command = { type = sleepevent which = 2011022 }
+	}
+}
+################
+#    Communist China
+#############################################
+event = {
+	id = 3053008
+	random = no 
+	country = CHC
+	
+	trigger = {
+		ai = yes
+		NOT = { war = { country = CHC country = CHI } }
+		NOT = { alliance = { country = CHC country = SOV } }
+		attack = SOV
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = setflag which = SOV_Aggresion_Asia }
+		command = { type = ai which = "switch/SOV_Aggression_China.ai" }
+		command = { type = ai which = "Air_Ground.ai" }
+		command = { type = sleepevent which = 2011022 }
+	}
+}
+################
+#    Guangxi Clique
+#############################################
+event = {
+	id = 3118017
+	random = no 
+	country = CGX
+	
+	trigger = {
+		ai = yes
+		NOT = { government = communist }
+		NOT = { war = { country = CGX country = CHI } }
+		NOT = { alliance = { country = CGX country = SOV } }
+		OR = {
+			attack = SOV
+			flag = SOV_Aggresion_Asia
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = setflag which = SOV_Aggresion_Asia }
+		command = { type = ai which = "switch/SOV_Aggression_China.ai" }
+		command = { type = ai which = "Air_Ground.ai" }
+		command = { type = sleepevent which = 2011022 }
+	}
+}
+################
+#    Tibet
+#############################################
+event = {
+	id = 3089002
+	random = no 
+	country = TIB
+	
+	trigger = {
+		ai = yes
+		NOT = { war = { country = TIB country = CHI } }
+		NOT = { alliance = { country = TIB country = SOV } }
+		attack = SOV
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = setflag which = SOV_Aggresion_Asia }
+		command = { type = ai which = "switch/SOV_Aggression_China.ai" }
+		command = { type = ai which = "Air_Ground.ai" }
+		command = { type = sleepevent which = 2011022 }
+	}
+}
+################
+#    Siam
+#############################################
+event = {
+	id = 3059011
+	random = no 
+	country = SIA
+	
+	trigger = {
+		ai = yes
+		NOT = { war = { country = SIA country = CHI } }
+		NOT = { alliance = { country = SIA country = SOV } }
+		OR = {
+			attack = SOV
+			flag = SOV_Aggresion_Asia
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = setflag which = SOV_Aggresion_Asia }
+		command = { type = ai which = "switch/SOV_Aggression_China.ai" }
+		command = { type = ai which = "Air_Ground.ai" }
+		command = { type = sleepevent which = 2011022 }
+	}
+}
+################
+#    Manchuria
+#############################################
+event = {
+	id = 3048013
+	random = no 
+	country = MAN
+	
+	trigger = {
+		ai = yes
+		NOT = { war = { country = MAN country = CHI } }
+		NOT = { alliance = { country = MAN country = SOV } }
+		OR = {
+			attack = SOV
+			flag = SOV_Aggresion_Asia
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = setflag which = SOV_Aggresion_Asia }
+		command = { type = ai which = "switch/SOV_Aggression_China.ai" }
+		command = { type = ai which = "Air_Ground.ai" }
+		command = { type = sleepevent which = 2011022 }
+	}
+}
+################
+#    Japan
+#############################################
+event = {
+	id = 3011058
+	random = no 
+	country = JAP
+	
+	trigger = {
+		ai = yes
+		NOT = { war = { country = JAP country = CHI } }
+		NOT = { alliance = { country = JAP country = SOV } }
+		NOT = { alliance = { country = JAP country = GER } }
+		OR = {
+			attack = SOV
+			flag = SOV_Aggresion_Asia
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = setflag which = SOV_Aggresion_Asia }
+		command = { type = ai which = "switch/SOV_Aggression_China.ai" }
+		command = { type = ai which = "Air_Ground.ai" }
+		command = { type = sleepevent which = 2011022 }
+	}
+}

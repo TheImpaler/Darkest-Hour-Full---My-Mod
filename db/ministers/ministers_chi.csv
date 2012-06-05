@@ -1,0 +1,108 @@
+CHI;Ruling Cabinet - Start;Name;Start Year;End Year;Ideology;Personality;Loyalty;Picturename;X
+;Replacements;;;;;;;;X
+55001;Head of State;Lin Sen;1927;1964;PA;Weary Stiffneck;High;2341;X
+55002;Head of Government;Chiang Kai-shek;1927;1964;PA;Old General;High;2342;X
+55003;Foreign Minister;Zhang Zun;1933;1964;PA;Great Compromiser;Very High;M52003;X
+55004;Minister of Armament;Yan Xishan;1927;1964;PA;Corrupt Kleptocrat;Low;M52004;X
+55005;Minister of Security;Chen Guofu;1914;1964;SC;Crooked Kleptocrat;Very High;M52005;X
+55006;Head of Military Intelligence;Chen Lifu;1929;1964;PA;Political Specialist;Very High;M52006;X
+55007;Chief of Staff;Chiang Kai-shek;1927;1964;PA;School of Manoeuvre;Undying;2342;X
+55008;Chief of Army;Zhang Xueliang;1929;1964;PA;Guns and Butter Doctrine;Low;M52008;X
+55009;Chief of Navy;Chen Shaokuan;1929;1964;PA;Indirect Approach Doctrine;Medium;M52009;X
+55010;Chief of Air Force;Zhou Zhirou;1922;1964;PA;Army Aviation Doctrine;Very High;M52010;X
+55011;Head of State;Chiang Kai-shek;1943;1964;PA;Resigned Generalissimo;High;2342;X
+55012;Head of State;Lin Sen;1939;1964;SC;Weary Stiffneck;High;2341;X
+55013;Head of State;T. V. Soong;1943;1964;SC;Autocratic Charmer;High;M52024;X
+55014;Head of State;Wang Jingwei;1939;1964;FA;Local tyrant2;High;M52011;X
+55015;Head of Government;Wang Chonghui;1937;1964;PA;Flamboyant Tough Guy;High;M52026;X
+55016;Head of Government;Zhang Zun;1939;1964;PA;Happy Amateur;High;M52003;X
+55017;Head of Government;T. V. Soong;1945;1964;PA;Political Protege;High;M52024;X
+55018;Head of Government;Kong Xiangxi;1938;1964;PA;Silent Workhorse;High;M52030;X
+55019;Head of Government;Li Zongren;1943;1964;SC;Corporate Suit;High;M52031;X
+55020;Head of Government;Wang Kemin;1939;1964;FA;Backroom Backstabber;High;M52012;X
+55021;Foreign Minister;Wang Chonghui;1937;1964;PA;Ideological Crusader;Medium;M52026;X
+55022;Foreign Minister;Lin Wei;1939;1964;PA;General Staffer;High;M52035;X
+55023;Foreign Minister;Shen Zui;1940;1964;PA;Apologetic Clerk;Very High;M52036;X
+55024;Foreign Minister;Chen Guofu;1914;1964;SC;Great Compromiser;Low;M52005;X
+55025;Foreign Minister;Wang Shijie;1945;1964;PA;Iron Fisted Brute;Medium;M52038;X
+55026;Foreign Minister;Lin Sen;1939;1964;SC;Ideological Crusader;Medium;2341;X
+55027;Foreign Minister;T. V. Soong;1941;1964;PA;The Cloak N Dagger Schemer;Medium;M52024;X
+55028;Foreign Minister;Wang JingWei;1939;1964;FA;Biased Intellectual;Medium;M52041;X
+55029;Foreign Minister;Chen Lu;1938;1964;PA;Apologetic Clerk;Medium;M52013;X
+55030;Foreign Minister;Yang Luchang;1944;1964;FA;Great Compromiser;Medium;M52043;X
+55031;Minister of Armament;Bai Chongxi;1937;1964;PA;Resource Industrialist;Low;M52045;X
+55032;Minister of Armament;Xu Yongchang;1938;1964;PA;Theoretical Scientist;High;M52046;X
+55033;Minister of Armament;Huang Chenzuo;1939;1964;PA;Military Entrepreneur;High;M52047;X
+55034;Minister of Armament;He Yingqin;1939;1964;PA;Air Superiority Proponent;High;M52048;X
+55035;Minister of Armament;Chen Guofu;1914;1964;SC;laissez-faire capitalist;Low;M52005;X
+55036;Minister of Armament;Cai Wenzhi;1941;1964;PA;Tank Proponent;High;M52050;X
+55037;Minister of Armament;He Guoguang;1942;1964;PA;Air to Ground Proponent;High;M52051;X
+55038;Minister of Armament;Chen Shaokuan;1942;1964;PA;Battle Fleet Proponent;Medium;M52009;X
+55039;Minister of Armament;Yu Feipeng;1942;1964;PA;Infantry Proponent;High;M52053;X
+55040;Minister of Armament;Wang Shuming;1943;1964;PA;Air to Sea Proponent;High;M52054;X
+55041;Minister of Armament;Jiang Jingguo;1945;1964;PA;Administrative Genius;High;M52055;X
+55042;Minister of Armament;Du Jianshi;1946;1964;PA;Strategic Air Proponent;High;M52056;X
+55043;Minister of Armament;Weng Wenhao;1939;1964;SC;laissez-faire capitalist;Medium;M52057;X
+55044;Minister of Armament;He Yingqin;1943;1964;SC;Infantry Proponent;Medium;M52058;X
+55045;Minister of Armament;Chen Gongbo;1939;1964;FA;laissez-faire capitalist;Medium;M52014;X
+55046;Minister of Armament;Yang Luchang;1941;1964;FA;Resource Industrialist;Medium;M52043;X
+55047;Minister of Armament;Chan Chak;1943;1964;FA;Submarine Proponent;High;M52061;X
+55048;Minister of Security;Dai Li;1938;1964;PA;Crime Fighter;Very High;M52063;X
+55049;Minister of Security;Walther Stennes;1937;1964;PA;Back Stabber;Very High;M52064;X
+55050;Minister of Security;Wu Zhongxin;1938;1964;PA;Compassionate Gentleman;High;M52065;X
+55051;Minister of Security;Huang Musong;1939;1964;PA;Efficient Sociopath;High;M52066;X
+55052;Minister of Security;Gu Zhenglun;1940;1964;PA;Crime Fighter;Very High;M52067;X
+55053;Minister of Security;Liu Fei;1941;1964;PA;Silent Lawyer;Medium;M52068;X
+55054;Minister of Security;Jiang Jingguo;1943;1964;PA;Man of the People;Very High;M52055;X
+55055;Minister of Security;Chen Lifu;1939;1964;SC;Back Stabber;Medium;M52006;X
+55056;Minister of Security;Kong Xiangxi;1943;1964;SC;Man of the People;High;M52030;X
+55057;Minister of Security;Kang Ze;1944;1964;SC;Prince of Terror;Medium;M52072;X
+55058;Minister of Security;Cai Yuanpei;1945;1964;SC;Compassionate Gentleman;Medium;M52073;X
+55059;Minister of Security;Ding Motun;1939;1964;FA;Crooked Kleptocrat;Medium;M52015;X
+55060;Minister of Security;Wang Kemin;1941;1964;FA;Man of the People;Medium;M52012;X
+55061;Minister of Security;Chan Hon-sam;1943;1964;FA;Prince of Terror;High;M52076;X
+55062;Minister of Security;Chen Fake;1944;1964;FA;Efficient Sociopath;High;M52077;X
+55063;Head of Military Intelligence;Dai Li;1937;1964;PA;Political Specialist;Very High;M52063;X
+55064;Head of Military Intelligence;He Yaozu;1939;1964;PA;Industrial Specialist;Low;M52079;X
+55065;Head of Military Intelligence;Mao Renfeng;1940;1964;PA;Logistics Specialist;Very High;M52080;X
+55066;Head of Military Intelligence;Jiang Yiying;1944;1964;PA;Dismal Enigma;Very High;M52064;X
+55067;Head of Military Intelligence;Yang Xuancheng;1941;1964;PA;Naval Intelligence Specialist;Very High;M52082;X
+55068;Head of Military Intelligence;Zheng Jiemin;1942;1964;PA;Technical Specialist;Very High;M52083;X
+55069;Head of Military Intelligence;Zhang Xueliang;1939;1964;SC;Logistics Specialist;Low;M52008;X
+55070;Head of Military Intelligence;Li Shiqun;1939;1964;FA;Political Specialist;Medium;M52016;X
+55071;Head of Military Intelligence;Chen Fake;1943;1964;FA;Logistics Specialist;High;M52077;X
+55072;Chief of Staff;Bai Chongxi;1923;1964;PA;School of Mass Combat;Low;M52045;X
+55073;Chief of Staff;Jiang Baili;1935;1964;PA;School of Psychology;High;M52089;X
+55074;Chief of Staff;Qian Dajun;1941;1964;PA;School of Defence;High;M52090;X
+55075;Chief of Staff;Lin Wei;1943;1964;PA;School of Manoeuvre;High;M52035;X
+55076;Chief of Staff;Xiao Yishu;1945;1964;PA;School of Fire Support;High;M52092;X
+55077;Chief of Staff;Xu Zuyi;1939;1964;SC;School of Defence;High;M52093;X
+55078;Chief of Staff;Qi Xieyuan;1939;1964;FA;School of Fire Support;Low;M52017;X
+55079;Chief of Army;Li Zongren;1923;1964;PA;Static Defence Doctrine;High;M52031;X
+55080;Chief of Army;Jiang Baili;1935;1964;PA;Guns and Butter Doctrine;High;M52089;X
+55081;Chief of Army;Gu Zhutong;1939;1964;PA;Decisive Battle Doctrine;Low;M52097;X
+55082;Chief of Army;Xu Tingyao;1944;1964;PA;Armoured Spearhead Doctrine;High;M52098;X
+55083;Chief of Army;He Yingqin;1939;1964;SC;Elastic Defence Doctrine;High;M52058;X
+55084;Chief of Army;Bao Wenyue;1939;1964;FA;Static Defence Doctrine;Low;M52018;X
+55085;Chief of Navy;Ouyang Ge;1937;1964;PA;Open Seas Doctrine;High;M52101;X
+55086;Chief of Navy;Zeng Yiding;1939;1964;PA;Base Control Doctrine;Medium;M52102;X
+55087;Chief of Navy;Chen Jiliang;1943;1964;PA;Indirect Approach Doctrine;Medium;M52103;X
+55088;Chief of Navy;Gui Yongqing;1945;1964;PA;Decisive Naval Battle Doctrine;Very High;M52104;X
+55089;Chief of Navy;Chen Cheng;1945;1964;PA;Power Projection Doctrine;Very High;M52105;X
+55090;Chief of Navy;Ren Shouxu;1939;1964;SC;Open Seas Doctrine;Low;M52106;X
+55091;Chief of Navy;Ren Yuandao;1939;1964;FA;Open Seas Doctrine;Low;M52019;X
+55092;Chief of Air Force;Huang Chenzuo;1937;1964;PA;Air Superiority Doctrine;High;M52047;X
+55093;Chief of Air Force;Shen Honglie;1937;1964;PA;Naval Aviation Doctrine;Very High;M52109;X
+55094;Chief of Air Force;Wang Shuming;1945;1964;PA;Vertical Envelopment Doctrine;High;M52054;X
+55095;Chief of Air Force;Qian Dajun;1939;1964;SC;Carpet Bombing Doctrine;Very High;M52090;X
+55096;Chief of Air Force;Chen Changchu;1939;1964;FA;Army Aviation Doctrine;Low;M52020;X
+55097;Head of Government;Yen Hsi-shan;1949;1964;PA;Old General;High;M52114;X
+55098;Head of Government;Ch'en Ch'eng;1950;1964;PA;Political Protege;High;M52115;X
+55099;Head of State;Dr. Sun Yat-Sen;1914;1933;SD;Popular Figurehead;High;2343;X
+55100;Head of Government;Wang Jingwei;1914;1933;SD;Ambitious Union Boss;Medium;M52041;X
+55101;Foreign Minister;Wu Tingfang;1914;1933;SD;Ideological Crusader;High;2344;X
+55102;Head of Military Intelligence;Lu Rongting;1914;1933;SC;Political Specialist;Medium;2345;X
+55103;Chief of Navy;Chen Biguang;1914;1933;ML;Open Seas Doctrine;Medium;unknown;X
+55104;Chief of Staff;Tang Jiyao;1914;1933;ML;School of Mass Combat;Medium;2346;X
+55105;Chief of Army;Chen Jiongming;1914;1933;ML;Decisive Battle Doctrine;Medium;2347;X
+55106;Chief of Air Force;Under Army Control;1914;1933;ML;Undistinguished Suit;Medium;unknown;X

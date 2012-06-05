@@ -1,0 +1,147 @@
+####################################
+# Saudi Arabia AI events by Lothos
+####################################
+################
+# Minister of Security Section
+#############################################
+event = { # Hubert Scott-Paine takes power
+	id = 3060001
+	random = no 
+	country = SAU
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 295021 # Hubert Scott-Paine
+		NOT = { InCabinet = 295021 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ministerofsecurity which = 295021 }
+		command = { type = dissent value = -1 }
+	}
+}
+################
+# Chief of Staff Section
+#############################################
+event = { # T.R.S. Smythe-Cooper takes power
+	id = 3060002
+	random = no 
+	country = SAU
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 295033 # T.R.S. Smythe-Cooper
+		NOT = { InCabinet = 295033 }
+		OR = {
+			atwar = no
+			NOT = { manpower = 20 }
+			AND = {
+				atwar = yes
+				NOT = { minister = 295031 } # William Campbell-Rice
+			}
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = chiefofstaff which = 295033 }
+		command = { type = dissent value = -1 }
+	}
+}
+event = { # William Campbell-Rice takes power
+	id = 3060003
+	random = no 
+	country = SAU
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		atwar = yes
+		manpower = 20
+		minister = 295031 # William Campbell-Rice
+		NOT = { InCabinet = 295031 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = chiefofstaff which = 295031 }
+		command = { type = dissent value = -1 }
+	}
+}
+
+################
+# Chief of the Army Section
+#############################################
+event = { # T.R.S. Smythe-Cooper takes power
+	id = 3060004
+	random = no 
+	country = SAU
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 295037 # T.R.S. Smythe-Cooper
+		NOT = { InCabinet = 295037 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = chiefofarmy which = 295037 }
+		command = { type = dissent value = -1 }
+	}
+}
+################
+# Armament Minister Section
+#############################################
+event = { # G.G. Aime-Murray takes power
+	id = 3060005
+	random = no 
+	country = SAU
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 295015 # G.G. Aime-Murray
+		NOT = { InCabinet = 295015 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = armamentminister which = 295015 }
+		command = { type = dissent value = -1 }
+	}
+}
+

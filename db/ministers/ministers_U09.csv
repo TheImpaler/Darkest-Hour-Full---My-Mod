@@ -1,0 +1,79 @@
+U09;Ruling Cabinet - Start;Name;Start Year;End Year;Ideology;Personality;Loyalty;Picturename;X
+860001;Chief of Air Force;Emil Uzelac;1912;1933;PA;Air Superiority Doctrine;Medium;3491;X
+860002;Chief of Air Force;Emil Uzelac;1912;1933;ML;Air Superiority Doctrine;Medium;3491;X
+860003;Chief of Army;Franz Conrad von Hötzendorf;1906;1933;PA;Decisive Battle Doctrine;Very High;3492;X
+860004;Chief of Army;Artur Arz von Straussenberg;1914;1933;ML;static defence doctrine;High;3493;X
+860005;Chief of Army;Blasius Schemua;1914;1933;PA;Guns and Butter Doctrine;High;3494;X
+860006;Chief of Army;Artur Arz von Straussenberg;1917;1933;PA;static defence doctrine;High;3493;X
+860007;Chief of Army;Friedrich von Beck-Rzikowsky;1900;1933;PA;Decisive Battle Doctrine;Very High;3495;X
+860008;Chief of Navy;Rudolf Montecuccoli;1904;1933;PA;Decisive Naval Battle Doctrine;Very High;3496;X
+860009;Chief of Navy;Anton Haus;1913;1933;PA;Decisive Naval Battle Doctrine;Medium;3497;X
+860010;Chief of Navy;Franz von Holub;1914;1933;ML;Decisive Naval Battle Doctrine;High;3498;X
+860011;Chief of Navy;Karl Kailer von Kagenfels;1917;1933;PA;Open Seas Doctrine;High;unknown;X
+860012;Chief of Navy;Maximilian Njegovan;1917;1933;PA;Base Control Doctrine;High;3499;X
+860013;Chief of Navy;Franz von Holub;1918;1933;PA;Indirect Approach Doctrine;High;3498;X
+860014;Chief of Navy;Hermann von Spaun;1900;1933;PA;Decisive Naval Battle Doctrine;Very High;3500;X
+860015;Chief of Navy;Maximilian Daublebsky von Sterneck;1900;1933;PA;Decisive Naval Battle Doctrine;Very High;3501;X
+860016;Chief of Staff;Franz Conrad von Hötzendorf;1906;1933;PA;School of Fire Support;Very High;3492;X
+860017;Chief of Staff;Artur Arz von Straussenberg;1914;1933;ML;school of manoeuvre;High;3493;X
+860018;Chief of Staff;Blasius Schemua;1914;1933;PA;School of Psychology;High;3494;X
+860019;Chief of Staff;Artur Arz von Straussenberg;1917;1933;PA;school of manoeuvre;High;3493;X
+860020;Chief of Staff;Friedrich von Beck-Rzikowsky;1900;1933;PA;School of Manoeuvre;Very High;3495;X
+860021;Foreign Minister;Alois Lexa von Aehrenthal;1906;1933;PA;Iron Fisted Brute;Very High;3502;X
+860022;Foreign Minister;Leopold Berchtold;1912;1933;PA;Iron Fisted Brute;Very High;3503;X
+860023;Foreign Minister;Viktor Adler;1914;1933;LWR;Ideological Crusader;Medium;3504;X
+860024;Foreign Minister;Gyula Andrássy;1914;1933;ML;Great Compromiser;High;3505;X
+860025;Foreign Minister;Stephan Burian;1915;1933;PA;Biased Intellectual;Very High;3506;X
+860026;Foreign Minister;Ottokar Czernin;1916;1933;PA;Ideological Crusader;Very High;3507;X
+860027;Foreign Minister;Gyula Andrássy;1918;1933;PA;Great Compromiser;High;3505;X
+860028;Foreign Minister;Agenor Goluchowski;1900;1933;PA;Great Compromiser;Very High;3508;X
+860029;Head of Government;Alois Lexa von Aehrenthal;1906;1933;PA;Corporate Suit;High;3502;X
+860030;Head of Government;Leopold Berchtold;1912;1933;PA;Flamboyant Tough Guy;High;3503;X
+860031;Head of Government;Stephan Burián;1915;1933;PA;Happy Amateur;High;3506;X
+860032;Head of Government;Ottokar Czernin;1916;1933;PA;Flamboyant Tough Guy;High;3507;X
+860033;Head of Government;Gyula Andrássy;1918;1933;PA;Smiling Oilman;High;3505;X
+860034;Head of Government;Ludwig von Flotow;1918;1933;PA;Silent Workhorse;High;unknown;X
+860035;Head of Government;Agenor Goluchowski;1900;1933;PA;Silent Workhorse;High;3508;X
+860036;Head of Military Intelligence;Eugen Hordliczka;1903;1933;PA;Industrial Specialist;Very High;unknown;X
+860037;Head of Military Intelligence;Alfred Redl;1908;1933;PA;Dismal Enigma;Very High;3509;X
+860038;Head of Military Intelligence;August Urbánski;1909;1933;PA;Political Specialist;Very High;unknown;X
+860039;Head of Military Intelligence;Oskar von Hranilovic-Czvetassin;1914;1933;PA;Logistics Specialist;Very High;3510;X
+860040;Head of Military Intelligence;Maximilian Ronge;1916;1933;PA;Dismal Enigma;Very High;3511;X
+860041;Head of Military Intelligence;Arthur Giesl von Gieslingen;1900;1933;PA;Political Specialist;Very High;3512;X
+860042;Head of Military Intelligence;Desiderius Koloszváry de Koloszvár;1900;1933;PA;Technical Specialist;Very High;3513;X
+860043;Head of State;Viktor Adler;1914;1933;LWR;Die-hard Reformer;High;3504;X
+860044;Head of State;Franz Ferdinand;1916;1933;PA;Die-hard Reformer;High;3514;X
+860045;Head of State;Karl I;1916;1933;PA;Die-hard Reformer;High;3515;X
+860046;Head of State;Karl I;1916;1933;ML;Die-hard Reformer;High;3515;X
+860047;Head of State;Franz Joseph I;1900;1933;PA;Weary Old Emperor;High;3516;X
+860048;Minister of Armament;Stephan Burian;1903;1933;PA;Theoretical Scientist;Very High;3506;X
+860049;Minister of Armament;Leon von Bilinski;1912;1933;PA;Administrative Genius;Medium;3517;X
+860050;Minister of Armament;Alexander Spitzmüller;1914;1933;ML;Administrative Genius;Very High;3518;X
+860051;Minister of Armament;Ernst von Koerber;1915;1933;PA;Resource Industrialist;High;3519;X
+860052;Minister of Armament;Konrad zu Hohenlohe-Schillingsfürst;1916;1933;PA;Administrative Genius;Very High;3520;X
+860053;Minister of Armament;Alexander Spitzmüller;1918;1933;PA;Administrative Genius;Very High;3518;X
+860054;Minister of Armament;Béni Kállay;1900;1933;PA;Administrative Genius;Very High;3521;X
+860055;Minister of Security;Artur von Bylandt-Rheidt;1905;1933;PA;Silent Lawyer;Very High;3522;X
+860056;Minister of Security;Richard von Bienerth-Schmerling;1906;1933;PA;Compassionate Gentleman;Very High;3523;X
+860057;Minister of Security;Konrad zu Hohenlohe-Waldenburg-Schillingfürst;1906;1933;PA;Silent Lawyer;Very High;3520;X
+860058;Minister of Security;Guido von Haerdtl;1908;1933;PA;Silent Lawyer;Very High;unknown;X
+860059;Minister of Security;Karl von Heinold;1911;1933;PA;Silent Lawyer;Medium;3996;X
+860060;Minister of Security;Maximilan von Wickenburg;1911;1933;PA;Silent Lawyer;Very High;unknown;X
+860061;Minister of Security;János Sándor;1914;1933;PA;Compassionate Gentleman;Very High;unknown;X
+860062;Minister of Security;Sándor Wekerle (H);1914;1933;ML;Silent Lawyer;High;3524;X
+860063;Minister of Security;Konrad zu Hohenlohe-Schillingsfürst;1915;1933;PA;Crime Fighter;Very High;3520;X
+860064;Minister of Security;Erasmus von Handel;1916;1933;PA;Silent Lawyer;High;unknown;X
+860065;Minister of Security;Erwin von Schwartzenau;1916;1933;PA;Compassionate Gentleman;High;unknown;X
+860066;Minister of Security;Gábor Ugron;1917;1933;PA;Man of the People;Medium;3997;X
+860067;Minister of Security;János Tóth;1918;1933;PA;Compassionate Gentleman;High;unknown;X
+860068;Minister of Security;Sándor Wekerle (H);1918;1933;PA;Silent Lawyer;High;3524;X
+860069;Minister of Security;Kasimir Felix Badeni;1900;1933;PA;Compassionate Gentleman;Very High;3525;X
+860070;Minister of Security;Paul Gautsch von Frankenthurn;1900;1933;PA;Compassionate Gentleman;Very High;3526;X
+860071;Minister of Security;Ernst von Koerber;1900;1933;PA;Crime Fighter;Very High;3519;X
+860072;Minister of Security;Franz von Thun und Hohenstein;1900;1933;PA;Silent Lawyer;Very High;3527;X
+860073;Minister of Security;Josef Stummer;1900;1933;PA;Silent Lawyer;Very High;unknown;X
+860074;Head of Government;Viktor Adler;1914;1933;LWR;Ambitious Union Boss;Very High;3504;x
+860075;Head of Government;Franz Conrad von Hötzendorf;1899;1933;NS;Old General;High;3492;x
+860076;Foreign Minister;Franz Conrad von Hötzendorf;1899;1933;NS;General Staffer;Very High;3492;x
+860077;Minister of Security;Arthur Maximilian Bylandt-Rheydt;1905;1933;PA;Silent Lawyer;Very High;unknown;x
+860078;Minister of Security;Karl Freiherr Heinold von Udynski;1914;1933;PA;Silent Lawyer;High;unknown;x

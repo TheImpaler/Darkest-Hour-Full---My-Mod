@@ -1,0 +1,128 @@
+# Austrian 1914 Kaiser Warplan Setup & Phase1
+# Austrai attacks both russia and serbia, focus on russia
+# 
+#####################################
+combat ={
+		RUS = 200
+		SER = 50	
+
+}
+
+max_front_ratio = 1.2
+max_front_ratios = { 	
+	RUS = 14
+	SER = 8
+	U08 = -1
+	ITA = 1
+	SCH = 1
+}
+max_garrison_prop = 0.60
+min_garrison_prop = 0.20
+neutrality = 20.000 
+war = 50
+
+target = {  
+# russian front
+	245 = 200
+	246 = 100
+	618 = 200
+	614 = 100
+	
+	
+	# serbian front
+	330 = 40
+	329 = 40
+	325 = 40
+	327 = 40
+	339 = 40
+					
+	
+}
+
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+garrison = {
+	defend_overseas_beaches = yes
+	home_multiplier 	= 1.0
+	overseas_multiplier 	= 1.0
+	home_peace_cap 		= 10
+	war_zone_odds 		= 2.0
+	key_point_prio_mult	= 0.0
+	revolt_risk_mult	= 0.1
+
+	# PRIORITIES:
+	beach			= 10	# Beach level 2
+	capital			= 4	# Our capital
+	human_border	= 0	# Ignored for allied human players
+	war_target		= 50	# The next country targeted for attack by this AI
+	reserves 		= 5	# bonus for provinces just behind a frontline.
+	
+	opposing_alliance	= 0	# For neutrals, all alliances are "opposing"
+	claim_threat		= 0	# If we are neutral, countries with claims on us get this
+	unstable_border		= 0	# Bordering countries at war with someone else get this
+
+	# Borders with specific countries
+	country_priorities = {
+		RUS = 15
+		SER = 7
+		U08 = -1
+		ITA = 3
+		SCH = 1
+	}
+	ignore = { }
+	province_priorities = {
+		#russian Border
+		235 = 15
+		237 = 15
+		239 = 15
+		240 = 15
+		242 = 15
+		300 = 15
+		
+		#serbian  Border
+		335 = 3
+		336 = 3
+		337 = 3
+	}
+	area_multiplier = {
+		
+		
+		
+		
+	}
+}
+front = { 
+	recklessness 		= 3 # 0-3
+	distrib_vs_ai 		= offensive
+	distrib_vs_human 	= offensive
+ 
+	enemy_handicap = {
+		
+	} 
+      	passivity = {
+
+	} 
+	province_priorities = {
+	
+	# russian front
+	245 = 250
+	246 = 250
+	618 = 150
+	614 = 150
+	
+	
+	# serbian front
+	330 = 10
+	329 = 10
+	325 = 10
+	327 = 10
+	339 = 10
+	340 = 50
+
+
+	}
+}
+
+
+###EOF

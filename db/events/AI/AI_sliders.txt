@@ -1,0 +1,321 @@
+####################################
+# Minor AI Slider Events by Lothos
+####################################
+################
+#	Free Market
+#############################################
+event = { # Free Market
+	id = 3000001
+	random = no
+	persistent = yes
+
+	trigger = {
+		ai = yes
+		NOT = {
+			country = GER
+			country = SOV
+			country = ITA
+			country = USA
+			country = ENG
+			country = CHI
+			country = JAP
+			country = FRA
+		}
+		can_change_policy = { type = free_market value = 1 }
+		government = democratic
+	}
+
+	name = "AI_EVENT"
+	style = 0
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = change_policy which = free_market value = 1 }
+	}
+}
+event = { # Free Market
+	id = 3000002
+	random = no
+	persistent = yes
+
+	trigger = {
+		ai = yes
+		NOT = {
+			country = GER
+			country = SOV
+			country = ITA
+			country = USA
+			country = ENG
+			country = CHI
+			country = JAP
+			country = FRA
+		}
+		can_change_policy = { type = free_market value = -1 }
+		OR = {
+			government = fascist
+			government = communist
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = change_policy which = free_market value = -1 }
+	}
+}
+################
+#	Open Society
+#############################################
+event = { # Open Society
+	id = 3000003
+	random = no
+	persistent = yes
+
+	trigger = {
+		ai = yes
+		atwar = yes
+		NOT = {
+			country = GER
+			country = SOV
+			country = ITA
+			country = USA
+			country = ENG
+			country = CHI
+			country = JAP
+			country = FRA
+		}
+		can_change_policy = { type = freedom value = -1 }
+		OR = {
+			government = fascist
+			government = communist
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = change_policy which = freedom value = -1 }
+	}
+}
+event = { # Open Society
+	id = 3000004
+	random = no
+	persistent = yes
+
+	trigger = {
+		ai = yes
+		atwar = no
+		NOT = {
+			country = GER
+			country = SOV
+			country = ITA
+			country = USA
+			country = ENG
+			country = CHI
+			country = JAP
+			country = FRA
+		}
+		can_change_policy = { type = freedom value = 1 }
+		government = democratic
+	}
+
+	name = "AI_EVENT"
+	style = 0
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = change_policy which = freedom value = 1 }
+	}
+}
+################
+#	Hawk Lobby
+#############################################
+event = { # Hawk Lobby
+	id = 3000005
+	random = no
+	persistent = yes
+
+	trigger = {
+		ai = yes
+		NOT = {
+			country = GER
+			country = SOV
+			country = ITA
+			country = USA
+			country = ENG
+			country = CHI
+			country = JAP
+			country = FRA
+		}
+		can_change_policy = { type = defense_lobby value = 1 }
+		OR = {
+			government = fascist
+			government = communist
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = change_policy which = defense_lobby value = 1 }
+	}
+}
+event = { # Dove Lobby
+	id = 3000006
+	random = no
+	persistent = yes
+
+	trigger = {
+		ai = yes
+		NOT = {
+			country = GER
+			country = SOV
+			country = ITA
+			country = USA
+			country = ENG
+			country = CHI
+			country = JAP
+			country = FRA
+		}
+		can_change_policy = { type = defense_lobby value = -1 }
+		government = democratic
+	}
+
+	name = "AI_EVENT"
+	style = 0
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = change_policy which = defense_lobby value = -1 }
+	}
+}
+################
+#	Interventionism
+#############################################
+event = { # Interventionism
+	id = 3000007
+	random = no
+	persistent = yes
+
+	trigger = {
+		ai = yes
+		NOT = {
+			country = GER
+			country = SOV
+			country = ITA
+			country = USA
+			country = ENG
+			country = CHI
+			country = JAP
+			country = FRA
+		}
+		can_change_policy = { type = interventionism value = 1 }
+		atwar = yes
+	}
+
+	name = "AI_EVENT"
+	style = 0
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = change_policy which = interventionism value = 1 }
+	}
+}
+################
+#	Standing Army
+#############################################
+#event = { # Standing Army
+#	id = 3000008
+#	random = no
+#	persistent = yes
+#
+#	trigger = {
+#		ai = yes
+#		NOT = {
+#			country = GER
+#			country = SOV
+#			country = ITA
+#			country = USA
+#			country = ENG
+#			country = CHI
+#			country = JAP
+#			country = FRA
+#		}
+#		can_change_policy = { type = professional_army value = 1 }
+#		OR = {
+#			government = fascist
+#			government = communist
+#		}
+#	}
+#
+#	name = "AI_EVENT"	
+#	style = 0
+#
+#	date = { day = 1 month = january year = 1936 }
+#	offset = 7
+#	deathdate = { day = 29 month = december year = 1963 }
+#
+#	action_a = {
+#		command = { type = change_policy which = professional_army value = 1 }
+#	}
+#}
+#event = { # Drafted Army
+#	id = 3000009
+#	random = no
+#	persistent = yes
+#
+#	trigger = {
+#		ai = yes
+#		NOT = {
+#			country = GER
+#			country = SOV
+#			country = ITA
+#			country = USA
+#			country = ENG
+#			country = CHI
+#			country = JAP
+#			country = FRA
+#		}
+#		can_change_policy = { type = professional_army value = -1 }
+#		government = democratic
+#	}
+#
+#	name = "AI_EVENT"	
+#	style = 0
+#
+#	date = { day = 1 month = january year = 1936 }
+#	offset = 7
+#	deathdate = { day = 29 month = december year = 1963 }
+#
+#	action_a = {
+#		command = { type = change_policy which = professional_army value = -1 }
+#	}
+#}
+#

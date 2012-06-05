@@ -1,0 +1,163 @@
+####################################
+# Honduras AI events by Lothos
+####################################
+################
+# Minister of Security Section
+#############################################
+event = { # Carlos Alberto Ucles takes power
+	id = 3072001
+	random = no 
+	country = HON
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 355005 # Carlos Alberto Ucles
+		NOT = { InCabinet = 355005 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ministerofsecurity which = 355005 }
+		command = { type = dissent value = -1 }
+	}
+}
+################
+# Chief of Staff Section
+#############################################
+event = { # Raimundo Stochler Garcia takes power
+	id = 3072002
+	random = no 
+	country = HON
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 355066 # Raimundo Stochler Garcia
+		NOT = { InCabinet = 355066 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = chiefofstaff which = 355066 }
+		command = { type = dissent value = -1 }
+	}
+}
+################
+# Head of Intelligence Section
+#############################################
+event = { # Hernan Fernandez Silva takes power
+	id = 3072003
+	random = no 
+	country = HON
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 355062 # Hernan Fernandez Silva
+		NOT = { InCabinet = 355062 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ministerofintelligence which = 355062 }
+		command = { type = dissent value = -1 }
+	}
+}
+event = { # Raul Sanchez Banados takes power
+	id = 3072004
+	random = no 
+	country = HON
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 355065 # Raul Sanchez Banados
+		NOT = { InCabinet = 355065 }
+		NOT = { minister = 355062 } # Hernan Fernandez Silva
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ministerofintelligence which = 355065 }
+		command = { type = dissent value = -1 }
+	}
+}
+################
+# Chief of the Army Section
+#############################################
+event = { # José Zuñiga Huete takes power
+	id = 3072005
+	random = no 
+	country = HON
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 355072 # José Zuñiga Huete
+		NOT = { InCabinet = 355072 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = chiefofarmy which = 355072 }
+		command = { type = dissent value = -1 }
+	}
+}
+################
+# Armament Minister Section
+#############################################
+event = { # Carlos Alberto Ucles takes power
+	id = 3072006
+	random = no 
+	country = HON
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 355036 # Carlos Alberto Ucles
+		NOT = { InCabinet = 355036 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = armamentminister which = 355036 }
+		command = { type = dissent value = -1 }
+	}
+}

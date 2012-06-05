@@ -1,0 +1,100 @@
+# 0 - Great war
+model = {
+	cost 				= 5
+	buildtime	 		= 70
+	manpower 			= 3
+	defensiveness 		= 1
+	hardattack			= 1
+	airattack			= 1
+	airdefence			= 2
+	maxspeed 			= 0
+	supplyconsumption 	= 0.12
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.8
+}
+# 1 - Interwar
+model = {
+	cost 				= 5
+	buildtime	 		= 70
+	manpower 			= 3
+	defensiveness 		= 1
+	hardattack			= 1
+	airattack			= 1
+	airdefence			= 2
+	maxspeed 			= 0
+	supplyconsumption 	= 0.12
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.8
+}
+# 2 - Basic
+model = {
+	cost 				= 5
+	buildtime	 		= 70
+	manpower 			= 3
+	defensiveness 		= 1
+	hardattack			= 1
+	airattack			= 1
+	airdefence			= 2
+	maxspeed 			= 0
+	supplyconsumption 	= 0.12
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.8
+}
+# 3 - Improved
+model = {
+	cost 				= 5
+	buildtime	 		= 70
+	manpower 			= 3
+	defensiveness 		= 1
+	hardattack			= 1
+	airattack			= 2
+	airdefence			= 3
+	maxspeed 			= 0
+	supplyconsumption 	= 0.14
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.8
+}
+# 4 - Advanced
+model = {
+	cost 				= 5
+	buildtime	 		= 70
+	manpower 			= 3
+	defensiveness 		= 1
+	hardattack			= 2
+	airattack			= 3
+	airdefence			= 3
+	maxspeed 			= 0
+	supplyconsumption 	= 0.16
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.8
+}
+# 5 - Semi-Modern
+model = {
+	cost 				= 5
+	buildtime	 		= 70
+	manpower 			= 3
+	defensiveness 		= 2
+	hardattack			= 3
+	airattack			= 4
+	airdefence			= 4
+	maxspeed 			= 0
+	supplyconsumption 	= 0.18
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.8
+}
+# 6 - Modern
+model = {
+	cost 				= 5
+	buildtime	 		= 70
+	manpower 			= 3
+	defensiveness 		= 3
+	hardattack			= 3
+	airattack			= 5
+	airdefence			= 5
+	maxspeed 			= 0
+	supplyconsumption 	= 0.18
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.8
+}
+
+

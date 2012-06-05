@@ -1,0 +1,33 @@
+CHC;Name;Pic Name;Skill;Start Year;End Year;Speciality1;Speciality2;Speciality3;Speciality4;Speciality5;Speciality6;Speciality7;Speciality8;Speciality9;Speciality10;Speciality11;Speciality12;Speciality13;Speciality14;Speciality15;Speciality16;Speciality17;Speciality18;Speciality19;Speciality20;Speciality21;Speciality22;Speciality23;Speciality24;Speciality25;Speciality26;Speciality27;Speciality28;Speciality29;Speciality30;Speciality31;Speciality32;x
+260001;Deng Xiaoping;T8300;5;1924;1970;management;industrial_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+260002;Lin Biao;T8301;3;1924;1970;large_unit_tactics;centralized_execution;infantry_focus;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+260003;Mao Zedong;T8302;2;1924;1970;small_unit_tactics;infantry_focus;individual_courage;decentralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+260004;Aviation Industries of China;T8303;4;1945;1970;aeronautics;bomber_design;fighter_design;avionics;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+260005;China North Industries Group;T8304;4;1939;1970;industrial_engineering;technical_efficiency;chemistry;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+260006;China State Shipbuilding Corporation;T8305;3;1945;1970;naval_engineering;naval_artillery;electronics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+260007;General Armament Department;T8306;4;1900;1970;mechanics;artillery;general_equipment;training;munitions;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+260008;Fang Tse-Yi;T8307;4;1945;1970;fighter_tactics;bomber_tactics;piloting;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+260009;School of Oriental Munich;T8805;3;1930;1970;infantry_focus;centralized_execution;training;general_equipment;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+260010;Shaanxi Kiln;T13507;3;1935;1970;general_equipment;mechanics;chemistry;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+260011;Fudan University;T8310;3;1950;1970;mathematics;nuclear_physics;nuclear_engineering;rocketry;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+260012;Li Kenong;T8311;2;1926;1959;mathematics;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+260013;People's Liberation Army;T8312;5;1949;1970;large_unit_tactics;centralized_execution;combined_arms_focus;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+260014;Chengdu Aircraft Industry Corp.;T8313;5;1950;1970;rocketry;aeronautics;fighter_design;bomber_design;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+260015;People's Liberation Army Navy;T8314;6;1950;1970;small_taskforce_tactics;naval_training;seamanship;centralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+260016;Wu Peifu;100059;6;1902;1970;centralized_execution;large_unit_tactics;large_unit_focus;individual_courage;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+260017;Yuan Shikai;100060;2;1890;1916;small_unit_tactics;decentralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+260018;Hanyang Arsenal;100061;3;1890;1970;general_equipment;training;artillery;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+260019;Han-Ye-Ping Coal and Iron Company;100062;4;1894;1970;industrial_engineering;mechanics;chemistry;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+260020;Jiangnan Shipbuilding Works;100063;3;1912;1970;naval_engineering;naval_artillery;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+260021;Jiangnan Machine Manufacturer;100064;2;1865;1912;naval_engineering;naval_artillery;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+260022;Zhang Guotao;100522;2;1924;1936;centralized_execution;large_unit_tactics;large_unit_focus;individual_courage;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+260023;Qian Xuesen;100523;6;1955;1999;rocketry;aeronautics;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+260024;Deng Jiaxian;100524;4;1950;1986;mathematics;nuclear_engineering;nuclear_physics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+260025;Cheng Kaijia;100525;6;1950;2010;mathematics;nuclear_engineering;nuclear_physics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+260026;Chinese Academy of Sciences;100526;4;1950;1999;mathematics;electronics;chemistry;management;mechanics;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+260027;Liu Yalou;100527;5;1950;1965;piloting;fighter_tactics;centralized_execution;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+260028;Zhejiang University;100528;5;1950;1999;training;general_equipment;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+260029;Anshan Iron and Steel Group;100529;4;1950;1999;industrial_engineering;management;mechanics;chemistry;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+260030;PLA Air Force;100530;4;1950;1999;fighter_tactics;bomber_tactics;piloting;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+260031;Shao Xianghua;100531;5;1945;1999;chemistry;training;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+260032;Zhu De;100608;3;1940;1949;small_unit_tactics;training;combined_arms_focus;centralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x

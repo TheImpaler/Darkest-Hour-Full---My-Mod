@@ -1,0 +1,34 @@
+# Darkest Hour events
+
+event = "db\events\bulgaria.txt"
+event = "db\events\china.txt"
+event = "db\events\coups_events.txt"
+event = "db\events\death_events.txt"
+event = "db\events\election_events.txt"
+event = "db\events\france.txt"
+event = "db\events\generic_decisions.txt"
+event = "db\events\germany.txt"
+event = "db\events\hoi2.txt"
+event = "db\events\hungary.txt"
+event = "db\events\italy.txt"
+event = "db\events\japan.txt"
+event = "db\events\Lend_Lease.txt"
+event = "db\events\romania.txt"
+event = "db\events\secret_weapon_events.txt"
+event = "db\events\spain.txt"
+event = "db\events\UK.txt"
+event = "db\events\USA.txt"
+event = "db\events\USSR.txt"
+event = "db\events\Mobilization.txt"
+
+
+# AI Events
+event = "db\events\AI\AI_ministers.txt"
+event = "db\events\AI\AI_sliders.txt"
+event = "db\events\AI\AI_minorshutinvasion.txt"
+event = "db\events\AI\AI_revolters.txt"
+event = "db\events\AI\AI_mobi.txt"
+event = "db\events\AI\AI_research.txt"
+
+event = "db\events\Cheats.txt"
+event = "db\events\DHFBlueprints.txt"

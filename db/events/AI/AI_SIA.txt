@@ -1,0 +1,282 @@
+####################################
+# Siam AI events by Lothos
+####################################
+################
+# Minister of Security Section
+#############################################
+event = { # Srisena Sampatisiri takes power
+	id = 3059001
+	random = no 
+	country = SIA
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 290052 # Srisena Sampatisiri
+		NOT = { InCabinet = 290052 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ministerofsecurity which = 290052 }
+		command = { type = dissent value = -1 }
+	}
+}
+################
+# Chief of Staff Section 
+#############################################
+event = { # Luang Phibunsongkhram takes power
+	id = 3059002
+	random = no 
+	country = SIA
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 290007 # Luang Phibunsongkhram
+		NOT = { InCabinet = 290007 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = chiefofstaff which = 290007 }
+		command = { type = dissent value = -1 }
+	}
+}
+################
+# Head of Intelligence Section 
+#############################################
+event = { # Pridi Phanomyong takes power
+	id = 3059003
+	random = no 
+	country = SIA
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 290006 # Pridi Phanomyong
+		NOT = { InCabinet = 290006 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ministerofintelligence which = 290006 }
+		command = { type = dissent value = -1 }
+	}
+}
+################
+# Chief of the Army Section
+#############################################
+event = { # Luang Phibunsongkhram takes power
+	id = 3059004
+	random = no 
+	country = SIA
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 290008 # Luang Phibunsongkhram
+		NOT = { InCabinet = 290008 }
+		OR = {
+			atwar = no
+			NOT = { minister = 290072 } # Manphya Khanphialong
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = chiefofarmy which = 290008 }
+		command = { type = dissent value = -1 }
+	}
+}
+event = { # Manphya Khanphialong takes power
+	id = 3059005
+	random = no 
+	country = SIA
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 290072 # Manphya Khanphialong
+		NOT = { InCabinet = 290072 }
+		OR = {
+			atwar = yes
+			NOT = { minister = 290008 } # Luang Phibunsongkhram
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = chiefofarmy which = 290072 }
+		command = { type = dissent value = -1 }
+	}
+}
+################
+# Armament Minister Section 
+#############################################
+event = { # Phya Bidadhkosha takes power
+	id = 3059006
+	random = no 
+	country = SIA
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 290032 # Phya Bidadhkosha
+		NOT = { InCabinet = 290032 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = armamentminister which = 290032 }
+		command = { type = dissent value = -1 }
+	}
+}
+################
+# Chief of Air Minister Section
+#############################################
+event = { # Phra Vechayanrangsarit takes power
+	id = 3059007
+	random = no 
+	country = SIA
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 290010 # Phra Vechayanrangsarit
+		NOT = { InCabinet = 290010 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = chiefofair which = 290010 }
+		command = { type = dissent value = -1 }
+	}
+}
+################
+# Chief of Navy Minister Section
+#############################################
+event = { # Pridi Phanomyong takes power
+	id = 3059008
+	random = no 
+	country = SIA
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 290009 # Pridi Phanomyong
+		NOT = { InCabinet = 290009 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = chiefofnavy which = 290009 }
+		command = { type = dissent value = -1 }
+	}
+}
+
+
+
+
+
+
+
+#############################################
+# Regular AI Events
+#############################################
+################
+# Siam sends EXP forces to Japan
+#############################################
+event = {
+	id = 3059009
+	random = no 
+	country = SIA
+	
+	trigger = {
+		ai = yes
+		war = { country = ENG country = SIA }
+		alliance = { country = JAP country = SIA }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ai which = "switch/EXP_100.ai" }
+	}
+}
+event = {
+	id = 3059010
+	random = no 
+	country = SIA
+	
+	trigger = {
+		ai = yes
+		atwar = yes
+		NOT = { war = { country = ENG country = SIA } }
+		alliance = { country = JAP country = SIA }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ai which = "switch/EXP_50.ai" }
+	}
+}

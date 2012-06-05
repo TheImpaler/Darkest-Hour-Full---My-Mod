@@ -1,0 +1,186 @@
+# near victory at the east
+# now move more Troops to the western Front
+#####################################
+# Jaegerfeld mar2011
+strat_redeploy_threshold = 20
+combat = {
+FRA = 100
+RUS = 1
+SER = 100
+SOV = 10
+}
+
+max_front_ratio = 1.0
+max_front_ratios = { 
+FRA = 15.0
+BEL = 15.0
+SER = 1.0
+ITA = 1.0
+RUS = 0.1
+}
+max_garrison_prop = 0.20
+min_garrison_prop = 0.10
+#neutrality = 20.000 
+war = 50
+target = {  
+	# western front
+	109 = 10  #Lux
+	108 = 200
+	113 = 120
+	117 = 120
+	116 = 140
+	52 = 150
+	102 = 180
+	
+	
+	# eastern front
+	250 = 2	
+
+# romanian front
+	297 = 20
+	309 = 20
+	316 = 20
+	# serbia
+	338 = 100
+	327 = 200
+	333 = 200
+	
+	# italy
+	400 =  20
+	408 =  20
+	419 =  190
+	399 =  90
+	396 = 100
+	422 = 80	
+	
+}
+
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+garrison = {
+	defend_overseas_beaches = yes
+	home_multiplier 	= 1.0
+	overseas_multiplier 	= 1.0
+	home_peace_cap 		= 10
+	war_zone_odds 		= 2.0
+	key_point_prio_mult	= 0
+	revolt_risk_mult	= 0
+
+	# PRIORITIES:
+	beach			= 40 # 50	# Beach level 2
+	capital			= 5	# Our capital
+	human_border	= 0	# Ignored for allied human players
+	war_target		= 50	# The next country targeted for attack by this AI
+	reserves 		= 5	# bonus for provinces just behind a frontline.
+	
+	opposing_alliance	= 100	# For neutrals, all alliances are "opposing"
+	claim_threat		= 0	# If we are neutral, countries with claims on us get this
+	unstable_border		= 0	# Bordering countries at war with someone else get this
+
+	# Borders with specific countries
+	country_priorities = {
+	SCH = -1
+		AUS = -1
+		FRA = 100
+		HOL = -1
+		BEL = 10
+		DEN = -1
+		RUS = 1
+		SOV = 1
+	}
+	ignore = { 
+
+	}
+	province_priorities = {
+		
+
+		
+	}
+	area_multiplier = {
+	
+	# second line of defense
+	
+		128 = 10.0
+		130 = 10.0
+		135 = 10.0
+		136 = 20.0
+	
+	
+
+	}
+}
+front = { 
+	recklessness 		= 3 # 0-3 # victory is near!
+	distrib_vs_ai 		= offensive
+	distrib_vs_human 	= offensive
+
+	enemy_reinf_days	= 1
+	reserve_prop		= 0.1
+	panic_ratio_vs_ai	= 2.5
+	panic_ratio_vs_human	= 2.5
+	base_attack_odds	= 1.333
+	min_attack_odds		= 1.1
+	max_attack_odds		= 2.0
+	reinforce_odds		= 1.2
+	withdraw_odds		= 0.75
+
+	strength 	= 1.0
+	organisation 	= 2.0
+	soft_attack 	= 1.0
+	hard_attack 	= 2.0
+	ground_defense 	= 1.0
+	dig_in 		= 1.25 # Against defender
+	enemy_handicap = {
+		
+	} 
+      	passivity = {
+
+	} 
+	province_priorities = {
+	
+		# western front
+	#109 = 5  #Lux
+	108 = 300
+	113 = 100
+	117 = 100
+	111 = 100
+	116 = 100
+	52 = 100
+	102 = 100
+	
+	# move on with lesser troops
+	# eastern front
+	250 = 2
+	
+	# russian front AH
+	228 = 1
+	244 = 1
+	618 = 1
+	
+	# romanian front
+	297 = 5
+	309 = 5
+	316 = 5
+	# serbia
+	338 = 50
+	327 = 50
+	333 = 50
+	
+	# italy
+	400 = 50
+	408 = 50
+	419 = 190
+	399 = 90
+	396 = 100
+	422 = 80
+	
+	
+	
+	}
+	
+
+}
+
+
+###EOF

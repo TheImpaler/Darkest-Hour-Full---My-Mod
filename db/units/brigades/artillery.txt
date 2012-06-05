@@ -1,0 +1,182 @@
+# 0 - Great War Light Field Artillery
+model = {
+	cost 				= 5
+	buildtime	 		= 110
+	manpower 			= 3
+	defensiveness 		= 2
+	maxspeed 			= 0
+	softattack			= 1
+	hardattack			= 1
+	supplyconsumption 	= 0.24
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.9
+}
+# 1 - Great War Medium Field Artillery
+model = {
+	cost 				= 5
+	buildtime	 		= 120
+	manpower 			= 3
+	defensiveness 		= 2
+	maxspeed 			= 0
+	softattack			= 2
+	hardattack			= 1
+	supplyconsumption 	= 0.32
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.9
+}
+# 2 - Great War Heavy Field Artillery 1916
+model = {
+	cost 				= 6
+	buildtime	 		= 140
+	manpower 			= 3
+	defensiveness 		= 2
+	maxspeed 			= 0
+	softattack			= 3
+	hardattack			= 1
+	supplyconsumption 	= 0.44
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.9
+}
+# 3 - Improved Heavy Field Artillery 1918
+model = {
+	cost 				= 6
+	buildtime	 		= 140
+	manpower 			= 3
+	defensiveness 		= 2
+	maxspeed 			= 0
+	softattack			= 4
+	hardattack			= 1
+	supplyconsumption 	= 0.44
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.9
+}
+# 4 - Postwar Field Artillery
+model = {
+	cost 				= 5
+	buildtime	 		= 120
+	manpower 			= 3
+	defensiveness 		= 3
+	maxspeed 			= 0
+	softattack			= 4
+	hardattack			= 2
+	supplyconsumption 	= 0.46
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.9
+}
+# 5 - Interwar Field Artillery
+model = {
+	cost 				= 5
+	buildtime	 		= 120
+	manpower 			= 3
+	defensiveness 		= 3
+	maxspeed 			= 0
+	softattack			= 5
+	hardattack			= 2
+	supplyconsumption 	= 0.48
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.9
+}
+# 6 - Basic Interwar Field Artillery
+model = {
+	cost 				= 5
+	buildtime	 		= 120
+	manpower 			= 3
+	defensiveness 		= 3
+	maxspeed 			= 0
+	softattack			= 6
+	hardattack			= 2
+	supplyconsumption 	= 0.5
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.9
+}
+# 7 - Imp. Interwar Field Artillery
+model = {
+	cost 				= 5
+	buildtime	 		= 120
+	manpower 			= 3
+	defensiveness 		= 3
+	maxspeed 			= 0
+	softattack			= 7
+	hardattack			= 2
+	supplyconsumption 	= 0.55
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.9
+}
+# 8 - Early Field Artillery
+model = {
+	cost 				= 5
+	buildtime	 		= 120
+	manpower 			= 3
+	defensiveness 		= 4
+	maxspeed 			= 0
+	softattack			= 7
+	hardattack			= 2
+	supplyconsumption 	= 0.55
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.9
+}
+# 9 - Basic Field Artillery
+model = {
+	cost 				= 6
+	buildtime	 		= 120
+	manpower 			= 3
+	defensiveness 		= 4
+	maxspeed 			= 0
+	softattack			= 8
+	hardattack			= 2
+	supplyconsumption 	= 0.60
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.9
+}
+# 10 - Improved Field Artillery
+model = {
+	cost 				= 7
+	buildtime	 		= 120
+	manpower 			= 3
+	defensiveness 		= 5
+	maxspeed 			= 0
+	softattack			= 8
+	hardattack			= 2
+	supplyconsumption	= 0.65
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.9
+}
+# 11 - Semi-Modern Field Artillery
+model = {
+	cost 				= 7
+	buildtime	 		= 120
+	manpower 			= 3
+	defensiveness 		= 5
+	maxspeed 			= 0
+	softattack			= 8
+	hardattack			= 3
+	supplyconsumption 	= 0.60
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.9
+}
+# 12 - Modern Field Artillery
+model = {
+	cost 				= 7
+	buildtime	 		= 120
+	manpower 			= 3
+	defensiveness 		= 5
+	maxspeed 			= 0
+	softattack			= 9
+	hardattack			= 3
+	supplyconsumption 	= 0.7
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.9
+}
+# 13 - Advanced Field Artillery
+model = {
+	cost 				= 7
+	buildtime	 		= 120
+	manpower 			= 3
+	defensiveness 		= 5
+	maxspeed 			= 0
+	softattack			= 10
+	hardattack			= 3
+	supplyconsumption 	= 0.8
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.9
+}

@@ -1,0 +1,209 @@
+####################################
+# Bolivia AI events by Lothos
+####################################
+################
+# Minister of Security Section
+#############################################
+event = { # José Franz Tamayo takes power
+	id = 3042001
+	random = no 
+	country = BOL
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 205098 # José Franz Tamayo
+		NOT = { InCabinet = 205098 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ministerofsecurity which = 205098 }
+		command = { type = dissent value = -1 }
+	}
+}
+################
+# Chief of Staff Section
+#############################################
+event = { # Gualberto Villarroel Lopez takes power
+	id = 3042002
+	random = no 
+	country = BOL
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 205007 # Gualberto Villarroel Lopez
+		NOT = { InCabinet = 205007 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = chiefofstaff which = 205007 }
+		command = { type = dissent value = -1 }
+	}
+}
+################
+# Head of Intelligence Section
+#############################################
+event = { # José Maria Gutierrez takes power
+	id = 3042003
+	random = no 
+	country = BOL
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 205122 # José Maria Gutierrez
+		NOT = { InCabinet = 205122 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ministerofintelligence which = 205122 }
+		command = { type = dissent value = -1 }
+	}
+}
+################
+# Chief of the Army Section
+#############################################
+event = { # Hans Kundt takes power
+	id = 3042004
+	random = no 
+	country = BOL
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 205008 # Hans Kundt
+		NOT = { InCabinet = 205008 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = chiefofarmy which = 205008 }
+		command = { type = dissent value = -1 }
+	}
+}
+################
+# Armament Minister Section
+#############################################
+event = { # Moritz Hochschild takes power
+	id = 3042005
+	random = no 
+	country = BOL
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 205004 # Moritz Hochschild
+		NOT = { InCabinet = 205004 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = armamentminister which = 205004 }
+		command = { type = dissent value = -1 }
+	}
+}
+################
+# Chief of Air Minister Section
+#############################################
+event = { # Hector Bilbao Roja takes power
+	id = 3042006
+	random = no 
+	country = BOL
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 205010 # Hector Bilbao Roja
+		NOT = { InCabinet = 205010 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = chiefofair which = 205010 }
+		command = { type = dissent value = -1 }
+	}
+}
+################
+# Chief of Navy Minister Section
+#############################################
+
+
+
+
+#############################################
+# Regular AI Events
+#############################################
+################
+# Shift Production
+#############################################
+event = {
+	id = 3042007
+	random = no 
+	country = BOL
+	
+	trigger = {
+		ai = yes
+		OR = {
+			atwar = yes
+			NOT = { ai = ARG }
+			NOT = { ai = BRA }
+			NOT = { ai = CHL }
+			NOT = { ai = PRU }
+			lost_national = { country = ARG value = 2 }
+			lost_national = { country = BRA value = 2 }
+			lost_national = { country = CHL value = 2 }
+			lost_national = { country = PRU value = 2 }
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ai which = "switch/Minor_Gear_Up.ai" }
+	}
+}

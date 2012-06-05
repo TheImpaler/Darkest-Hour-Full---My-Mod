@@ -1,0 +1,231 @@
+####################################
+# Brazil AI events by Lothos
+####################################
+################
+# Minister of Security Section
+#############################################
+event = { # Marcondes Filho takes power
+	id = 3033001
+	random = no 
+	country = BRA
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 160005 # Marcondes Filho
+		NOT = { InCabinet = 160005 }
+		OR = {
+			manpower = 200
+			AND = {
+				NOT = { manpower = 200 }
+				NOT = { minister = 160058 } # Manuel A. Venâncio
+			}
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ministerofsecurity which = 160005 }
+		command = { type = dissent value = -1 }
+	}
+}
+event = { # Manuel A. Venâncio takes power
+	id = 3033002
+	random = no 
+	country = BRA
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 160058 # Manuel A. Venâncio
+		NOT = { InCabinet = 160058 }
+		OR = {
+			NOT = { manpower = 200 }
+			AND = {
+				manpower = 200
+				NOT = { minister = 160005 } # Marcondes Filho
+			}
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ministerofsecurity which = 160058 }
+		command = { type = dissent value = -1 }
+	}
+}
+################
+# Chief of Staff Section
+#############################################
+event = { # Luis Carlos Prestes takes power
+	id = 3033003
+	random = no 
+	country = BRA
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 160086 # Luis Carlos Prestes
+		NOT = { InCabinet = 160086 }
+		OR = {
+			atwar = no
+			NOT = { manpower = 200 }
+			AND = {
+				manpower = 200
+				NOT = { minister = 160007 } # Gaspar Dutra
+			}
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = chiefofstaff which = 160086 }
+		command = { type = dissent value = -1 }
+	}
+}
+event = { # Gaspar Dutra takes power
+	id = 3033004
+	random = no 
+	country = BRA
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		atwar = yes
+		minister = 160007 # Gaspar Dutra
+		NOT = { InCabinet = 160007 }
+		OR = {
+			manpower = 200
+			AND = {
+				NOT = { manpower = 200 }
+				NOT = { minister = 160086 } # Luis Carlos Prestes
+			}
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = chiefofstaff which = 160007 }
+		command = { type = dissent value = -1 }
+	}
+}
+################
+# Head of Intelligence Section
+#############################################
+################
+# Chief of the Army Section
+#############################################
+event = { # Henrique Teixeira Lott takes power
+	id = 3033005
+	random = no 
+	country = BRA
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 160101 # Henrique Teixeira Lott
+		NOT = { InCabinet = 160101 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = chiefofarmy which = 160101 }
+		command = { type = dissent value = -1 }
+	}
+}
+################
+# Armament Minister Section
+#############################################
+event = { # Getulio Vargas takes power
+	id = 3033006
+	random = no 
+	country = BRA
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 160041 # Getulio Vargas
+		NOT = { InCabinet = 160041 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = armamentminister which = 160041 }
+		command = { type = dissent value = -1 }
+	}
+}
+
+
+
+
+#############################################
+# Regular AI Events
+#############################################
+################
+# Shift Production
+#############################################
+event = {
+	id = 3033007
+	random = no 
+	country = BRA
+	
+	trigger = {
+		ai = yes
+		OR = {
+			atwar = yes
+			atwar = GER
+			atwar = ENG
+			atwar = FRA
+			atwar = USA
+			year = 1939
+			NOT = { ai = ARG }
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ai which = "switch/Minor_Gear_Up.ai" }
+	}
+}

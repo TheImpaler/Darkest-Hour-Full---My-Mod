@@ -1,0 +1,138 @@
+####################################
+# Liberia AI events by Lothos
+####################################
+################
+# Minister of Security Section 
+#############################################
+event = { # Ralph W. Morrison takes power
+	id = 3077001
+	random = no 
+	country = LIB
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 380031 # Ralph W. Morrison
+		NOT = { InCabinet = 380031 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ministerofsecurity which = 380031 }
+		command = { type = dissent value = -1 }
+	}
+}
+event = { # Key Pittman takes power
+	id = 3077002
+	random = no 
+	country = LIB
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 380028 # Key Pittman
+		NOT = { InCabinet = 380028 }
+		NOT = { minister = 380031 } # Ralph W. Morrison
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ministerofsecurity which = 380028 }
+		command = { type = dissent value = -1 }
+	}
+}
+
+################
+# Head of Intelligence Section
+#############################################
+event = { # Henry M. Robinson takes power
+	id = 3077003
+	random = no 
+	country = LIB
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 380006 # Henry M. Robinson
+		NOT = { InCabinet = 380006 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ministerofintelligence which = 380006 }
+		command = { type = dissent value = -1 }
+	}
+}
+################
+# Chief of the Army Section
+#############################################
+event = { # Iver Virgin takes power
+	id = 3077004
+	random = no 
+	country = LIB
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 380008 # Iver Virgin
+		NOT = { InCabinet = 380008 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = chiefofarmy which = 380008 }
+		command = { type = dissent value = -1 }
+	}
+}
+################
+# Armament Minister Section
+#############################################
+event = { # Cornelius van Oudkarspel takes power
+	id = 3077005
+	random = no 
+	country = LIB
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 380022 # Cornelius van Oudkarspel
+		NOT = { InCabinet = 380022 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = armamentminister which = 380022 }
+		command = { type = dissent value = -1 }
+	}
+}
+

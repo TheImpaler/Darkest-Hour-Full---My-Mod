@@ -1,0 +1,49 @@
+LBY;Ruling Cabinet - Start;Name;Start Year;End Year;Ideology;Personality;Loyalty;Picturename;X
+;Replacements;;;;;;;;X
+495001;Head of State;Guglielmo Nasi;1933;1964;FA;Ruthless Powermonger;High;L6108;X
+495002;Head of Government;Italo Gariboldi;1933;1964;FA;Old General;High;L6077;X
+495003;Foreign Minister;Ettore Bastico;1933;1964;FA;General Staffer;High;L6021;X
+495004;Minister of Armament;Giacomo Acerbo;1933;1964;FA;Military Entrepreneur;High;M3073;X
+495005;Minister of Security;Umberto Ricci;1933;1964;FA;Silent Lawyer;High;M3015;X
+495006;Head of Military Intelligence;Giovanni Messe;1933;1964;PA;Logistics Specialist;Medium;L6102;X
+495007;Chief of Staff;Giovanni Messe;1933;1964;PA;School of Psychology;Medium;L6102;X
+495008;Chief of Army;Lorenzo Dalmazzo;1933;1964;PA;Decisive Battle Doctrine;Medium;L6052;X
+495009;Chief of Navy;Stefano de Laurentiis;1933;1964;PA;Base Control Doctrine;Medium;L6166;X
+495010;Chief of Air Force;Aroldo Soffritti;1933;1964;PA;Air Superiority Doctrine;Medium;L6235;X
+495011;Head of State;H.M. Idris I. al Sanussi;1939;1964;ML;Popular Figurehead;High;M576011;X
+495012;Head of Government;Duncan C. Cumming;1939;1964;ML;Corporate Suit;High;M576012;X
+495013;Foreign Minister;Leonard F. Mayhood;1939;1964;ML;Apologetic Clerk;High;M576013;X
+495014;Foreign Minister;Eric Vully de Candole;1942;1964;ML;Great Compromiser;High;M576014;X
+495015;Foreign Minister;Mahmud al-Muntasir;1946;1964;ML;Ideological Crusader;High;M576015;X
+495016;Minister of Armament;James W.N. Haugh;1939;1964;ML;Resource Industrialist;High;M576016;X
+495017;Minister of Armament;Umar Mansur Kikhia;1944;1964;ML;Air Superiority Proponent;High;M576017;X
+495018;Minister of Security;Ahmad al-Halikwi;1939;1964;ML;Crooked Kleptocrat;High;M576018;X
+495019;Minister of Security;Peter B.E. Acland;1943;1964;ML;Efficient Sociopath;High;M576019;X
+495020;Minister of Security;Mustafa ben Halim;1946;1964;ML;Compassionate Gentleman;High;M576020;X
+495021;Head of Military Intelligence;C.A. Morris;1939;1964;ML;Dismal Enigma;Medium;M576021;X
+495022;Head of Military Intelligence;Abdul Kubar;1945;1964;ML;Technical Specialist;Medium;M576022;X
+495023;Chief of Staff;George Dillon;1939;1964;ML;School of Manoeuvre;Medium;L1339;X
+495024;Chief of Staff;Mahammad Sakizli;1945;1964;ML;School of Fire Support;Medium;M576024;X
+495025;Chief of Army;G.B.T. Lord Thurlow;1939;1964;ML;Guns and Butter Doctrine;Medium;M576025;X
+495026;Chief of Army;Mohammar Sidiq;1946;1964;ML;Elastic Defence Doctrine;Medium;M576026;X
+495027;Chief of Navy;B.C.S. Martin;1939;1964;ML;Indirect Approach Doctrine;Medium;L1370;X
+495028;Chief of Navy;H.R.H. Taher Khimlani;1945;1964;ML;Open Seas Doctrine;Medium;M576028;X
+495029;Chief of Air Force;Richard Pierse;1939;1964;ML;Army Aviation Doctrine;Medium;L1468;X
+495030;Chief of Air Force;Ali al-Umlan;1945;1964;ML;Carpet Bombing Doctrine;Medium;M576030;X
+495031;Head of State;Ahmed Sharif es Senussi;1902;1916;PA;Autocratic Charmer;Medium;6034;X
+495032;Head of Government;Ahmed Sharif es Senussi;1902;1916;PA;Smiling Oilman;Medium;6034;X
+495033;Foreign Minister;Ahmed Sharif es Senussi;1902;1916;PA;Ideological Crusader;Medium;6034;X
+495034;Minister of Armament;Ahmed Sharif es Senussi;1902;1916;PA;Military Entrepreneur;Medium;6034;X
+495035;Minister of Security;Ahmed Sharif es Senussi;1902;1916;PA;Man of the People;Medium;6034;X
+495036;Head of Military Intelligence;Omar Mukhtar;1911;1935;PA;Logistics Specialist;Medium;6036;X
+495037;Chief of Staff;Ahmed Sharif es Senussi;1902;1916;PA;School of Defence;Medium;6034;X
+495038;Chief of Army;Ahmed Sharif es Senussi;1902;1916;PA;Static Defence Doctrine;Medium;6034;X
+495039;Head of State;Muhammad Idris al-Senussi;1917;1939;PA;Autocratic Charmer;Medium;6035;X
+495040;Head of Government;Muhammad Idris al-Senussi;1917;1939;PA;Old General;Medium;6035;X
+495041;Foreign Minister;Muhammad Idris al-Senussi;1917;1939;PA;General Staffer;Medium;6035;X
+495042;Minister of Armament;Muhammad Idris al-Senussi;1917;1939;PA;Infantry Proponent;Medium;6035;X
+495043;Minister of Security;Muhammad Idris al-Senussi;1917;1939;PA;Prince of Terror;Medium;6035;X
+495044;Chief of Staff;Muhammad Idris al-Senussi;1917;1939;PA;School of Psychology;Medium;6035;X
+495045;Chief of Army;Muhammad Idris al-Senussi;1917;1939;PA;Static Defence Doctrine;Medium;6035;X
+495046;Chief of Staff;Jafar al-Askari;1914;1933;PA;School of Manoeuvre;Medium;6037;X
+495047;Chief of Army;Jafar al-Askari;1914;1933;PA;elastic defence doctrine;Medium;6037;X

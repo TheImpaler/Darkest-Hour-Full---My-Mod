@@ -1,0 +1,325 @@
+JAP;Ruling Cabinet - Start;Name;Start Year;End Year;Ideology;Personality;Loyalty;Picturename;X
+;Replacements;;;;;;;;X
+50001;Head of State;Hirohito;1933;1964;PA;Puppet emperor;High;M5001;X
+50002;Head of Government;Okada Keisuke;1933;1964;PA;Happy Amateur;High;M5002;X
+50003;Foreign Minister;Hirota Koki;1933;1964;PA;Great Compromiser;High;M5003;X
+50004;Minister of Armament;Machida Chuji;1933;1964;SC;laissez-faire capitalist;High;M5004;X
+50005;Minister of Security;Goto Fumio;1933;1964;SC;Silent Lawyer;High;M5005;X
+50006;Head of Military Intelligence;Okamura Yasuji;1933;1964;PA;Political Specialist;Very Low;M5006;X
+50007;Chief of Staff;Kanin Kotohito;1933;1964;PA;School of Defence;Very Low;M5007;X
+50008;Chief of Army;Kanin Kotohito;1933;1964;PA;Static Defence Doctrine;Very Low;M5007;X
+50009;Chief of Navy;Osumi Mineo;1933;1964;FA;Power Projection Doctrine;Very High;M5009;X
+50010;Chief of Air Force;Yamamoto Isoroku;1933;1964;FA;Naval Aviation Doctrine;Very High;M5010;X
+50011;Head of State;Prince Chichibu;1933;1964;PA;Ruthless Powermonger;Very High;M5207;X
+50012;Head of State;Nosaka Sanzo;1933;1964;SD;Barking Buffoon;High;M5011;X
+50013;Head of Government;Hayashi Senjuro;1933;1964;PA;Smiling Oilman;High;M5033;X
+50014;Head of Government;Konoe Fumimaro;1937;1964;PA;Flamboyant Tough Guy;High;M5034;X
+50015;Head of Government;Abe Nobuyuki;1938;1964;PA;Political Protege;High;M5035;X
+50016;Head of Government;Yonai Mitsumasa;1940;1964;PA;Ambitious Union Boss;High;M5036;X
+50017;Head of Government;Suzuki Kantaro;1945;1964;PA;Corporate Suit;High;M5037;X
+50018;Head of Government;Higashikuni Naruhiko;1945;1964;PA;Silent Workhorse;High;M5038;X
+50019;Head of Government;Terauchi Hisaichi;1946;1964;PA;Naive Optimist;High;M5039;X
+50020;Head of Government;Hirota Koki;1933;1964;FA;Happy Amateur;High;M5003;X
+50021;Head of Government;Hiranuma Kiichiro;1939;1964;FA;Old Admiral;High;M5041;X
+50022;Head of Government;Tojo Hideki;1941;1964;FA;Old General;High;M5042;X
+50023;Head of Government;Koiso Kuniaki;1944;1964;FA;Corporate Suit;High;M5043;X
+50024;Head of Government;Goto Fumio;1937;1964;SD;Naive Optimist;High;M5005;X
+50025;Head of Government;Katayama Tetsu;1945;1964;SD;Political Protege;High;M5027;X
+50026;Head of Government;Ugaki Kazushige;1933;1964;SC;Silent Workhorse;High;M5028;X
+50027;Head of Government;Suzuki Kisaburo;1941;1964;SC;Happy Amateur;High;M5029;X
+50028;Head of Government;Shidehara Kijuro;1945;1964;SC;Naive Optimist;High;M5030;X
+50029;Head of Government;Yoshida Shigeru;1946;1964;SC;Backroom Backstabber;High;M5031;X
+50030;Head of Government;Hatoyama Ichiro;1954;1964;SC;Political Protege;High;M5032;X
+50031;Head of Government;Miyamoto Kenji;1933;1964;LE;Smiling Oilman;High;M5012;X
+50032;Foreign Minister;Nosako Sanzo;1937;1964;SD;The Cloak N Dagger Schemer;Low;M5011;X
+50033;Foreign Minister;Ashida Hitoshi;1945;1964;SL;Apologetic Clerk;High;M5046;X
+50034;Foreign Minister;Yoshizawa Kenkichi;1933;1964;SC;Ideological Crusader;High;M5047;X
+50035;Foreign Minister;Okada Keisuke;1933;1964;SC;Iron Fisted Brute;High;M5002;X
+50036;Foreign Minister;Suzuki Kisaburo;1939;1964;SC;The Cloak N Dagger Schemer;Medium;M5029;X
+50037;Foreign Minister;Shigemitsu Mamoru;1941;1964;SC;Great Compromiser;Medium;M5050;X
+50038;Foreign Minister;Yoshida Shigeru;1945;1964;SC;Apologetic Clerk;Medium;M5031;X
+50039;Foreign Minister;Sato Naotake;1937;1964;PA;The Cloak N Dagger Schemer;Medium;M5053;X
+50040;Foreign Minister;Ugaki Kazushige;1938;1964;PA;Biased Intellectual;Medium;M5028;X
+50041;Foreign Minister;Konoe Fumimaro;1938;1964;PA;Apologetic Clerk;Medium;M5034;X
+50042;Foreign Minister;Arita Hachiro;1933;1964;FA;Ideological Crusader;Medium;M5057;X
+50043;Foreign Minister;Abe Nobuyuki;1939;1964;FA;Iron Fisted Brute;Medium;M5035;X
+50044;Foreign Minister;Nomura Kichisaburo;1939;1964;PA;General Staffer;Medium;M5059;X
+50045;Foreign Minister;Matsuoka Yosuke;1940;1964;PA;Ideological Crusader;Medium;M5060;X
+50046;Foreign Minister;Toyoda Teijiro;1941;1964;PA;Iron Fisted Brute;Medium;M5061;X
+50047;Foreign Minister;Hayashi Senjuro;1937;1964;PA;General Staffer;Medium;M5033;X
+50048;Foreign Minister;Togo Shigenori;1941;1964;FA;Biased Intellectual;Medium;M5065;X
+50049;Foreign Minister;Tani Masayuki;1942;1964;FA;Apologetic Clerk;Medium;M5066;X
+50050;Foreign Minister;Shigemitsu Mamoru;1943;1964;FA;Great Compromiser;Medium;M5050;X
+50051;Foreign Minister;Shiga Yoshio;1933;1964;LE;Biased Intellectual;Very Low;M5013;X
+50052;Minister of Armament;Yoshino Shinji;1937;1964;SD;laissez-faire capitalist;Very High;M5069;X
+50053;Minister of Armament;Mizutani Chosaburo;1945;1964;SD;Resource Industrialist;High;M5070;X
+50054;Minister of Armament;Hoshijima Jiro;1947;1964;SD;Administrative Genius;Medium;M5071;X
+50055;Minister of Armament;Ogawa Gotaro;1933;1964;SC;Resource Industrialist;Medium;M5072;X
+50056;Minister of Armament;Godo Takuo;1937;1964;SC;Battle Fleet Proponent;Medium;M5073;X
+50057;Minister of Armament;Yoshida Shigeru;1941;1964;SC;Strategic Air Proponent;Medium;M5031;X
+50058;Minister of Armament;Shidehara Kijuro;1943;1964;SC;Tank Proponent;High;M5030;X
+50059;Minister of Armament;Hatoyama Ichiro;1944;1964;SC;Administrative Genius;High;M5032;X
+50060;Minister of Armament;Hoshijima Jiro;1945;1964;SC;Military Entrepreneur;Very High;M5071;X
+50061;Minister of Armament;Ogasawara Sankuro;1946;1964;SC;laissez-faire capitalist;Medium;M5079;X
+50062;Minister of Armament;Kawasaki Takukichi;1933;1964;PA;Air Superiority Proponent;Medium;M5080;X
+50063;Minister of Armament;Ikeda Shigeaki;1938;1964;PA;Resource Industrialist;High;M5081;X
+50064;Minister of Armament;Hatta Yoshiaki;1938;1964;PA;Military Entrepreneur;Medium;M5082;X
+50065;Minister of Armament;Kobayashi Seiichi;1940;1964;PA;laissez-faire capitalist;Medium;M5083;X
+50066;Minister of Armament;Fujiwara Ginjiro;1941;1964;PA;Administrative Genius;Medium;M5084;X
+50067;Minister of Armament;Kishi Nobusuke;1942;1964;PA;Theoretical Scientist;Medium;M5085;X
+50068;Minister of Armament;Toyoda Teijiro;1943;1964;PA;Air to Ground Proponent;Medium;M5061;X
+50069;Minister of Armament;Sakonji Seizo;1944;1964;PA;Submarine Proponent;Medium;M5087;X
+50070;Minister of Armament;Terauchi Hisaichi;1946;1964;PA;Tank Proponent;High;M5039;X
+50071;Minister of Armament;Yonai Mitsumasa;1947;1964;PA;Battle Fleet Proponent;High;M5036;X
+50072;Minister of Armament;Shoda Kazue;1933;1964;FA;Military Entrepreneur;High;M5090;X
+50073;Minister of Armament;Kobayashi Ichizo;1941;1964;FA;Resource Industrialist;High;M5083;X
+50074;Minister of Armament;Tojo Hideki;1942;1964;FA;Infantry Proponent;Medium;M5042;X
+50075;Minister of Armament;Nakajima Chikuhei;1945;1964;FA;Air to Sea Proponent;Medium;M5093;X
+50076;Minister of Armament;Kato Sotomatsu;1943;1964;FA;Tank Proponent;Medium;M5094;X
+50077;Minister of Armament;Tokuda Kyuichi;1933;1964;LWR;Resource Industrialist;Low;M5014;X
+50078;Minister of Security;Yamamoto Tatsuo;1933;1964;SD;Compassionate Gentleman;High;M5096;X
+50079;Minister of Security;Goto Fumio;1941;1964;SD;Silent Lawyer;High;M5005;X
+50080;Minister of Security;Kimura Kozaemon;1945;1964;SD;Man of the People;High;M5098;X
+50081;Minister of Security;Kawarada Kakichi;1933;1964;SC;Man of the People;High;M5099;X
+50082;Minister of Security;Obara Naoshi;1939;1964;SC;Back Stabber;Medium;M5100;X
+50083;Minister of Security;Omura Seiichi;1945;1964;SC;Silent Lawyer;Very High;M5101;X
+50084;Minister of Security;Horikiri Zenjiro;1945;1964;SC;Crime Fighter;Medium;M5102;X
+50085;Minister of Security;Yamazaki Iwao;1945;1964;SC;Man of the People;Medium;M5103;X
+50086;Minister of Security;Ushio Shigenosuke;1933;1964;PA;Crime Fighter;Very High;M5105;X
+50087;Minister of Security;Suetsugu Nobumasa;1937;1964;PA;Silent Lawyer;Medium;M5106;X
+50088;Minister of Security;Baba Eiichi;1937;1964;PA;Prince of Terror;Medium;M5107;X
+50089;Minister of Security;Kido Koichi;1938;1964;PA;Crime Fighter;Medium;M5108;X
+50090;Minister of Security;Yasui Eiji;1941;1964;PA;Crooked Kleptocrat;High;M5110;X
+50091;Minister of Security;Kobayashi Seizo;1942;1964;PA;Man of the People;High;M5111;X
+50092;Minister of Security;Tanabe Harumichi;1943;1964;PA;Man of the People;Medium;M5112;X
+50093;Minister of Security;Yusawa Michio;1944;1964;PA;Silent Lawyer;Medium;M5113;X
+50094;Minister of Security;Abe Genki;1946;1964;PA;Silent Lawyer;Medium;M5114;X
+50095;Minister of Security;Fujie Keisuke;1933;1964;FA;Prince of Terror;Medium;M5115;X
+50096;Minister of Security;Nakajima Kesago;1937;1964;FA;Man of the People;Medium;M5116;X
+50097;Minister of Security;Tanaka Seiichi;1938;1964;FA;Back Stabber;Medium;M5117;X
+50098;Minister of Security;Hirabayashi Morito;1939;1964;FA;Silent Lawyer;Medium;M5118;X
+50099;Minister of Security;Hiranuma Kiichiro;1940;1964;FA;Prince of Terror;Medium;M5041;X
+50100;Minister of Security;Teshima Fusataro;1940;1964;FA;Crime Fighter;Medium;M5120;X
+50101;Minister of Security;Kodama Hideo;1941;1964;FA;Silent Lawyer;Low;M5109;X
+50102;Minister of Security;Nakamura Aketo;1941;1964;FA;Crime Fighter;Medium;M5122;X
+50103;Minister of Security;Tojo Hideki;1942;1964;FA;Prince of Terror;Medium;M5042;X
+50104;Minister of Security;Kato Hakujiro;1943;1964;FA;Man of the People;Medium;M5124;X
+50105;Minister of Security;Odachi Shigeo;1944;1964;FA;Man of the People;Medium;M5125;X
+50106;Minister of Security;Iimura Jo;1945;1964;FA;Crime Fighter;Medium;M5126;X
+50107;Minister of Security;Nosaka Sanzo;1933;1964;LE;Man of the People;Very High;M5015;X
+50108;Head of Military Intelligence;Nosako Sanzo;1937;1964;SD;Industrial Specialist;Low;M5011;X
+50109;Head of Military Intelligence;Katayama Tetsu;1945;1964;SD;Naval Intelligence Specialist;Medium;M5027;X
+50110;Head of Military Intelligence;Ugaki Kazushige;1933;1964;SC;Political Specialist;Medium;M5028;X
+50111;Head of Military Intelligence;Machida Chuji;1933;1964;SC;Technical Specialist;High;M5004;X
+50112;Head of Military Intelligence;Ogawa Gotaro;1933;1964;SC;Dismal Enigma;Medium;M5072;X
+50113;Head of Military Intelligence;Horikiri Zenjiro;1942;1964;SC;Logistics Specialist;Medium;M5102;X
+50114;Head of Military Intelligence;Takasu Shiro;1933;1964;PA;Industrial Specialist;Medium;M5134;X
+50115;Head of Military Intelligence;Nomura Naokuni;1937;1964;PA;Naval Intelligence Specialist;Medium;M5135;X
+50116;Head of Military Intelligence;Kano Jigoro;1938;1964;PA;Dismal Enigma;Medium;M5136;X
+50117;Head of Military Intelligence;Oka Takazumi;1938;1964;PA;Logistics Specialist;Medium;M5137;X
+50118;Head of Military Intelligence;Maeda Minoru;1940;1964;PA;Technical Specialist;Medium;M5138;X
+50119;Head of Military Intelligence;Suzuki Kantaro;1945;1964;PA;Political Specialist;Medium;M5037;X
+50120;Head of Military Intelligence;Honma Masaharu;1937;1964;FA;Dismal Enigma;Medium;M5141;X
+50121;Head of Military Intelligence;Higuchi Kiichiro;1938;1964;FA;Logistics Specialist;Medium;M5142;X
+50122;Head of Military Intelligence;Araki Sadao;1939;1964;FA;Naval Intelligence Specialist;Medium;M5143;X
+50123;Head of Military Intelligence;Tsuchihashi Yuitsu;1940;1964;FA;Technical Specialist;Medium;M5144;X
+50124;Head of Military Intelligence;Koiso Kuniaki;1943;1964;FA;Industrial Specialist;Medium;M5043;X
+50125;Head of Military Intelligence;Miyamoto Kenji;1933;1964;LE;Industrial Specialist;Medium;M5012;X
+50126;Chief of Staff;Tasuku Nakazawa;1937;1964;SD;School of Psychology;Very Low;M5147;X
+50127;Chief of Staff;Osamura Kajika;1947;1964;SD;School of Fire Support;Very Low;M5148;X
+50128;Chief of Staff;Hirotsugu Hayashida;1933;1964;SC;School of Fire Support;Very Low;M5149;X
+50129;Chief of Staff;Kanichiro Tashiro;1933;1964;SC;School of Psychology;Very Low;M5150;X
+50130;Chief of Staff;Kazuo Tanigawa;1945;1964;SC;School of Mass Combat;Very Low;M5151;X
+50131;Chief of Staff;Abe Nobuyuki;1941;1964;PA;School of Fire Support;Medium;M5035;X
+50132;Chief of Staff;Mikawa Gunichi;1945;1964;PA;School of Psychology;Medium;M5154;X
+50133;Chief of Staff;Sugiyama Hajime;1933;1964;FA;School of Defence;Medium;M5155;X
+50134;Chief of Staff;Tojo Hideki;1941;1964;FA;School of Psychology;Medium;M5042;X
+50135;Chief of Staff;Umezu Yoshijiro;1944;1964;FA;School of Fire Support;Medium;M5157;X
+50136;Chief of Staff;Ryonosuke Kusaka;1933;1964;LWR;School of Defence;Medium;M5017;X
+50137;Chief of Army;Imai Takeo;1937;1964;SD;Elastic Defence Doctrine;Medium;M5018;X
+50138;Chief of Army;Inanba Satoru;1933;1964;SC;Guns and Butter Doctrine;Medium;M5160;X
+50139;Chief of Army;Tsuchihashi Yuitsu;1945;1964;SC;Decisive Battle Doctrine;Medium;M5144;X
+50140;Chief of Army;Fujioka Takeo;1941;1964;PA;Elastic Defence Doctrine;Very Low;M5163;X
+50141;Chief of Army;Aotsu Kikutara;1945;1964;PA;Guns and Butter Doctrine;Very Low;M5164;X
+50142;Chief of Army;Sugiyama Hajime;1933;1964;FA;Decisive Battle Doctrine;Medium;M5155;X
+50143;Chief of Army;Tojo Hideki;1941;1964;FA;Elastic Defence Doctrine;Medium;M5042;X
+50144;Chief of Army;Umezu Yoshijiro;1944;1964;FA;Guns and Butter Doctrine;Medium;M5157;X
+50145;Chief of Navy;Kawai Akira;1937;1964;SD;Open Seas Doctrine;Medium;M5019;X
+50146;Chief of Navy;Shimada Shigetaro;1933;1964;SC;Open Seas Doctrine;Medium;M5170;X
+50147;Chief of Navy;Toyoda Soemu;1944;1964;FA;Decisive Naval Battle Doctrine;Medium;M5171;X
+50148;Chief of Navy;Fujita Hisanori;1933;1964;PA;Decisive Naval Battle Doctrine;Medium;M5172;X
+50149;Chief of Navy;Nagano Osami;1941;1964;PA;Power Projection Doctrine;Medium;M5173;X
+50150;Chief of Navy;Oikawa Koshiro;1944;1964;PA;Base Control Doctrine;Medium;M5175;X
+50151;Chief of Air Force;Fukui Yoshi;1933;1964;SD;Air Superiority Doctrine;Medium;M5020;X
+50152;Chief of Air Force;Inoue Shigeyoshi;1933;1964;SC;Naval Aviation Doctrine;Medium;M5180;X
+50153;Chief of Air Force;Tsukahara Nishizou;1941;1964;SC;Air Superiority Doctrine;Medium;M5181;X
+50154;Chief of Air Force;Oikawa Koshiro;1933;1964;PA;Naval Aviation Doctrine;Medium;M5175;X
+50155;Chief of Air Force;Higashikuni Naruhiko;1937;1964;PA;Carpet Bombing Doctrine;Medium;M5038;X
+50156;Chief of Air Force;Toyoda Teijiro;1938;1964;PA;Vertical Envelopment Doctrine;Medium;M5061;X
+50157;Chief of Air Force;Wada Misao;1945;1964;PA;Vertical Envelopment Doctrine;Medium;M5182;X
+50158;Chief of Air Force;Hata Shunroku;1933;1964;FA;Army Aviation Doctrine;Medium;M5189;X
+50159;Chief of Air Force;Tojo Hideki;1938;1964;FA;Army Aviation Doctrine;Medium;M5042;X
+50160;Chief of Air Force;Yamashita Tomoyuki;1940;1964;FA;Carpet Bombing Doctrine;Medium;M5192;X
+50161;Chief of Air Force;Doihara Kenji;1941;1964;FA;Naval Aviation Doctrine;Medium;M5193;X
+50162;Chief of Air Force;Anami Korechika;1942;1964;FA;Vertical Envelopment Doctrine;Medium;M5194;X
+50163;Chief of Air Force;Ushiroku Jun;1943;1964;FA;Army Aviation Doctrine;Medium;M5195;X
+50164;Chief of Air Force;Sugawara Michio;1944;1964;FA;Air Superiority Doctrine;Medium;M5196;X
+50165;Chief of Air Force;Kawabe Masakazu;1945;1964;PA;Army Aviation Doctrine;Medium;M5197;X
+50166;Foreign Minister;Tojo Hideki;1942;1964;FA;General Staffer;Medium;M5042;X
+50167;Chief of Navy;Yamamoto Isoroku;1938;1964;FA;Power Projection Doctrine;Very High;M5010;X
+50168;Chief of Navy;Koga Mineichi;1943;1964;FA;Decisive Naval Battle Doctrine;Very High;L101243;X
+50169;Chief of Navy;Ozawa Jisaburo;1937;1964;PA;Open Seas Doctrine;High;L101273;X
+50170;Head of Government;Konoe Fumimaro;1940;1964;PA;Flamboyant Tough Guy;High;M5034;X
+50171;Foreign Minister;Suzuki Kantaro;1945;1964;PA;Biased Intellectual;High;M5037;X
+50172;Head of State;Hirohito;1933;1964;SD;Benevolent Gentleman;High;M5001;X
+50173;Head of State;Hirohito;1933;1964;ML;Benevolent Gentleman;High;M5001;X
+50174;Head of Government;Ashida Hitoshi;1948;1964;SL;Smiling Oilman;High;M5046;X
+50175;Minister of Security;Ishibashi Tanzan;1948;1964;SC;Silent Lawyer;Medium;M5210;X
+50176;Head of Government;Ishibashi Tanzan;1956;1964;SC;Silent Workhorse;High;M5210;X
+50177;Head of Government;Kishi Nobusuke;1957;1964;SC;Backroom Backstabber;High;M5085;X
+50178;Head of Government;Ikeda Hayato;1960;1964;SC;Corporate Suit;High;M5213;X
+50179;Head of Government;Suehiro Nishio;1960;1964;SD;Flamboyant Tough Guy;High;M5214;X
+50180;Foreign Minister;Kanichiro Kubota;1954;1964;SD;Iron Fisted Brute;Medium;M5215;X
+50181;Foreign Minister;Kishi Nobusuke;1956;1964;SC;Ideological Crusader;Medium;M5085;X
+50182;Foreign Minister;Fujiyama Aiichiro;1957;1964;SC;Apologetic Clerk;Medium;M5217;X
+50183;Foreign Minister;Kosaka Zentaro;1960;1964;SC;Biased Intellectual;Medium;M5218;X
+50184;Foreign Minister;Ohira Masayoshi;1962;1964;SC;The Cloak N Dagger Schemer;Medium;M5219;X
+50185;Minister of Armament;Ikeda Hayato;1950;1964;SC;Infantry Proponent;High;M5213;X
+50186;Minister of Armament;Mukai Tadaharu;1952;1964;SC;Strategic Air Proponent;High;M5221;X
+50187;Minister of Armament;Ichimada Hisato;1954;1964;SC;Submarine Proponent;High;M5222;X
+50188;Minister of Armament;Sato Eisaku;1958;1964;SC;Administrative Genius;High;M5223;X
+50189;Minister of Armament;Mizuta Mikio;1960;1964;SC;Resource Industrialist;High;M5224;X
+50190;Minister of Armament;Tanaka Kakuei;1962;1964;SC;Corrupt Kleptocrat;High;M5225;X
+50191;Minister of Armament;Suehiro Nishio;1957;1964;SD;Military Entrepreneur;Medium;M5214;X
+50192;Minister of Armament;Usami Makoto;1960;1964;SD;Theoretical Scientist;Medium;M5227;X
+50193;Minister of Security;Ohashi Takeo;1950;1964;SC;Crooked Kleptocrat;Medium;M5228;X
+50194;Minister of Security;Kimura Tokutaro;1951;1964;SC;Efficient Sociopath;Medium;M5229;X
+50195;Minister of Security;Inukai Takeru;1952;1964;SC;Back Stabber;Medium;M5230;X
+50196;Minister of Security;Nakamura Umekichi;1954;1964;SC;Compassionate Gentleman;Medium;M5231;X
+50197;Minister of Security;Ueki Koshiro;1957;1964;SC;Silent Lawyer;Medium;M5232;X
+50198;Minister of Security;Hanamura Shiro;1957;1964;SD;Prince of Terror;Medium;M5233;X
+50199;Minister of Security;Morinaga Teiichiro;1960;1964;SD;Crime Fighter;Medium;M5234;X
+50200;Head of Military Intelligence;Koto Ryogoro;1954;1964;SC;Political Specialist;Medium;M5235;X
+50201;Head of Military Intelligence;Ohara Naoshi;1957;1964;SC;Technical Specialist;Medium;M5236;X
+50202;Head of Military Intelligence;Hanamura Shiro;1957;1964;SD;Dismal Enigma;Medium;M5233;X
+50203;Chief of Air Force;Hino Kumazo;1914;1936;SD;Army Aviation Doctrine;Medium;2735;X
+50204;Chief of Air Force;Inoue Ikutaro;1914;1936;ML;Air Superiority Doctrine;Medium;2736;X
+50205;Chief of Air Force;Shirakawa Yoshinori;1916;1936;ML;vertical envelopment doctrine;Medium;2737;X
+50206;Chief of Air Force;Tokugawa Yoshitoshi;1914;1936;ML;Army Aviation Doctrine;Very High;2738;X
+50207;Chief of Air Force;Inoue Jinro;1914;1936;PA;Air Superiority Doctrine;Medium;unknown;X
+50208;Chief of Air Force;Yamamoto Eisuke;1918;1936;ML;Naval Aviation Doctrine;Medium;2739;X
+50209;Chief of Army;Hasegawa Yoshimichi;1914;1936;SC;Decisive Battle Doctrine;Medium;2740;X
+50210;Chief of Army;Kawai Misao;1923;1936;SC;Guns and Butter Doctrine;Medium;2741;X
+50211;Chief of Army;Kigoshi Yasutsuna;1914;1936;SL;elastic defence doctrine;Medium;2742;X
+50212;Chief of Army;Kusunose Yukihiko;1914;1936;ML;elastic defence doctrine;Very High;2743;X
+50213;Chief of Army;Oka Ichinosuke;1914;1936;ML;static defence doctrine;Medium;2744;X
+50214;Chief of Army;Oku Yasukata;1914;1936;PA;static defence doctrine;Medium;2745;X
+50215;Chief of Army;Oshima Kenichi;1914;1936;PA;Decisive Battle Doctrine;Medium;2746;X
+50216;Chief of Army;Kaninnomiya Kotohito;1914;1936;NS;Decisive Battle Doctrine;Medium;2747;X
+50217;Chief of Army;Shirakawa Yoshinori;1917;1936;SD;static defence doctrine;Medium;2737;X
+50218;Chief of Army;Takashima Tomonosuke;1914;1936;PA;Decisive Battle Doctrine;Medium;2748;X
+50219;Chief of Army;Tanaka Giichi;1914;1936;ML;Guns and Butter Doctrine;Medium;2749;X
+50220;Chief of Army;Terauchi Masatake;1914;1936;PA;static defence doctrine;Medium;2750;X
+50221;Chief of Army;Uehara Yosaku;1914;1936;FA;Guns and Butter Doctrine;Medium;2751;X
+50222;Chief of Army;Ugaki Kazushige;1917;1936;FA;Armoured Spearhead Doctrine;Medium;2752;X
+50223;Chief of Navy;Ijuin Goro;1914;1936;SD;Base Control Doctrine;Medium;2753;X
+50224;Chief of Navy;Kato Hiroharu;1917;1936;FA;Decisive Naval Battle Doctrine;Medium;2754;X
+50225;Chief of Navy;Kato Tomosaburo;1914;1936;ML;Decisive Naval Battle Doctrine;Medium;2755;X
+50226;Chief of Navy;Murakami Kakuichi;1916;1936;SD;Base Control Doctrine;Medium;2756;X
+50227;Chief of Navy;Okada Keisuke;1916;1936;SD;Indirect Approach Doctrine;Medium;2757;X
+50228;Chief of Navy;Fushiminomiya Hiroyasu;1914;1936;NS;Base Control Doctrine;Medium;2758;X
+50229;Chief of Navy;Saito Makoto;1914;1936;ML;Decisive Naval Battle Doctrine;High;2759;X
+50230;Chief of Navy;Takarabe Takeshi;1914;1936;ML;Indirect Approach Doctrine;Medium;2760;X
+50231;Chief of Navy;Togo Heihachiro;1914;1936;FA;Decisive Naval Battle Doctrine;Medium;2761;X
+50232;Chief of Navy;Yamamoto Gonnohyoe;1914;1936;ML;Power Projection Doctrine;Medium;2762;X
+50233;Chief of Navy;Yashiro Rokuro;1914;1936;ML;Open Seas Doctrine;Medium;2763;X
+50234;Chief of Staff;Hasegawa Yoshimichi;1914;1936;SC;School of Fire Support;Medium;2740;X
+50235;Chief of Staff;Kawai Misao;1923;1936;SC;School of Fire Support;Medium;2741;X
+50236;Chief of Staff;Kigoshi Yasutsuna;1914;1936;SL;school of defence;Medium;2742;X
+50237;Chief of Staff;Kusunose Yukihiko;1914;1936;ML;School of Psychology;Very High;2743;X
+50238;Chief of Staff;Oka Ichinosuke;1914;1936;ML;School of Fire Support;Medium;2744;X
+50239;Chief of Staff;Oku Yasukata;1914;1936;PA;school of defence;Medium;2745;X
+50240;Chief of Staff;Oshima Kenichi;1914;1936;PA;School of Mass Combat;Medium;2746;X
+50241;Chief of Staff;Kaninnomiya Kotohito;1914;1936;NS;School of Mass Combat;Medium;2747;X
+50242;Chief of Staff;Shirakawa Yoshinori;1917;1936;SD;school of defence;Medium;2737;X
+50243;Chief of Staff;Takashima Tomonosuke;1914;1936;PA;School of Fire Support;Medium;2748;X
+50244;Chief of Staff;Tanaka Giichi;1914;1936;ML;School of Psychology;Medium;2749;X
+50245;Chief of Staff;Terauchi Masatake;1914;1936;PA;School of Fire Support;Medium;2750;X
+50246;Chief of Staff;Uehara Yosaku;1914;1936;FA;School of Fire Support;Medium;2751;X
+50247;Chief of Staff;Ugaki Kazushige;1917;1936;FA;School of Fire Support;Medium;2752;X
+50248;Foreign Minister;Arahata Kanson;1914;1936;ST;General Staffer;Medium;2764;X
+50249;Foreign Minister;Inukai Tsuyoshi;1914;1936;SD;General Staffer;Medium;2765;X
+50250;Foreign Minister;Ishii Kikujiro;1914;1936;ML;Great Compromiser;Medium;2766;X
+50251;Foreign Minister;Kato Takaaki;1914;1936;SL;Apologetic Clerk;Medium;2767;X
+50252;Foreign Minister;Kiyoura Keigo;1914;1936;FA;Biased Intellectual;Medium;2768;X
+50253;Foreign Minister;Makino Nobuaki;1914;1936;ML;Biased Intellectual;High;2769;X
+50254;Foreign Minister;Motono Ichiro;1914;1936;PA;the cloak n dagger schemer;Medium;2770;X
+50255;Foreign Minister;Okuma Shigenobu;1914;1936;ML;General Staffer;Medium;2771;X
+50256;Foreign Minister;Saionji Kinmochi;1914;1936;ML;Great Compromiser;Medium;2772;X
+50257;Foreign Minister;Sidehara Kijuro;1916;1936;SD;Great Compromiser;Medium;2773;X
+50258;Foreign Minister;Terauchi Masatake;1914;1936;PA;General Staffer;Medium;2750;X
+50259;Foreign Minister;Uchida Kosai;1914;1936;ML;General Staffer;Medium;2774;X
+50260;Head of Government;Hamaguchi Osachi;1918;1936;SD;Flamboyant Tough Guy;Medium;2775;X
+50261;Head of Government;Hara Takashi;1914;1936;ML;Flamboyant Tough Guy;Medium;2776;X
+50262;Head of Government;Inukai Tsuyoshi;1914;1936;SD;Ambitious Union Boss;Medium;2765;X
+50263;Head of Government;Kato Takaaki;1914;1936;ML;Flamboyant Tough Guy;Medium;2767;X
+50264;Head of Government;Kato Tomosaburo;1914;1936;ML;Silent Workhorse;Medium;2755;X
+50265;Head of Government;Kiyoura Keigo;1914;1936;PA;Ambitious Union Boss;Medium;2768;X
+50266;Head of Government;Okuma Shigenobu;1914;1936;ML;Flamboyant Tough Guy;Medium;2771;X
+50267;Head of Government;Saionji Kinmochi;1914;1936;SC;Happy Amateur;Medium;2772;X
+50268;Head of Government;Sakai Toshihiko;1914;1936;ST;Ambitious Union Boss;Medium;2777;X
+50269;Head of Government;Takahashi Korekiyo;1914;1936;ML;Smiling Oilman;Medium;2778;X
+50270;Head of Government;Terauchi Masatake;1914;1936;PA;Naive Optimist;Medium;2750;X
+50271;Head of Government;Ugaki Kazushige;1914;1936;FA;Old General;Medium;2752;X
+50272;Head of Government;Yamagata Aritomo;1914;1936;NS;Old General;Medium;2779;X
+50273;Head of Government;Yamakawa Hitoshi;1914;1936;ST;Silent Workhorse;Medium;2780;X
+50274;Head of Government;Yamamoto Gonnohyoe;1914;1936;ML;Old Admiral;High;2762;X
+50275;Head of Military Intelligence;Akashi Motojiro;1914;1936;PA;Dismal Enigma;Medium;2781;X
+50276;Head of Military Intelligence;Akiyama Saneyuki;1914;1936;ML;Naval Intelligence Specialist;Medium;2782;X
+50277;Head of Military Intelligence;Yasumasa Fukushima;1914;1936;PA;Logistics Specialist;High;2783;X
+50278;Head of Military Intelligence;Goto Shinpei;1914;1936;ML;Industrial Specialist;Medium;2784;X
+50279;Head of Military Intelligence;Tanaka Giichi;1914;1936;ML;Logistics Specialist;Very High;2749;X
+50280;Head of Military Intelligence;Ugaki Kazushige;1914;1936;PA;Dismal Enigma;Medium;2752;X
+50281;Head of Military Intelligence;Yamagata Aritomo;1914;1936;FA;Political Specialist;Medium;2779;X
+50282;Head of Military Intelligence;Yamamoto Gonnohyoe;1914;1936;ML;Naval Intelligence Specialist;Medium;2762;X
+50283;Head of State;Hirohito;1918;1936;ML;Autocratic Charmer;Medium;2785;X
+50284;Head of State;Hirohito;1918;1936;PA;Autocratic Charmer;Medium;2785;X
+50285;Head of State;Hirohito;1918;1936;NS;Autocratic Charmer;Medium;2785;X
+50286;Head of State;Yoshihito;1914;1936;ML;Insignificant Layman;High;2786;X
+50287;Head of State;Yoshihito;1914;1936;PA;Insignificant Layman;Medium;2786;X
+50288;Head of State;Yoshihito;1914;1936;NS;Insignificant Layman;Medium;2786;X
+50289;Minister of Armament;Goto Shinpei;1914;1936;FA;Resource Industrialist;Medium;2784;X
+50290;Minister of Armament;Hamaguchi Osachi;1914;1936;SL;Administrative Genius;Medium;2775;X
+50291;Minister of Armament;Ichiki Otohiko;1914;1936;FA;Military Entrepreneur;Medium;2787;X
+50292;Minister of Armament;Inoue Junnosuke;1914;1936;SD;Resource Industrialist;Medium;2788;X
+50293;Minister of Armament;Kawakami Hajime;1914;1936;ST;Resource Industrialist;Medium;2789;X
+50294;Minister of Armament;Ozaki Yukio;1914;1936;SD;Laissez-Faire Capitalist;Medium;2790;X
+50295;Minister of Armament;Saionji Kinmochi;1914;1936;ML;Laissez-Faire Capitalist;Medium;2772;X
+50296;Minister of Armament;Sakai Toshihiko;1914;1936;ST;Military Entrepreneur;Medium;2777;X
+50297;Minister of Armament;Sakatani Yoshio;1914;1936;ML;Infantry Proponent;Medium;2791;X
+50298;Minister of Armament;Shota Kazue;1914;1936;ML;Resource Industrialist;Medium;2792;X
+50299;Minister of Armament;Shibusawa Eiichi;1914;1936;ML;Administrative Genius;Medium;2793;X
+50300;Minister of Armament;Takahashi Korekiyo;1914;1936;ML;Administrative Genius;High;2778;X
+50301;Minister of Armament;Taketomi Tokitoshi;1914;1936;ML;Laissez-Faire Capitalist;Medium;2794;X
+50302;Minister of Armament;Wakatsuki Reijiro;1914;1936;ML;Corrupt Kleptocrat;Medium;2795;X
+50303;Minister of Armament;Yamakawa Hitoshi;1914;1936;ST;Infantry Proponent;Medium;2780;X
+50304;Minister of Armament;Yamamoto Tatsuo;1914;1936;PA;Laissez-Faire Capitalist;Medium;2796;X
+50305;Minister of Security;Goto Shinpei;1914;1936;PA;Prince of Terror;Medium;2784;X
+50306;Minister of Security;Hara Takashi;1914;1936;SD;Compassionate Gentleman;High;2776;X
+50307;Minister of Security;Hirata Tosuke;1914;1936;ML;Crime Fighter;Medium;2797;X
+50308;Minister of Security;Ikki Kitokuro;1914;1936;ML;Silent Lawyer;Medium;2798;X
+50309;Minister of Security;Kiyoura Keigo;1914;1936;FA;Compassionate Gentleman;Medium;2768;X
+50310;Minister of Security;Mizuno Rentaro;1914;1936;FA;Crooked Kleptocrat;Medium;2799;X
+50311;Minister of Security;Osugi Sakae;1914;1936;ST;Crime Fighter;Medium;2800;X
+50312;Minister of Security;Oura Kanetake;1914;1936;FA;Silent Lawyer;Medium;3872;X
+50313;Minister of Security;Ozaki Yukio;1914;1936;SD;Man of the People;Medium;2790;X
+50314;Minister of Security;Tokonami Takejiro;1914;1936;SC;Efficient Sociopath;Medium;2801;X
+50315;Minister of Security;Yamakawa Hitoshi;1914;1936;ST;Compassionate Gentleman;Medium;2780;X
+50316;Minister of Armament;Genda Minoru;1959;1964;ML;Military Entrepreneur;Very high;6083;x
+50317;Chief of Navy;Genda Minoru;1939;1964;PA;Open Seas Doctrine;Very high;6083;x
+50318;Chief of Navy;Genda Minoru;1939;1964;SC;Open Seas Doctrine;Very high;6083;x
+50319;Minister of Security;Okuma Shigenobu;1914;1936;PA;Crime Fighter;Very High;2771;X
+50320;Chief of Staff;Yamagata Aritomo;1914;1936;SC;School of Fire Support;Very high;2779;X
+50321;Chief of Navy;Yamagata Aritomo;1914;1936;SC;Open Seas Doctrine;Very high;2779;x
+50322;Chief of Air Force;Yamagata Aritomo;1914;1936;SC;Army Aviation Doctrine;Very high;2779;X
+50323;Head of Government;Saito Makoto;1933;1934;ML;Old Admiral;High;2759;X

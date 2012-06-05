@@ -1,0 +1,144 @@
+########################################
+
+# 0 - ASW Suite 1918
+model = {
+	cost 						= 0.5
+	buildtime					= 100
+	manpower 					= 0.0
+	surfacedetectioncapability	= 0
+	airdetectioncapability		= 0
+	subdetectioncapability		= 0.004
+	airdefence					= 0
+	seaattack					= 0
+	convoyattack				= 0
+	subattack					= 1
+	airattack					= 0
+	shorebombardment			= 0
+	distance					= 0
+	supplyconsumption 			= 0.0
+	fuelconsumption				= 0
+	upgrade_time_factor 		= 1.0
+	upgrade_cost_factor 		= 1.0
+}
+# 1 - ASW Suite 1934
+model = {
+	cost 						= 1.0
+	buildtime					= 100
+	manpower 					= 0.0
+	surfacedetectioncapability	= 0
+	airdetectioncapability		= 0
+	subdetectioncapability		= 0.004
+	airdefence					= 0
+	seaattack					= 0
+	convoyattack				= 0
+	subattack					= 2
+	airattack					= 0
+	shorebombardment			= 0
+	distance					= 0
+	supplyconsumption 			= 0.0
+	fuelconsumption				= 0
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 1.0
+}
+# 2 - ASW Suite 1942
+model = {
+	cost 						= 1.5
+	buildtime					= 100
+	manpower 					= 0.0
+	surfacedetectioncapability	= 0
+	airdetectioncapability		= 0
+	subdetectioncapability		= 0.004
+	airdefence					= 0
+	seaattack					= 0
+	convoyattack				= 0
+	subattack					= 3
+	airattack					= 0
+	shorebombardment			= 0
+	distance					= 0
+	supplyconsumption 			= 0.0
+	fuelconsumption				= 0
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 1.0
+}
+# 3 - ASW Suite 1945
+model = {
+	cost 						= 1.5
+	buildtime					= 100
+	manpower 					= 0.0
+	surfacedetectioncapability	= 0
+	airdetectioncapability		= 0
+	subdetectioncapability		= 0.004
+	airdefence					= 0
+	seaattack					= 0
+	convoyattack				= 0
+	subattack					= 4
+	airattack					= 0
+	shorebombardment			= 0
+	distance					= 0
+	supplyconsumption 			= 0.0
+	fuelconsumption				= 0
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 1.0
+}
+# 4 - ASW Suite 1952
+model = {
+	cost 						= 2.0
+	buildtime					= 100
+	manpower 					= 0.0
+	surfacedetectioncapability	= 0
+	airdetectioncapability		= 0
+	subdetectioncapability		= 0.004
+	airdefence					= 0
+	seaattack					= 0
+	convoyattack				= 0
+	subattack					= 5
+	airattack					= 0
+	shorebombardment			= 0
+	distance					= 0
+	supplyconsumption 			= 0.0
+	fuelconsumption				= 0
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 1.0
+}
+# 5 - ASW Suite 1960
+model = {
+	cost 						= 2.0
+	buildtime					= 100
+	manpower 					= 0.0
+	surfacedetectioncapability	= 0
+	airdetectioncapability		= 0
+	subdetectioncapability		= 0.004
+	airdefence					= 0
+	seaattack					= 0
+	convoyattack				= 0
+	subattack					= 6
+	airattack					= 0
+	shorebombardment			= 0
+	distance					= 0
+	supplyconsumption 			= 0.0
+	fuelconsumption				= 0
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 1.0
+}
+# 6 - ASW Suite 1962 guided rockets
+model = {
+	cost 						= 2.0
+	buildtime					= 100
+	manpower 					= 0.0
+	surfacedetectioncapability	= 0
+	airdetectioncapability		= 0
+	subdetectioncapability		= 0.004
+	airdefence					= 0
+	seaattack					= 0
+	convoyattack				= 0
+	subattack					= 15
+	airattack					= 0
+	shorebombardment			= 0
+	distance					= 0
+	supplyconsumption 			= 0.0
+	fuelconsumption				= 0
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 1.0
+}
+########################################
+

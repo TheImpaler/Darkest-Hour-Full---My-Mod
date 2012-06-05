@@ -1,0 +1,429 @@
+
+########################################################## Austria Hungary AI 1914 Jaegerfeld 2010
+###############################################
+## Austria-Hungary is at war with Entente & Serbia
+## Austria-Hungary is allied with germany, italy is neutral
+## Germany has 5 great Warplans and chooses one of them to battle the entente
+## Plan 1  		Conrad 	3 Armies against russia, 2 armies vs serbia 1 reserve focus on both
+## Plan 2		Kaiser  4 Armies against russia, 2 vs serbia focus on russia
+## Plan 3		Koenig  3 Armies against russia, 3 cs serbia focus on serbia
+## Plan 4		Prinz  	defend the homeland
+################################################
+
+
+event = {
+	id = 3192501
+	random = no
+	country = U09
+	persistent = yes		
+	
+	trigger = {
+		ai = yes
+		
+		NOT = { flag = U09_1914StartupDone }
+		war = { country = SER country = U09 }
+		war = { country = RUS country = U09 }
+		NOT = { war = { country = U09 country = U08 } }	
+		NOT = { war = { country = U09 country = ITA } }			
+		NOT = { alliance = { country = U09  country = ITA } } 
+		
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 1
+	deathdate = { day = 30 month = december year = 1925 }
+
+	action_a = 
+		{
+			name = "AI_EVENT"
+			ai_chance = 60
+			
+			command = { type = setflag which = U09_1914StartupDone }
+			command = { type = ai which = "switch/U09_1914Conrad_setup.ai" }
+			command = { type = setflag which = U09_1914Conrad }
+
+		}
+	action_b = 
+		{
+			name = "AI_EVENT"
+			ai_chance = 15
+			
+			command = { type = setflag which = U09_1914Koenig }
+			command = { type = ai which = "switch/U09_1914Koenig_setup.ai" }	
+			command = { type = setflag which = U09_1914StartupDone }			
+		}
+	action_c = 
+		{
+			name = "AI_EVENT"
+			ai_chance = 15
+			
+			command = { type = setflag which = U09_1914Prinz }
+			command = { type = ai which = "switch/U09_1914Prinz_setup.ai" }			
+			command = { type = setflag which = U09_1914StartupDone }
+		}
+			
+	action_d = {
+			name = "AI_EVENT"
+			ai_chance = 10
+			
+			command = { type = setflag which = U09_1914Kaiser }
+			command = { type = ai which = "switch/U09_1914Kaiser_setup.ai" }	
+			command = { type = setflag which = U09_1914StartupDone }			
+			}
+}
+#######################################################
+#### RUS has refused to support SER in the SER - AH war
+#### A-H conquers Serbia & Montenegro
+event = {
+	id = 3192502
+	random = no
+	country = U09
+	persistent = yes	
+	
+	trigger = {
+		ai = yes
+		
+		NOT = { flag = U09_1914StartupDone }
+		war = { country = SER country = U09 }
+		NOT	= { war = { country = RUS country = U09 }}
+		NOT = { war = { country = U09 country = U08 } }	
+		NOT = { war = { country = U09 country = ITA } }			
+		#NOT = { alliance = { country = U09  country = ITA } } 
+		
+	}
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 1
+	deathdate = { day = 30 month = december year = 1925 }
+
+
+	action_a = 
+		{
+			name = "AI_EVENT"
+			ai_chance = 100
+			command = { type = ai which = "switch/U09_1914BalkanOnly_setup.ai" }
+			command = { type = setflag which = U09_1914BalkanOnly }
+		}
+}
+
+###########################################
+# WAR against Bulgaria or Romania
+#
+#
+event = {
+	id = 3192503
+	random = no
+	country = U09
+	persistent = yes	
+	
+	trigger = {
+		ai = yes
+		NOT = { flag = U09_1914BulRomWar }
+		flag = U09_1914StartupDone 
+		OR = { 
+				war = { country = BUL country = U09 }
+				war = { country = ROM country = U09 }
+		}
+	}
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 1
+	deathdate = { day = 30 month = december year = 1925 }
+
+
+	action_a = 
+		{
+			name = "AI_EVENT"
+			ai_chance = 100
+			command = { type = ai which = "switch/U09_1914BulRomWar.ai" }
+			command = { type = setflag which = U09_1914BulRomWar }
+		}
+}
+###########################################
+# WAR against Greece
+#
+#
+event = {
+	id = 3192504
+	random = no
+	country = U09
+	persistent = yes	
+	
+	trigger = {
+		ai = yes
+		NOT = { flag = U09_1914GREWar }
+		flag = U09_1914StartupDone 
+		OR = { 
+				war = { country = GRE country = U09 }
+				
+		}
+	}
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 1
+	deathdate = { day = 30 month = december year = 1925 }
+
+
+	action_a = 
+		{
+			name = "AI_EVENT"
+			ai_chance = 100
+			command = { type = ai which = "switch/U09_1914GRE.ai" }
+			command = { type = setflag which = U09_1914GREWar }
+		}
+}
+
+###########################################
+# WAR against Italy
+#
+#
+event = {
+	id = 3192505
+	random = no
+	country = U09
+	persistent = yes	
+	
+	trigger = {
+		ai = yes
+		NOT = { flag = U09_1914ITAWar }
+		flag = U09_1914StartupDone 
+		OR = { 
+				war = { country = ITA country = U09 }
+				
+		}
+	}
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 1
+	deathdate = { day = 30 month = december year = 1925 }
+
+
+	action_a = 
+		{
+			name = "AI_EVENT"
+			ai_chance = 100
+			command = { type = ai which = "switch/U09_1914ITA.ai" }
+			command = { type = setflag which = U09_1914ITAWar }
+		}
+}
+###
+# we(or germany) have taken zitomir or pinsk
+# now move on deeper into russia
+event = {
+	id = 3192506
+	random = no 
+	country = U09
+	persistent = yes
+	trigger = {
+					ai = yes					
+					NOT = { flag = U09_1914phaseTwo }
+					NOT = {
+							OR ={
+								control = { province = 611 data = RUS } #zitomir
+								control = { province = 248 data = RUS}	#pinsk
+								}
+					}
+				}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 30 month = 5 year = 1914 }
+	offset = 1 # Check for trigger conditions day
+	deathdate = { day = 29 month = december year = 1925 }
+
+	action_a = { #
+		name = "AI_EVENT"	
+		command = { type = setflag which = U09_1914phaseTwo }
+		command = { type = ai which = "switch/U09_1914phaseTwo.ai" }
+		
+	}
+}
+
+###
+# we(or germany) have taken kursk or kharkov
+# now attack rostov and moskva
+event = {
+	id = 3192507
+	random = no 
+	country = U09
+	persistent = yes
+	trigger = {
+					ai = yes					
+					NOT = { flag = U09_1914phaseThree }
+					NOT = {
+							OR ={
+								control = { province = 604 data = RUS } #kursk
+								control = { province = 636 data = RUS}	#kharkov
+								}
+					}
+				}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 30 month = 5 year = 1914 }
+	offset = 1 # Check for trigger conditions day
+	deathdate = { day = 29 month = december year = 1925 }
+
+	action_a = { #
+		name = "AI_EVENT"	
+		command = { type = setflag which = U09_1914phaseThree }
+		command = { type = ai which = "switch/U09_1914phaseThree.ai" }
+		
+	}
+}
+
+event = {
+	id = 3192508
+	random = no
+	country = U09
+	persistent = yes		
+	
+	
+	
+	trigger = {
+		ai = yes
+		
+		#NOT = { flag = U09_1914StartupDone }
+		#war = { country = SER country = U09 }
+		war = { country = RUS country = U09 }
+		NOT = { war = { country = U09 country = U08 } }	
+		#NOT = { war = { country = U09 country = ITA } }			
+		#NOT = { alliance = { country = U09  country = ITA } } 
+		
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1915 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1925 }
+
+	action_a = 
+		{
+			name = "AI_EVENT"
+			ai_chance = 100
+			
+			
+			command = { type = ai which = "switch/U09_1914_ResetAI.ai" }
+			command = { type = clrflag which = U09_1914phaseTwo}
+			command = { type = clrflag which = U09_1914phaseThree}
+
+		}
+
+}
+###
+# The foe threatens Vienna, we have to defend it
+event = {
+	id = 3192509
+	random = no 
+	country = U09
+	persistent = yes
+	trigger = {
+					ai = yes					
+					NOT = { flag = U09_1914DefendVienna }
+					OR  = {
+								NOT = {control = { province = 191 data = U09 }  } #Klagenfurt
+								NOT = {control = { province = 192 data = U09}	}#Salzburg
+								NOT = {control = { province = 279 data = U09}	}#Gyo
+								NOT = {control = { province = 212 data = U09}	}#Zilina
+								NOT = {control = { province = 196 data = U09}	}#Brno
+						}
+					
+				}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 30 month = 5 year = 1914 }
+	offset = 1 # Check for trigger conditions day
+	deathdate = { day = 29 month = december year = 1925 }
+
+	action_a = { #
+		name = "AI_EVENT"	
+		command = { type = setflag which = U09_1914DefendVienna }
+		command = { type = ai which = "switch/U09_1914DefendVienna.ai" }
+		
+	}
+}
+
+###
+# The siege of Vienna has been lifted, turn back to war
+event = {
+	id = 3192510
+	random = no 
+	country = U09
+	persistent = yes
+	trigger = {
+					ai = yes					
+					flag = U09_1914DefendVienna 
+							AND ={
+								control = { province = 191 data = U09 } #Klagenfurt
+								control = { province = 192 data = U09}	#Salzburg
+								control = { province = 279 data = U09}	#Gyor
+								control = { province = 212 data = U09}	#Zilina
+								control = { province = 196 data = U09}	#Brno
+								}
+				}
+				
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 30 month = 5 year = 1914 }
+	offset = 30 # Check for trigger conditions day
+	deathdate = { day = 29 month = december year = 1925 }
+
+	action_a = { #
+		name = "AI_EVENT"	
+		command = { type = ai which = "switch/U09_1914_ResetAI.ai" }
+		command = { type = clrflag which = U09_1914DefendVienna}
+		command = { type = clrflag which = U09_1914phaseTwo}
+		command = { type = clrflag which = U09_1914phaseThree}
+		
+	}
+}
+
+
+###
+# 	Both Ger and Ah are controlled by the AI
+#	AH gives control to Germany
+event = {
+	id = 3192511
+	random = no 
+	country = U09
+	persistent = yes
+	trigger = {
+					ai = yes					
+					flag = GER1914_workaround 
+					NOT = { flag =	U09_1914ExpForcesToGER }
+				}
+				
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 30 month = 5 year = 1914 }
+	offset = 30 # Check for trigger conditions day
+	deathdate = { day = 29 month = december year = 1925 }
+
+	action_a = { #
+		name = "AI_EVENT"	
+		command = { type = ai which = "switch/U09_1914ExpForcesToGER.ai" }
+		command = { type = setflag which = U09_1914ExpForcesToGER }
+		
+	}
+}

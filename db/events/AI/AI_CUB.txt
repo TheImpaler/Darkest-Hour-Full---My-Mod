@@ -1,0 +1,172 @@
+####################################
+# Cuba AI events by Lothos
+####################################
+################
+# Minister of Security Section
+#############################################
+event = { # A. Odero y Garcia takes power
+	id = 3018001
+	random = no 
+	country = CUB
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 85057 # A. Odero y Garcia
+		NOT = { InCabinet = 85057 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ministerofsecurity which = 85057 }
+		command = { type = dissent value = -1 }
+	}
+}
+################
+# Chief of Staff Section
+#############################################
+event = { # Fulgencio Batista takes power
+	id = 3018002
+	random = no 
+	country = CUB
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 85075 # Fulgencio Batista
+		NOT = { InCabinet = 85075 }
+		OR = {
+			atwar = no
+			NOT = { manpower = 20 }
+			AND = {
+				atwar = yes
+				NOT = { minister = 85007 } # Julio Sanguily
+			}
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = chiefofstaff which = 85075 }
+		command = { type = dissent value = -1 }
+	}
+}
+event = { # Julio Sanguily takes power
+	id = 3018003
+	random = no 
+	country = CUB
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		atwar = yes
+		manpower = 20
+		minister = 85007 # Julio Sanguily
+		NOT = { InCabinet = 85007 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = chiefofstaff which = 85007 }
+		command = { type = dissent value = -1 }
+	}
+}
+################
+# Head of Intelligence Section
+#############################################
+event = { # Carlos Hevia takes power
+	id = 3018004
+	random = no 
+	country = CUB
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 85069 # Carlos Hevia
+		NOT = { InCabinet = 85069 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ministerofintelligence which = 85069 }
+		command = { type = dissent value = -1 }
+	}
+}
+################
+# Chief of the Army Section
+#############################################
+event = { # Fulgencio Batista takes power
+	id = 3018005
+	random = no 
+	country = CUB
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 85078 # Fulgencio Batista
+		NOT = { InCabinet = 85078 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = chiefofarmy which = 85078 }
+		command = { type = dissent value = -1 }
+	}
+}
+################
+# Armament Minister Section
+#############################################
+event = { # Carlos Prio takes power
+	id = 3018006
+	random = no 
+	country = CUB
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 85004 # Carlos Prio
+		NOT = { InCabinet = 85004 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = armamentminister which = 85004 }
+		command = { type = dissent value = -1 }
+	}
+}

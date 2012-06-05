@@ -1,0 +1,363 @@
+###
+###  Ottoman events (OTT - 145)
+###
+### By Rhysaxiel
+###
+### 
+###2145500	OTT	Secret alliance pact with Germany
+###2145501	OTT	Join Central Powers
+###2145502	OTT	The Fall of Constantinople
+###2145511	OTT	The Armistice of Moudros
+###2145512	OTT	The Escape of SMS Goeben and SMS Breslau
+###2145513	OTT	The Treaty of Sèvres
+#
+# Ottoman war entry
+
+event = {
+	id = 2145500	# Secret alliance pact with Germany
+	country = OTT
+
+	#triggered by U08 2191506
+   
+	name = "EVT1914_2145500_NAME"
+	desc = "EVT1914_2145500_DESC" 
+	style = 2
+
+	action_a = {
+		name = "ACTION_NAME_ACCEPT" # Accept
+		ai_chance = 100
+		command = { type = trigger which = 2191507 }
+		command = { type = relation which = U08 value = 50 }
+		command = { type = wakeleader which = 720117 } #Souchon	
+		
+	}
+	action_b = {
+		name = "ACTION_NAME_DECLINE" # Refuse
+		ai_chance = 0
+		command = { type = relation which = U08 value = -50 }
+	}
+}
+event = {
+	id = 2145501	# Join Central Powers
+	country = OTT
+
+	decision = { 
+		event = 2191507 # Secret alliance pact with Ottomans signed
+		NOT = {
+			event = 2145513 # The Treaty of Sèvres
+			event = 2002534 # The Versailles Treaty
+		}
+	}
+	decision_trigger = {
+		NOT = { alliance = { country = OTT country = U08 } }
+	}
+	trigger = {  
+		random = 25
+		event = 2191507 # Secret alliance pact with Ottomans signed
+		NOT = {
+			event = 2145513 # The Treaty of Sèvres
+			event = 2002534 # The Versailles Treaty
+			event = 2191532 # U08 The Fall of Berlin
+			event = 2191514 # U08 Military defeat
+			alliance = { country = OTT country = U08 }
+		}
+	}
+   
+	name = "EVT1914_2145501_NAME"
+	desc = "EVT1914_2145501_DESC" 
+	style = 2
+	picture = "Ottoman_declaration_war"
+	
+	date = { day = 1 month = october year = 1914 }
+	offset = 5
+	deathdate = { day = 30 month = december year = 1915 }
+	
+	action = {
+		name = "EVT1914_2145501_ACTIONA" # We are at war
+		command = { type = belligerence value = 10 }
+		command = { type = alliance which = U08 }
+	}
+}
+# Defeat
+event = {
+	id = 2145502	# The Fall of Constantinople
+	country = OTT
+
+	trigger = {  
+		NOT = { control = { province = 409 data = -1 } }  # Constantinople
+		random = 10
+	}
+	
+	name = "EVT1914_2145502_NAME"
+	desc = "EVT1914_2145502_DESC" 
+	style = 2
+	
+	date = { day = 1 month = october year = 1914 }
+	offset = 3
+	deathdate = { day = 30 month = december year = 1925 }
+	
+	action = {
+		name = "EVT1914_2145502_ACTIONA" # We are defeated
+		command = { type = leave_alliance }
+		command = { trigger = { war = { country = OTT country = RUS } } type = peace which = RUS value = 1 }
+		command = { trigger = { war = { country = OTT country = FRA } } type = peace which = FRA value = 1 }
+		command = { trigger = { war = { country = OTT country = SOV } } type = peace which = SOV value = 1 }
+		command = { type = dissent value = 20 }
+		# Future partitions
+		#PAL
+		command = { type = removecore which = 1009 }
+		command = { type = removecore which = 1010 }
+		command = { type = removecore which = 1011 }
+		command = { type = removecore which = 1172 }
+		command = { type = removecore which = 1013 }
+		#SYR
+		command = { type = removecore which = 1014 }
+		command = { type = removecore which = 1015 }
+		command = { type = removecore which = 1016 }
+		command = { type = removecore which = 1017 }
+		command = { type = removecore which = 1018 }
+		command = { type = removecore which = 1019 }
+		command = { type = removecore which = 1020 }
+		command = { type = removecore which = 1021 }
+		#JOR
+		command = { type = removecore which = 1022 }
+		command = { type = removecore which = 1023 }
+		command = { type = removecore which = 1024 }
+		command = { type = removecore which = 1025 }
+		command = { type = removecore which = 1026 }
+		#IRK
+		command = { type = removecore which = 1027 }
+		command = { type = removecore which = 1028 }
+		command = { type = removecore which = 1029 }
+		command = { type = removecore which = 1030 }
+		command = { type = removecore which = 1031 }
+		command = { type = removecore which = 1032 }
+		command = { type = removecore which = 1033 }
+		command = { type = removecore which = 1034 }
+		command = { type = removecore which = 1035 }
+		command = { type = removecore which = 1036 }
+		command = { type = removecore which = 1037 }
+		#Alexandretta
+		command = { type = removecore which = 1054 }
+		# demobilization
+		command = { type = remove_division which = -1 value = -1 }
+		command = { type = remove_division which = -1 value = -1 }
+		command = { type = remove_division which = -1 value = -1 }
+		command = { type = remove_division which = -1 value = -1 }
+		command = { type = remove_division which = -1 value = -1 }
+		command = { type = remove_division which = -1 value = -1 }
+		command = { type = remove_division which = -1 value = -1 }
+		command = { type = remove_division which = -1 value = -1 }
+		command = { type = remove_division which = -1 value = -1 }
+		command = { type = remove_division which = -1 value = -1 }
+		command = { type = remove_division which = -1 value = -1 }
+		command = { type = remove_division which = -1 value = -1 }
+		command = { type = remove_division which = -1 value = -1 }
+		command = { type = remove_division which = -1 value = -1 }		
+		
+		command = { type = trigger which = 2145513 } # The Treaty of Sèvres
+	}
+}
+# 2145503>2145510
+event = {
+	id = 2145511    # The Armistice of Moudros
+	country = OTT
+
+	trigger = { 
+		random = 20 
+		OR = { 
+			war = { country = OTT country = ENG } 
+			war = { country = OTT country = FRA } 
+			war = { country = OTT country = RUS } 
+		}
+		control = { province = 409 data = OTT }	# Must control Constantinople
+		NOT = { control = { province = 1172 data = OTT } } # Jerusalem
+		NOT = { control = { province = 1022 data = OTT } } # Amman
+		NOT = { control = { province = 900 data = OTT } } # Suez
+		NOT = { control = { province = 663 data = OTT } } # Tsaritsyn
+		OR = {	# Baghdad, Trabzon or Damascus
+			NOT = { control = { province = 1067 data = OTT } } #Trabzon
+			NOT = { control = { province = 1034 data = OTT } } #Baghdad
+			NOT = { control = { province = 1016 data = OTT } } #Damascus
+		}
+	}
+  
+	name = "EVT1914_2145511_NAME"
+	desc = "EVT1914_2145511_DESC"
+	style = 2
+	picture = "Peace_conference"
+	
+	date = { day = 1 month = june year = 1915 }
+	offset = 15
+	deathdate = { day = 30 month = december year = 1925 }
+	
+	action = {
+		name = "EVT1914_2145502_ACTIONA" # We are defeated
+		command = { type = leave_alliance }
+		command = { trigger = { war = { country = OTT country = RUS } } type = peace which = RUS value = 1 }
+		command = { trigger = { war = { country = OTT country = FRA } } type = peace which = FRA value = 1 }
+		command = { trigger = { war = { country = OTT country = SOV } } type = peace which = SOV value = 1 }
+		command = { type = dissent value = 10 }
+		# Future partitions
+		#PAL
+		command = { type = removecore which = 1008 }
+		command = { type = removecore which = 1009 }
+		command = { type = removecore which = 1010 }
+		command = { type = removecore which = 1011 }
+		command = { type = removecore which = 1172 }
+		command = { type = removecore which = 1013 }
+		#SYR
+		command = { type = removecore which = 1014 }
+		command = { type = removecore which = 1015 }
+		command = { type = removecore which = 1016 }
+		command = { type = removecore which = 1017 }
+		command = { type = removecore which = 1018 }
+		command = { type = removecore which = 1019 }
+		command = { type = removecore which = 1020 }
+		command = { type = removecore which = 1021 }
+		#JOR
+		command = { type = removecore which = 1022 }
+		command = { type = removecore which = 1023 }
+		command = { type = removecore which = 1024 }
+		command = { type = removecore which = 1025 }
+		command = { type = removecore which = 1026 }
+		#IRK
+		command = { type = removecore which = 1027 }
+		command = { type = removecore which = 1028 }
+		command = { type = removecore which = 1029 }
+		command = { type = removecore which = 1030 }
+		command = { type = removecore which = 1031 }
+		command = { type = removecore which = 1032 }
+		command = { type = removecore which = 1033 }
+		command = { type = removecore which = 1034 }
+		command = { type = removecore which = 1035 }
+		command = { type = removecore which = 1036 }
+		command = { type = removecore which = 1037 }
+		#Alexandretta
+		command = { type = removecore which = 1054 }
+		#Xanthi and Alexandroupoli
+		command = { type = removecore which = 363 }
+		command = { type = removecore which = 370 }
+		#remove claims
+		command = { type = removeclaim which = 644 } #Rostov-on-Don
+		command = { type = removeclaim which = 1041 } #Kuwait
+		command = { type = removeclaim which = 1044 } #Jebel Shammar
+		command = { type = removeclaim which = 1046 }
+		command = { type = removeclaim which = 1048 } #Hejaz
+		command = { type = removeclaim which = 1049 }
+		command = { type = removeclaim which = 1050 } #Yemen
+		command = { type = removeclaim which = 379 } #Rhodes
+		command = { type = removeclaim which = 387 } #Cyprus
+		command = { type = removeclaim which = 388 }
+		command = { type = removeclaim which = 778 } #Egypt
+		command = { type = removeclaim which = 779 }
+		command = { type = removeclaim which = 780 }
+		command = { type = removeclaim which = 781 }
+		command = { type = removeclaim which = 782 }
+		command = { type = removeclaim which = 783 }
+		command = { type = removeclaim which = 784 }
+		command = { type = removeclaim which = 785 }
+		command = { type = removeclaim which = 786 }
+		command = { type = removeclaim which = 787 }
+		command = { type = removeclaim which = 788 }
+		command = { type = removeclaim which = 789 }
+		command = { type = removeclaim which = 790 }
+		command = { type = removeclaim which = 791 }
+		command = { type = removeclaim which = 792 }
+		command = { type = removeclaim which = 793 }
+		command = { type = removeclaim which = 794 }
+		command = { type = removeclaim which = 795 }
+		command = { type = removeclaim which = 796 }
+		command = { type = removeclaim which = 797 }
+		command = { type = removeclaim which = 798 }
+		command = { type = removeclaim which = 799 }
+		command = { type = removeclaim which = 800 }
+		command = { type = removeclaim which = 801 }
+		command = { type = removeclaim which = 802 }
+		command = { type = removeclaim which = 900 }
+		command = { type = removeclaim which = 1004 }
+		command = { type = removeclaim which = 1005 }
+		command = { type = removeclaim which = 1006 }
+		command = { type = removeclaim which = 1007 }
+		
+		# demobilization
+		command = { type = remove_division which = -1 value = -1 }
+		command = { type = remove_division which = -1 value = -1 }
+		command = { type = remove_division which = -1 value = -1 }
+		command = { type = remove_division which = -1 value = -1 }
+		command = { type = remove_division which = -1 value = -1 }
+		command = { type = remove_division which = -1 value = -1 }
+		command = { type = remove_division which = -1 value = -1 }
+		command = { type = remove_division which = -1 value = -1 }
+		command = { type = remove_division which = -1 value = -1 }
+		command = { type = remove_division which = -1 value = -1 }
+		command = { type = remove_division which = -1 value = -1 }
+		command = { type = remove_division which = -1 value = -1 }
+		command = { type = remove_division which = -1 value = -1 }
+		command = { type = remove_division which = -1 value = -1 }		
+
+		command = { type = trigger which = 2145513 } # The Treaty of Sèvres
+	}
+}
+
+event = {
+	id = 2145512 # The Escape of SMS Goeben and SMS Breslau
+	country = OTT
+	
+	name = "EVT1914_2191547_NAME"
+	desc = "EVT1914_2191547_DESC" 
+	style = 2
+	picture = "news_paper"
+	
+	action = {
+		name = "EVT1914_2191547_ACTIONA"
+		command = { type = relation which = U08 value = 30 }
+		command = { type = add_division which = "Midilli" value = light_cruiser when = 2 }
+		command = { type = add_division which = "TCG Yavuz Sultan Selim" value = battlecruiser when = 0 }	  
+	}
+}
+
+event = {
+	id = 2145513 # The Treaty of Sèvres
+	country = OTT
+	
+	name = "EVT1914_2145513_NAME"
+	desc = "EVT1914_2145513_DESC"
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		name = "EVT1914_2145513_ACTIONA"
+		command = { trigger = { puppet = { country = YEM country = OTT } } type = end_mastery which = YEM }
+		command = { trigger = { NOT = { event = 2191512 } } type = secedeprovince which = FRA value = 1054 } #Alexandretta
+		command = { trigger = { NOT = { event = 2191512 } } type = secedearea which = FRA value = "Lebanon_Syria" }
+		command = { trigger = { NOT = { event = 2191512 } alliance = { country = FRA country = ENG } } type = secedearea which = ENG value = "Palestine" }  
+		command = { trigger = { NOT = { event = 2191512 } alliance = { country = FRA country = ENG } } type = secedearea which = ENG value = "Transjordan" }  
+		command = { trigger = { NOT = { event = 2191512 } alliance = { country = FRA country = ENG } } type = secedearea which = ENG value = "Iraq" }
+		command = { trigger = { NOT = { event = 2191512 } alliance = { country = FRA country = ENG } } type = secedeprovince which = ENG value = 1041 }	#Kuwait
+		command = { trigger = { NOT = { event = 2191512 alliance = { country = FRA country = ENG } } } type = secedearea which = FRA value = "Palestine" }  
+		command = { trigger = { NOT = { event = 2191512 alliance = { country = FRA country = ENG } } } type = secedearea which = FRA value = "Transjordan" }  
+		command = { trigger = { NOT = { event = 2191512 alliance = { country = FRA country = ENG } } } type = secedearea which = FRA value = "Iraq" }
+		command = { trigger = { exists = RUS } type = secedeprovince which = RUS value = 1063 } #Erzurum
+		command = { trigger = { exists = RUS } type = secedeprovince which = RUS value = 1067 } #Trabzon
+		command = { trigger = { exists = RUS } type = secedeprovince which = RUS value = 386 } #Kars
+		command = { trigger = { exists = ARM NOT = { exists = RUS war = { country = FRA country = ARM } } } type = secedeprovince which = ARM value = 1063 } #Erzurum
+		command = { trigger = { exists = ARM NOT = { exists = RUS war = { country = FRA country = ARM } } } type = secedeprovince which = ARM value = 1067 } #Trabzon
+		command = { trigger = { exists = ARM NOT = { exists = RUS war = { country = FRA country = ARM } } } type = secedeprovince which = ARM value = 386 } #Kars
+		command = { trigger = { alliance = { country = FRA country = GRE } } type = secedeprovince which = GRE value = 384 } #Gelibolu
+		command = { trigger = { alliance = { country = FRA country = GRE } } type = secedeprovince which = GRE value = 385 } #Edirne
+		command = { trigger = { alliance = { country = FRA country = GRE } } type = secedeprovince which = GRE value = 1077 } #Izmir
+		
+		#revert possible gains
+		command = { trigger = { event = 2006514 NOT = { war = { country = FRA country = ITA } } } type = secedeprovince which = ITA value = 378 } #Kalymnos
+		command = { trigger = { event = 2006514 NOT = { war = { country = FRA country = ITA } } } type = secedeprovince which = ITA value = 379 } #Rodos
+		command = { trigger = { event = 2006514 NOT = { war = { country = FRA country = ITA } } } type = secederegion which = ITA value = "Libya" }
+		command = { trigger = { event = 2191551 } type = secedeprovince which = ENG value = 387 } #Famagusta
+		command = { trigger = { event = 2191551 } type = secedeprovince which = ENG value = 388 } #Nicosia
+		command = { trigger = { event = 2191551 } type = secedeprovince which = ENG value = 1004 } #El Arish
+		command = { trigger = { event = 2191551 } type = secedeprovince which = ENG value = 1005 } #Sharm el Sheikh
+		command = { trigger = { event = 2191551 } type = secedeprovince which = ENG value = 1006 } #Al Qantarah
+		command = { trigger = { event = 2191551 } type = secedeprovince which = ENG value = 1007 } #Bur Tawfiq
+		command = { trigger = { event = 2191551 } type = secedeprovince which = ENG value = 1041 } #Kuwait		
+	}
+}

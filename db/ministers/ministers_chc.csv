@@ -1,0 +1,46 @@
+CHC;Ruling Cabinet - Start;Name;Start Year;End Year;Ideology;Personality;Loyalty;Picturename;X
+;Replacements;;;;;;;;X
+260001;Head of State;Mao Zedong;1933;1964;ST;Powerhungry Demagogue;High;2334;X
+260002;Head of Government;Mao Zedong;1933;1964;ST;Backroom Backstabber;High;2334;X
+260003;Foreign Minister;Wang Jiaxiang;1933;1964;ST;General Staffer;High;M51003;X
+260004;Minister of Armament;Lin Bojiu;1933;1964;ST;Military Entrepreneur;High;M51004;X
+260005;Minister of Security;Xie Juezai;1933;1964;ST;Man of the People;Medium;M51005;X
+260006;Head of Military Intelligence;Li Kenong;1933;1964;ST;Logistics Specialist;Medium;2335;X
+260007;Chief of Staff;Zhu De;1933;1964;ST;School of Mass Combat;Medium;2336;X
+260008;Chief of Army;Zhu De;1933;1964;ST;Guns and Butter Doctrine;Low;2336;X
+260009;Chief of Navy;Ziao Jingguang;1933;1964;ST;Open Seas Doctrine;Medium;M51009;X
+260010;Chief of Air Force;Fang Zeyi;1933;1964;ST;Army Aviation Doctrine;Medium;M51010;X
+260011;Head of State;Zhang Guotao;1937;1964;LE;Ruthless Powermonger;High;2337;X
+260012;Head of State;Lin Bojiu;1937;1964;LWR;Die-hard Reformer;High;M51004;X
+260013;Head of Government;Zhang Guotao;1937;1964;LE;Ambitious Union Boss;High;2337;X
+260014;Head of Government;Lin Bojiu;1937;1964;LWR;Flamboyant Tough Guy;High;M51004;X
+260015;Foreign Minister;Zhang Guotao;1942;1964;ST;Ideological Crusader;High;2337;X
+260016;Foreign Minister;Li Kenong;1944;1964;ST;Great Compromiser;Medium;2335;X
+260017;Minister of Armament;Cao Qiuru;1939;1964;ST;Administrative Genius;High;M51023;X
+260018;Minister of Armament;Guo Yunshen;1941;1964;ST;Air to Ground Proponent;High;M51024;X
+260019;Minister of Armament;Wang Fengbo;1943;1964;ST;laissez-faire capitalist;High;M51025;X
+260020;Minister of Armament;He Yuandang;1937;1964;LWR;Resource Industrialist;High;M51026;X
+260021;Minister of Security;Zhou Xing;1939;1964;ST;Crime Fighter;Medium;M51030;X
+260022;Minister of Security;Mao Zedong;1941;1964;ST;Back Stabber;Medium;2334;X
+260023;Minister of Security;Lin Bojiu;1942;1964;ST;Compassionate Gentleman;High;M51004;X
+260024;Minister of Security;Gao Xue;1944;1964;ST;Compassionate Gentleman;High;M51033;X
+260025;Head of Military Intelligence;Zhou Enlai;1939;1964;ST;Technical Specialist;Medium;M51037;X
+260026;Head of Military Intelligence;Deng Xiaoping;1940;1964;ST;Industrial Specialist;Medium;2338;X
+260027;Head of Military Intelligence;Wang Jiaxiang;1942;1964;ST;Dismal Enigma;High;M51003;X
+260028;Head of Military Intelligence;Xie Juezai;1945;1964;ST;Political Specialist;Medium;M51005;X
+260029;Chief of Staff;Xu Xiangqian;1941;1964;ST;School of Manoeuvre;Medium;M51044;X
+260030;Chief of Staff;Chen Yi;1944;1964;ST;School of Psychology;Medium;M51045;X
+260031;Chief of Army;Gao Gang;1940;1964;ST;Elastic Defence Doctrine;Low;M51049;X
+260032;Chief of Army;Chen Yi;1943;1964;ST;Armoured Spearhead Doctrine;Medium;M51045;X
+260033;Head of Government;Zhou Enlai;1949;1964;ST;Ambitious Union Boss;High;2339;X
+260034;Foreign Minister;Zhou Enlai;1949;1964;ST;Ideological Crusader;High;2339;X
+260035;Minister of Armament;Peng Dehuai;1949;1964;ST;Theoretical Scientist;High;2340;X
+260036;Minister of Security;Ren Bishi;1949;1964;ST;Efficient Sociopath;Medium;M51054;X
+260037;Head of Military Intelligence;Peng Zhen;1949;1964;ST;Industrial Specialist;High;M51055;X
+260038;Foreign Minister;Chen Yi;1958;1964;ST;General Staffer;High;M51045;X
+260039;Minister of Armament;Lin Biao;1959;1964;ST;Military Entrepreneur;High;L76324;X
+260040;Minister of Security;Shi Liang;1950;1964;ST;Prince of Terror;Medium;M51058;X
+260041;Minister of Security;Qian Ying;1959;1964;ST;Silent Lawyer;Medium;M51059;X
+260042;Minister of Security;Zeng Shan;1960;1964;ST;Back Stabber;Medium;M51060;X
+260043;Head of Military Intelligence;Bo Yibo;1953;1964;ST;Technical Specialist;High;M51061;X
+260044;Head of Military Intelligence;Li Xiannian;1954;1964;ST;Logistics Specialist;High;321;X

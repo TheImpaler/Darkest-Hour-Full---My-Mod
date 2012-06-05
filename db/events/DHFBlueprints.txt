@@ -1,0 +1,1148 @@
+event = {
+	id = 80120
+	random = no
+	
+	name = "Infantry & Armor Technology Booster"
+	desc = "Sometimes, you've just gotta read some blueprints"
+	style = 0
+
+	action_a = {
+		name = "Infantry & Armor Technology Booster"
+################# Infantry ##################### 
+#Infantry
+command = { type = gain_tech which = 1010}
+command = { type = gain_tech which = 1020}
+command = { type = gain_tech which = 1030}
+command = { type = gain_tech which = 1040}
+command = { type = gain_tech which = 1050}
+command = { type = gain_tech which = 1060}
+command = { type = gain_tech which = 1070}
+command = { type = gain_tech which = 1080}
+command = { type = gain_tech which = 1090}
+command = { type = gain_tech which = 1100}
+command = { type = gain_tech which = 1110}
+command = { type = gain_tech which = 1120}
+command = { type = gain_tech which = 1130}
+command = { type = gain_tech which = 1140}
+command = { type = gain_tech which = 1150}
+command = { type = gain_tech which = 13000}
+command = { type = gain_tech which = 13010}
+command = { type = gain_tech which = 13020}
+# Mountain
+command = { type = gain_tech which = 1160}
+command = { type = gain_tech which = 1170}
+command = { type = gain_tech which = 1180}
+command = { type = gain_tech which = 1190}
+command = { type = gain_tech which = 1200}
+command = { type = gain_tech which = 1210}
+command = { type = gain_tech which = 1220}
+command = { type = gain_tech which = 1230}
+command = { type = gain_tech which = 1240}
+command = { type = gain_tech which = 1250}
+command = { type = gain_tech which = 1260}
+command = { type = gain_tech which = 1270}
+command = { type = gain_tech which = 1280}
+command = { type = gain_tech which = 1290}
+command = { type = gain_tech which = 1300}
+command = { type = gain_tech which = 13030}
+command = { type = gain_tech which = 13040}
+command = { type = gain_tech which = 13050}
+# Cavalry & Mech Cav, Arm cav
+command = { type = gain_tech which = 13060}
+command = { type = gain_tech which = 13070}
+command = { type = gain_tech which = 13080}
+command = { type = gain_tech which = 1310}
+command = { type = gain_tech which = 1320}
+command = { type = gain_tech which = 1330}
+command = { type = gain_tech which = 1340}
+command = { type = gain_tech which = 1350}
+command = { type = gain_tech which = 1360}
+command = { type = gain_tech which = 1370}
+command = { type = gain_tech which = 1380}
+command = { type = gain_tech which = 1390}
+command = { type = gain_tech which = 1530}
+command = { type = gain_tech which = 1540}
+# motorized
+command = { type = gain_tech which = 1396}
+command = { type = gain_tech which = 1400}
+command = { type = gain_tech which = 1410}
+command = { type = gain_tech which = 1420}
+command = { type = gain_tech which = 1430}
+command = { type = gain_tech which = 1440}
+command = { type = gain_tech which = 1450}
+command = { type = gain_tech which = 1460}
+# Mechanized
+command = { type = gain_tech which = 1470}
+command = { type = gain_tech which = 1480}
+command = { type = gain_tech which = 1490}
+command = { type = gain_tech which = 1500}
+command = { type = gain_tech which = 1510}
+command = { type = gain_tech which = 1520}
+# Marines
+command = { type = gain_tech which = 1560}
+command = { type = gain_tech which = 1570}
+command = { type = gain_tech which = 1580}
+command = { type = gain_tech which = 1590}
+command = { type = gain_tech which = 1600}
+command = { type = gain_tech which = 1610}
+command = { type = gain_tech which = 1620}
+command = { type = gain_tech which = 1630}
+command = { type = gain_tech which = 1640}
+command = { type = gain_tech which = 1650}
+command = { type = gain_tech which = 1660}
+#Airbone
+command = { type = gain_tech which = 1670}
+command = { type = gain_tech which = 1680}
+command = { type = gain_tech which = 1690}
+command = { type = gain_tech which = 1700}
+command = { type = gain_tech which = 1710}
+command = { type = gain_tech which = 1720}
+command = { type = gain_tech which = 1730}
+command = { type = gain_tech which = 1740}
+#Engineers
+command = { type = gain_tech which = 1830}
+command = { type = gain_tech which = 1840}
+command = { type = gain_tech which = 1850}
+command = { type = gain_tech which = 1860}
+command = { type = gain_tech which = 1870}
+command = { type = gain_tech which = 1880}
+command = { type = gain_tech which = 1890}
+command = { type = gain_tech which = 1900}
+#Inf Support
+command = { type = gain_tech which = 1910}
+command = { type = gain_tech which = 1920}
+command = { type = gain_tech which = 1930}
+command = { type = gain_tech which = 1940}
+command = { type = gain_tech which = 1950}
+command = { type = gain_tech which = 1960}
+command = { type = gain_tech which = 1970}
+command = { type = gain_tech which = 1980}
+command = { type = gain_tech which = 1990}
+command = { type = gain_tech which = 199100}
+command = { type = gain_tech which = 199110}
+command = { type = gain_tech which = 199120}
+command = { type = gain_tech which = 199130}
+command = { type = gain_tech which = 199140}
+command = { type = gain_tech which = 199150}
+command = { type = gain_tech which = 199160}
+command = { type = gain_tech which = 199170}
+command = { type = gain_tech which = 199180}
+
+################# Armor Artillery #####################
+
+#Light armor brigades only techs / advanced Light armor
+command = { type = gain_tech which = 2000}
+command = { type = gain_tech which = 2630}
+command = { type = gain_tech which = 2640}
+command = { type = gain_tech which = 2646}
+command = { type = gain_tech which = 2650}
+command = { type = gain_tech which = 2060}
+#Light armor brigades & Divisions techs
+command = { type = gain_tech which = 2030}
+command = { type = gain_tech which = 2040}
+command = { type = gain_tech which = 2050}
+#Medium armor brigades & Divisions techs
+command = { type = gain_tech which = 2070}
+command = { type = gain_tech which = 2080}
+command = { type = gain_tech which = 2090}
+command = { type = gain_tech which = 2140}
+command = { type = gain_tech which = 11000}
+command = { type = gain_tech which = 2660}
+command = { type = gain_tech which = 11010}
+command = { type = gain_tech which = 2670}
+#Heavy armor brigades
+command = { type = gain_tech which = 2620}
+command = { type = gain_tech which = 2100}
+command = { type = gain_tech which = 2110}
+command = { type = gain_tech which = 2120}
+command = { type = gain_tech which = 2126}
+command = { type = gain_tech which = 2127}
+#Super heavy armor brigade (Model 0 in SW tech)
+command = { type = gain_tech which = 2130}
+command = { type = gain_tech which = 7610}
+#Tank Destroyer
+command = { type = gain_tech which = 2170}
+command = { type = gain_tech which = 2180}
+command = { type = gain_tech which = 2850}
+command = { type = gain_tech which = 2190}
+command = { type = gain_tech which = 2200}
+command = { type = gain_tech which = 2210}
+command = { type = gain_tech which = 11020}
+command = { type = gain_tech which = 11026}
+#Armoured Car
+command = { type = gain_tech which = 2860}
+command = { type = gain_tech which = 2870}
+command = { type = gain_tech which = 2880}
+command = { type = gain_tech which = 2020}
+command = { type = gain_tech which = 2150}
+command = { type = gain_tech which = 2160}
+command = { type = gain_tech which = 2890}
+command = { type = gain_tech which = 11110}
+command = { type = gain_tech which = 11116}
+#Artillery
+command = { type = gain_tech which = 2290}
+command = { type = gain_tech which = 2300}
+command = { type = gain_tech which = 2310}
+command = { type = gain_tech which = 2900}
+command = { type = gain_tech which = 2910}
+command = { type = gain_tech which = 2920}
+command = { type = gain_tech which = 2930}
+command = { type = gain_tech which = 2940}
+command = { type = gain_tech which = 2320}
+command = { type = gain_tech which = 2330}
+command = { type = gain_tech which = 2340}
+command = { type = gain_tech which = 2360}
+command = { type = gain_tech which = 2950}
+command = { type = gain_tech which = 2350}
+#Self-Propelled Artillery
+command = { type = gain_tech which = 2220}
+command = { type = gain_tech which = 2230}
+command = { type = gain_tech which = 2240}
+command = { type = gain_tech which = 2250}
+command = { type = gain_tech which = 11030}
+command = { type = gain_tech which = 11040}
+command = { type = gain_tech which = 2960}
+command = { type = gain_tech which = 2966}
+#Static Anti-Air Artillery
+command = { type = gain_tech which = 2800}
+command = { type = gain_tech which = 2450}
+command = { type = gain_tech which = 2460}
+command = { type = gain_tech which = 2470}
+command = { type = gain_tech which = 2480}
+command = { type = gain_tech which = 2490}
+command = { type = gain_tech which = 2500}
+command = { type = gain_tech which = 11080}
+#Anti-Air Artillery
+command = { type = gain_tech which = 2810}
+command = { type = gain_tech which = 2820}
+command = { type = gain_tech which = 2510}
+command = { type = gain_tech which = 2520}
+command = { type = gain_tech which = 2530}
+command = { type = gain_tech which = 2540}
+command = { type = gain_tech which = 11090}
+#Anti tank
+command = { type = gain_tech which = 2400}
+command = { type = gain_tech which = 2410}
+command = { type = gain_tech which = 2420}
+command = { type = gain_tech which = 2430}
+# Rocket
+command = { type = gain_tech which = 2970}
+command = { type = gain_tech which = 2370}
+command = { type = gain_tech which = 2380}
+command = { type = gain_tech which = 2390}
+# SP-Rocket
+command = { type = gain_tech which = 2980}
+command = { type = gain_tech which = 2260}
+command = { type = gain_tech which = 2270}
+command = { type = gain_tech which = 2280}
+command = { type = gain_tech which = 11050}
+command = { type = gain_tech which = 11060}
+command = { type = gain_tech which = 2990}
+#SP Anti-Air Artillery
+command = { type = gain_tech which = 22910}
+command = { type = gain_tech which = 22920}
+command = { type = gain_tech which = 22930}
+command = { type = gain_tech which = 22940}
+command = { type = gain_tech which = 22950}
+command = { type = gain_tech which = 22960}
+	}
+	action_b = {
+		name = "Don't Need It"
+		ai_chance = 100
+		command = { }
+	}
+}
+event = {
+	id = 80121
+	random = no
+	
+	name = "Naval & Aircraft Technology Booster"
+	desc = "Sometimes, you've just gotta read some blueprints"
+	style = 0
+	
+	action_a = {
+		name = "Naval & Aircraft Technology Booster"
+########################## Naval #############################
+
+# Destroyers 
+command = { type = gain_tech which = 3010}
+command = { type = gain_tech which = 3020}
+command = { type = gain_tech which = 3030}
+command = { type = gain_tech which = 3040}
+command = { type = gain_tech which = 3050}
+command = { type = gain_tech which = 3060}
+command = { type = gain_tech which = 3070}
+command = { type = gain_tech which = 12000}
+command = { type = gain_tech which = 3080}
+command = { type = gain_tech which = 3090}
+# Light Cruiser
+command = { type = gain_tech which = 3110}
+command = { type = gain_tech which = 3120}
+command = { type = gain_tech which = 3130}
+command = { type = gain_tech which = 3140}
+command = { type = gain_tech which = 3150}
+command = { type = gain_tech which = 3160}
+command = { type = gain_tech which = 12010}
+command = { type = gain_tech which = 3170}
+command = { type = gain_tech which = 3180}
+# Heavy Cruiser
+command = { type = gain_tech which = 3210}
+command = { type = gain_tech which = 3220}
+command = { type = gain_tech which = 3230}
+command = { type = gain_tech which = 3240}
+command = { type = gain_tech which = 3250}
+command = { type = gain_tech which = 3260}
+command = { type = gain_tech which = 12020}
+command = { type = gain_tech which = 3270}
+command = { type = gain_tech which = 3280}
+# Battle Cruiser
+command = { type = gain_tech which = 3310}
+command = { type = gain_tech which = 3320}
+command = { type = gain_tech which = 3330}
+command = { type = gain_tech which = 3340}
+command = { type = gain_tech which = 3350}
+command = { type = gain_tech which = 12030}
+# Battleship & Super heavy Battleship
+command = { type = gain_tech which = 3410}
+command = { type = gain_tech which = 3420}
+command = { type = gain_tech which = 3430}
+command = { type = gain_tech which = 3440}
+command = { type = gain_tech which = 3450}
+command = { type = gain_tech which = 3460}
+command = { type = gain_tech which = 3470}
+command = { type = gain_tech which = 3480}
+command = { type = gain_tech which = 12040}
+command = { type = gain_tech which = 3490}
+command = { type = gain_tech which = 12050}
+# Carrier 
+command = { type = gain_tech which = 3510}
+command = { type = gain_tech which = 3520}
+command = { type = gain_tech which = 3530}
+command = { type = gain_tech which = 3540}
+command = { type = gain_tech which = 3550}
+command = { type = gain_tech which = 12060}
+command = { type = gain_tech which = 3560}
+command = { type = gain_tech which = 3570}
+# Light Carrier
+command = { type = gain_tech which = 12100}
+command = { type = gain_tech which = 12110}
+command = { type = gain_tech which = 12120}
+command = { type = gain_tech which = 12130}
+command = { type = gain_tech which = 12140}
+command = { type = gain_tech which = 12150}
+command = { type = gain_tech which = 12160}
+# Submarines
+command = { type = gain_tech which = 3610}
+command = { type = gain_tech which = 3620}
+command = { type = gain_tech which = 3630}
+command = { type = gain_tech which = 3640}
+command = { type = gain_tech which = 3650}
+command = { type = gain_tech which = 3660}
+command = { type = gain_tech which = 3670}
+command = { type = gain_tech which = 3680}
+command = { type = gain_tech which = 3690}
+command = { type = gain_tech which = 3700}
+# Transport
+command = { type = gain_tech which = 3810}
+command = { type = gain_tech which = 3820}
+command = { type = gain_tech which = 3830}
+command = { type = gain_tech which = 3840}
+command = { type = gain_tech which = 3850}
+command = { type = gain_tech which = 3860}
+# ASW_EQUIPMENT
+command = { type = gain_tech which = 3900}
+command = { type = gain_tech which = 3910}
+command = { type = gain_tech which = 3920}
+command = { type = gain_tech which = 3930}
+command = { type = gain_tech which = 3940}
+command = { type = gain_tech which = 3950}
+# TORPEDOES
+command = { type = gain_tech which = 3720}
+command = { type = gain_tech which = 3730}
+command = { type = gain_tech which = 3736}
+command = { type = gain_tech which = 3740}
+command = { type = gain_tech which = 3750}
+command = { type = gain_tech which = 3760}
+command = { type = gain_tech which = 3770}
+command = { type = gain_tech which = 3780}
+command = { type = gain_tech which = 3790}
+
+######################### Aircraft tech ########################
+
+### Interceptors ###
+command = { type = gain_tech which = 4510}
+command = { type = gain_tech which = 4520}
+command = { type = gain_tech which = 4530}
+command = { type = gain_tech which = 4540}
+command = { type = gain_tech which = 4550}
+command = { type = gain_tech which = 4010}
+command = { type = gain_tech which = 4020}
+command = { type = gain_tech which = 4030}
+command = { type = gain_tech which = 4060}
+command = { type = gain_tech which = 4090}
+command = { type = gain_tech which = 15000}
+command = { type = gain_tech which = 15010}
+command = { type = gain_tech which = 4560}
+command = { type = gain_tech which = 4570}
+command = { type = gain_tech which = 4580}
+### Multi role ###
+command = { type = gain_tech which = 4500}
+command = { type = gain_tech which = 4300}
+command = { type = gain_tech which = 4310}
+command = { type = gain_tech which = 4320}
+command = { type = gain_tech which = 4330}
+command = { type = gain_tech which = 4340}
+command = { type = gain_tech which = 4040}
+command = { type = gain_tech which = 4070}
+command = { type = gain_tech which = 4100}
+command = { type = gain_tech which = 4350}
+command = { type = gain_tech which = 15030}
+command = { type = gain_tech which = 15040}
+command = { type = gain_tech which = 15050}
+command = { type = gain_tech which = 4360}
+command = { type = gain_tech which = 4370}
+# Escort Brigade
+command = { type = gain_tech which = 4050}
+command = { type = gain_tech which = 4080}
+command = { type = gain_tech which = 4110}
+command = { type = gain_tech which = 4116}
+command = { type = gain_tech which = 15060}
+command = { type = gain_tech which = 15070}
+command = { type = gain_tech which = 15080}
+### Prewar experimental ###
+command = { type = gain_tech which = 4600}
+# Close Air support #
+command = { type = gain_tech which = 4400}
+command = { type = gain_tech which = 4170}
+command = { type = gain_tech which = 4280}
+command = { type = gain_tech which = 4450}
+command = { type = gain_tech which = 4180}
+command = { type = gain_tech which = 15120}
+command = { type = gain_tech which = 15130}
+# Tactical bombers 
+command = { type = gain_tech which = 4610}
+command = { type = gain_tech which = 4620}
+command = { type = gain_tech which = 4630}
+command = { type = gain_tech which = 4120}
+command = { type = gain_tech which = 4130}
+command = { type = gain_tech which = 4140}
+command = { type = gain_tech which = 4150}
+command = { type = gain_tech which = 4160}
+command = { type = gain_tech which = 15100}
+command = { type = gain_tech which = 15110}
+command = { type = gain_tech which = 4640}
+command = { type = gain_tech which = 4650}
+# Strategic bombers
+command = { type = gain_tech which = 4800}
+command = { type = gain_tech which = 4810}
+command = { type = gain_tech which = 4820}
+command = { type = gain_tech which = 4220}
+command = { type = gain_tech which = 4230}
+command = { type = gain_tech which = 4240}
+command = { type = gain_tech which = 4246}
+command = { type = gain_tech which = 15160}
+command = { type = gain_tech which = 15170}
+command = { type = gain_tech which = 16030}
+# Naval bombers
+command = { type = gain_tech which = 4700}
+command = { type = gain_tech which = 4710}
+command = { type = gain_tech which = 4190}
+command = { type = gain_tech which = 4200}
+command = { type = gain_tech which = 4210}
+command = { type = gain_tech which = 15140}
+command = { type = gain_tech which = 15150}
+# Transports
+command = { type = gain_tech which = 4290}
+command = { type = gain_tech which = 4250}
+command = { type = gain_tech which = 4260}
+command = { type = gain_tech which = 4270}
+command = { type = gain_tech which = 15180}
+command = { type = gain_tech which = 15190}
+#SEAPLANES
+command = { type = gain_tech which = 4740}
+command = { type = gain_tech which = 4750}
+command = { type = gain_tech which = 4760}
+command = { type = gain_tech which = 4770}
+command = { type = gain_tech which = 4780}
+command = { type = gain_tech which = 4790}
+command = { type = gain_tech which = 4850}
+command = { type = gain_tech which = 4860}
+# Carrier Air groups *Turbojet CAG, Imp.Turbojet CAG
+command = { type = gain_tech which = 4900}
+command = { type = gain_tech which = 4910}
+command = { type = gain_tech which = 4920}
+command = { type = gain_tech which = 4930}
+command = { type = gain_tech which = 4940}
+command = { type = gain_tech which = 4950}
+command = { type = gain_tech which = 4960}
+command = { type = gain_tech which = 7050}
+command = { type = gain_tech which = 7280}
+	}
+	action_b = {
+		name = "Don't Need It"
+		ai_chance = 100
+		command = { }
+	}
+}
+event = {
+	id = 80122
+	random = 0
+	
+		name = "Industrial booster"
+		desc = "Sometimes, you've just gotta read some blueprints"
+		style = 0
+		
+		action_a = {
+			name = "Industrial Booster"
+################# Industry ##################### 
+
+# Agriculture
+command = { type = gain_tech which = 5700}
+command = { type = gain_tech which = 5710}
+command = { type = gain_tech which = 5010}
+command = { type = gain_tech which = 5020}
+command = { type = gain_tech which = 5030}
+command = { type = gain_tech which = 5040}
+command = { type = gain_tech which = 5720}
+command = { type = gain_tech which = 53000}
+command = { type = gain_tech which = 53010}
+# MANUFACTURING
+command = { type = gain_tech which = 5810}
+command = { type = gain_tech which = 5820}
+command = { type = gain_tech which = 5050}
+command = { type = gain_tech which = 5830}
+
+command = { type = gain_tech which = 5060}
+command = { type = gain_tech which = 5070}
+command = { type = gain_tech which = 5130}
+command = { type = gain_tech which = 5110}
+command = { type = gain_tech which = 5120}
+command = { type = gain_tech which = 5840}
+command = { type = gain_tech which = 5850}
+command = { type = gain_tech which = 5860}
+# CONSTRUCTION
+command = { type = gain_tech which = 5800}
+command = { type = gain_tech which = 5080}
+command = { type = gain_tech which = 5090}
+command = { type = gain_tech which = 5100}
+command = { type = gain_tech which = 5900}
+command = { type = gain_tech which = 5910}
+# Air Ship Vehicle Rocket Small-arms assembly lines
+command = { type = gain_tech which = 5140}
+command = { type = gain_tech which = 5150}
+command = { type = gain_tech which = 5160}
+command = { type = gain_tech which = 5170}
+command = { type = gain_tech which = 5180}
+# MATERIALS
+command = { type = gain_tech which = 53040}
+command = { type = gain_tech which = 53050}
+# Oil Refining
+command = { type = gain_tech which = 5190}
+command = { type = gain_tech which = 5200}
+command = { type = gain_tech which = 5210}
+command = { type = gain_tech which = 5220}
+command = { type = gain_tech which = 5230}
+command = { type = gain_tech which = 5240}
+command = { type = gain_tech which = 53020}
+command = { type = gain_tech which = 13040}
+command = { type = gain_tech which = 13050}
+# COMPUTERS
+command = { type = gain_tech which = 5310}
+command = { type = gain_tech which = 54010}
+command = { type = gain_tech which = 54020}
+command = { type = gain_tech which = 54030}
+command = { type = gain_tech which = 5320}
+command = { type = gain_tech which = 5330}
+command = { type = gain_tech which = 5340}
+# CRYPTOGRAPHY
+command = { type = gain_tech which = 5316}
+command = { type = gain_tech which = 5326}
+command = { type = gain_tech which = 5327}
+command = { type = gain_tech which = 5350}
+command = { type = gain_tech which = 5360}
+command = { type = gain_tech which = 5370}
+command = { type = gain_tech which = 5380}
+command = { type = gain_tech which = 5390}
+command = { type = gain_tech which = 5400}
+command = { type = gain_tech which = 53060}
+command = { type = gain_tech which = 53116}
+# Radar
+command = { type = gain_tech which = 5410}
+command = { type = gain_tech which = 5416}
+command = { type = gain_tech which = 5417}
+command = { type = gain_tech which = 5420}
+command = { type = gain_tech which = 5430}
+command = { type = gain_tech which = 5440}
+command = { type = gain_tech which = 5466}
+command = { type = gain_tech which = 5450}
+command = { type = gain_tech which = 5460}
+command = { type = gain_tech which = 5326}
+command = { type = gain_tech which = 53030}
+command = { type = gain_tech which = 5476}
+command = { type = gain_tech which = 53070}
+# Atomic Research
+command = { type = gain_tech which = 5470}
+command = { type = gain_tech which = 5480}
+command = { type = gain_tech which = 5490}
+command = { type = gain_tech which = 5500}
+command = { type = gain_tech which = 5510}
+command = { type = gain_tech which = 5520}
+command = { type = gain_tech which = 5530}
+command = { type = gain_tech which = 5540}
+# ROCKETRY
+command = { type = gain_tech which = 5560}
+# MEDICINE
+command = { type = gain_tech which = 5600}
+command = { type = gain_tech which = 5610}
+command = { type = gain_tech which = 5620}
+command = { type = gain_tech which = 5630}
+command = { type = gain_tech which = 5640}
+command = { type = gain_tech which = 5650}
+command = { type = gain_tech which = 5660}
+command = { type = gain_tech which = 5670}
+#EQUIPMENT Winter / Jungle / Desert / Sturdy
+command = { type = gain_tech which = 5920}
+command = { type = gain_tech which = 5930}
+command = { type = gain_tech which = 5940}
+command = { type = gain_tech which = 5950}
+command = { type = gain_tech which = 5960}
+command = { type = gain_tech which = 5970}
+command = { type = gain_tech which = 5980}
+command = { type = gain_tech which = 5990}
+	}
+	action_b = {
+		name = "Don't Need It"
+		ai_chance = 100
+		command = { }
+	}
+}
+event = {
+	id = 80123
+	random = no
+	
+	name = "Land Doctrine Booster"
+	desc = "Sometimes, you've just gotta read some blueprints"
+	style = 0
+	
+	action_d = {
+		name = "Land Doctrine Booster"
+################# Landdoctrines ##################### 
+
+# pre ww1 techs
+command = { type = gain_tech which = 6500}
+command = { type = gain_tech which = 6510}
+command = { type = gain_tech which = 6530}
+command = { type = gain_tech which = 6580}
+command = { type = gain_tech which = 6590}
+# ww1
+command = { type = gain_tech which = 6600}
+command = { type = gain_tech which = 6610}
+command = { type = gain_tech which = 6620}
+command = { type = gain_tech which = 6630}
+command = { type = gain_tech which = 6640}
+command = { type = gain_tech which = 6650}
+command = { type = gain_tech which = 6660}
+command = { type = gain_tech which = 6670}
+command = { type = gain_tech which = 6680}
+command = { type = gain_tech which = 6690}
+command = { type = gain_tech which = 6700}
+command = { type = gain_tech which = 6710}
+#Interwar Doctrine
+command = { type = gain_tech which = 6540}
+command = { type = gain_tech which = 6550}
+command = { type = gain_tech which = 6910}
+# Armor Division Formation
+command = { type = gain_tech which = 6900}
+# Superior Firepower Path (US)
+command = { type = gain_tech which = 6010}
+command = { type = gain_tech which = 6040}
+command = { type = gain_tech which = 6050}
+command = { type = gain_tech which = 6060}
+command = { type = gain_tech which = 6070}
+command = { type = gain_tech which = 6080}
+command = { type = gain_tech which = 6090}	
+command = { type = gain_tech which = 6100}
+command = { type = gain_tech which = 14050}
+# Defensive Focus Grand Battleplan Path (FRA / UK)
+command = { type = gain_tech which = 6560}
+command = { type = gain_tech which = 6030}
+command = { type = gain_tech which = 6110}
+command = { type = gain_tech which = 6120}
+command = { type = gain_tech which = 6130}
+command = { type = gain_tech which = 6140}
+command = { type = gain_tech which = 14070}
+command = { type = gain_tech which = 6150}
+command = { type = gain_tech which = 6180}
+command = { type = gain_tech which = 6170}
+command = { type = gain_tech which = 6200}
+# MOBILITY FOCUS Blitzkrieg Path (GER)
+command = { type = gain_tech which = 6210}
+command = { type = gain_tech which = 6220}
+command = { type = gain_tech which = 6240}
+command = { type = gain_tech which = 6230}
+command = { type = gain_tech which = 6250}
+command = { type = gain_tech which = 6260}
+command = { type = gain_tech which = 6270}
+command = { type = gain_tech which = 6280}
+command = { type = gain_tech which = 6290}
+command = { type = gain_tech which = 14100}
+# Manpower Focus Human Wave Path (SOV)
+command = { type = gain_tech which = 6570}
+command = { type = gain_tech which = 6300}
+command = { type = gain_tech which = 6310}
+command = { type = gain_tech which = 6320}
+command = { type = gain_tech which = 6330}
+command = { type = gain_tech which = 6340}
+command = { type = gain_tech which = 6350}
+command = { type = gain_tech which = 6360}
+command = { type = gain_tech which = 6370}
+command = { type = gain_tech which = 14060}
+# Light infantry
+command = { type = gain_tech which = 6390}
+command = { type = gain_tech which = 6400}
+command = { type = gain_tech which = 6410}
+command = { type = gain_tech which = 6420}
+command = { type = gain_tech which = 6430}
+command = { type = gain_tech which = 6440}
+command = { type = gain_tech which = 6160}
+command = { type = gain_tech which = 6190}
+command = { type = gain_tech which = 6450}
+command = { type = gain_tech which = 6460}
+command = { type = gain_tech which = 6490}
+##### post ww2 tech
+command = { type = gain_tech which = 6720}
+command = { type = gain_tech which = 6730}
+command = { type = gain_tech which = 6740}
+command = { type = gain_tech which = 6750}
+command = { type = gain_tech which = 6760}
+command = { type = gain_tech which = 6770}
+command = { type = gain_tech which = 6780}
+command = { type = gain_tech which = 6790}
+command = { type = gain_tech which = 6800}
+command = { type = gain_tech which = 6810}
+command = { type = gain_tech which = 6820}
+command = { type = gain_tech which = 6830}
+command = { type = gain_tech which = 6840}
+command = { type = gain_tech which = 6850}
+# Hospital System
+command = { type = gain_tech which = 14000}
+command = { type = gain_tech which = 14010}
+command = { type = gain_tech which = 14020}
+command = { type = gain_tech which = 14030}
+command = { type = gain_tech which = 14040}
+command = { type = gain_tech which = 14110}
+command = { type = gain_tech which = 14120}
+command = { type = gain_tech which = 14130}
+	}
+	action_b = {
+		name = "Don't Need It"
+		ai_chance = 100
+		command = { }
+	}
+}
+event = {
+	id = 80124
+	random = no
+	
+	name = "Secret Weapons Blueprints"
+	desc = "Sometimes, you've just gotta read some blueprints"
+	style = 0
+	trigger = {
+                technology = 7110
+		technology = 7590
+		technology = 7100
+                technology = 4060
+		technology = 7560
+                technology = 7570
+                technology = 7580
+                technology = 5340
+                technology = 5540
+                technology = 3300
+                technology = 3180
+		technology = 3390
+                technology = 3700
+                technology = 1540  # Armoured cavalry
+		technology = 15190 # Modern air transport 
+		technology = 15500 # Practical Turbojet Engine
+                technology = 15130
+                technology = 2500
+                technology = 2870
+                technology = 5560
+		technology = 2150
+		technology = 5330
+		technology = 5420
+		NOT = {
+
+		}
+	}
+	action_a = {
+		name = "Secret Weapon Blueprints"
+	################# Secret weapons ##################### 
+
+command = {  type = activate which = 7010 }# Basic Rocket Interceptor
+command = {  type = activate which = 7020 }# Impr Rocket Interceptor
+command = {  type = activate which = 15500 }# Practical Turbojet Engine
+command = {  type = activate which = 7100 } # Flying Bomb
+command = {  type = activate which = 7110 } # Flying Rocket
+command = {  type = activate which = 7120 } # Ballistic Missile
+command = {  type = activate which = 7130 } # Intercontinental Ballistic Missile
+command = {  type = activate which = 7140 } # Basic Electronic Computers
+command = {  type = activate which = 7150 } # Improved Electronic Computers
+command = {  type = activate which = 7160 } # Advanced Electronic Computers
+command = {  type = activate which = 16000 } # Basic semiconductors
+command = {  type = activate which = 16040 } # Silicon transistors
+command = {  type = activate which = 7170 } # Nuclear Waste Bomb
+command = {  type = activate which = 7180 } # Semi-Fission Bomb
+command = {  type = activate which = 7190 } # Fission Bomb
+command = {  type = activate which = 16010 } # Miniaturised Fission Bomb
+command = {  type = activate which = 16020 } # Fussion Bomb
+command = {  type = activate which = 7200 } # Nuclear Battleship Propulsion
+command = {  type = activate which = 7210 } # Nuclear Cruiser Propulsion
+command = {  type = activate which = 7220 } # Nuclear Carrier Propulsion
+command = {  type = activate which = 7230 } # Nuclear powered Submarine
+command = {  type = activate which = 7400 } # Nuclear Attack Submarine
+command = {  type = activate which = 7410 } # Nuclear Ballistic Missile Submarine
+command = {  type = activate which = 7240 } # Air Cavalry Division	
+command = {  type = activate which = 7260 } # Air-to-Surface Missile (ASM)
+command = {  type = activate which = 7270 } # Surface-to-Air Missile (SAM)
+command = {  type = activate which = 7600 } # Experimental Tank
+command = {  type = activate which = 7610 } # Super Heavy ww1
+command = {  type = activate which = 7550 } # Rocket Test and Research Facility
+command = {  type = activate which = 7560 } # Practical Rocket Engine
+command = {  type = activate which = 7570 } # Experimental Turbojet Engine
+command = {  type = activate which = 7580 } # Flying Bomb Development
+command = {  type = activate which = 7590 } # Flying Rocket Development
+command = {  type = activate which = 7620 } # Goliath mini Tank
+command = {  type = activate which = 7630 } # Teletank
+# Rocket Intercepters 
+command = { type = gain_tech which = 7010}
+command = { type = gain_tech which = 7020}
+# Rockets and missiles
+command = { type = gain_tech which = 7100}
+command = { type = gain_tech which = 7110}
+command = { type = gain_tech which = 7120}
+command = { type = gain_tech which = 7130}
+# Electronic Computers
+command = { type = gain_tech which = 7140}
+command = { type = gain_tech which = 7150}
+command = { type = gain_tech which = 7160}
+command = { type = gain_tech which = 16000}
+command = { type = gain_tech which = 16040}
+# Nuclear Bombs
+command = { type = gain_tech which = 7170}
+command = { type = gain_tech which = 7180}
+command = { type = gain_tech which = 7190}
+command = { type = gain_tech which = 16010}
+command = { type = gain_tech which = 16020}
+# Nuclear Ships
+command = { type = gain_tech which = 7200}
+command = { type = gain_tech which = 7210}
+command = { type = gain_tech which = 7220}
+command = { type = gain_tech which = 7230}
+command = { type = gain_tech which = 7400}
+command = { type = gain_tech which = 7410}
+# Air Cavalry / ASM / SAM / Inter. Strategic Bomber
+command = { type = gain_tech which = 7240}
+command = { type = gain_tech which = 7260}
+command = { type = gain_tech which = 7270}
+command = { type = gain_tech which = 16030}
+# Rocket Test and Research Facility
+command = { type = gain_tech which = 7550}
+command = { type = gain_tech which = 7560}
+command = { type = gain_tech which = 7570}
+command = { type = gain_tech which = 7580}
+command = { type = gain_tech which = 7590}
+#Experimental tank SH WW1 Tank
+command = { type = gain_tech which = 7600}
+command = { type = gain_tech which = 7610}
+# Practical Turbojet Engine
+command = { type = gain_tech which = 15500}
+	}
+	action_b = {
+		name = "Don't Need It"
+		ai_chance = 100
+		command = { }
+	}
+}
+event = {
+	id = 80125
+	random = no
+	
+	name = "Naval Doctrine Blueprints"
+	desc = "Sometimes, you've just gotta read some blueprints"
+	style = 0
+	
+	action_a = {
+		name = "Naval Doctrine Booster"
+	################# Naval Doctrines #####################
+
+# Engagement Theories
+command = { type = gain_tech which = 8010}
+command = { type = gain_tech which = 8020}
+command = { type = gain_tech which = 8030}
+command = { type = gain_tech which = 8040}
+command = { type = gain_tech which = 8050}
+command = { type = gain_tech which = 8060}
+command = { type = gain_tech which = 8070}
+command = { type = gain_tech which = 8080}
+# Naval Supremacy
+command = { type = gain_tech which = 8100}
+command = { type = gain_tech which = 8110}
+command = { type = gain_tech which = 8120}
+# Commerce Defense
+command = { type = gain_tech which = 8150}
+command = { type = gain_tech which = 8160}
+command = { type = gain_tech which = 8170}
+# Anti-Submarine Patrols
+command = { type = gain_tech which = 8200}
+command = { type = gain_tech which = 8210}
+command = { type = gain_tech which = 8220}
+command = { type = gain_tech which = 8230}
+command = { type = gain_tech which = 8240}
+command = { type = gain_tech which = 8250}
+command = { type = gain_tech which = 8260}
+command = { type = gain_tech which = 8300}
+command = { type = gain_tech which = 8310}
+command = { type = gain_tech which = 8320}
+command = { type = gain_tech which = 8330}
+command = { type = gain_tech which = 8340}
+command = { type = gain_tech which = 8350}
+# Naval Interdiction
+command = { type = gain_tech which = 8500}
+command = { type = gain_tech which = 8510}
+command = { type = gain_tech which = 8520}
+# Raider Patrols 
+command = { type = gain_tech which = 8550}
+command = { type = gain_tech which = 8560}
+command = { type = gain_tech which = 8570}
+# Trade Interdiction Submarine
+command = { type = gain_tech which = 8600}
+command = { type = gain_tech which = 8610}
+command = { type = gain_tech which = 8620}
+command = { type = gain_tech which = 8630}
+command = { type = gain_tech which = 8640}
+command = { type = gain_tech which = 8650}
+command = { type = gain_tech which = 8660}
+command = { type = gain_tech which = 8700}
+command = { type = gain_tech which = 8710}
+command = { type = gain_tech which = 8720}
+command = { type = gain_tech which = 8730}
+command = { type = gain_tech which = 8740}
+command = { type = gain_tech which = 8750}
+# Engagement Tactics - Fleet-in-Being colum
+command = { type = gain_tech which = 8900}
+command = { type = gain_tech which = 8910}
+command = { type = gain_tech which = 8920}
+command = { type = gain_tech which = 8930}
+command = { type = gain_tech which = 8940}
+command = { type = gain_tech which = 8950}
+command = { type = gain_tech which = 8960}
+command = { type = gain_tech which = 8970}
+command = { type = gain_tech which = 8980}
+command = { type = gain_tech which = 81050}
+command = { type = gain_tech which = 81060}
+command = { type = gain_tech which = 81070}
+command = { type = gain_tech which = 81080}
+command = { type = gain_tech which = 81090}
+command = { type = gain_tech which = 81100}
+command = { type = gain_tech which = 81110}
+command = { type = gain_tech which = 81120}
+# Engagement Tactics - Indirect Approach
+command = { type = gain_tech which = 81300}
+command = { type = gain_tech which = 81310}
+command = { type = gain_tech which = 81320}
+command = { type = gain_tech which = 81330}
+command = { type = gain_tech which = 81340}
+command = { type = gain_tech which = 81350}
+command = { type = gain_tech which = 81360}
+command = { type = gain_tech which = 81370}
+command = { type = gain_tech which = 81380}
+command = { type = gain_tech which = 81450}
+command = { type = gain_tech which = 81460}
+command = { type = gain_tech which = 81470}
+command = { type = gain_tech which = 81480}
+command = { type = gain_tech which = 81490}
+command = { type = gain_tech which = 81500}
+command = { type = gain_tech which = 81510}
+command = { type = gain_tech which = 81520}
+# Subsidiary Carrier Role
+command = { type = gain_tech which = 81650}
+# Carrier Strike/Offensive column
+command = { type = gain_tech which = 81700}
+command = { type = gain_tech which = 81710}
+command = { type = gain_tech which = 81720}
+command = { type = gain_tech which = 81730}
+command = { type = gain_tech which = 81740}
+command = { type = gain_tech which = 81750}
+command = { type = gain_tech which = 81760}
+command = { type = gain_tech which = 82100}
+command = { type = gain_tech which = 82110}
+command = { type = gain_tech which = 82120}
+# Carrier Scouting/Defensive column
+command = { type = gain_tech which = 81850}
+command = { type = gain_tech which = 81860}
+command = { type = gain_tech which = 81870}
+command = { type = gain_tech which = 81880}
+command = { type = gain_tech which = 81890}
+command = { type = gain_tech which = 81900}
+command = { type = gain_tech which = 81910}
+command = { type = gain_tech which = 82130}
+command = { type = gain_tech which = 82140}
+command = { type = gain_tech which = 82150}
+# Amphibious Warfare
+command = { type = gain_tech which = 82300}
+command = { type = gain_tech which = 82310}
+command = { type = gain_tech which = 82320}
+command = { type = gain_tech which = 82330}
+# Logistic Support
+command = { type = gain_tech which = 82500}
+command = { type = gain_tech which = 82510}
+command = { type = gain_tech which = 82520}
+command = { type = gain_tech which = 82530}
+	}
+	action_b = {
+		name = "Don't Need It"
+		ai_chance = 100
+		command = { }
+	}
+}
+event = {
+	id = 80126
+	random = no
+	
+	name = "Air Doctrine Blueprints"
+	desc = "Sometimes, you've just gotta read some blueprints"
+	style = 0
+	action_a = {
+		name = "Air Doctrine Booster"
+	################# AIR Doctrines #####################
+
+# interwar doctrines
+command = { type = gain_tech which = 27460}
+command = { type = gain_tech which = 27470}
+command = { type = gain_tech which = 9010}
+# WW1 Doctrines
+command = { type = gain_tech which = 27480}
+command = { type = gain_tech which = 27490}
+command = { type = gain_tech which = 27500}
+command = { type = gain_tech which = 27510}
+command = { type = gain_tech which = 27520}
+command = { type = gain_tech which = 27530}
+command = { type = gain_tech which = 27540}
+command = { type = gain_tech which = 27550}
+command = { type = gain_tech which = 9020}
+command = { type = gain_tech which = 9030}
+command = { type = gain_tech which = 27560}
+command = { type = gain_tech which = 27570}
+command = { type = gain_tech which = 27580}
+command = { type = gain_tech which = 27590}
+command = { type = gain_tech which = 27600}
+# Battlefield Destruction branch./ Combat Unit Destruction
+command = { type = gain_tech which = 9040}
+command = { type = gain_tech which = 9050}
+command = { type = gain_tech which = 9060}
+command = { type = gain_tech which = 9070}
+command = { type = gain_tech which = 9080}
+command = { type = gain_tech which = 9270}
+command = { type = gain_tech which = 9280}
+command = { type = gain_tech which = 9290}
+command = { type = gain_tech which = 9300}
+# Operational Destruction branch./ Infrastructure destruction 
+command = { type = gain_tech which = 9090}
+command = { type = gain_tech which = 9100}
+command = { type = gain_tech which = 9110}
+command = { type = gain_tech which = 9120}
+command = { type = gain_tech which = 9130}
+command = { type = gain_tech which = 9350}
+command = { type = gain_tech which = 9360}
+command = { type = gain_tech which = 9370}
+command = { type = gain_tech which = 9380}
+# Strategic Destruction branch. / Mass Destruction
+command = { type = gain_tech which = 9140}
+command = { type = gain_tech which = 9150}
+command = { type = gain_tech which = 9160}
+command = { type = gain_tech which = 9170}
+command = { type = gain_tech which = 9180}
+command = { type = gain_tech which = 9430}
+command = { type = gain_tech which = 9440}
+command = { type = gain_tech which = 9450}
+command = { type = gain_tech which = 9460}
+# First strike branch. / Off. Fighter Box
+command = { type = gain_tech which = 9190}
+command = { type = gain_tech which = 9200}
+command = { type = gain_tech which = 9210}
+command = { type = gain_tech which = 9220}
+command = { type = gain_tech which = 9310}
+command = { type = gain_tech which = 9320}
+command = { type = gain_tech which = 9330}
+command = { type = gain_tech which = 9340}
+# Perimeter Defence branch. / Def. Fighter Box
+command = { type = gain_tech which = 9230}
+command = { type = gain_tech which = 9240}
+command = { type = gain_tech which = 9250}
+command = { type = gain_tech which = 9260}
+command = { type = gain_tech which = 9390}
+command = { type = gain_tech which = 9400}
+command = { type = gain_tech which = 9410}
+command = { type = gain_tech which = 9420}
+# Cold war doctrines
+command = { type = gain_tech which = 27000}
+#Interceptor vs Multirole Fighter Emphasis
+command = { type = gain_tech which = 27010}
+command = { type = gain_tech which = 27020}
+command = { type = gain_tech which = 27030}
+command = { type = gain_tech which = 27040}
+command = { type = gain_tech which = 27050}
+command = { type = gain_tech which = 27060}
+command = { type = gain_tech which = 27070}
+command = { type = gain_tech which = 27080}
+command = { type = gain_tech which = 27090}
+command = { type = gain_tech which = 27100}
+command = { type = gain_tech which = 27110}
+command = { type = gain_tech which = 27120}
+command = { type = gain_tech which = 27130}
+# B-TAC priority better choice for desert warfare
+command = { type = gain_tech which = 27140}
+command = { type = gain_tech which = 27150}
+command = { type = gain_tech which = 27160}
+command = { type = gain_tech which = 27170}
+command = { type = gain_tech which = 27180}
+command = { type = gain_tech which = 27190}
+command = { type = gain_tech which = 27200}
+# Infantry Destruction Focus
+command = { type = gain_tech which = 27210}
+command = { type = gain_tech which = 27220}
+command = { type = gain_tech which = 27230}
+command = { type = gain_tech which = 27240}
+command = { type = gain_tech which = 27250}
+command = { type = gain_tech which = 27260}
+command = { type = gain_tech which = 27270}
+# Airborne Assault Suppor
+command = { type = gain_tech which = 27280}
+command = { type = gain_tech which = 27290}
+command = { type = gain_tech which = 27300}
+# Strategic Bomber, ICBM and Nuclear 
+command = { type = gain_tech which = 27310}
+command = { type = gain_tech which = 27320}
+command = { type = gain_tech which = 27330}
+command = { type = gain_tech which = 27340}
+command = { type = gain_tech which = 27350}
+command = { type = gain_tech which = 27360}
+command = { type = gain_tech which = 27370}
+command = { type = gain_tech which = 27380}
+command = { type = gain_tech which = 27390}
+command = { type = gain_tech which = 27400}
+# Naval Bomber Role
+command = { type = gain_tech which = 27410}
+command = { type = gain_tech which = 27420}
+command = { type = gain_tech which = 27430}
+command = { type = gain_tech which = 27440}
+command = { type = gain_tech which = 27450}
+
+	}
+	action_b = {
+		name = "Don't Need It"
+		ai_chance = 100
+		command = { }
+	}
+}

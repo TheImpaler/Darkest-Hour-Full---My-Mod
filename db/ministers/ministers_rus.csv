@@ -1,0 +1,204 @@
+RUS;Ruling Cabinet - Start;Name;Start Year;End Year;Ideology;Personality;Loyalty;Picturename;X
+;Replacements;;;;;;;;X
+515001;Head of State;H.R.H. Kyrill Romanov;1933;1964;FA;Weary Stiffneck;High;3025;X
+515002;Head of Government;Gregori Zhilenkov;1933;1964;FA;Silent Workhorse;High;M4081;X
+515003;Foreign Minister;Nikolai Pokrovsky;1933;1964;FA;General Staffer;Low;M4082;X
+515004;Minister of Armament;Nikolai Maklakov;1933;1964;FA;Military Entrepreneur;Medium;M4083;X
+515005;Minister of Security;Vladimir Malyshkin;1933;1964;FA;Back Stabber;Very High;3026;X
+515006;Head of Military Intelligence;Mikhail Meandrov;1933;1964;FA;Dismal Enigma;Very High;3027;X
+515007;Chief of Staff;Anton Denikin;1933;1964;FA;School of Mass Combat;High;L500009;X
+515008;Chief of Army;Lavrentij Kornilov;1933;1964;FA;Guns and Butter Doctrine;Very High;L500046;X
+515009;Chief of Navy;Boris Makaroff;1933;1964;FA;Decisive Naval Battle Doctrine;High;3029;X
+515010;Chief of Air Force;Ivan Taube;1933;1964;FA;Air Superiority Doctrine;High;M4145;X
+515011;Head of State;Andrei Vlasov;1933;1964;NS;Resigned Generalissimo;High;M4090;X
+515012;Head of State;H.R.H. Vladimir Romanov;1933;1964;PA;Benevolent Gentleman;High;M4091;X
+515013;Head of State;Alexander Kerensky;1933;1964;SC;Die-hard Reformer;High;3030;X
+515014;Head of Government;Nikolai Yezhov;1933;1964;NS;Backroom Backstabber;High;M4093;X
+515015;Head of Government;Iraklij Tsereteliy;1933;1964;SC;Naive Optimist;High;M4095;X
+515016;Foreign Minister;Boris Sturmer;1933;1964;FA;Iron Fisted Brute;Low;3032;X
+515017;Foreign Minister;Fedor Chicherin;1933;1964;NS;Biased Intellectual;Low;3033;X
+515018;Foreign Minister;Georgij Brassov;1933;1964;NS;The Cloak N Dagger Schemer;Low;M4098;X
+515019;Foreign Minister;Boris Chernov;1933;1964;PA;Apologetic Clerk;Low;M4099;X
+515020;Foreign Minister;Piotr Plehanov;1933;1964;PA;Ideological Crusader;Low;3034;X
+515021;Foreign Minister;Oleg Milyukov;1933;1964;SC;Great Compromiser;Low;3035;X
+515022;Foreign Minister;Pavel Konovalov;1933;1964;SC;Apologetic Clerk;Low;M4102;X
+515023;Minister of Armament;Sergei Rodzyanko;1933;1964;FA;Resource Industrialist;Medium;M4103;X
+515024;Minister of Armament;Nikolai Krasnov;1933;1964;NS;Administrative Genius;Medium;3036;X
+515025;Minister of Armament;Boris Komenenov;1933;1964;NS;Resource Industrialist;Medium;M4105;X
+515026;Minister of Armament;Georgij Brassov;1933;1964;PA;Resource Industrialist;Medium;M4098;X
+515027;Minister of Armament;Yurij Rosenfeld;1933;1964;PA;Theoretical Scientist;Medium;3037;X
+515028;Minister of Armament;Sergei Savinkov;1933;1964;SC;Theoretical Scientist;Medium;3038;X
+515029;Minister of Armament;Boris Maltcheff;1933;1964;SC;Infantry Proponent;Medium;M4109;X
+515030;Minister of Security;Sergei Sazonov;1933;1964;FA;Compassionate Gentleman;Very High;M4110;X
+515031;Minister of Security;Grigorij R. Semyonov;1933;1964;NS;Crime Fighter;Very High;M4111;X
+515032;Minister of Security;Felix Yussopov;1933;1964;NS;Back Stabber;Very High;M4112;X
+515033;Minister of Security;Sergei Rodzyanko;1933;1964;PA;Silent Lawyer;Very High;M4103;X
+515034;Minister of Security;Nikolai Yezhov;1933;1964;PA;Back Stabber;Undying;M4093;X
+515035;Minister of Security;Vladimir Skobelev;1933;1964;SC;Prince of Terror;Very High;M4115;X
+515036;Minister of Security;Felix Yussopov;1933;1964;SC;Compassionate Gentleman;Very High;M4112;X
+515037;Head of Military Intelligence;Nikolai Yezhov;1933;1964;FA;Technical Specialist;Undying;M4093;X
+515038;Head of Military Intelligence;Vsevolod Romanovsky;1933;1964;NS;Dismal Enigma;Very High;M4118;X
+515039;Head of Military Intelligence;Sergei Sazonov;1933;1964;NS;Industrial Specialist;Very High;M4110;X
+515040;Head of Military Intelligence;Anatolij Kaledin;1933;1964;PA;Logistics Specialist;Very High;M4120;X
+515041;Head of Military Intelligence;Alexander Kolchak;1870;1964;PA;Naval Intelligence Specialist;Very High;M4089;X
+515042;Head of Military Intelligence;Ilich Antonov;1933;1964;SC;Technical Specialist;Very High;M4122;X
+515043;Head of Military Intelligence;Yurij Rosenfeld;1933;1964;SC;Logistics Specialist;Very High;3037;X
+515044;Chief of Staff;Petr Vrangel;1933;1964;FA;School of Manoeuvre;High;M4124;X
+515045;Chief of Staff;Fyodor Trikhin;1933;1964;NS;School of Mass Combat;High;M4125;X
+515046;Chief of Staff;Andrei Vlasov;1933;1964;NS;School of Fire Support;High;M4090;X
+515047;Chief of Staff;Alexander Kolchak;1870;1964;PA;School of Defence;High;M4089;X
+515048;Chief of Staff;Mikhail Tukachevsky;1933;1964;PA;School of Manoeuvre;High;M4128;X
+515049;Chief of Staff;Feliks Romanovsky;1933;1964;SC;School of Fire Support;High;M4129;X
+515050;Chief of Staff;Jevgenij von Rommel;1933;1964;SC;School of Manoeuvre;High;M4130;X
+515051;Chief of Army;Alexander Egorov;1933;1964;FA;Armoured Spearhead Doctrine;Very High;M4131;X
+515052;Chief of Army;Andrei Vlasov;1933;1964;NS;Elastic Defence Doctrine;Very High;M4090;X
+515053;Chief of Army;Mikhail Tukachevsky;1933;1964;NS;Static Defence Doctrine;Very High;M4128;X
+515054;Chief of Army;Petr Vrangel;1933;1964;PA;Decisive Battle Doctrine;Very High;M4124;X
+515055;Chief of Army;Jevgenij von Rommel;1933;1964;PA;Armoured Spearhead Doctrine;Very High;M4130;X
+515056;Chief of Army;Vasilij von Blücher;1933;1964;SC;Armoured Spearhead Doctrine;Very High;M4136;X
+515057;Chief of Army;Igor Belov;1933;1964;SC;Static Defence Doctrine;Very High;M4137;X
+515058;Chief of Navy;Petar Drozd;1933;1964;FA;Open Seas Doctrine;High;M4138;X
+515059;Chief of Navy;Oleg Mychelkin;1933;1964;NS;Indirect Approach Doctrine;High;M4139;X
+515060;Chief of Navy;Alexander Kolchak;1870;1964;PA;Power Projection Doctrine;High;M4089;X
+515061;Chief of Navy;Konstantin Dushenov;1933;1964;PA;Base Control Doctrine;High;L10520;X
+515062;Chief of Navy;Robert von Wirén;1933;1964;SC;Decisive Naval Battle Doctrine;High;M4143;X
+515063;Chief of Navy;Edouard Galler;1933;1964;SC;Open Seas Doctrine;High;L10417;X
+515064;Chief of Air Force;Nikolai Kharlamov;1933;1964;PA;Army Aviation Doctrine;High;L10472;X
+515065;Chief of Air Force;Jurij Alksnis;1933;1964;PA;Vertical Envelopment Doctrine;High;M4146;X
+515066;Chief of Air Force;Sergei Korenev;1933;1964;SC;Vertical Envelopment Doctrine;High;M4150;X
+515067;Chief of Air Force;Jevgennij Smushkevich;1933;1964;SC;Air Superiority Doctrine;High;M4147;X
+515068;Head of State;H.R.H. Vladimir Romanov;1938;1964;FA;Benevolent Gentleman;High;M4091;X
+515069;Chief of Air Force;Alexander Kolchak;1870;1964;FA;Naval Aviation Doctrine;High;M4089;X
+515070;Chief of Air Force;Michael Alexandrovich;1914;1933;PA;Carpet Bombing Doctrine;Very High;3039;X
+515071;Chief of Army;Vladimir Sukhomlinov;1914;1933;PA;Decisive Battle Doctrine;Very High;3040;X
+515072;Chief of Army;Alexei Brusilov;1915;1933;SL;Innovative Offensive General;High;3041;X
+515073;Chief of Army;Lavrentij Kornilov;1915;1933;ML;Armoured Spearhead Doctrine;Low;L500046;X
+515074;Chief of Army;Mikhail Alexeev;1915;1933;ML;static defence doctrine;High;3043;X
+515075;Chief of Army;Nikolai Krylenko;1915;1933;ST;Guns and Butter Doctrine;Very High;3044;X
+515076;Chief of Army;Nikolai II;1914;1933;PA;Undistinguished Suit;Very High;3045;X
+515077;Chief of Navy;Stepan Voevodsky;1914;1933;PA;Decisive Naval Battle Doctrine;Very High;3951;X
+515078;Chief of Navy;Ivan Grigorovich;1914;1933;PA;Decisive Naval Battle Doctrine;Very High;3046;X
+515079;Chief of Navy;Aleksandr Rusin;1914;1933;PA;Open Seas Doctrine;Very High;5218;X
+515080;Chief of Navy;Count Kapnist;1915;1933;PA;Decisive Naval Battle Doctrine;High;4551;X
+515081;Chief of Navy;Mikhail Berens;1915;1933;PA;Decisive Naval Battle Doctrine;High;3952;X
+515082;Chief of Navy;Mikhail Kedrov;1915;1933;ML;Open Seas Doctrine;High;3047;X
+515083;Chief of Navy;Mikhail Kedrov;1915;1933;PA;Open Seas Doctrine;High;3047;X
+515084;Chief of Navy;Pavel Dybenko;1915;1933;LE;BASE CONTROL DOCTRINE;Low;3048;X
+515085;Chief of Staff;Vladimir Sukhomlinov;1914;1933;PA;school of manoeuvre;Very High;3040;X
+515086;Chief of Staff;Nikolai Yanushkevich;1914;1933;PA;School of Mass Combat;Very High;3049;X
+515087;Chief of Staff;Mikhail Alexeev;1915;1933;PA;School of Fire Support;Very High;3043;X
+515088;Chief of Staff;Vasily Gurko;1916;1933;PA;School of Psychology;Very High;3050;X
+515089;Chief of Staff;Aleksandr Kerensky;1915;1933;SD;school of manoeuvre;High;3051;X
+515090;Chief of Staff;Aleksandr Lukomsky;1915;1933;PA;School of Fire Support;Very High;3953;X
+515091;Chief of Staff;Anton Denikin;1915;1933;PA;school of manoeuvre;Very High;L500009;X
+515092;Chief of Staff;Mikhail Alexeev;1915;1933;ML;School of Fire Support;High;3043;X
+515093;Chief of Staff;Nikolai Dukhonin;1915;1933;PA;School of Psychology;Very High;3954;X
+515094;Chief of Staff;Nikolai Podvoisky;1915;1933;ST;School of Manoeuvre;Low;3053;X
+515095;Chief of Staff;Vladislav Klembovski;1915;1933;PA;School of Mass Combat;Very High;3955;X
+515096;Chief of Staff;Leon Trotsky;1918;1933;LE;School of Mass Combat;Very High;1189;X
+515097;Foreign Minister;Pavel Milyukov;1914;1933;ML;Ideological Crusader;Medium;3054;X
+515098;Foreign Minister;Sergei Sazonov;1914;1933;ML;Apologetic Clerk;Very High;3055;X
+515099;Foreign Minister;Sergei Sazonov;1914;1933;PA;Apologetic Clerk;Very High;3055;X
+515100;Foreign Minister;Boris Stürmer;1916;1933;PA;Iron Fisted Brute;High;3056;X
+515101;Foreign Minister;Leon Trotsky;1915;1933;ST;Ideological Crusader;Low;1189;X
+515102;Foreign Minister;Mikhail Tereshchenko;1915;1933;SL;Ideological Crusader;High;3058;X
+515103;Foreign Minister;Nikolai Pokrovsky;1915;1933;PA;Great Compromiser;High;3059;X
+515104;Head of Government;Ivan Goremykin;1914;1933;PA;Political Protege;Very High;3060;X
+515105;Head of Government;Ivan Goremykin;1914;1933;SC;Political Protege;Very High;3060;X
+515106;Head of Government;Aleksandr Krivoshein;1914;1933;PA;Silent Workhorse;High;3061;X
+515107;Head of Government;Aleksandr Krivoshein;1914;1933;SC;Silent Workhorse;High;3061;X
+515108;Head of Government;Mikhail Rodzianko;1914;1933;ML;Flamboyant Tough Guy;High;3062;X
+515109;Head of Government;Pyotr Stolypin;1914;1933;SC;Flamboyant Tough Guy;Very High;3063;X
+515110;Head of Government;Vladimir Kokovtsov;1914;1933;PA;Naive Optimist;High;3064;X
+515111;Head of Government;Boris Stürmer;1915;1933;PA;Political Protege;High;3056;X
+515112;Head of Government;Aleksandr Trepov;1916;1933;PA;Silent Workhorse;High;3065;X
+515113;Head of Government;Nikolai Golitsyn;1916;1933;PA;Happy Amateur;High;3066;X
+515114;Head of Government;Aleksandr Kerensky;1915;1933;SD;Ambitious Union Boss;High;3051;X
+515115;Head of Government;Lavrentij Kornilov;1915;1933;PA;Old General;High;L500046;X
+515116;Head of Government;Georgy Lvov;1915;1933;ML;Silent Workhorse;High;3067;X
+515117;Head of Government;Vladimir Ilyich Lenin;1915;1933;ST;Flamboyant Tough Guy;High;3068;X
+515118;Head of Government;Anton Denikin;1918;1933;PA;Old General;High;L500009;X
+515119;Head of Government;Petr Wrangel;1920;1933;PA;Old General;High;3956;X
+515120;Head of Military Intelligence;Okhranka;1914;1933;PA;Political Specialist;Very High;3069;X
+515121;Head of Military Intelligence;Andrian Ivanovich Nepenin;1914;1933;PA;Naval Intelligence Specialist;Very High;3070;X
+515122;Head of Military Intelligence;Felix Dzerzhinskiy;1915;1933;ST;Political Specialist;Medium;3071;X
+515123;Head of State;Nikolai II;1914;1933;PA;Despotic Autocrat;High;3045;X
+515124;Head of State;Aleksandr Kerensky;1915;1933;SD;Die-hard Reformer;High;3051;X
+515125;Head of State;Alexis II;1915;1933;ML;Popular Figurehead;High;3072;X
+515126;Head of State;Lavrentij Kornilov;1915;1933;PA;Stern Imperialist;High;L500046;X
+515127;Head of State;Michael II;1915;1933;ML;Weary Stiffneck;High;3039;X
+515128;Head of State;Nikolai II;1915;1933;ML;Despotic Autocrat;High;3045;X
+515129;Head of State;Georgy Lvov;1915;1933;ML;Die-hard Reformer;High;3067;X
+515130;Head of State;Vladimir Ilyich Lenin;1915;1933;ST;powerhungry demagogue;High;3068;X
+515131;Head of State;Anton Denikin;1915;1933;PA;Stern Imperialist;High;L500009;X
+515132;Head of State;Petr Wrangel;1916;1933;PA;Resigned Generalissimo;High;3956;X
+515133;Minister of Armament;Vladimir Kokovtsov;1914;1933;PA;Resource Industrialist;Very High;3064;X
+515134;Minister of Armament;Pavel Ryabushinsky;1914;1933;SL;Administrative Genius;High;3073;X
+515135;Minister of Armament;Vladimir Kokovtsov;1914;1933;SC;Resource Industrialist;Very High;3064;X
+515136;Minister of Armament;Vasily Maklakov;1914;1933;SL;Administrative Genius;High;3074;X
+515137;Minister of Armament;Vasily Shulgin;1914;1933;ML;laissez-faire capitalist;High;3075;X
+515138;Minister of Armament;Pyotr Bark;1914;1933;PA;Resource Industrialist;High;3076;X
+515139;Minister of Armament;Alexei Polivanov;1915;1933;PA;Infantry Proponent;High;3077;X
+515140;Minister of Armament;Andrei Shingarev;1915;1933;SL;Theoretical Scientist;High;3078;X
+515141;Minister of Armament;Mikhail Bernatsky;1915;1933;SL;Theoretical Scientist;High;3079;X
+515142;Minister of Armament;Mikhail Tereshchenko;1915;1933;SL;laissez-faire capitalist;High;3058;X
+515143;Minister of Armament;Valerian Obolensky;1915;1933;ST;Resource Industrialist;High;unknown;X
+515144;Minister of Armament;Nikolay Nekrasov;1915;1933;SD;Theoretical Scientist;High;3080;X
+515145;Minister of Security;Ivan Goremykin;1914;1933;PA;Crime Fighter;Very High;3060;X
+515146;Minister of Security;Peter Struve;1914;1933;SL;Compassionate Gentleman;High;3081;X
+515147;Minister of Security;Aleksandr Guchkov;1914;1933;ML;Compassionate Gentleman;High;3082;X
+515148;Minister of Security;Aleksandr Protopopov;1914;1933;SL;Back Stabber;High;3083;X
+515149;Minister of Security;Alexander A. Makarov;1914;1933;PA;Silent Lawyer;Very High;3084;X
+515150;Minister of Security;Alexander A. Makarov;1914;1933;SC;Silent Lawyer;Very High;3084;X
+515151;Minister of Security;Nikolai Maklakov;1914;1933;PA;Crime Fighter;Very High;3085;X
+515152;Minister of Security;Alexei Khvostov;1915;1933;PA;Silent Lawyer;High;3086;X
+515153;Minister of Security;Nikolai Shcherbatov;1915;1933;PA;Silent Lawyer;High;3957;X
+515154;Minister of Security;Aleksandr Protopopov;1916;1933;PA;Back Stabber;High;3083;X
+515155;Minister of Security;Boris Stürmer;1916;1933;PA;Silent Lawyer;High;3056;X
+515156;Minister of Security;Aleksandr S. Zarudny;1915;1933;SD;Crime Fighter;High;3958;X
+515157;Minister of Security;Aleksandr Kerensky;1915;1933;SD;Man of the People;Low;3051;X
+515158;Minister of Security;Aleksey Rykov;1915;1933;ST;Man of the People;Low;3087;X
+515159;Minister of Security;Felix Dzerzhinsky;1915;1933;ST;Efficient Sociopath;Medium;3038;X
+515160;Minister of Security;Irakli Tsereteli;1915;1933;SL;Silent Lawyer;High;3088;X
+515161;Minister of Security;Georgy Lvov;1915;1933;SL;Compassionate Gentleman;High;3067;X
+515162;Chief of Army;Grand Duke Nikolai;1910;1933;PA;Decisive Battle Doctrine;High;5910;X
+515163;Minister of Security;Anna N. Wolkova;1915;1933;NS;Efficient Sociopath;High;6376;X
+515164;Chief of Staff;Vladimir A. Kislitsin;1915;1933;SC;School of Manoeuvre;Very high;6375;X
+515165;Minister of Security;Konstantin V. Rodzaevsky;1915;1933;NS;Prince of Terror;High;6377;X
+515166;Head of Government;Konstantin V. Rodzaevsky;1915;1945;NS;Naive Optimist;High;6377;X
+515167;Chief of Army;Vladimir A. Kislitsin;1915;1930;SC;Decisive Battle Doctrine;Very high;6375;X
+515168;Foreign Minister;Aleksandr Solzhenitsyn;1915;1940;ML;Ideological Crusader;High;6378;X
+515169;Chief of Staff;Pyotr Krasnov;1915;1930;PA;School of Manoeuvre;Medium;6374;X
+515170;Chief of Army;Pyotr Krasnov;1915;1939;PA;Guns and Butter Doctrine;Medium;6374;X
+515171;Chief of Staff;Andrei Shkuro;1915;1930;PA;School of Psychology;Medium;6372;X
+515172;Chief of Army;Andrei Shkuro;1915;1930;PA;Decisive Battle Doctrine;Medium;6372;X
+515173;Minister of Armament;Mikhail Kalashnikov;1915;1943;SC;Infantry Proponent;Very high;6373;X
+515174;Chief of Staff;Mikhail Kalashnikov;1915;1947;SC;School of Defence;Very high;6373;X
+515175;Foreign Minister;Andrei Vlasov;1915;1944;NS;General Staffer;High;M4090;X
+515176;Chief of Staff;Pavel Bermondt-Avalov;1915;1933;FA;School of Psychology;Medium;6379;X
+515177;Chief of Army;Pavel Bermondt-Avalov;1915;1938;FA;Static Defence Doctrine;Medium;6379;X
+515178;Minister of Security;Pavel Bermondt-Avalov;1915;1942;FA;Back Stabber;Medium;6379;X
+515179;Chief of Staff;Vladimir A. Kislitsin;1933;1964;SC;School of Manoeuvre;Very high;6375;X
+515180;Minister of Security;Konstantin V. Rodzaevsky;1933;1964;NS;Prince of Terror;High;6377;X
+515181;Head of Government;Konstantin V. Rodzaevsky;1945;1964;NS;Naive Optimist;High;6377;X
+515182;Chief of Army;Vladimir A. Kislitsin;1946;1964;SC;Decisive Battle Doctrine;Very high;6375;X
+515183;Foreign Minister;Aleksandr Solzhenitsyn;1940;1964;ML;Ideological Crusader;High;6378;X
+515184;Chief of Staff;Pyotr Krasnov;1930;1964;PA;School of Manoeuvre;Medium;6374;X
+515185;Chief of Army;Pyotr Krasnov;1939;1964;PA;Guns and Butter Doctrine;Medium;6374;X
+515186;Chief of Staff;Andrei Shkuro;1930;1964;PA;School of Psychology;Medium;6372;X
+515187;Chief of Army;Andrei Shkuro;1930;1964;PA;Decisive Battle Doctrine;Medium;6372;X
+515188;Minister of Armament;Mikhail Kalashnikov;1943;1964;SC;Infantry Proponent;Very high;6373;X
+515189;Chief of Staff;Mikhail Kalashnikov;1947;1964;SC;School of Defence;Very high;6373;X
+515190;Chief of Staff;Pavel Bermondt-Avalov;1933;1964;FA;School of Psychology;Medium;6379;X
+515191;Chief of Army;Pavel Bermondt-Avalov;1938;1964;FA;Static Defence Doctrine;Medium;6379;X
+515192;Minister of Security;Pavel Bermondt-Avalov;1942;1964;FA;Back Stabber;Medium;6379;X
+515193;Foreign Minister;Mikhail Tereshchenko;1934;1964;SC;The Cloak N Dagger Schemer;High;3058;X
+515194;Minister of Armament;Mikhail Tereshchenko;1934;1964;SC;Military Entrepreneur;High;3058;X
+515195;Chief of Staff;Budykho A. Efimovich;1941;1964;FA;School of Defence;Medium;7370;X
+515196;Minister of Security;Ivan Alekseevich;1943;1964;FA;Man of the People;High;7371;X
+515197;Chief of Navy;Ivan Alekseevich;1941;1964;FA;Indirect Approach Doctrine;High;7371;X
+515198;Chief of Staff;Malyshkin V. Fedorovich;1939;1964;PA;School of Psychology;High;7372;X
+515199;Chief of Staff;Bogdanov Mikhail Vasilevich;1942;1964;PA;School of Fire Support;Medium;7373;X
+515200;Chief of Staff;Trukhin Fedor Ivanovich;1941;1964;PA;School of Manoeuvre;High;7374;X
+515201;Chief of Staff;Zakutnyi Dmitrii Efimovich;1941;1964;FA;School of Defence;High;7375;X
+515202;Chief of Army;Trukhin Fedor Ivanovich;1945;1964;PA;Armoured Spearhead Doctrine;High;7374;X

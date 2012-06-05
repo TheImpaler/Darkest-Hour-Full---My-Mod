@@ -1,0 +1,115 @@
+####################################
+# Uruguay AI events by Lothos
+####################################
+################
+# Minister of Security Section 
+#############################################
+event = { # Roberto Acosta Díez takes power
+	id = 3040001
+	random = no 
+	country = URU
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 195078 # Roberto Acosta Díez
+		NOT = { InCabinet = 195078 }
+		OR = {
+			manpower = 20
+			NOT = { minister = 195041 } # Horacio Arredondo
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ministerofsecurity which = 195078 }
+		command = { type = dissent value = -1 }
+	}
+}
+event = { # Horacio Arredondo takes power
+	id = 3040002
+	random = no 
+	country = URU
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 195041 # Horacio Arredondo
+		NOT = { InCabinet = 195041 }
+		OR = {
+			NOT = { manpower = 20 }
+			NOT = { minister = 195078 } # Roberto Acosta Díez
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ministerofsecurity which = 195041 }
+		command = { type = dissent value = -1 }
+	}
+}
+
+################
+# Head of Intelligence Section
+#############################################
+event = { # Lui Soro Contioni takes power
+	id = 3040003
+	random = no 
+	country = URU
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 195079 # Lui Soro Contioni
+		NOT = { InCabinet = 195079 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ministerofintelligence which = 195079 }
+		command = { type = dissent value = -1 }
+	}
+}
+event = { # Enrique Moutisch takes power
+	id = 3040004
+	random = no 
+	country = URU
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 195050 # Enrique Moutisch
+		NOT = { InCabinet = 195050 }
+		NOT = { minister = 195079 } # Lui Soro Contioni
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ministerofintelligence which = 195050 }
+		command = { type = dissent value = -1 }
+	}
+}

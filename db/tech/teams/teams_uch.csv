@@ -1,0 +1,29 @@
+UCH;Name;Pic Name;Skill;Start Year;End Year;Speciality1;Speciality2;Speciality3;Speciality4;Speciality5;Speciality6;Speciality7;Speciality8;Speciality9;Speciality10;Speciality11;Speciality12;Speciality13;Speciality14;Speciality15;Speciality16;Speciality17;Speciality18;Speciality19;Speciality20;Speciality21;Speciality22;Speciality23;Speciality24;Speciality25;Speciality26;Speciality27;Speciality28;Speciality29;Speciality30;Speciality31;Speciality32;x
+1325001;CAMCO;T1000;2;1920;1970;aeronautics;fighter_design;general_equipment;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1325002;Dading Engine Factory;T1001;3;1920;1970;aeronautics;fighter_design;mechanics;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1325003;Hanyang Arsenal;T1002;2;1900;1970;munitions;artillery;general_equipment;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1325004;Chung Hing Coal Company;T1004;2;1900;1970;industrial_engineering;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1325005;Alexander von Falkenhausen;T1005;4;1930;1948;large_unit_tactics;infantry_focus;centralized_execution;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1325006;Yan Xishan;T1006;2;1931;1960;large_unit_tactics;infantry_focus;individual_courage;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1325007;Claire Chennault;T1007;4;1970;1970;fighter_tactics;bomber_tactics;piloting;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1325008;Republic of China Air Force;T1008;2;1920;1970;fighter_tactics;centralized_execution;piloting;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1325009;Republic of China Navy;T1009;2;1920;1970;small_taskforce_tactics;naval_training;seamanship;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1325010;Kiangnan Dock and Engineering Works;T1010;2;1930;1970;naval_artillery;naval_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1325011;Institute of Mathematics - Academia Sinica;T1011;5;1900;1970;mathematics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1325012;Academia Sinica;T1012;2;1900;1970;mechanics;chemistry;management;mathematics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1325013;Baoding Military Academy;T8803;1;1900;1970;large_unit_tactics;infantry_focus;individual_courage;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1325014;China National Aviation Corporation;T1014;2;1930;1970;aeronautics;bomber_design;general_equipment;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1325015;Chang'an;T1015;3;1930;1970;artillery;mechanics;general_equipment;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1325016;Yong Li;T1016;4;1930;1970;industrial_engineering;chemistry;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1325017;National Machine Works;T8500;3;1930;1970;industrial_engineering;mechanics;general_equipment;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1325018;China Development & Finance Corp.;T1018;2;1900;1970;industrial_engineering;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1325019;National Tsing Hua University;T1019;3;1950;1970;mathematics;nuclear_physics;nuclear_engineering;chemistry;mechanics;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1325020;CSIST;T1426;5;1950;1970;rocketry;aeronautics;avionics;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1325021;Taiyuan Arsenal;T8801;3;1910;1970;artillery;general_equipment;training;mechanics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1325022;Qinghua University;T8802;2;1910;1970;mechanics;chemistry;mathematics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1325023;Baoding Military Academy;T8803;2;1910;1970;large_unit_tactics;infantry_focus;individual_courage;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1325024;Dagu Shipyard;T8804;2;1910;1970;naval_engineering;naval_artillery;electronics;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1325025;Kaiping Coal Mine;T1004;2;1910;1970;industrial_engineering;management;chemistry;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1325026;Tianjin Tram & Electric Co.;T8807;3;1910;1970;mechanics;electronics;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1325027;Zhili Gongyi Zongju;T8808;2;1910;1970;industrial_engineering;electronics;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1325028;Wu Peifu;100364;4;1920;1939;combined_arms_focus;small_unit_tactics;centralized_execution;decentralized_execution;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;x

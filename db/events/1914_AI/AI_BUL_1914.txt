@@ -1,0 +1,42 @@
+
+########################################################## 
+###############################################
+## Bulgarian AI Files
+## Jaegerfeld 2011
+
+## Bulgaria enters the war aside the central powers
+
+
+event = {
+	id = 3020501
+	random = no
+	country = BUL
+	persistent = yes		
+	
+	trigger = {
+		ai = yes
+		
+		NOT = { flag = BUL_1914StartupDone }
+		war = { country = BUL country = RUS }
+		NOT = { war = { country = BUL country = U08 } }	
+		NOT = { war = { country = BUL country = U09 } }			
+		
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 1
+	deathdate = { day = 30 month = december year = 1925 }
+
+	action_a = 
+		{
+			name = "AI_EVENT"
+			ai_chance = 60
+			
+			command = { type = setflag which = BUL_1914StartupDone }
+			command = { type = ai which = "switch/BUL_1914Startup.ai" }
+
+		}
+}

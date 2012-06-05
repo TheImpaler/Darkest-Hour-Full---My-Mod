@@ -1,0 +1,37 @@
+SLV;Ruling Cabinet - Start;Name;Start Year;End Year;Ideology;Personality;Loyalty;Picturename;X
+;Replacements;;;;;;;;X
+525001;Head of State;Edler von Hospdarz;1933;1964;PA;Resigned Generalissimo;High;M545001;X
+525002;Head of Government;Ladislaus Grusz;1933;1964;PA;Political Protege;High;M545002;X
+525003;Foreign Minister;Cene Verhonik;1933;1964;PA;Great Compromiser;High;M545003;X
+525004;Minister of Armament;Danko Urshek;1933;1964;PA;Military Entrepreneur;Medium;M545004;X
+525005;Minister of Security;Milan Lekse;1933;1964;PA;Crime Fighter;Medium;M545005;X
+525006;Head of Military Intelligence;Nico Krefel;1933;1964;PA;Dismal Enigma;Medium;M545006;X
+525007;Chief of Staff;Tivador Stupka;1933;1964;PA;School of Defence;Medium;M545007;X
+525008;Chief of Army;Joseph Kövess;1933;1964;PA;Elastic Defence Doctrine;Medium;M545008;X
+525009;Chief of Navy;Friedrich Homberth;1933;1964;PA;Open Seas Doctrine;Medium;M545009;X
+525010;Chief of Air Force;Gustave Casati;1933;1964;PA;Vertical Envelopment Doctrine;Medium;M545010;X
+525011;Head of State;Arthur von Straussenburg;1933;1964;SC;Die-hard Reformer;High;M545011;X
+525012;Head of State;Ales Zupancic;1933;1964;LE;Benevolent Gentleman;High;M545012;X
+525013;Head of Government;Emil von Brasseur;1933;1964;SC;Silent Workhorse;High;M545013;X
+525014;Head of Government;Bartolomej Watzke;1933;1964;LE;Ambitious Union Boss;High;M545014;X
+525015;Foreign Minister;Sveto Hren;1941;1964;PA;Biased Intellectual;High;M545015;X
+525016;Foreign Minister;Iztok Pretner;1933;1964;SC;Iron Fisted Brute;High;M545016;X
+525017;Foreign Minister;Edvard Trubar;1933;1964;LE;Ideological Crusader;High;M545017;X
+525018;Minister of Armament;Zivadin Codamaz;1942;1964;PA;laissez-faire capitalist;Medium;M545018;X
+525019;Minister of Armament;Julij Orendec;1933;1964;SC;Administrative Genius;Medium;M545019;X
+525020;Minister of Armament;Gaspar Sorc;1933;1964;LE;Theoretical Scientist;Medium;M545020;X
+525021;Minister of Armament;Tomasz Gerbajs;1942;1964;LE;Strategic Air Proponent;Medium;M545021;X
+525022;Minister of Security;Karel Nunet;1933;1964;SC;Prince of Terror;Medium;M545022;X
+525023;Minister of Security;Hugo Ribic;1933;1964;LE;Efficient Sociopath;Medium;M545023;X
+525024;Minister of Security;Urban Frelih;1941;1964;LE;Silent Lawyer;Medium;M545024;X
+525025;Head of Military Intelligence;Lovro Miklavc;1933;1964;SC;Industrial Specialist;Medium;M545025;X
+525026;Head of Military Intelligence;Primoz Jezik;1933;1964;LE;Political Specialist;Medium;M545026;X
+525027;Head of Military Intelligence;Vilhjem Donas;1942;1964;LE;Technical Specialist;Medium;M545027;X
+525028;Chief of Staff;Franz von Ulm;1933;1964;SC;School of Mass Combat;Medium;M545028;X
+525029;Chief of Staff;Alexander Brosch von Aarenau;1933;1964;LE;School of Psychology;Medium;M545029;X
+525030;Chief of Army;Gregor Lang;1933;1964;SC;Static Defence Doctrine;Medium;M545030;X
+525031;Chief of Army;Ernst von Jacobs;1933;1964;SC;Guns and Butter Doctrine;Medium;M545031;X
+525032;Chief of Navy;Arthur Dannecker;1933;1964;SC;Decisive Naval Battle Doctrine;Medium;M545032;X
+525033;Chief of Navy;René Imperl;1933;1964;LE;Indirect Approach Doctrine;Medium;M545033;X
+525034;Chief of Air Force;Alberto von Kodolitsch;1933;1964;SC;Army Aviation Doctrine;Medium;M545034;X
+525035;Chief of Air Force;Friedrich Mazal;1933;1964;LE;Air Superiority Doctrine;Medium;M545035;X

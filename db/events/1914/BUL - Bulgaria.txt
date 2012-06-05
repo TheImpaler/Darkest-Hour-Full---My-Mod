@@ -1,0 +1,179 @@
+###
+###  Bulgarian events (BUL - 020)
+###
+### By Rhysaxiel
+###
+### 2020500 : The Fall of Serbia
+### 2020501	: CP's proposal
+### 2020502	: Armistice (based upon territory losses and dissent)
+### 2020503	: Historical Treaty of Neuilly
+###
+# Bulgaria autojoin on Serbia's capitulation
+event = {
+	id = 2020500	# The Fall of Serbia
+	country = BUL
+
+	#triggered by U08 2191508
+   
+	name = "EVT1914_2020500_NAME"
+	desc = "EVT1914_2020500_DESC" 
+	style = 2
+	picture = "news_paper"
+	
+	action_a = {
+		name = "EVT1914_2020500_ACTIONA" # It's time to join the winning side !
+		ai_chance = 95
+		command = { type = alliance which = U08 }
+		command = { trigger = { NOT = { policy = { type = professional_army value = 7 } } } type = trigger which = 1350007 } #Mobilize?
+		command = { type = trigger which = 2191509 } # U08 "Bulgaria joins CP"
+	}
+	action_b = {
+		name = "EVT1914_2020500_ACTIONA" # Stay neutral
+		ai_chance = 5
+		command = { type = relation which = U08 value = -15 }
+	}
+}
+event = {
+	id = 2020501	# CP's proposal
+	country = BUL
+
+	#triggered by U09 2192505
+   
+	name = "EVT1914_2020501_NAME"
+	desc = "EVT1914_2020501_DESC" 
+	style = 2
+	picture = "news_paper"
+
+	action_a = {
+		ai_chance = 100
+		name = "ACTION_NAME_ACCEPT" # Accept
+		command = { type = alliance which = U09 }
+		command = { trigger = { NOT = { policy = { type = professional_army value = 7 } } } type = trigger which = 1350007 } #Mobilize?
+		command = { type = trigger which = 2192506 } # U08 "Bulgaria joins CP"
+	}
+	action_b = {
+		ai_chance = 0
+		name = "EVT1914_2020501_ACTIONB" # Reject
+		command = { type = relation which = U08 value = -15 }
+	}
+}
+#Defeat
+event = {
+	id = 2020502	# Armistice
+	country = BUL
+
+	trigger = { 
+		random = 20
+		OR = {
+			war = { country = BUL country = RUS }
+			war = { country = BUL country = FRA }
+		}
+		OR = {
+			dissent = 20
+			AND = {
+				lost_national = { value = 75 } #which means Bulgaria controls only 6 of its 12 starting province and none of its cores abroad!
+				lost_ic = { value = 75 }
+			}
+			AND = {
+				lost_national = { value = 55 } #which means Bulgaria controls only 9 of its 12 starting province and none of its cores abroad!
+				NOT = { control = { province = 321 data = -1 } } #Sofia
+			}
+			AND = {
+				random = 50
+				ai = BUL
+				OR = {
+					event = 2192513 # Military defeat (U09 defeated)
+					event = 2002534 #Versailles Treaty (U08 defeated)
+				}
+			}
+		}
+	}
+   
+	name = "EVT1914_2020502_NAME"
+	desc = "EVT1914_2020502_DESC" 
+	style = 2
+	picture = "news_paper"
+	
+	date = { day = 28 month = june year = 1914 }
+	offset = 7
+	deathdate = { day = 30 month = december year = 1925 }
+
+	action = {
+		name = "EVT1914_2020502_ACTIONA" # We are defeated
+		command = { type = leave_alliance }
+		command = { trigger = { war = { country = BUL country = RUS } } type = peace which = RUS value = 1 }
+		command = { trigger = { war = { country = BUL country = FRA } } type = peace which = FRA value = 1 }
+		command = { trigger = { war = { country = BUL country = SOV } } type = peace which = SOV value = 1 }
+		command = { type = dissent value = 20 }
+		command = { type = removecore which = 307 } #Dobrich
+		command = { type = removecore which = 363 } #Xanthi
+		command = { type = removecore which = 370 } #Alexandroupoli
+		command = { type = removecore which = 331 } #Pirot
+		command = { type = removecore which = 328 } #Kumanovo
+		command = { type = removecore which = 333 } #Skopje
+		command = { type = removecore which = 364 } #Kavala
+		command = { type = removecore which = 365 } #Thessaloniki
+		command = { type = removecore which = 366 } #Kozani
+		command = { type = removecore which = 370 } #Alexandroupoli
+		command = { type = removeclaim which = 334 } #Tetovo
+		command = { type = removeclaim which = 385 } #Adrianople  
+		command = { trigger = { NOT = { exists = ROM } } type = independence which = ROM value = 1 when = 1 }
+		command = { trigger = { NOT = { exists = SER } } type = independence which = SER value = 1 when = 1 }
+		command = { trigger = { NOT = { exists = ALB } } type = independence which = ALB value = 1 when = 1 }
+		command = { trigger = { NOT = { exists = GRE } } type = independence which = GRE value = 1 when = 1 }
+		# demobilization
+		command = { type = remove_division which = -1 value = -1 }
+		command = { type = remove_division which = -1 value = -1 }
+		command = { type = remove_division which = -1 value = -1 }
+		command = { type = remove_division which = -1 value = -1 }
+		command = { type = remove_division which = -1 value = -1 }
+		command = { type = remove_division which = -1 value = -1 }
+		command = { type = remove_division which = -1 value = -1 }		
+	}
+}
+# Historical Treaty of Neuilly
+event = {
+	id = 2020503	# Treaty of Neuilly
+	country = BUL
+
+	trigger = { 
+		random = 25
+		event = 2020502
+		OR = {
+			NOT = { exists = U09 } # AH has split
+			event = 2002534 #Versailles Treaty (U08 defeated)
+		}
+	}
+   
+	name = "EVT1914_2020503_NAME"
+	desc = "EVT1914_2020503_DESC" 
+	style = 2
+	picture = "news_paper"
+	
+	date = { day = 28 month = june year = 1914 }
+	offset = 5
+	deathdate = { day = 30 month = december year = 1925 }
+
+	action = {
+		name = "EVT1914_2020503_ACTIONA" # Bulgaria lives its darkest hour...
+		command = { trigger = { NOT = { exists = ROM } } type = independence which = ROM value = 1 when = 1 }
+		command = { trigger = { NOT = { exists = SER } } type = independence which = SER value = 1 when = 1 }		
+		command = { trigger = { NOT = { exists = ALB } } type = independence which = ALB value = 1 when = 1 }
+		command = { trigger = { NOT = { exists = GRE } } type = independence which = GRE value = 1 when = 1 }
+		command = { type = secedearea which = ROM value = "Romania" }
+		command = { type = secedeprovince which = ROM value = 307 } #Dobrich
+		command = { type = secedeprovince which = ROM value = 310 } #Costanza
+		command = { type = secedeprovince which = ROM value = 313 } #Sulina		
+		command = { type = secedeprovince which = GRE value = 363 } #Xanthi
+		command = { type = secedeprovince which = GRE value = 370 } #Alexandroupoli
+		command = { type = secedearea which = SER value = "East Serbia" }
+		command = { type = secedearea which = SER value = "Central Serbia" }	  
+		command = { type = secedearea which = ALB value = "Albania" }
+		command = { type = secedearea which = GRE value = "Thrace" }
+		command = { type = secedearea which = GRE value = "Attica" }
+		command = { type = secedearea which = GRE value = "Greek Island" }	  
+        command = { type = trade which = SER where = BUL money = -2 when = 2400 value = 1 }
+        command = { trigger = { alliance = { country = FRA country = GRE } } type = trade which = GRE where = BUL money = -2 when = 2400 value = 1 }
+        command = { type = trade which = FRA where = BUL money = -2 when = 3600 value = 1 }		
+	}
+}

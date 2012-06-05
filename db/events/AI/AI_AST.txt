@@ -1,0 +1,448 @@
+####################################
+# Australia AI events by Lothos
+####################################
+################
+# Minister of Security Section 
+#############################################
+event = { # Alexander McLachlan takes power
+	id = 3046001
+	random = no 
+	country = AST
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 225057 # Alexander McLachlan
+		NOT = { InCabinet = 225057 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ministerofsecurity which = 225057 }
+		command = { type = dissent value = -1 }
+	}
+}
+event = { # James McCarthy takes power
+	id = 3046002
+	random = no 
+	country = AST
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 225065 # James McCarthy
+		NOT = { InCabinet = 225065 }
+		NOT = { minister = 225057 } # Alexander McLachlan
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ministerofsecurity which = 225065 }
+		command = { type = dissent value = -1 }
+	}
+}
+################
+# Chief of Staff Section
+#############################################
+event = { # George F. Langley takes power
+	id = 3046003
+	random = no 
+	country = AST
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 225086 # George F. Langley
+		NOT = { InCabinet = 225086 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = chiefofstaff which = 225086 }
+		command = { type = dissent value = -1 }
+	}
+}
+event = { # Cyril Bingham-White takes power
+	id = 3046004
+	random = no 
+	country = AST
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 225082 # Cyril Bingham-White
+		NOT = { InCabinet = 225082 }
+		NOT = { minister = 225086 } # George F. Langley
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = chiefofstaff which = 225082 }
+		command = { type = dissent value = -1 }
+	}
+}
+################
+# Head of Intelligence Section
+#############################################
+event = { # Norman J. Makin takes power
+	id = 3046005
+	random = no 
+	country = AST
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 225074 # Norman J. Makin
+		NOT = { InCabinet = 225074 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ministerofintelligence which = 225074 }
+		command = { type = dissent value = -1 }
+	}
+}
+event = { # Alexander McLachlan takes power
+	id = 3046006
+	random = no 
+	country = AST
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 225006 # Alexander McLachlan
+		NOT = { InCabinet = 225006 }
+		NOT = { minister = 225074 } # Norman J. Makin
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ministerofintelligence which = 225006 }
+		command = { type = dissent value = -1 }
+	}
+}
+################
+# Chief of the Army Section
+#############################################
+event = { # Alan Ramsay takes power
+	id = 3046007
+	random = no 
+	country = AST
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 225093 # Alan Ramsay
+		NOT = { InCabinet = 225093 }
+		OR = {
+			atwar = no
+			NOT = { minister = 225088 } # Cyril Bingham-White
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = chiefofarmy which = 225093 }
+		command = { type = dissent value = -1 }
+	}
+}
+event = { # Cyril Bingham-White takes power
+	id = 3046008
+	random = no 
+	country = AST
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 225088 # Cyril Bingham-White
+		NOT = { InCabinet = 225088 }
+		OR = {
+			atwar = yes
+			NOT = { minister = 225093 } # Alan Ramsay
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = chiefofarmy which = 225088 }
+		command = { type = dissent value = -1 }
+	}
+}
+################
+# Armament Minister Section
+#############################################
+event = { # G.A. Street takes power
+	id = 3046009
+	random = no 
+	country = AST
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 225035 # G.A. Street
+		NOT = { InCabinet = 225035 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = armamentminister which = 225035 }
+		command = { type = dissent value = -1 }
+	}
+}
+event = { # Hattil S. Foll takes power
+	id = 3046010
+	random = no 
+	country = AST
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 225036 # Hattil S. Foll
+		NOT = { InCabinet = 225036 }
+		NOT = { minister = 225035 } # G.A. Street
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = armamentminister which = 225036 }
+		command = { type = dissent value = -1 }
+	}
+}
+################
+# Chief of Air Minister Section
+#############################################
+event = { # Richard Williams takes power
+	id = 3046011
+	random = no 
+	country = AST
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 225010 # Richard Williams
+		NOT = { InCabinet = 225010 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = chiefofair which = 225010 }
+		command = { type = dissent value = -1 }
+	}
+}
+################
+# Chief of Navy Minister Section
+#############################################
+event = { # Ragnar M. Colvin takes power
+	id = 3046012
+	random = no 
+	country = AST
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 225009 # Ragnar M. Colvin
+		NOT = { InCabinet = 225009 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = chiefofnavy which = 225009 }
+		command = { type = dissent value = -1 }
+	}
+}
+
+
+
+
+
+
+
+#############################################
+# Regular AI Events
+#############################################
+################
+# Australia changes production
+#############################################
+event = {
+	id = 3046013
+	random = no 
+	country = AST
+	
+	trigger = {
+		ai = yes
+		OR = {
+			atwar = yes
+			year = 1939
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 4
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ai which = "switch/AST_Change_Production.ai" }
+	}
+}
+################
+# Australia Air AI
+#############################################
+event = {
+	id = 3046014
+	random = no 
+	country = AST
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		NOT = { local_flag = ASTGroundAir }
+		lost_national = { country = AST value = 1 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 3
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = local_setflag which = ASTGroundAir }
+		command = { type = local_clrflag which = ASTNavalAir }
+		command = { type = ai which = "Air_Ground.ai" }
+	}
+}
+event = {
+	id = 3046015
+	random = no 
+	country = AST
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		NOT = { local_flag = ASTNavalAir }
+		NOT = { lost_national = { country = AST value = 1 } }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 3
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = local_clrflag which = ASTGroundAir }
+		command = { type = local_setflag which = ASTNavalAir }
+		command = { type = ai which = "Air_Naval.ai" }
+	}
+}
+################
+# Shift Production
+#############################################
+event = {
+	id = 3046016
+	random = no 
+	country = AST
+	
+	trigger = {
+		ai = yes
+		OR = {
+			year = 1938
+			atwar = HOL
+			atwar = PHI
+			atwar = USA
+			war = { country = JAP country = AST }
+			AND = {
+				atwar = yes
+				lost_national = { country = AST value = 1 }
+			}
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ai which = "switch/Minor_Gear_Up.ai" }
+	}
+}

@@ -1,0 +1,81 @@
+allowed_brigades = naval_torpedoes_l
+allowed_brigades = naval_improved_hull_s
+allowed_brigades = naval_torpedoes_s
+max_allowed_brigades = 3
+# 0 - Type J's
+model = {
+	cost						= 1.2 
+	buildtime					= 420 
+	defaultorganisation 		= 10
+	morale						= 20
+	manpower					= 0.5
+	maxspeed					= 18
+	surfacedetectioncapability	= 1
+	airdetectioncapability		= 1
+	subdetectioncapability		= 1
+	visibility					= 1.5
+	seadefence					= 8
+	airdefence					= 12
+	seaattack					= 3
+	convoyattack				= 7
+	subattack					= 3
+	airattack					= 1
+	shorebombardment			= 0
+	transportcapability			= 0
+	range						= 6500
+	supplyconsumption			= 0.7
+	fuelconsumption				= 0.8
+	distance					= 0.2
+}
+
+# 1 - Type A/B
+model = {
+	cost						= 1.4
+	buildtime					= 420
+	defaultorganisation 		= 10
+	morale						= 20
+	manpower					= 0.5
+	maxspeed					= 23
+	surfacedetectioncapability	= 1
+	airdetectioncapability		= 1
+	subdetectioncapability		= 1
+	visibility					= 2
+	seadefence					= 9
+	airdefence					= 13
+	seaattack					= 4
+	convoyattack				= 8
+	subattack					= 3
+	airattack					= 1
+	shorebombardment			= 0
+	transportcapability			= 0
+	range						= 7000
+	supplyconsumption			= 0.7
+	fuelconsumption				= 0.8
+	distance					= 0.2
+}
+
+# 2 - Sen Toku 
+model = {
+	cost						= 1.6
+	buildtime					= 440
+	defaultorganisation 		= 10
+	morale						= 20
+	manpower					= 0.5
+	maxspeed					= 23
+	surfacedetectioncapability	= 2
+	airdetectioncapability		= 1
+	subdetectioncapability		= 1
+	visibility					= 2
+	seadefence					= 10
+	airdefence					= 14
+	seaattack					= 5
+	convoyattack				= 9
+	subattack					= 3
+	airattack					= 2
+	shorebombardment			= 0
+	transportcapability			= 0
+	range						= 12000
+	supplyconsumption			= 0.8
+	fuelconsumption				= 0.8
+	distance					= 0.2
+}

@@ -1,0 +1,141 @@
+####################################
+# Costa Rica AI events by Lothos
+####################################
+################
+# Minister of Security Section
+#############################################
+event = { # Isalino de Silva Londres takes power
+	id = 3063001
+	random = no 
+	country = COS
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 310061 # Isalino de Silva Londres
+		NOT = { InCabinet = 310061 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ministerofsecurity which = 310061 }
+		command = { type = dissent value = -1 }
+	}
+}
+event = { # Isalino de Silva Londres takes power
+	id = 3063002
+	random = no 
+	country = COS
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 310067 # Isalino de Silva Londres
+		NOT = { InCabinet = 310067 }
+		NOT = { minister = 310061 } # Isalino de Silva Londres
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ministerofsecurity which = 310067 }
+		command = { type = dissent value = -1 }
+	}
+}
+################
+# Chief of Staff Section
+#############################################
+################
+# Head of Intelligence Section
+#############################################
+event = { # José Mendéz Alino takes power
+	id = 3063003
+	random = no 
+	country = COS
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 310076 # José Mendéz Alino
+		NOT = { InCabinet = 310076 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ministerofintelligence which = 310076 }
+		command = { type = dissent value = -1 }
+	}
+}
+################
+# Chief of the Army Section
+#############################################
+event = { # Don Arnaldo Zamora takes power
+	id = 3063004
+	random = no 
+	country = COS
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 310087 # Don Arnaldo Zamora
+		NOT = { InCabinet = 310087 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = chiefofarmy which = 310087 }
+		command = { type = dissent value = -1 }
+	}
+}
+################
+# Armament Minister Section
+#############################################
+event = { # Otto Cortes Fernandez takes power
+	id = 3063005
+	random = no 
+	country = COS
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 310054 # Otto Cortes Fernandez
+		NOT = { InCabinet = 310054 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = armamentminister which = 310054 }
+		command = { type = dissent value = -1 }
+	}
+}
+
+

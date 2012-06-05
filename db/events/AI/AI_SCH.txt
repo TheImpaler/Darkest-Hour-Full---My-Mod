@@ -1,0 +1,202 @@
+####################################
+# Swiss AI events by Lothos
+####################################
+################
+# Minister of Security Section 
+#############################################
+event = { # Hugo Gschwind takes power
+	id = 3017001
+	random = no 
+	country = SCH
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 80067 # Hugo Gschwind
+		NOT = { InCabinet = 80067 }
+		OR = {
+			manpower = 20
+			NOT = { minister = 80063 } # Gustave Adoor
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ministerofsecurity which = 80067 }
+		command = { type = dissent value = -1 }
+	}
+}
+event = { # Gustave Adoor takes power
+	id = 3017002
+	random = no 
+	country = SCH
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 80063 # Gustave Adoor
+		NOT = { InCabinet = 80063 }
+		OR = {
+			NOT = { manpower = 20 }
+			NOT = { minister = 80067 } # Hugo Gschwind
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ministerofsecurity which = 80063 }
+		command = { type = dissent value = -1 }
+	}
+}
+################
+# Chief of Staff Section
+#############################################
+event = { # Henri Guisan takes power
+	id = 3017003
+	random = no 
+	country = SCH
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 80077 # Henri Guisan
+		NOT = { InCabinet = 80077 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = chiefofstaff which = 80077 }
+		command = { type = dissent value = -1 }
+	}
+}
+################
+# Head of Intelligence Section
+#############################################
+event = { # Roger Masson takes power
+	id = 3017004
+	random = no 
+	country = SCH
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 80006 # Roger Masson
+		NOT = { InCabinet = 80006 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ministerofintelligence which = 80006 }
+		command = { type = dissent value = -1 }
+	}
+}
+################
+# Chief of the Army Section
+#############################################
+event = { # Ernst Laur takes power
+	id = 3017005
+	random = no 
+	country = SCH
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 80079 # Ernst Laur
+		NOT = { InCabinet = 80079 }
+		OR = {
+			atwar = no
+			AND = {
+				atwar = yes
+				NOT = { minister = 80008 } # Johann August Sutter
+			}
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = chiefofarmy which = 80079 }
+		command = { type = dissent value = -1 }
+	}
+}
+event = { # Johann August Sutter takes power
+	id = 3017006
+	random = no 
+	country = SCH
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		atwar = yes
+		minister = 80008 # Johann August Sutter
+		NOT = { InCabinet = 80008 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = chiefofarmy which = 80008 }
+		command = { type = dissent value = -1 }
+	}
+}
+################
+# Armament Minister Section
+#############################################
+event = { # Ernst Weber takes power
+	id = 3017007
+	random = no 
+	country = SCH
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 80048 # Ernst Weber
+		NOT = { InCabinet = 80048 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = armamentminister which = 80048 }
+		command = { type = dissent value = -1 }
+	}
+}

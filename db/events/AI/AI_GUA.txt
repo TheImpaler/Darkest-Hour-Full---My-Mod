@@ -1,0 +1,161 @@
+####################################
+# Guatemala AI events by Lothos
+####################################
+################
+# Minister of Security Section
+#############################################
+event = { # Manuel Orellana takes power
+	id = 3062001
+	random = no 
+	country = GUA
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 305036 # Manuel Orellana
+		NOT = { InCabinet =  305036 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ministerofsecurity which = 305036 }
+		command = { type = dissent value = -1 }
+	}
+}
+event = { # Alfredo Skinner Klee takes power
+	id = 3062002
+	random = no 
+	country = GUA
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 305040 # Alfredo Skinner Klee
+		NOT = { InCabinet =  305040 }
+		NOT = { minister = 305036 } # Manuel Orellana
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ministerofsecurity which = 305040 }
+		command = { type = dissent value = -1 }
+	}
+}
+################
+# Chief of Staff Section
+#############################################
+event = { # Jorge Ubico Castaneda takes power
+	id = 3062003
+	random = no 
+	country = GUA
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 305051 # Jorge Ubico Castaneda
+		NOT = { InCabinet =  305051 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = chiefofstaff which = 305051 }
+		command = { type = dissent value = -1 }
+	}
+}
+################
+# Chief of the Army Section
+#############################################
+event = { # Federico Ponce Vaides takes power
+	id = 3062004
+	random = no 
+	country = GUA
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 305056 # Federico Ponce Vaides
+		NOT = { InCabinet =  305056 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = chiefofarmy which = 305056 }
+		command = { type = dissent value = -1 }
+	}
+}
+################
+# Armament Minister Section
+#############################################
+event = { # Diego A. Castro Arigon takes power
+	id = 3062005
+	random = no 
+	country = GUA
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 305030 # Diego A. Castro Arigon
+		NOT = { InCabinet =  305030 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = armamentminister which = 305030 }
+		command = { type = dissent value = -1 }
+	}
+}
+event = { # Manuel Arroyo Arigon takes power
+	id = 3062006
+	random = no 
+	country = GUA
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 305034 # Manuel Arroyo
+		NOT = { InCabinet =  305034 }
+		NOT = { minister = 305030 } # Diego A. Castro Arigon
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = armamentminister which = 305034 }
+		command = { type = dissent value = -1 }
+	}
+}

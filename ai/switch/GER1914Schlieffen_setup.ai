@@ -1,0 +1,111 @@
+# germany 1914 Schlieffen Warplan Setup & Phase1
+# germany masses Divisions at the belgian border
+# the french border will be good defended, the russian just by one army
+#####################################
+### Germany attacks Belgium & Luxembourg 
+# new mar2011
+
+combat = {
+}
+
+max_front_ratio = 1.0
+max_front_ratios = { 
+FRA = 2.0
+BEL = 5.0
+ITA = 1
+	
+}
+max_garrison_prop = 0.20
+min_garrison_prop = 0.10
+#neutrality = 20.000 
+war = 50
+target = { }
+
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+garrison = {
+	defend_overseas_beaches = yes
+	home_multiplier 	= 1.0
+	overseas_multiplier 	= 1.0
+	home_peace_cap 		= 10
+	war_zone_odds 		= 2.0
+	key_point_prio_mult	= 0
+	revolt_risk_mult	= 0
+
+	# PRIORITIES:
+	beach			= 30 # 50	# Beach level 2
+	capital			= 0	# Our capital
+	human_border	= 0	# Ignored for allied human players
+	war_target		= 50	# The next country targeted for attack by this AI
+	reserves 		= 5	# bonus for provinces just behind a frontline.
+	
+	opposing_alliance	= 100	# For neutrals, all alliances are "opposing"
+	claim_threat		= 0	# If we are neutral, countries with claims on us get this
+	unstable_border		= 0	# Bordering countries at war with someone else get this
+
+	# Borders with specific countries
+	country_priorities = {
+	BEL = 100
+LUX = 80
+SER = 10	
+	}
+	ignore = { 
+	168
+	221
+	224
+	225
+	222
+
+	
+	
+	}
+	province_priorities = {
+		
+
+		
+	}
+	area_multiplier = {
+	
+	
+
+	}
+}
+front = { 
+	recklessness 		= 3 # 0-3
+	distrib_vs_ai 		= offensive
+	distrib_vs_human 	= offensive
+
+	enemy_reinf_days	= 1
+	reserve_prop		= 0.1
+	panic_ratio_vs_ai	= 2.5
+	panic_ratio_vs_human	= 2.5
+	base_attack_odds	= 1.333
+	min_attack_odds		= 1.1
+	max_attack_odds		= 2.0
+	reinforce_odds		= 1.2
+	withdraw_odds		= 0.75
+
+	strength 	= 1.0
+	organisation 	= 2.0
+	soft_attack 	= 1.0
+	hard_attack 	= 2.0
+	ground_defense 	= 1.0
+	dig_in 		= 0.25 # Against defender
+	enemy_handicap = {
+		
+	} 
+      	passivity = {
+
+	} 
+	province_priorities = {
+	
+	
+	
+	}
+	
+
+}
+
+
+###EOF

@@ -1,0 +1,188 @@
+allowed_brigades =  artillery
+#allowed_brigades =  anti_tank		
+allowed_brigades =  anti_air		
+allowed_brigades =  rocket_artillery
+allowed_brigades =  sp_artillery	
+allowed_brigades =  sp_rct_artillery
+#allowed_brigades =  tank_destroyer	
+#allowed_brigades =  light_armor_brigade
+#allowed_brigades =  heavy_armor	
+#allowed_brigades =  super_heavy_armor
+#allowed_brigades =  armored_car
+allowed_brigades =  engineer			
+allowed_brigades =  police
+# 0 - Basic HQ Division (1870)
+model = {
+	cost 				= 16
+	buildtime	 		= 510
+	manpower 			= 13
+	maxspeed 			= 4 #3
+	defaultorganisation	= 30
+	morale				= 30
+	defensiveness 		= 18
+	toughness			= 1
+	softness			= 100
+	suppression			= 2
+	airdefence			= 1
+	softattack			= 4
+	hardattack			= 0
+	airattack			= 0
+	transportweight		= 15
+	supplyconsumption 	= 1.8
+	fuelconsumption		= 0
+	speed_cap_art		= 4
+	speed_cap_eng		= 5
+	speed_cap_at		= 4
+	speed_cap_aa		= 4
+	upgrade_time_factor = 0.25
+	upgrade_cost_factor = 1.25
+	reinforce_time		= 1.1
+	reinforce_cost 		= 0.56
+}
+# 1- Basic HQ Division (1914)
+model = {
+	cost 				= 16
+	buildtime	 		= 510
+	manpower 			= 13
+	maxspeed 			= 4 #3
+	defaultorganisation = 30
+	morale				= 30
+	defensiveness 		= 18
+	toughness			= 4
+	softness			= 100
+	suppression			= 2
+	airdefence			= 3
+	softattack			= 4
+	hardattack			= 1
+	airattack			= 1
+	transportweight		= 15
+	supplyconsumption 	= 1.8
+	fuelconsumption		= 0
+	speed_cap_art		= 4
+	speed_cap_eng		= 5
+	speed_cap_at		= 4
+	speed_cap_aa		= 4
+	upgrade_time_factor = 0.25
+	upgrade_cost_factor = 1.25
+	reinforce_time		= 1.1
+	reinforce_cost 		= 0.56
+}
+# 2 - Basic HQ Division (1928)
+model = {
+	cost 				= 16
+	buildtime	 		= 510
+	manpower 			= 13
+	maxspeed 			= 5
+	defaultorganisation = 30
+	morale				= 30
+	defensiveness 		= 18
+	toughness			= 12
+	softness			= 100
+	suppression			= 2
+	airdefence			= 3
+	softattack			= 8
+	hardattack			= 1
+	airattack			= 2
+	transportweight		= 15
+	supplyconsumption 	= 2
+	fuelconsumption		= 0
+	speed_cap_art		= 4
+	speed_cap_eng		= 6
+	speed_cap_at		= 5
+	speed_cap_aa		= 5
+	upgrade_time_factor = 0.25
+	upgrade_cost_factor = 1.25
+	reinforce_time		= 1.1
+	reinforce_cost 		= 0.56
+}
+# 3 - Improved HQ Division (1939) #Motorized/Mechanized
+model = {
+	cost 				= 18
+	buildtime	 		= 470
+	manpower 			= 13
+	maxspeed 			= 11 #10
+	defaultorganisation = 30
+	morale				= 30
+	defensiveness 		= 20
+	toughness			= 20
+	softness			= 82
+	suppression			= 2
+	airdefence			= 4
+	softattack			= 9
+	hardattack			= 2
+	airattack			= 3
+	transportweight		= 35
+	supplyconsumption 	= 2.4
+	fuelconsumption		= 4.5 #7
+	speed_cap_art		= 5
+	speed_cap_eng		= 12
+	speed_cap_at		= 11
+	speed_cap_aa		= 7
+	upgrade_time_factor = 0.55
+	upgrade_cost_factor = 1.10
+	reinforce_time		= 1.1
+	reinforce_cost 		= 1.10
+}
+# 4 - Advanced HQ Division (1943) #Armoured/Mechanized
+model = {
+	cost 				= 21
+	buildtime 			= 420
+	manpower			= 12
+	maxspeed 			= 12
+	defaultorganisation = 30
+	morale				= 30
+	defensiveness 		= 25
+	toughness			= 25
+	softness			= 64
+	suppression			= 2
+	airdefence			= 5
+	softattack			= 12
+	hardattack			= 4
+	airattack			= 4
+	transportweight		= 35
+	supplyconsumption 	= 1.4
+	fuelconsumption		= 5 #8
+	speed_cap_art		= 6
+	speed_cap_eng		= 13
+	speed_cap_at		= 12
+	speed_cap_aa		= 8
+	upgrade_time_factor = 0.75
+	upgrade_cost_factor = 1.25
+	reinforce_time		= 1.5
+	reinforce_cost 		= 1.25
+}
+
+# Enabled by and disabling the previous model (HQ model 2)
+# Modern Blitzkrieg (14100)
+# Assualt Concentration Doctrine (14070)
+# Mechanized Wave (14060)
+# Air Land Battle (14050)
+#######################################################################
+# 5 - Modern HQ Division (1946)
+model = {
+	cost				= 25
+	buildtime			= 420
+	manpower			= 12
+	maxspeed			= 14
+	defaultorganisation = 30
+	morale 				= 30
+	defensiveness 		= 30
+	toughness 			= 30
+	softness 			= 60
+	suppression 		= 2
+	airdefence			= 6
+	softattack			= 14
+	hardattack			= 5
+	airattack			= 4
+	transportweight		= 35
+	supplyconsumption	= 2.8
+	fuelconsumption		= 5 #8
+	speed_cap_art		= 8
+	speed_cap_eng		= 15
+	speed_cap_at		= 14
+	speed_cap_aa		= 10
+	upgrade_time_factor = 0.75
+	upgrade_cost_factor = 1.25
+	reinforce_time		= 1.5
+	reinforce_cost 		= 1.25
+}

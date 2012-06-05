@@ -1,0 +1,23 @@
+OTT;Name;Pic Name;Skill;Start Year;End Year;Speciality1;Speciality2;Speciality3;Speciality4;Speciality5;Speciality6;Speciality7;Speciality8;Speciality9;Speciality10;Speciality11;Speciality12;Speciality13;Speciality14;Speciality15;Speciality16;Speciality17;Speciality18;Speciality19;Speciality20;Speciality21;Speciality22;Speciality23;Speciality24;Speciality25;Speciality26;Speciality27;Speciality28;Speciality29;Speciality30;Speciality31;Speciality32;x
+720001;Gölcük Naval Shipyard;T3500;4;1926;1970;naval_engineering;technical_efficiency;naval_artillery;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+720002;Istanbul Naval Shipyard;100252;5;1453;1970;naval_engineering;technical_efficiency;naval_artillery;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+720003;Aviation Industries;T3502;4;1914;1970;aeronautics;bomber_design;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+720004;MKEK;100253;5;1921;1970;chemistry;mathematics;general_equipment;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+720005;Turkish Petroleum Company;100254;3;1914;1970;industrial_engineering;chemistry;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+720006;THK;100255;4;1925;1970;aeronautics;fighter_design;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+720007;Mustapha Kemal;T15706;6;1919;1938;large_unit_tactics;small_unit_tactics;centralized_execution;decentralized_execution;individual_courage;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+720008;Military Industries;100256;4;1890;1970;artillery;mechanics;general_equipment;munitions;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+720009;Istanbul University;100257;4;1846;1970;mechanics;chemistry;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+720010;Aviation School;T3506;4;1912;1970;fighter_tactics;bomber_tactics;piloting;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+720011;Muzaffer Ergüder;100258;3;1914;1970;bomber_tactics;training;piloting;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+720012;Mustafa Fevzi;100259;4;1916;1945;large_unit_tactics;centralized_execution;infantry_focus;individual_courage;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+720013;Naval Academy;100260;4;1773;1970;large_taskforce_tactics;naval_training;seamanship;centralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+720014;Nuri Yamut;T3511;4;1930;1961;small_unit_tactics;centralized_execution;combined_arms_focus;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+720015;Heinrich August Meißner;100017;3;1999;1930;industrial_engineering;mechanics;general_equipment;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+720016;Istanbul Technical University;100261;3;1871;1970;industrial_engineering;management;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+720017;Taikczak Shipyards;100262;4;1890;1970;naval_engineering;naval_artillery;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+720018;Rauf Orbay;100263;1;1914;1930;centralized_execution;large_taskforce_tactics;naval_training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+720019;Mittelmeer-Kommando;100264;5;1999;1918;decentralized_execution;naval_training;small_taskforce_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+720020;German Military Mission;100265;7;1999;1950;decentralized_execution;large_unit_tactics;management;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+720021;Ismael Enver;100266;5;1913;1950;centralized_execution;large_unit_tactics;infantry_focus;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+720022;Military Academy;100267;3;1890;1916;centralized_execution;infantry_focus;mountain_training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x

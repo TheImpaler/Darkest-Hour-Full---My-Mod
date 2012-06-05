@@ -1,0 +1,42 @@
+RSI;Ruling Cabinet - Start;Name;Start Year;End Year;Ideology;Personality;Loyalty;Picturename;X
+;Replacements;;;;;;;;X
+750001;Head of State;Benito Mussolini;1933;1964;NS;Barking Buffoon;High;2688;X
+750002;Head of Government;Achille Starace;1933;1964;NS;Political Protege;High;M3126;X
+750003;Foreign Minister;Eduardo Moroni;1933;1964;FA;Biased Intellectual;High;M508003;X
+750004;Minister of Armament;Giampietro Pellegrini;1933;1964;NS;Military Entrepreneur;Medium;M508004;X
+750005;Minister of Security;Guido Buffarini-Guidi;1933;1964;FA;Efficient Sociopath;Very High;M3005;X
+750006;Head of Military Intelligence;Carlo Sambruni;1933;1964;FA;Dismal Enigma;Medium;M508006;X
+750007;Chief of Staff;Gastone Gambara;1933;1964;FA;School of Mass Combat;Medium;L6074;X
+750008;Chief of Army;Rodolfo Graziani;1933;1964;FA;Decisive Battle Doctrine;Medium;M508008;X
+750009;Chief of Navy;Pier Angelo Brandimarte;1933;1964;FA;Open Seas Doctrine;Medium;L6280;X
+750010;Chief of Air Force;Arrigo Tessari;1933;1964;FA;Army Aviation Doctrine;Medium;L6283;X
+750011;Head of State;Paolo Thaon di Revel;1945;1964;NS;Resigned Generalissimo;High;M3035;X
+750012;Head of Government;Junio Borghese;1945;1964;NS;Corporate Suit;High;M508012;X
+750013;Foreign Minister;Mario Mangani;1942;1964;NS;The Cloak N Dagger Schemer;High;M508013;X
+750014;Minister of Armament;Romano Ruggero;1933;1964;NS;Theoretical Scientist;Medium;M508014;X
+750015;Minister of Armament;G. Imperiali de Francarillo;1945;1964;NS;Administrative Genius;High;M3071;X
+750016;Minister of Armament;Fernando Mezzasoma;1943;1964;FA;Infantry Proponent;High;M508016;X
+750017;Minister of Security;Alessandro Pavolini;1933;1964;NS;Prince of Terror;Very High;M508017;X
+750018;Minister of Security;Renzo Montagna;1943;1964;FA;Crime Fighter;Very High;L6265;X
+750019;Minister of Security;Luigi Pisenti;1933;1964;FA;Silent Lawyer;Very High;M508019;X
+750020;Head of Military Intelligence;Pio Filippani Ronconi;1945;1964;NS;Logistics Specialist;Medium;M508020;X
+750021;Head of Military Intelligence;Bruno Perego;1940;1964;FA;Technical Specialist;Medium;M508021;X
+750022;Head of Military Intelligence;Carlo Alberto Biggini;1933;1964;NS;Industrial Specialist;Medium;M508022;X
+750023;Chief of Staff;Alessandro Pavolini;1933;1964;NS;School of Defence;Medium;M508017;X
+750024;Chief of Army;Junio Borghese;1933;1964;NS;Decisive Battle Doctrine;High;M508012;X
+750025;Chief of Navy;Carlo di Cossata;1933;1964;FA;Indirect Approach Doctrine;Medium;L6164;X
+750026;Chief of Air Force;Rino Corso Fougier;1945;1964;NS;Air Superiority Doctrine;Low;M3161;X
+750027;Chief of Air Force;Ruggero Bonomi;1943;1964;FA;Vertical Envelopment Doctrine;Low;M508027;X
+750028;Minister of Armament;Karl Wolff;1943;1964;NS;Military Entrepreneur;High;M508028;X
+750029;Minister of Armament;Rodolfo Graziani;1933;1964;FA;Infantry Proponent;High;M508008;X
+750030;Minister of Security;Karl Wolff;1943;1964;NS;Compassionate Gentleman;High;M508028;X
+750031;Chief of Staff;Albert Kesselring;1942;1964;NS;School of Defence;Very High;M508031;X
+750032;Chief of Staff;Karl Wolff;1943;1964;NS;School of Psychology;High;M508028;X
+750033;Chief of Army;Albert Kesselring;1942;1964;NS;Elastic Defence Doctrine;Very High;M508031;X
+750034;Chief of Army;Heinrich Gottfried von Vietinghoff-Scheel;1944;1964;FA;Armoured Spearhead Doctrine;High;M508034;X
+750035;Chief of Air Force;Albert Kesselring;1942;1964;NS;Army Aviation Doctrine;Very High;M508031;X
+750036;Minister of Armament;Arturo Michelini;1954;1964;FA;Laissez-Faire Capitalist;High;6080;x
+750037;Foreign Minister;Augusto De Marsanich;1944;1964;FA;Great Compromiser;High;6081;X
+750038;Head of Government;Augusto De Marsanich;1955;1964;FA;Silent Workhorse;High;6081;x
+750039;Minister of Security;Giorgio Almirante;1946;1964;NS;Back Stabber;High;6082;x
+750040;Foreign Minister;Giorgio Almirante;1945;1964;NS;The Cloak N Dagger Schemer;High;6082;x

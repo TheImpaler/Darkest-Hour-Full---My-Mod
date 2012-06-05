@@ -1,0 +1,144 @@
+####################################
+# Ecuador AI events by Lothos
+####################################
+################
+# Minister of Security Section
+#############################################
+event = { # Rafael Vascoñez takes power
+	id = 3039001
+	random = no 
+	country = ECU
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 190084 # Rafael Vascoñez
+		NOT = { InCabinet = 190084 }
+		OR = {
+			manpower = 20
+			NOT = { minister = 190088 } # Julio Moreno Peñaherrera
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ministerofsecurity which = 190084 }
+		command = { type = dissent value = -1 }
+	}
+}
+event = { # Antonio Pons Machado takes power
+	id = 3039002
+	random = no 
+	country = ECU
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 190082 # Antonio Pons Machado
+		NOT = { InCabinet = 190082 }
+		NOT = { minister = 190084 } # Rafael Vascoñez
+		OR = {
+			manpower = 20
+			NOT = { minister = 190088 } # Julio Moreno Peñaherrera
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ministerofsecurity which = 190082 }
+		command = { type = dissent value = -1 }
+	}
+}
+event = { # Julio Moreno Peñaherrera takes power
+	id = 3039003
+	random = no 
+	country = ECU
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		NOT = { manpower = 20 }
+		minister = 190088 # Julio Moreno Peñaherrera
+		NOT = { InCabinet = 190088 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ministerofsecurity which = 190088 }
+		command = { type = dissent value = -1 }
+	}
+}
+
+################
+# Head of Intelligence Section
+#############################################
+event = { # Davide Flores takes power
+	id = 3039004
+	random = no 
+	country = ECU
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 190094 # Davide Flores
+		NOT = { InCabinet = 190094 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ministerofintelligence which = 190094 }
+		command = { type = dissent value = -1 }
+	}
+}
+
+################
+# Armament Minister Section
+#############################################
+event = { # Carlos M. Larrea takes power
+	id = 3039005
+	random = no 
+	country = ECU
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 190076 # Carlos M. Larrea
+		NOT = { InCabinet = 190076 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = armamentminister which = 190076 }
+		command = { type = dissent value = -1 }
+	}
+}

@@ -1,0 +1,301 @@
+allowed_brigades =  artillery
+#allowed_brigades =  anti_tank
+allowed_brigades =  rocket_artillery	
+allowed_brigades =  anti_air		
+#allowed_brigades =  light_armor_brigade
+#allowed_brigades =  armored_car		
+#allowed_brigades =  police
+
+upgrade = { type = garrison upgrade_time_factor = 1 upgrade_cost_factor = 0.46 }
+upgrade = { type = infantry upgrade_time_factor = 1 upgrade_cost_factor = 1.41 }
+upgrade = { type = cavalry upgrade_time_factor = 1 upgrade_cost_factor = 1.89 }
+
+# Militia - 0 (1870)
+model = {
+	cost 					= 4
+	buildtime	 			= 140
+	manpower 				= 10
+	maxspeed 				= 3
+	defaultorganisation 	= 20
+	morale 					= 35
+	defensiveness 			= 8
+	toughness	 			= 1
+	softness	 			= 100
+	suppression				= 2
+	airdefence				= 1
+	softattack				= 3
+	hardattack				= 0
+	airattack				= 0
+	transportweight			= 10
+	supplyconsumption 		= 0.2
+	fuelconsumption			= 0
+	speed_cap_art			= 4
+	speed_cap_eng			= 4
+	speed_cap_at			= 4
+	speed_cap_aa			= 4
+	upgrade_time_factor = 0.75
+	upgrade_cost_factor = 0.4
+	reinforce_time		= 1.9
+	reinforce_cost 		= 0.25
+}
+
+# Militia - 1 (1897)
+model = {
+	cost 					= 4
+	buildtime	 			= 140
+	manpower 				= 10
+	maxspeed 				= 3
+	defaultorganisation 	= 20
+	morale 					= 35
+	defensiveness 			= 10
+	toughness	 			= 3
+	softness	 			= 100
+	suppression				= 2
+	airdefence				= 1
+	softattack				= 4
+	hardattack				= 0
+	airattack				= 0
+	transportweight			= 10
+	supplyconsumption 		= 0.3
+	fuelconsumption			= 0
+	speed_cap_art			= 4
+	speed_cap_eng			= 4
+	speed_cap_at			= 4
+	speed_cap_aa			= 4
+	upgrade_time_factor = 0.75
+	upgrade_cost_factor = 0.4
+	reinforce_time		= 1.9
+	reinforce_cost 		= 0.25
+}
+
+# Militia - 2 (1916)
+model = {
+	cost 					= 4
+	buildtime	 			= 140
+	manpower 				= 10
+	maxspeed 				= 3
+	defaultorganisation 	= 20
+	morale 					= 35
+	defensiveness 			= 12
+	toughness	 			= 5
+	softness	 			= 100
+	suppression				= 3
+	airdefence				= 2
+	softattack				= 6
+	hardattack				= 0
+	airattack				= 0
+	transportweight			= 10
+	supplyconsumption 		= 0.3
+	fuelconsumption			= 0
+	speed_cap_art			= 4
+	speed_cap_eng			= 4
+	speed_cap_at			= 4
+	speed_cap_aa			= 4
+	upgrade_time_factor = 0.75
+	upgrade_cost_factor = 0.4
+	reinforce_time		= 1.9
+	reinforce_cost 		= 0.25
+}
+
+# Militia - 3 (1918)
+model = {
+	cost 					= 4
+	buildtime	 			= 140
+	manpower 				= 10
+	maxspeed 				= 3
+	defaultorganisation 	= 20
+	morale 					= 35
+	defensiveness 			= 14
+	toughness	 			= 7
+	softness	 			= 100
+	suppression				= 3
+	airdefence				= 2
+	softattack				= 8
+	hardattack				= 1
+	airattack				= 1
+	transportweight			= 10
+	supplyconsumption 		= 0.4
+	fuelconsumption			= 0
+	speed_cap_art			= 4
+	speed_cap_eng			= 4
+	speed_cap_at			= 4
+	speed_cap_aa			= 4
+	upgrade_time_factor = 0.75
+	upgrade_cost_factor = 0.4
+	reinforce_time		= 1.9
+	reinforce_cost 		= 0.25
+}
+
+# Militia - 4 (1921)
+model = {
+	cost 					= 4
+	buildtime	 			= 140
+	manpower 				= 10
+	maxspeed 				= 3
+	defaultorganisation 	= 20
+	morale 					= 35
+	defensiveness 			= 16
+	toughness	 			= 9
+	softness	 			= 100
+	suppression				= 3
+	airdefence				= 2
+	softattack				= 10
+	hardattack				= 2
+	airattack				= 2
+	transportweight			= 10
+	supplyconsumption 		= 0.4
+	fuelconsumption			= 0
+	speed_cap_art			= 4
+	speed_cap_eng			= 4
+	speed_cap_at			= 4
+	speed_cap_aa			= 4
+	upgrade_time_factor = 0.75
+	upgrade_cost_factor = 0.4
+	reinforce_time		= 1.9
+	reinforce_cost 		= 0.25
+}
+
+# Militia - 5 (1939)
+model = {
+	cost 					= 4
+	buildtime	 			= 140
+	manpower 				= 10
+	maxspeed 				= 3
+	defaultorganisation 	= 20
+	morale 					= 35
+	defensiveness 			= 18
+	toughness	 			= 11
+	softness	 			= 100
+	suppression				= 3
+	airdefence				= 2
+	softattack				= 12
+	hardattack				= 3
+	airattack				= 2
+	transportweight			= 10
+	supplyconsumption 		= 0.5
+	fuelconsumption			= 0
+	speed_cap_art			= 4
+	speed_cap_eng			= 4
+	speed_cap_at			= 4
+	speed_cap_aa			= 4
+	upgrade_time_factor = 0.75
+	upgrade_cost_factor = 0.4
+	reinforce_time		= 1.9
+	reinforce_cost 		= 0.25
+}
+
+# Militia - 6 (1945)
+model = {
+	cost					= 4
+	buildtime	 			= 140
+	manpower 				= 10
+	maxspeed 				= 3
+	defaultorganisation 	= 20
+	morale 					= 35
+	defensiveness 			= 20
+	toughness	 			= 13
+	softness	 			= 100
+	suppression				= 3
+	airdefence				= 3
+	softattack				= 14
+	hardattack				= 3
+	airattack				= 3
+	transportweight			= 10
+	supplyconsumption 		= 0.5
+	fuelconsumption			= 0
+	speed_cap_art			= 4
+	speed_cap_eng			= 4
+	speed_cap_at			= 4
+	speed_cap_aa			= 4
+	upgrade_time_factor = 0.75
+	upgrade_cost_factor = 0.4
+	reinforce_time		= 1.9
+	reinforce_cost 		= 0.25
+}
+
+# Militia - 7 (1948)
+model = {
+	cost 					= 4
+	buildtime	 			= 140
+	manpower 				= 10
+	maxspeed 				= 3
+	defaultorganisation 	= 20
+	morale 					= 35
+	defensiveness 			= 22
+	toughness 				= 15
+	softness 				= 100
+	suppression 			= 3
+	airdefence 				= 3
+	softattack 				= 16
+	hardattack 				= 4
+	airattack 				= 3
+	transportweight 		= 10
+	supplyconsumption 		= 0.6
+	fuelconsumption 		= 0
+	speed_cap_art			= 4
+	speed_cap_eng			= 4
+	speed_cap_at			= 4
+	speed_cap_aa			= 4
+	upgrade_time_factor = 0.75
+	upgrade_cost_factor = 0.4
+	reinforce_time		= 1.9
+	reinforce_cost 		= 0.25
+}
+
+# Militia - 8 (1954)
+model = {
+	cost 					= 4
+	buildtime	 			= 140
+	manpower 				= 10
+	maxspeed 				= 3
+	defaultorganisation 	= 20
+	morale 					= 35
+	defensiveness 			= 24
+	toughness 				= 17
+	softness 				= 100
+	suppression 			= 3
+	airdefence 				= 4
+	softattack 				= 18
+	hardattack 				= 4
+	airattack 				= 4
+	transportweight 		= 10
+	supplyconsumption 		= 0.7
+	fuelconsumption 		= 0
+	speed_cap_art			= 4
+	speed_cap_eng			= 4
+	speed_cap_at			= 4
+	speed_cap_aa			= 4
+	upgrade_time_factor = 0.75
+	upgrade_cost_factor = 0.4
+	reinforce_time		= 1.9
+	reinforce_cost 		= 0.25
+}
+
+# Militia - 9 (1962)
+model = {
+	cost 					= 4
+	buildtime	 			= 140
+	manpower 				= 10
+	maxspeed 				= 3
+	defaultorganisation 	= 20
+	morale 					= 35
+	defensiveness 			= 26
+	toughness 				= 19
+	softness 				= 100
+	suppression 			= 3
+	airdefence 				= 5
+	softattack 				= 20
+	hardattack 				= 5
+	airattack 				= 5
+	transportweight 		= 10
+	supplyconsumption 		= 0.8
+	fuelconsumption 		= 0
+	speed_cap_art			= 4
+	speed_cap_eng			= 4
+	speed_cap_at			= 4
+	speed_cap_aa			= 4
+	upgrade_time_factor = 0.75
+	upgrade_cost_factor = 0.4
+	reinforce_time		= 1.9
+	reinforce_cost 		= 0.25
+}

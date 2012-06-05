@@ -1,0 +1,197 @@
+####################################
+# El Salvador AI events by Lothos
+####################################
+################
+# Minister of Security Section
+#############################################
+event = { # Pedro Jaime de Matheu takes power
+	id = 3070001
+	random = no 
+	country = SAL
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 345028 # Pedro Jaime de Matheu
+		NOT = { InCabinet = 345028 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ministerofsecurity which = 345028 }
+		command = { type = dissent value = -1 }
+	}
+}
+event = { # José Adán Parada takes power
+	id = 3070002
+	random = no 
+	country = SAL
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 345027 # José Adán Parada
+		NOT = { InCabinet = 345027 }
+		NOT = { minister = 345028 } # Pedro Jaime de Matheu
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ministerofsecurity which = 345027 }
+		command = { type = dissent value = -1 }
+	}
+}
+################
+# Chief of Staff Section
+#############################################
+event = { # Marco A. Molina takes power
+	id = 3070003
+	random = no 
+	country = SAL
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 345007 # Marco A. Molina
+		NOT = { InCabinet = 345007 }
+		OR = {
+			atwar = no
+			NOT = { manpower = 200 }
+			AND = {
+				atwar = yes
+				NOT = { minister = 345007 } # Marco A. Molina
+			}
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = chiefofstaff which = 345007 }
+		command = { type = dissent value = -1 }
+	}
+}
+event = { # Andrés Ignacio Menéndez takes power
+	id = 3070004
+	random = no 
+	country = SAL
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		atwar = yes
+		manpower = 200
+		minister = 345032 # Andrés Ignacio Menéndez
+		NOT = { InCabinet = 345032 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = chiefofstaff which = 345032 }
+		command = { type = dissent value = -1 }
+	}
+}
+################
+# Head of Intelligence Section
+#############################################
+event = { # Oscar A. Bolaños takes power
+	id = 3070005
+	random = no 
+	country = SAL
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 345006 # Oscar A. Bolaños
+		NOT = { InCabinet = 345006 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ministerofintelligence which = 345006 }
+		command = { type = dissent value = -1 }
+	}
+}
+
+################
+# Armament Minister Section
+#############################################
+event = { # Pio Romero Bosque takes power
+	id = 3070006
+	random = no 
+	country = SAL
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 345022 # Pio Romero Bosque
+		NOT = { InCabinet = 345022 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = armamentminister which = 345022 }
+		command = { type = dissent value = -1 }
+	}
+}
+event = { # Pedro Jaime de Matheu takes power
+	id = 3070007
+	random = no 
+	country = SAL
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 345023 # Pedro Jaime de Matheu
+		NOT = { InCabinet = 345023 }
+		NOT = { minister = 345022 } # Pio Romero Bosque
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = armamentminister which = 345023 }
+		command = { type = dissent value = -1 }
+	}
+}
+

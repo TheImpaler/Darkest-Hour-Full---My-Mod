@@ -1,0 +1,25 @@
+CYN;Ruling Cabinet - Start;Name;Start Year;End Year;Ideology;Personality;Loyalty;Picturename;X
+;Replacements;;;;;;;;X
+615001;Head of State;Long Yun;1933;1964;PA;Die-hard Reformer;High;2374;X
+615002;Head of Government;Long Yun;1933;1964;PA;Political Protege;High;2374;X
+615003;Foreign Minister;Zhou Zhirou;1933;1964;PA;Apologetic Clerk;High;M501003;X
+615004;Minister of Armament;Liu Wenhui;1933;1964;PA;Battle Fleet Proponent;Medium;M501004;X
+615005;Minister of Security;Ding Zhipan;1933;1964;PA;Crime Fighter;Medium;M501005;X
+615006;Head of Military Intelligence;Mi Zaiming;1933;1964;PA;Political Specialist;Medium;M501006;X
+615007;Chief of Staff;Long Yun;1933;1964;PA;School of Psychology;Medium;2374;X
+615008;Chief of Army;Long Yun;1933;1964;PA;Guns and Butter Doctrine;Medium;2374;X
+615009;Chief of Navy;Lu Han;1933;1964;PA;Open Seas Doctrine;Medium;M501009;X
+615010;Chief of Air Force;Lu Han;1933;1964;PA;Carpet Bombing Doctrine;Medium;M501009;X
+615011;Chief of Army;Cai E;1914;1933;PA;Decisive Battle Doctrine;Undying;2375;X
+615012;Chief of Army;Tang Jiyao;1914;1933;PA;Decisive Battle Doctrine;Medium;2376;X
+615013;Chief of Staff;Cai E;1914;1933;PA;School of Mass Combat;Medium;2375;X
+615014;Foreign Minister;Liang Qichao;1914;1933;SC;Great Compromiser;Very High;2377;X
+615015;Foreign Minister;Cai E;1914;1933;PA;General Staffer;Very High;2375;X
+615016;Head of Government;Tang Jiyao;1914;1933;PA;Old General;Medium;2376;X
+615017;Head of Government;Long Yun;1920;1933;PA;Old General;Medium;2374;X
+615018;Head of Government;Cai E;1914;1933;PA;Old General;Very High;2375;X
+615019;Head of Military Intelligence;Liang Qichao;1920;1933;PA;Political Specialist;Medium;2377;X
+615020;Head of State;Cai E;1914;1933;PA;Resigned Generalissimo;Medium;2375;X
+615021;Head of State;Long Yun;1920;1933;PA;Resigned Generalissimo;Medium;2374;X
+615022;Minister of Armament;Yin Cheng;1914;1933;PA;Infantry Proponent;Medium;2378;X
+615023;Minister of Security;Li Liejun;1914;1933;PA;Silent Lawyer;Medium;unknown;X

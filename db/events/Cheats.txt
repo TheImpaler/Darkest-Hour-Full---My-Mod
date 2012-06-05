@@ -1,0 +1,1501 @@
+event = {
+	id = 80100
+	random = yes
+
+	name = "Repair Boost"
+	desc = "Our engineers are now fuelled by chicken soup."
+	picture = "coastal_fort"
+	style = 0
+
+	action = {
+		name = "Reliable boys!"
+		ai_chance = 0
+		command = { type = repair_mod value = 10 }
+	}
+	action = {
+		name = "Reverse the changes"
+		ai_chance = 0
+		command = { type = repair_mod value = -10 }
+	}
+	action = {
+		name = "Don't Need It"
+		ai_chance = 100
+		command = { }
+	}
+}
+event = {
+	id = 80101
+	random = yes
+
+	name = "Command Efficiency"
+	desc = "Our generals have played several marathons of Hearts of Iron and Red Alert 2!"
+	picture = "ger_surrender"
+	style = 0
+
+	action = {
+		name = "Command & Conquer!!"
+		ai_chance = 0
+		command = { type = speed which = hq value = 2 }
+		command = { type = hq_supply_eff value = 2 }
+		command = { type = sce_frequency value = 0.5 }
+	}
+	action = {
+		name = "Reverse the changes"
+		ai_chance = 0
+		command = { type = speed which = hq value = -2 }
+		command = { type = hq_supply_eff value = -2 }
+		command = { type = sce_frequency value = -0.5 }
+	}
+	action = {
+		name = "Don't Need It"
+		ai_chance = 100
+		command = { }
+	}
+}
+event = {
+	id = 80102
+	random = yes
+
+	name = "New Tactical Methods"
+	desc = "Our generals have learned how to turn the tide to their advandage more easily!."
+	picture = "german_reinforcment_5"
+	style = 0
+
+	action = {
+		name = "Bolster our skillset!"
+		ai_chance = 0
+		command = { type = ambush value = 10 }
+		command = { type = breakthrough value = 30 }
+		command = { type = encirclement value = 10 }
+		command = { type = tactical_withdrawal value = 30 }
+	}
+	action = {
+		name = "Reverse the changes"
+		ai_chance = 0
+		command = { type = ambush value = -10 }
+		command = { type = breakthrough value = -30 }
+		command = { type = encirclement value = -10 }
+		command = { type = tactical_withdrawal value = -30 }
+	}
+	action = {
+		name = "Don't Need It"
+		ai_chance = 100
+		command = { }
+	}
+}
+event = {
+	id = 80103
+	random = yes
+
+	name = "Tactical Defence Boost"
+	desc = "Our generals are now more capable in defensive battles"
+	picture = "german_reinforcment_5"
+	style = 0
+
+	action = {
+		name = "To defend all is as good as nothing at all."
+		ai_chance = 0
+		command = { type = ground_def_eff value = 1.0 }
+		command = { type = counterattack value = 30 }
+		command = { type = tactical_withdrawal value = 30 }
+		command = { type = surprise which = land value = 75 }
+		command = { type = army_detection which = them value = -40 }
+		command = { type = intelligence which = us value = 75 }
+		command = { type = army_detection which = us value = 75 }
+		
+		command = { type = night_defense which = infantry value = 80 }
+		command = { type = night_defense which = paratrooper value = 80 }
+		command = { type = night_defense which = marine value = 80 }
+		command = { type = night_defense which = bergsjaeger value = 80 }
+		command = { type = night_defense which = armor value = 80 }
+		command = { type = night_defense which = militia value = 80 }
+		command = { type = night_defense which = garrison value = 80 }
+		command = { type = night_defense which = motorized value = 80 }
+		command = { type = night_defense which = mechanized value = 80 }
+		
+		command = { type = hill_defense which = infantry value = 40 }
+		command = { type = hill_defense which = paratrooper value = 40 }
+		command = { type = hill_defense which = marine value = 40 }
+		command = { type = hill_defense which = bergsjaeger value = 40 }
+		command = { type = hill_defense which = armor value = 40 }
+		command = { type = hill_defense which = militia value = 40 }
+		command = { type = hill_defense which = garrison value = 40 }
+		command = { type = hill_defense which = motorized value = 40 }
+		command = { type = hill_defense which = mechanized value = 40 }
+		
+		command = { type = forest_defense which = infantry value = 40 }
+		command = { type = forest_defense which = paratrooper value = 40 }
+		command = { type = forest_defense which = marine value = 40 }
+		command = { type = forest_defense which = bergsjaeger value = 40 }
+		command = { type = forest_defense which = armor value = 40 }
+		command = { type = forest_defense which = militia value = 40 }
+		command = { type = forest_defense which = garrison value = 40 }
+		command = { type = forest_defense which = motorized value = 40 }
+		command = { type = forest_defense which = mechanized value = 40 }
+		
+	}
+	action = {
+		name = "Reverse the changes"
+		ai_chance = 0
+		command = { type = ground_def_eff value = -1.0 }
+		command = { type = counterattack value = -30 }
+		command = { type = tactical_withdrawal value = -30 }
+		command = { type = surprise which = land value = -75 }
+		command = { type = army_detection which = them value = 40 }
+		command = { type = intelligence which = us value = -75 }
+		command = { type = army_detection which = us value = -75 }
+		
+		command = { type = night_defense which = infantry value = -80 }
+		command = { type = night_defense which = paratrooper value = -80 }
+		command = { type = night_defense which = marine value = -80 }
+		command = { type = night_defense which = bergsjaeger value = -80 }
+		command = { type = night_defense which = armor value = -80 }
+		command = { type = night_defense which = militia value = -80 }
+		command = { type = night_defense which = garrison value = -80 }
+		command = { type = night_defense which = motorized value = -80 }
+		command = { type = night_defense which = mechanized value = -80 }
+		
+		command = { type = hill_defense which = infantry value = -40 }
+		command = { type = hill_defense which = paratrooper value = -40 }
+		command = { type = hill_defense which = marine value = -40 }
+		command = { type = hill_defense which = bergsjaeger value = -40 }
+		command = { type = hill_defense which = armor value = -40 }
+		command = { type = hill_defense which = militia value = -40 }
+		command = { type = hill_defense which = garrison value = -40 }
+		command = { type = hill_defense which = motorized value = -40 }
+		command = { type = hill_defense which = mechanized value = -40 }
+		
+		command = { type = forest_defense which = infantry value = -40 }
+		command = { type = forest_defense which = paratrooper value = -40 }
+		command = { type = forest_defense which = marine value = -40 }
+		command = { type = forest_defense which = bergsjaeger value = -40 }
+		command = { type = forest_defense which = armor value = -40 }
+		command = { type = forest_defense which = militia value = -40 }
+		command = { type = forest_defense which = garrison value = -40 }
+		command = { type = forest_defense which = motorized value = -40 }
+		command = { type = forest_defense which = mechanized value = -40 }
+		
+	}
+	action = {
+		name = "Don't Need It"
+		ai_chance = 100
+		command = { }
+	}
+}
+event = {
+	id = 80104
+	random = yes
+
+	name = "Military geniuses"
+	desc = "Our generals have recently passed their acadamy courses and are ready to lead!"
+	picture = "coastal_fort"
+	style = 0
+
+	action = {
+		name = "To the front! Big boost!"
+		ai_chance = 0
+		command = { type = set_leader_skill which = -1 value = 9 }
+		command = { type = set_leader_skill which = -1 value = 9 }
+		command = { type = set_leader_skill which = -1 value = 9 }
+		command = { type = set_leader_skill which = -1 value = 9 }
+		command = { type = set_leader_skill which = -1 value = 9 }
+		command = { type = set_leader_skill which = -1 value = 9 }
+		command = { type = set_leader_skill which = -1 value = 9 }
+		command = { type = set_leader_skill which = -1 value = 9 }
+		command = { type = set_leader_skill which = -1 value = 9 }
+		command = { type = set_leader_skill which = -1 value = 9 }
+		command = { type = set_leader_skill which = -1 value = 9 }
+		command = { type = set_leader_skill which = -1 value = 9 }
+		command = { type = set_leader_skill which = -1 value = 9 }
+		command = { type = set_leader_skill which = -1 value = 9 }
+		command = { type = set_leader_skill which = -1 value = 9 }
+		command = { type = set_leader_skill which = -1 value = 9 }
+		command = { type = set_leader_skill which = -1 value = 9 }
+		command = { type = set_leader_skill which = -1 value = 9 }
+		command = { type = set_leader_skill which = -1 value = 9 }
+		command = { type = set_leader_skill which = -1 value = 9 }
+		command = { type = set_leader_skill which = -1 value = 9 }
+		command = { type = set_leader_skill which = -1 value = 9 }
+		command = { type = set_leader_skill which = -1 value = 9 }
+		command = { type = set_leader_skill which = -1 value = 9 }
+		command = { type = set_leader_skill which = -1 value = 9 }
+		command = { type = set_leader_skill which = -1 value = 9 }
+		command = { type = set_leader_skill which = -1 value = 9 }
+		command = { type = set_leader_skill which = -1 value = 9 }
+		command = { type = set_leader_skill which = -1 value = 9 }
+		command = { type = set_leader_skill which = -1 value = 9 }
+		command = { type = set_leader_skill which = -1 value = 9 }
+		command = { type = set_leader_skill which = -1 value = 9 }
+		command = { type = set_leader_skill which = -1 value = 9 }
+		command = { type = set_leader_skill which = -1 value = 9 }
+		command = { type = set_leader_skill which = -1 value = 9 }
+		command = { type = set_leader_skill which = -1 value = 9 }
+		command = { type = set_leader_skill which = -1 value = 9 }
+		command = { type = set_leader_skill which = -1 value = 9 }
+		command = { type = set_leader_skill which = -1 value = 9 }
+		command = { type = set_leader_skill which = -1 value = 9 }
+		command = { type = set_leader_skill which = -1 value = 9 }
+		command = { type = set_leader_skill which = -1 value = 9 }
+		command = { type = set_leader_skill which = -1 value = 9 }
+		command = { type = set_leader_skill which = -1 value = 9 }
+		command = { type = set_leader_skill which = -1 value = 9 }
+		command = { type = set_leader_skill which = -1 value = 9 }
+		command = { type = set_leader_skill which = -1 value = 9 }
+		command = { type = set_leader_skill which = -1 value = 9 }
+		command = { type = set_leader_skill which = -1 value = 9 }
+		command = { type = set_leader_skill which = -1 value = 9 }
+		command = { type = set_leader_skill which = -1 value = 9 }
+		command = { type = set_leader_skill which = -1 value = 9 }
+		command = { type = set_leader_skill which = -1 value = 9 }
+		command = { type = set_leader_skill which = -1 value = 9 }
+		command = { type = set_leader_skill which = -1 value = 9 }
+		command = { type = set_leader_skill which = -1 value = 9 }
+		command = { type = set_leader_skill which = -1 value = 9 }
+		command = { type = set_leader_skill which = -1 value = 9 }
+
+	}
+	action = {
+		name = "Moderate boost"
+		command = { type = set_leader_skill which = -1 value = 5 }
+		command = { type = set_leader_skill which = -1 value = 5 }
+		command = { type = set_leader_skill which = -1 value = 5 }
+		command = { type = set_leader_skill which = -1 value = 5 }
+		command = { type = set_leader_skill which = -1 value = 5 }
+		command = { type = set_leader_skill which = -1 value = 5 }
+		}
+	action = {
+		name = "Small boost"
+		command = { type = set_leader_skill which = -1 value = 2 }
+		command = { type = set_leader_skill which = -1 value = 2 }
+		command = { type = set_leader_skill which = -1 value = 2 }
+		}
+		action = {
+		name = "Don't Need It"
+		ai_chance = 100
+		command = { }
+	}
+}
+event = {
+	id = 80105
+	random = yes
+	name = "Industrial Boost"
+	desc = "We have managed to bolster our industrial might!"
+	picture = "factory"
+
+	  	action = {
+		name = "Increase the base IC by 15 IC"
+		ai_chance = 0
+		command = { type = construct which = ic where = -4 value = 3 }
+		command = { type = construct which = ic where = -4 value = 3 }
+		command = { type = construct which = ic where = -4 value = 3 }
+		command = { type = construct which = ic where = -4 value = 3 }
+		command = { type = construct which = ic where = -4 value = 3 }
+	}
+	action = {
+		name = "Increase the base IC by 10 IC"
+		ai_chance = 0
+		command = { type = construct which = ic where = -4 value = 2 }
+		command = { type = construct which = ic where = -4 value = 2 }
+		command = { type = construct which = ic where = -4 value = 2 }
+		command = { type = construct which = ic where = -4 value = 2 }
+		command = { type = construct which = ic where = -4 value = 2 }
+		}
+	action = {
+		name = "Increase the base IC by 5 IC"
+		ai_chance = 0
+		command = { type = construct which = ic where = -4 value = 1 }
+		command = { type = construct which = ic where = -4 value = 1 }
+		command = { type = construct which = ic where = -4 value = 1 }
+		command = { type = construct which = ic where = -4 value = 1 }
+		command = { type = construct which = ic where = -4 value = 1 }
+		}
+	
+	action = {
+		name = "Decrease the base IC by 5 IC"
+		ai_chance = 0
+		command = { type = construct which = ic where = -4 value = -1 }
+		command = { type = construct which = ic where = -4 value = -1 }
+		command = { type = construct which = ic where = -4 value = -1 }
+		command = { type = construct which = ic where = -4 value = -1 }
+		command = { type = construct which = ic where = -4 value = -1 }
+		}
+		
+		action = {
+		name = "Decrease the base IC by 10 IC"
+		ai_chance = 0
+		command = { type = construct which = ic where = -4 value = -2 }
+		command = { type = construct which = ic where = -4 value = -2 }
+		command = { type = construct which = ic where = -4 value = -2 }
+		command = { type = construct which = ic where = -4 value = -2 }
+		command = { type = construct which = ic where = -4 value = -2 }
+		}
+		
+	action = {
+		name = "Don't Need It"
+		ai_chance = 100
+		command = { }
+	}
+}
+event = {
+	id = 80106
+	random = yes
+
+	name = "Advanced Industry"
+	desc = "The industry of the nation will now be more efficient due to new technologies and application methods."
+	picture = "factory"
+	style = 0
+
+	action = {
+		name = "Increase Our IC Efficiency by 20%"
+		ai_chance = 0
+		command = { type = industrial_modifier which = total value = 20 }
+	}
+	action = {
+		name = "Increase Our IC Efficiency by 10%"
+		ai_chance = 0
+		command = { type = industrial_modifier which = total value = 10 }
+		}
+	action = {
+		name = "Increase Our IC Efficiency by 5%"
+		ai_chance = 0
+		command = { type = industrial_modifier which = total value = 5 }
+		}
+	action = {
+		name = "Decrease Our IC Efficiency by 5%"
+		ai_chance = 0
+		command = { type = industrial_modifier which = total value = -5 }
+		}
+	action = {
+		name = "Decrease Our IC Efficiency by 10%"
+		ai_chance = 0
+		command = { type = industrial_modifier which = total value = -10 }
+		}
+	action = {
+		name = "Decrease Our IC Efficiency by 15%"
+		ai_chance = 0
+		command = { type = industrial_modifier which = total value = -15 }
+		}
+	action = {
+		name = "Don't Need It"
+		ai_chance = 100
+		command = { }
+	}
+}
+event = {
+	id = 80107
+	random = yes
+
+	name = "Small Arms & Vehicle Production Efficiency"
+	desc = "We can now produce land units at a much faster rate!"
+	picture = "german_reinforcment_4"
+	style = 0
+
+	action = {
+		name = "Speed up the training!"
+		ai_chance = 0
+		command = { type = build_time which = armor when = now where = relative value = -90 }
+        command = { type = build_time which = light_armor when = now where = relative value = -90 }
+		command = { type = build_time which = infantry when = now where = relative value = -50 }
+		command = { type = build_time which = cavalry when = now where = relative value = -50 }
+		command = { type = build_time which = militia when = now where = relative value = -50 }
+		command = { type = build_time which = garrison when = now where = relative value = -50 }
+		command = { type = build_time which = paratrooper when = now where = relative value = -70 }
+		command = { type = build_time which = bergsjaeger when = now where = relative value = -70 }
+		command = { type = build_time which = mechanized when = now where = relative value = -60 }
+		command = { type = build_time which = motorized when = now where = relative value = -60 }
+		command = { type = build_time which = hq when = now where = relative value = -80 }
+		command = { type = build_time which = marine when = now where = relative value = -70 }     #Brigades below
+		command = { type = build_time which = anti_tank when = now where = relative value = -50 }
+		command = { type = build_time which = anti_air when = now where = relative value = -50 }
+		command = { type = build_time which = artillery when = now where = relative value = -50 }
+		command = { type = build_time which = rocket_artillery when = now where = relative value = -50 }
+		command = { type = build_time which = police when = now where = relative value = -50 }
+		command = { type = build_time which = engineer when = now where = relative value = -50 }
+		command = { type = build_time which = light_armor_brigade when = now where = relative value = -50 }
+		command = { type = build_time which = armored_car when = now where = relative value = -50 }
+		command = { type = build_time which = heavy_armor when = now where = relative value = -100 }
+		command = { type = build_time which = super_heavy_armor when = now where = relative value = -100 }
+		command = { type = build_time which = tank_destroyer when = now where = relative value = -70 }
+		command = { type = build_time which = sp_artillery when = now where = relative value = -70 }
+		command = { type = build_time which = sp_rct_artillery when = now where = relative value = -70 }
+	}
+	action = {
+		name = "Reverse the changes"
+		ai_chance = 0
+		command = { type = build_time which = armor when = now where = relative value = 90 }
+        command = { type = build_time which = light_armor when = now where = relative value = 90 }
+		command = { type = build_time which = infantry when = now where = relative value = 50 }
+		command = { type = build_time which = cavalry when = now where = relative value = 50 }
+		command = { type = build_time which = militia when = now where = relative value = 50 }
+		command = { type = build_time which = garrison when = now where = relative value = 50 }
+		command = { type = build_time which = paratrooper when = now where = relative value = 70 }
+		command = { type = build_time which = bergsjaeger when = now where = relative value = 70 }
+		command = { type = build_time which = mechanized when = now where = relative value = 60 }
+		command = { type = build_time which = motorized when = now where = relative value = 60 }
+		command = { type = build_time which = hq when = now where = relative value = 80 }
+		command = { type = build_time which = marine when = now where = relative value = 70 }     #Brigades below
+		command = { type = build_time which = anti_tank when = now where = relative value = 50 }
+		command = { type = build_time which = anti_air when = now where = relative value = 50 }
+		command = { type = build_time which = artillery when = now where = relative value = 50 }
+		command = { type = build_time which = rocket_artillery when = now where = relative value = 50 }
+		command = { type = build_time which = police when = now where = relative value = 50 }
+		command = { type = build_time which = engineer when = now where = relative value = 50 }
+		command = { type = build_time which = light_armor_brigade when = now where = relative value = 50 }
+		command = { type = build_time which = armored_car when = now where = relative value = 50 }
+		command = { type = build_time which = heavy_armor when = now where = relative value = 100 }
+		command = { type = build_time which = super_heavy_armor when = now where = relative value = 100 }
+		command = { type = build_time which = tank_destroyer when = now where = relative value = 70 }
+		command = { type = build_time which = sp_artillery when = now where = relative value = 70 }
+		command = { type = build_time which = sp_rct_artillery when = now where = relative value = 70 }
+	}
+	action = {
+		name = "Don't Need It"
+		ai_chance = 100
+		command = { }
+	}
+}
+event = {
+	id = 80108
+	random = yes
+
+	name = "Naval Production Efficiency"
+	desc = "Our engineers have shortened the production time for naval vessels"
+	picture = "american_ships_in_dock"
+	style = 0
+
+	action = {
+		name = "Set sail men!"
+		ai_chance = 0
+		command = { type = build_time which = battlecruiser when = now where = relative value = -70 }
+		command = { type = build_time which = battleship when = now where = relative value = -80 }
+		command = { type = build_time which = carrier when = now where = relative value = -90 }
+		command = { type = build_time which = escort_carrier when = now where = relative value = -80 }
+		command = { type = build_time which = destroyer when = now where = relative value = -70 }
+		command = { type = build_time which = heavy_cruiser when = now where = relative value = -90 }
+		command = { type = build_time which = light_cruiser when = now where = relative value = -80 }
+		command = { type = build_time which = submarine when = now where = relative value = -70 }
+		command = { type = build_time which = nuclear_submarine when = now where = relative value = -80 }
+		command = { type = build_time which = transport when = now where = relative value = -50 }
+		command = { type = convoy_prod_mod which = transports value = 40 }
+		command = { type = convoy_prod_mod which = escorts value = 40 }
+		command = { type = build_time which = naval_anti_air_l when = now where = relative value = -80 }
+		command = { type = build_time which = naval_anti_air_s when = now where = relative value = -80 }
+		command = { type = build_time which = naval_asw when = now where = relative value = -80 }
+		command = { type = build_time which = naval_fire_controll_l when = now where = relative value = -80 }
+		command = { type = build_time which = naval_fire_controll_s when = now where = relative value = -80 }
+		command = { type = build_time which = naval_improved_hull_l when = now where = relative value = -80 }
+		command = { type = build_time which = naval_improved_hull_s when = now where = relative value = -80 }
+		command = { type = build_time which = naval_radar_l when = now where = relative value = -80 }
+		command = { type = build_time which = naval_radar_s when = now where = relative value = -80 }
+		command = { type = build_time which = naval_torpedoes_l when = now where = relative value = -80 }
+		command = { type = build_time which = naval_torpedoes_s when = now where = relative value = -80 }
+			}
+	action = {
+		name = "Reverse the changes"
+		ai_chance = 0
+		command = { type = build_time which = battlecruiser when = now where = relative value = 70 }
+		command = { type = build_time which = battleship when = now where = relative value = 80 }
+		command = { type = build_time which = carrier when = now where = relative value = 90 }
+		command = { type = build_time which = escort_carrier when = now where = relative value = 80 }
+		command = { type = build_time which = destroyer when = now where = relative value = 70 }
+		command = { type = build_time which = heavy_cruiser when = now where = relative value = 90 }
+		command = { type = build_time which = light_cruiser when = now where = relative value = 80 }
+		command = { type = build_time which = submarine when = now where = relative value = 70 }
+		command = { type = build_time which = nuclear_submarine when = now where = relative value = 80 }
+		command = { type = build_time which = transport when = now where = relative value = 50 }
+		command = { type = convoy_prod_mod which = transports value = -40 }
+		command = { type = convoy_prod_mod which = escorts value = -40 }
+		command = { type = build_time which = naval_anti_air_l when = now where = relative value = 80 }
+		command = { type = build_time which = naval_anti_air_s when = now where = relative value = 80 }
+		command = { type = build_time which = naval_asw when = now where = relative value = 80 }
+		command = { type = build_time which = naval_fire_controll_l when = now where = relative value = 80 }
+		command = { type = build_time which = naval_fire_controll_s when = now where = relative value = 80 }
+		command = { type = build_time which = naval_improved_hull_l when = now where = relative value = 80 }
+		command = { type = build_time which = naval_improved_hull_s when = now where = relative value = 80 }
+		command = { type = build_time which = naval_radar_l when = now where = relative value = 80 }
+		command = { type = build_time which = naval_radar_s when = now where = relative value = 80 }
+		command = { type = build_time which = naval_torpedoes_l when = now where = relative value = 80 }
+		command = { type = build_time which = naval_torpedoes_s when = now where = relative value = 80 }
+			}
+	action = {
+		name = "Don't Need It"
+		ai_chance = 100
+		command = { }
+	}
+}
+event = {
+	id = 80109
+	random = yes
+
+	name = "Aircraft Production Efficiency"
+	desc = "We can now build aeroplanes at a much faster rate!"
+	picture = "german_air_reinforcments"
+	style = 0
+
+	action = {
+		name = "Scramble! Scramble!"
+		ai_chance = 0
+		command = { type = build_time which = interceptor when = now where = relative value = -60 }
+		command = { type = build_time which = multi_role when = now where = relative value = -60 }
+		command = { type = build_time which = escort when = now where = relative value = -60 }
+		command = { type = build_time which = cas when = now where = relative value = -60 }
+		command = { type = build_time which = naval_bomber when = now where = relative value = -60 }
+		command = { type = build_time which = strategic_bomber when = now where = relative value = -70 }
+		command = { type = build_time which = tactical_bomber when = now where = relative value = -60 }
+		command = { type = build_time which = transport_plane when = now where = relative value = -80 }
+		command = { type = build_time which = cag when = now where = relative value = -60 }
+		command = { type = build_time which = flying_bomb when = now where = relative value = -60 }
+		command = { type = build_time which = flying_rocket when = now where = relative value = -60 }
+	}
+	action = {
+		name = "Reverse the changes"
+		ai_chance = 0
+		command = { type = build_time which = interceptor when = now where = relative value = 60 }
+		command = { type = build_time which = multi_role when = now where = relative value = 60 }
+		command = { type = build_time which = escort when = now where = relative value = 60 }
+		command = { type = build_time which = cas when = now where = relative value = 60 }
+		command = { type = build_time which = naval_bomber when = now where = relative value = 60 }
+		command = { type = build_time which = strategic_bomber when = now where = relative value = 70 }
+		command = { type = build_time which = tactical_bomber when = now where = relative value = 60 }
+		command = { type = build_time which = transport_plane when = now where = relative value = 80 }
+		command = { type = build_time which = cag when = now where = relative value = 60 }
+		command = { type = build_time which = flying_bomb when = now where = relative value = 60 }
+		command = { type = build_time which = flying_rocket when = now where = relative value = 60 }
+	}
+	action = {
+		name = "Don't Need It"
+		ai_chance = 100
+		command = { }
+	}
+}
+event = {
+	id = 80110
+	random = yes
+
+	name = "Construction Efficiency"
+	desc = "Our engineers are now more adept at building national structures!"
+	picture = "factory"
+	style = 0
+
+	action = {
+		name = "Need a dispenser here!"
+		ai_chance = 0
+		command = { type = building_prod_mod which = ic value = 75 }
+		command = { type = building_prod_mod which = infrastructure value = 75 }
+		command = { type = building_prod_mod which = rocket_test value = 75 }
+		command = { type = building_prod_mod which = nuclear_reactor value = 75 }
+		command = { type = building_prod_mod which = coastal_fort value = 75 }
+		command = { type = building_prod_mod which = land_fort value = 75 }
+		command = { type = building_prod_mod which = flak value = 75 }
+		command = { type = building_prod_mod which = air_base value = 75 }
+		command = { type = building_prod_mod which = naval_base value = 75 }
+		command = { type = building_prod_mod which = radar_station value = 75 }
+	}
+	action = {
+		name = "Reverse the changes"
+		ai_chance = 0
+		command = { type = building_prod_mod which = ic value = -75 }
+		command = { type = building_prod_mod which = infrastructure value = -75 }
+		command = { type = building_prod_mod which = rocket_test value = -75 }
+		command = { type = building_prod_mod which = nuclear_reactor value = -75 }
+		command = { type = building_prod_mod which = coastal_fort value = -75 }
+		command = { type = building_prod_mod which = land_fort value = -75 }
+		command = { type = building_prod_mod which = flak value = -75 }
+		command = { type = building_prod_mod which = air_base value = -75 }
+		command = { type = building_prod_mod which = naval_base value = -75 }
+		command = { type = building_prod_mod which = radar_station value = -75 }
+	}
+	action = {
+		name = "Don't Need It"
+		ai_chance = 100
+		command = { }
+	}
+}
+event = {
+	id = 80111
+	random = yes
+
+	name = "Increase In Transport Capacity"
+	desc = "Future Japanese and German ministers have made our transport networks far more efficient!"
+	picture = "transfer"
+	style = 0
+
+	action = {
+		name = "Big booster 800 TC"
+		ai_chance = 0
+		command = { type = extra_tc value = 800 }
+	}
+	action = {
+		name = "Moderate Booster 200 TC"
+		ai_chance = 0
+		command = { type = extra_tc value = 200 }
+	}
+	action = {
+		name = "Small Booster 100 TC"
+		ai_chance = 0
+		command = { type = extra_tc value = 100 }
+	}
+	action = {
+		name = "Moderate Penalty -200 TC"
+		ai_chance = 0
+		command = { type = extra_tc value = -200 }
+	}
+	action = {
+		name = "Small Penalty -100 TC"
+		ai_chance = 0
+		command = { type = extra_tc value = -100 }
+	}
+	action = {
+		name = "Don't Need It"
+		ai_chance = 100
+		command = { }
+	}
+}
+event = {
+	id = 80112
+	random = yes
+
+	name = "Smoother Logistics In Occupied Land."
+	desc = "Our logistical staff have found ways to improve our transport capacities on foreign soil!."
+	picture = "transfer"
+	style = 0
+
+	action = {
+		name = "Bless paperwork!"
+		ai_chance = 0
+		command = { type = tc_occupied_mod value = 70 }
+	}
+	action = {
+		name = "Reverse the changes"
+		ai_chance = 0
+		command = { type = tc_occupied_mod value = -70 }
+	}
+	action = {
+		name = "Don't Need It"
+		ai_chance = 100
+		command = { }
+	}
+}
+event = {
+	id = 80113
+	random = yes
+
+	name = "Scientists spy on the future"
+	desc = "Some scientist from the future brought a laptop with Wikipedia!  This has allowed our researchers to plagiarize the future"
+	picture = "scientist"
+	style = 0
+
+	action = {
+		name = "Plagiarize!! 1000% Booster"
+		ai_chance = 0
+		command = { type = research_mod value = 1000 }
+	}
+	action = {
+		name = "Plagiarize!! 100% Booster"
+		ai_chance = 0
+		command = { type = research_mod value = 100 }
+	}
+	action = {
+		name = "Plagiarize!! 10% Booster"
+		ai_chance = 0
+		command = { type = research_mod value = 10 }
+	}
+	action = {
+		name = "Burn them books! 100% Penalty"
+		ai_chance = 0
+		command = { type = research_mod value = -100 }
+	}
+	action = {
+		name = "Burn them books! 10% Penalty"
+		ai_chance = 0
+		command = { type = research_mod value = -10 }
+	}
+	action = {
+		name = "Don't Need It"
+		ai_chance = 100
+		command = { }
+	}
+}
+event = {
+	id = 80114
+	random = yes
+
+	name = "Supply Production"
+	desc = "Our industrialists, engineers and generals have joined forces and come up with methods for producing supplies much more efficiently!"
+	picture = "american_supplies"
+	style = 0
+
+	action = {
+		name = "Excellent!"
+		ai_chance = 0
+		command = { type = industrial_modifier which = supplies value = 75 }
+	}
+	action = {
+		name = "Reverse the changes"
+		ai_chance = 0
+		command = { type = industrial_modifier which = supplies value = -75 }
+	}
+	action = {
+		name = "Don't Need It"
+		ai_chance = 100
+		command = { }
+	}
+}
+event = {
+	id = 80115
+	random = yes
+
+	name = "Resource Production"
+	desc = "We've discovered completely new sources of rescources!"
+	picture = "siberia"
+	style = 0
+
+	action = {
+		name = "Excellent!"
+		ai_chance = 0
+		command = { type = free_energy value = 800 }
+		command = { type = free_metal value = 600 }
+		command = { type = free_rare_materials value = 250 }
+		command = { type = free_oil value = 750 }
+		command = { type = free_supplies value = 800 }
+		command = { type = free_money value = 100 }
+	}
+	action = {
+		name = "Reverse the changes"
+		ai_chance = 0
+		command = { type = free_energy value = -800 }
+		command = { type = free_metal value = -600 }
+		command = { type = free_rare_materials value = -250 }
+		command = { type = free_oil value = -750 }
+		command = { type = free_supplies value = -800 }
+		command = { type = free_money value = -100 }
+	}
+	action = {
+		name = "Don't Need It"
+		ai_chance = 100
+		command = { }
+	}
+}
+event = {
+	id = 80116
+	random = yes
+	name = "Dissent reduced"
+	desc = "Our people have recently discovered their inner content selves, allowing them the be less annoyed with our government!"
+	picture = "gulag"
+	style = 0
+
+	action = {
+		name = "I am one with myself -25%"
+		ai_chance = 0
+		command = { type = dissent value = -25 }
+	}
+	action = {
+		name = "Turn on the TV Jeeves -10%"
+		ai_chance = 0
+		command = { type = dissent value = -10 }
+	}
+	action = {
+		name = "Have a pint laddy! -5%"
+		ai_chance = 0
+		command = { type = dissent value = -5 }
+	}
+	action = {
+		name = "Don't Need It"
+		ai_chance = 100
+		command = { }
+	}
+}
+event = {
+	id = 80117
+	random = yes
+	name = "Peace Conference"
+	desc = "After bringing the other leaders to our nation, we had a cocktail party and everyone around the world now sees us as cool party animals.  Everybody loves party animals!"
+	picture = "constitutional"
+	style = 0
+
+	action = {
+		name = "WARNING: Alcohol is not for politics! -25"
+		ai_chance = 0
+		command = { type = belligerence value = -25 }
+	}
+	action = {
+		name = "WARNING: Tango is not for politics! -10"
+		ai_chance = 0
+		command = { type = belligerence value = -10 }
+	}
+	action = {
+		name = "Don't Need It"
+		ai_chance = 100
+		command = { }
+	}
+}
+event = {
+id = 80118
+random = yes
+style = 0
+
+name = "Cut Production Time"
+desc = "Our factories are now more efficient in producing military forces"
+
+date = { day = 1 month = january year = 1936 }
+offset = 0
+
+action_a = {
+name = "Build faster!!"
+ai_chance = 0
+command = { type = build_time which = armor when = now where = relative value = -150 }
+command = { type = build_time which = light_armor when = now where = relative value = -150 }
+command = { type = build_time which = battlecruiser when = now where = relative value = -150 }
+command = { type = build_time which = battleship when = now where = relative value = -150 }
+command = { type = build_time which = carrier when = now where = relative value = -150 }
+command = { type = build_time which = heavy_cruiser when = now where = relative value = -150 }
+command = { type = build_time which = destroyer when = now where = relative value = -150 }
+command = { type = build_time which = CAG when = now where = relative value = -150 }
+command = { type = build_time which = infantry when = now where = relative value = -150 }
+command = { type = build_time which = CAS when = now where = relative value = -150 }
+command = { type = build_time which = bergsjaeger when = now where = relative value = -150 }
+command = { type = build_time which = cavalry when = now where = relative value = -150 }
+command = { type = build_time which = escort when = now where = relative value = -150 }
+command = { type = build_time which = flying_bomb when = now where = relative value = -150 }
+command = { type = build_time which = flying_rocket when = now where = relative value = -150 }
+command = { type = build_time which = garrison when = now where = relative value = -150 }
+command = { type = build_time which = interceptor when = now where = relative value = -150 }
+command = { type = build_time which = marine when = now where = relative value = -150 }
+command = { type = build_time which = mechanized when = now where = relative value = -150 }
+command = { type = build_time which = motorized when = now where = relative value = -150 }
+command = { type = build_time which = naval_bomber when = now where = relative value = -150 }
+command = { type = build_time which = paratrooper when = now where = relative value = -150 }
+command = { type = build_time which = strategic_bomber when = now where = relative value = -150 }
+command = { type = build_time which = tactical_bomber when = now where = relative value = -150 }
+command = { type = build_time which = transport when = now where = relative value = -150 }
+command = { type = build_time which = transport_plane when = now where = relative value = -150 }
+command = { type = build_time which = engineer when = now where = relative value = -150 }
+command = { type = build_time which = police when = now where = relative value = -150 }
+command = { type = build_time which = anti_tank when = now where = relative value = -150 }
+command = { type = build_time which = battleship when = now where = relative value = -150 }
+command = { type = build_time which = hq when = now where = relative value = -150 }
+command = { type = build_time which = sp_artillery when = now where = relative value = -150 }
+command = { type = build_time which = sp_rct_artillery when = now where = relative value = -150 }
+}
+	action_b = {
+		name = "We must reverse our changes"
+                        ai_chance = 0
+		command = { type = build_time which = armor when = now where = relative value = 150 }
+command = { type = build_time which = light_armor when = now where = relative value = 150 }
+command = { type = build_time which = battlecruiser when = now where = relative value = 150 }
+command = { type = build_time which = battleship when = now where = relative value = 150 }
+command = { type = build_time which = carrier when = now where = relative value = 150 }
+command = { type = build_time which = heavy_cruiser when = now where = relative value = 150 }
+command = { type = build_time which = destroyer when = now where = relative value = 150 }
+command = { type = build_time which = CAG when = now where = relative value = 150 }
+command = { type = build_time which = infantry when = now where = relative value = 150 }
+command = { type = build_time which = CAS when = now where = relative value = 150 }
+command = { type = build_time which = bergsjaeger when = now where = relative value = 150 }
+command = { type = build_time which = cavalry when = now where = relative value = 150 }
+command = { type = build_time which = escort when = now where = relative value = 150 }
+command = { type = build_time which = flying_bomb when = now where = relative value = 150 }
+command = { type = build_time which = flying_rocket when = now where = relative value = 150 }
+command = { type = build_time which = garrison when = now where = relative value = 150 }
+command = { type = build_time which = interceptor when = now where = relative value = 150 }
+command = { type = build_time which = marine when = now where = relative value = 150 }
+command = { type = build_time which = mechanized when = now where = relative value = 150 }
+command = { type = build_time which = motorized when = now where = relative value = 150 }
+command = { type = build_time which = naval_bomber when = now where = relative value = 150 }
+command = { type = build_time which = paratrooper when = now where = relative value = 150 }
+command = { type = build_time which = strategic_bomber when = now where = relative value = 150 }
+command = { type = build_time which = tactical_bomber when = now where = relative value = 150 }
+command = { type = build_time which = transport when = now where = relative value = 150 }
+command = { type = build_time which = transport_plane when = now where = relative value = 150 }
+command = { type = build_time which = engineer when = now where = relative value = 150 }
+command = { type = build_time which = police when = now where = relative value = 150 }
+command = { type = build_time which = anti_tank when = now where = relative value = 150 }
+command = { type = build_time which = battleship when = now where = relative value = 150 }
+command = { type = build_time which = hq when = now where = relative value = 150 }
+command = { type = build_time which = sp_artillery when = now where = relative value = 150 }
+command = { type = build_time which = sp_rct_artillery when = now where = relative value = 150 }
+	}
+	action_c = {
+		name = "Don't Need It"
+		ai_chance = 100
+		command = { }
+	}
+}
+event = {
+	id = 80119
+	random = no
+	
+
+	name = "Blueprints Cheats"
+	desc = "This cheats adds the blueprints for the Vanilla Technology tree, though some Darkest Hour blurprints will also appear"
+	style = 0
+
+	action_a = {
+		name = "Give me those blueprints!"
+
+command = { type = gain_tech which = 1010}
+command = { type = gain_tech which = 1020}
+command = { type = gain_tech which = 1030}
+command = { type = gain_tech which = 1040}
+command = { type = gain_tech which = 1050}
+command = { type = gain_tech which = 1060}
+command = { type = gain_tech which = 1070}
+command = { type = gain_tech which = 1080}
+command = { type = gain_tech which = 1090}
+command = { type = gain_tech which = 1100}
+command = { type = gain_tech which = 1110}
+command = { type = gain_tech which = 1120}
+command = { type = gain_tech which = 1130}
+command = { type = gain_tech which = 1140}
+command = { type = gain_tech which = 1150}
+command = { type = gain_tech which = 1160}
+command = { type = gain_tech which = 1170}
+command = { type = gain_tech which = 1180}
+command = { type = gain_tech which = 1190}
+command = { type = gain_tech which = 1200}
+command = { type = gain_tech which = 1210}
+command = { type = gain_tech which = 1220}
+command = { type = gain_tech which = 1230}
+command = { type = gain_tech which = 1240}
+command = { type = gain_tech which = 1250}
+command = { type = gain_tech which = 1260}
+command = { type = gain_tech which = 1270}
+command = { type = gain_tech which = 1280}
+command = { type = gain_tech which = 1290}
+command = { type = gain_tech which = 1300}
+command = { type = gain_tech which = 1310}
+command = { type = gain_tech which = 1320}
+command = { type = gain_tech which = 1330}
+command = { type = gain_tech which = 1340}
+command = { type = gain_tech which = 1350}
+command = { type = gain_tech which = 1360}
+Command = { type = gain_tech which = 2010}
+Command = { type = gain_tech which = 2020}
+Command = { type = gain_tech which = 2030}
+Command = { type = gain_tech which = 2040}
+Command = { type = gain_tech which = 2050}
+Command = { type = gain_tech which = 2060}
+Command = { type = gain_tech which = 2070}
+Command = { type = gain_tech which = 2080}
+Command = { type = gain_tech which = 2090}
+Command = { type = gain_tech which = 2100}
+Command = { type = gain_tech which = 2110}
+Command = { type = gain_tech which = 2120}
+Command = { type = gain_tech which = 2130}
+Command = { type = gain_tech which = 2140}
+Command = { type = gain_tech which = 2150}
+Command = { type = gain_tech which = 2160}
+Command = { type = gain_tech which = 2170}
+Command = { type = gain_tech which = 2180}
+Command = { type = gain_tech which = 2190}
+Command = { type = gain_tech which = 2200}
+Command = { type = gain_tech which = 2210}
+Command = { type = gain_tech which = 2220}
+Command = { type = gain_tech which = 2230}
+Command = { type = gain_tech which = 2240}
+Command = { type = gain_tech which = 2250}
+Command = { type = gain_tech which = 2260}
+Command = { type = gain_tech which = 2270}
+Command = { type = gain_tech which = 2280}
+Command = { type = gain_tech which = 2290}
+Command = { type = gain_tech which = 2300}
+Command = { type = gain_tech which = 2310}
+Command = { type = gain_tech which = 2320}
+Command = { type = gain_tech which = 2330}
+Command = { type = gain_tech which = 2340}
+Command = { type = gain_tech which = 2350}
+Command = { type = gain_tech which = 2360}
+Command = { type = gain_tech which = 2370}
+Command = { type = gain_tech which = 2380}
+Command = { type = gain_tech which = 2390}
+Command = { type = gain_tech which = 2400}
+Command = { type = gain_tech which = 2410}
+Command = { type = gain_tech which = 2420}
+Command = { type = gain_tech which = 2430}
+Command = { type = gain_tech which = 2440}
+Command = { type = gain_tech which = 2450}
+Command = { type = gain_tech which = 2460}
+Command = { type = gain_tech which = 2470}
+Command = { type = gain_tech which = 2480}
+Command = { type = gain_tech which = 2490}
+Command = { type = gain_tech which = 2500}
+Command = { type = gain_tech which = 2510}
+Command = { type = gain_tech which = 2520}
+Command = { type = gain_tech which = 2530}
+Command = { type = gain_tech which = 2540}
+Command = { type = gain_tech which = 3010}
+Command = { type = gain_tech which = 3020}
+Command = { type = gain_tech which = 3030}
+Command = { type = gain_tech which = 3040}
+Command = { type = gain_tech which = 3050}
+Command = { type = gain_tech which = 3060}
+Command = { type = gain_tech which = 3070}
+Command = { type = gain_tech which = 3080}
+Command = { type = gain_tech which = 3090}
+Command = { type = gain_tech which = 3100}
+Command = { type = gain_tech which = 3110}
+Command = { type = gain_tech which = 3120}
+Command = { type = gain_tech which = 3130}
+Command = { type = gain_tech which = 3140}
+Command = { type = gain_tech which = 3150}
+Command = { type = gain_tech which = 3160}
+Command = { type = gain_tech which = 3170}
+Command = { type = gain_tech which = 3180}
+Command = { type = gain_tech which = 3190}
+Command = { type = gain_tech which = 3200}
+Command = { type = gain_tech which = 3210}
+Command = { type = gain_tech which = 3220}
+Command = { type = gain_tech which = 3230}
+Command = { type = gain_tech which = 3240}
+Command = { type = gain_tech which = 3250}
+Command = { type = gain_tech which = 3260}
+Command = { type = gain_tech which = 3270}
+Command = { type = gain_tech which = 3280}
+Command = { type = gain_tech which = 3290}
+Command = { type = gain_tech which = 3300}
+Command = { type = gain_tech which = 3310}
+Command = { type = gain_tech which = 3320}
+Command = { type = gain_tech which = 3330}
+Command = { type = gain_tech which = 3340}
+Command = { type = gain_tech which = 3350}
+Command = { type = gain_tech which = 3360}
+Command = { type = gain_tech which = 3370}
+Command = { type = gain_tech which = 3380}
+Command = { type = gain_tech which = 3390}
+Command = { type = gain_tech which = 3400}
+Command = { type = gain_tech which = 3410}
+Command = { type = gain_tech which = 3420}
+Command = { type = gain_tech which = 3430}
+Command = { type = gain_tech which = 3440}
+Command = { type = gain_tech which = 3450}
+Command = { type = gain_tech which = 3460}
+command = { type = gain_tech which = 4010}
+command = { type = gain_tech which = 4020}
+Command = { type = gain_tech which = 4030}
+Command = { type = gain_tech which = 4040}
+Command = { type = gain_tech which = 4050}
+Command = { type = gain_tech which = 4060}
+Command = { type = gain_tech which = 4070}
+Command = { type = gain_tech which = 4080}
+Command = { type = gain_tech which = 4090}
+Command = { type = gain_tech which = 4100}
+Command = { type = gain_tech which = 4110}
+Command = { type = gain_tech which = 4120}
+Command = { type = gain_tech which = 4130}
+Command = { type = gain_tech which = 4140}
+Command = { type = gain_tech which = 4150}
+Command = { type = gain_tech which = 4160}
+Command = { type = gain_tech which = 4170}
+Command = { type = gain_tech which = 4180}
+Command = { type = gain_tech which = 4190}
+Command = { type = gain_tech which = 4200}
+Command = { type = gain_tech which = 4210}
+Command = { type = gain_tech which = 4220}
+Command = { type = gain_tech which = 4230}
+Command = { type = gain_tech which = 4240}
+Command = { type = gain_tech which = 4250}
+Command = { type = gain_tech which = 4260}
+Command = { type = gain_tech which = 4270}
+Command = { type = gain_tech which = 4280}
+command = { type = gain_tech which = 5010}
+command = { type = gain_tech which = 5020}
+command = { type = gain_tech which = 5030}
+command = { type = gain_tech which = 5040}
+command = { type = gain_tech which = 5050}
+command = { type = gain_tech which = 5060}
+command = { type = gain_tech which = 5070}
+command = { type = gain_tech which = 5080}
+command = { type = gain_tech which = 5090}
+command = { type = gain_tech which = 5100}
+command = { type = gain_tech which = 5110}
+command = { type = gain_tech which = 5120}
+command = { type = gain_tech which = 5130}
+command = { type = gain_tech which = 5140}
+command = { type = gain_tech which = 5150}
+command = { type = gain_tech which = 5160}
+command = { type = gain_tech which = 5170}
+command = { type = gain_tech which = 5180}
+command = { type = gain_tech which = 5190}
+command = { type = gain_tech which = 5200}
+command = { type = gain_tech which = 5210}
+command = { type = gain_tech which = 5220}
+command = { type = gain_tech which = 5230}
+command = { type = gain_tech which = 5240}
+command = { type = gain_tech which = 5310}
+command = { type = gain_tech which = 5320}
+command = { type = gain_tech which = 5330}
+command = { type = gain_tech which = 5340}
+command = { type = gain_tech which = 5350}
+command = { type = gain_tech which = 5360}
+command = { type = gain_tech which = 5370}
+command = { type = gain_tech which = 5380}
+command = { type = gain_tech which = 5390}
+command = { type = gain_tech which = 5400}
+command = { type = gain_tech which = 5410}
+command = { type = gain_tech which = 5420}
+command = { type = gain_tech which = 5430}
+command = { type = gain_tech which = 5440}
+command = { type = gain_tech which = 5450}
+command = { type = gain_tech which = 5460}
+command = { type = gain_tech which = 5470}
+command = { type = gain_tech which = 5480}
+command = { type = gain_tech which = 5490}
+command = { type = gain_tech which = 5500}
+command = { type = gain_tech which = 5510}
+command = { type = gain_tech which = 5520}
+command = { type = gain_tech which = 5530}
+command = { type = gain_tech which = 5540}
+command = { type = gain_tech which = 5550}
+command = { type = gain_tech which = 5560}
+command = { type = gain_tech which = 5570}
+command = { type = gain_tech which = 5580}
+command = { type = gain_tech which = 5590}
+command = { type = gain_tech which = 6010}
+command = { type = gain_tech which = 6020}
+command = { type = gain_tech which = 6030}
+command = { type = gain_tech which = 6040}
+command = { type = gain_tech which = 6050}
+command = { type = gain_tech which = 6060}
+command = { type = gain_tech which = 6070}
+command = { type = gain_tech which = 6080}
+command = { type = gain_tech which = 6090}
+command = { type = gain_tech which = 6100}
+command = { type = gain_tech which = 6110}
+command = { type = gain_tech which = 6120}
+command = { type = gain_tech which = 6130}
+command = { type = gain_tech which = 6140}
+command = { type = gain_tech which = 6150}
+command = { type = gain_tech which = 6160}
+command = { type = gain_tech which = 6170}
+command = { type = gain_tech which = 6180}
+command = { type = gain_tech which = 6190}
+command = { type = gain_tech which = 6200}
+command = { type = gain_tech which = 6210}
+command = { type = gain_tech which = 6220}
+command = { type = gain_tech which = 6230}
+command = { type = gain_tech which = 6240}
+command = { type = gain_tech which = 6250}
+command = { type = gain_tech which = 6260}
+command = { type = gain_tech which = 6270}
+command = { type = gain_tech which = 6280}
+command = { type = gain_tech which = 6290}
+command = { type = gain_tech which = 6300}
+command = { type = gain_tech which = 6310}
+command = { type = gain_tech which = 6320}
+command = { type = gain_tech which = 6330}
+command = { type = gain_tech which = 6340}
+command = { type = gain_tech which = 6350}
+command = { type = gain_tech which = 6360}
+command = { type = gain_tech which = 6370}
+command = { type = gain_tech which = 7010}
+command = { type = gain_tech which = 7020}
+command = { type = gain_tech which = 7030}
+command = { type = gain_tech which = 7040}
+command = { type = gain_tech which = 7050}
+command = { type = gain_tech which = 7060}
+command = { type = gain_tech which = 7070}
+command = { type = gain_tech which = 7080}
+command = { type = gain_tech which = 7090}
+command = { type = gain_tech which = 7100}
+command = { type = gain_tech which = 7110}
+command = { type = gain_tech which = 7120}
+command = { type = gain_tech which = 7130}
+command = { type = gain_tech which = 7140}
+command = { type = gain_tech which = 7150}
+command = { type = gain_tech which = 7160}
+command = { type = gain_tech which = 7170}
+command = { type = gain_tech which = 7180}
+command = { type = gain_tech which = 7190}
+command = { type = gain_tech which = 7200}
+command = { type = gain_tech which = 7210}
+command = { type = gain_tech which = 7220}
+command = { type = gain_tech which = 7230}
+command = { type = gain_tech which = 7240}
+command = { type = gain_tech which = 7260}
+command = { type = gain_tech which = 7270}
+command = { type = gain_tech which = 7280}
+command = { type = gain_tech which = 7290}
+command = { type = gain_tech which = 8000}
+command = { type = gain_tech which = 8010}
+command = { type = gain_tech which = 8010}
+command = { type = gain_tech which = 8020}
+command = { type = gain_tech which = 8030}
+command = { type = gain_tech which = 8040}
+command = { type = gain_tech which = 8050}
+command = { type = gain_tech which = 8060}
+command = { type = gain_tech which = 8070}
+command = { type = gain_tech which = 8080}
+command = { type = gain_tech which = 8090}
+command = { type = gain_tech which = 8100}
+command = { type = gain_tech which = 8110}
+command = { type = gain_tech which = 8120}
+command = { type = gain_tech which = 8130}
+command = { type = gain_tech which = 8140}
+command = { type = gain_tech which = 8150}
+command = { type = gain_tech which = 8160}
+command = { type = gain_tech which = 8170}
+command = { type = gain_tech which = 8180}
+command = { type = gain_tech which = 8190}
+command = { type = gain_tech which = 8200}
+command = { type = gain_tech which = 8210}
+command = { type = gain_tech which = 8220}
+command = { type = gain_tech which = 8230}
+command = { type = gain_tech which = 8240}
+command = { type = gain_tech which = 8250}
+command = { type = gain_tech which = 8260}
+command = { type = gain_tech which = 8270}
+command = { type = gain_tech which = 8280}
+command = { type = gain_tech which = 8290}
+command = { type = gain_tech which = 8300}
+command = { type = gain_tech which = 8310}
+command = { type = gain_tech which = 8320}
+command = { type = gain_tech which = 8330}
+command = { type = gain_tech which = 8340}
+command = { type = gain_tech which = 8350}
+command = { type = gain_tech which = 9010}
+command = { type = gain_tech which = 9020}
+command = { type = gain_tech which = 9030}
+command = { type = gain_tech which = 9040}
+command = { type = gain_tech which = 9050}
+command = { type = gain_tech which = 9060}
+command = { type = gain_tech which = 9070}
+command = { type = gain_tech which = 9080}
+command = { type = gain_tech which = 9090}
+command = { type = gain_tech which = 9100}
+command = { type = gain_tech which = 9110}
+command = { type = gain_tech which = 9120}
+command = { type = gain_tech which = 9130}
+command = { type = gain_tech which = 9140}
+command = { type = gain_tech which = 9150}
+command = { type = gain_tech which = 9160}
+command = { type = gain_tech which = 9170}
+command = { type = gain_tech which = 9180}
+command = { type = gain_tech which = 9190}
+command = { type = gain_tech which = 9200}
+command = { type = gain_tech which = 9210}
+command = { type = gain_tech which = 9220}
+command = { type = gain_tech which = 9230}
+command = { type = gain_tech which = 9240}
+command = { type = gain_tech which = 9250}
+command = { type = gain_tech which = 9260}
+command = { type = gain_tech which = 9270}
+command = { type = gain_tech which = 9280}
+command = { type = gain_tech which = 9290}
+command = { type = gain_tech which = 9300}
+command = { type = gain_tech which = 9310}
+command = { type = gain_tech which = 9320}
+command = { type = gain_tech which = 9330}
+command = { type = gain_tech which = 9340}
+command = { type = gain_tech which = 9350}
+command = { type = gain_tech which = 9360}
+command = { type = gain_tech which = 9370}
+command = { type = gain_tech which = 9380}
+command = { type = gain_tech which = 9390}
+command = { type = gain_tech which = 9400}
+command = { type = gain_tech which = 9410}
+command = { type = gain_tech which = 9420}
+command = { type = gain_tech which = 9430}
+command = { type = gain_tech which = 9440}
+command = { type = gain_tech which = 9450}
+command = { type = gain_tech which = 9460}
+command = { type = gain_tech which = 17010}
+command = { type = gain_tech which = 17000}
+command = { type = gain_tech which = 15500}
+command = { type = gain_tech which = 15000}
+command = { type = gain_tech which = 15010}
+command = { type = gain_tech which = 15020}
+command = { type = gain_tech which = 15030}
+command = { type = gain_tech which = 15040}
+command = { type = gain_tech which = 15050}
+command = { type = gain_tech which = 15060}
+command = { type = gain_tech which = 15070}
+command = { type = gain_tech which = 15080}
+command = { type = gain_tech which = 15100}
+command = { type = gain_tech which = 15110}
+command = { type = gain_tech which = 15120}
+command = { type = gain_tech which = 15130}
+command = { type = gain_tech which = 15140}
+command = { type = gain_tech which = 15150}
+command = { type = gain_tech which = 15160}
+command = { type = gain_tech which = 15170}
+command = { type = gain_tech which = 15180}
+command = { type = gain_tech which = 15190}
+command = { type = gain_tech which = 11000}
+command = { type = gain_tech which = 11010}
+command = { type = gain_tech which = 11020}
+command = { type = gain_tech which = 11030}
+command = { type = gain_tech which = 11040}
+command = { type = gain_tech which = 11050}
+command = { type = gain_tech which = 11060}
+command = { type = gain_tech which = 11070}
+command = { type = gain_tech which = 11080}
+command = { type = gain_tech which = 11090}
+command = { type = gain_tech which = 13000}
+command = { type = gain_tech which = 13010}
+command = { type = gain_tech which = 13020}
+command = { type = gain_tech which = 13030}
+command = { type = gain_tech which = 13040}
+command = { type = gain_tech which = 13050}
+command = { type = gain_tech which = 13060}
+command = { type = gain_tech which = 10000}
+command = { type = gain_tech which = 10010}
+command = { type = gain_tech which = 10020}
+command = { type = gain_tech which = 10030}
+command = { type = gain_tech which = 10040}
+command = { type = gain_tech which = 10050}
+command = { type = gain_tech which = 10060}
+command = { type = gain_tech which = 10070}
+command = { type = gain_tech which = 10080}
+command = { type = gain_tech which = 10090}
+command = { type = gain_tech which = 10100}
+command = { type = gain_tech which = 10110}
+command = { type = gain_tech which = 10120}
+command = { type = gain_tech which = 14000}
+command = { type = gain_tech which = 14010}
+command = { type = gain_tech which = 14020}
+command = { type = gain_tech which = 14030}
+command = { type = gain_tech which = 14040}
+command = { type = gain_tech which = 14050}
+command = { type = gain_tech which = 14060}
+command = { type = gain_tech which = 14070}
+command = { type = gain_tech which = 14080}
+command = { type = gain_tech which = 14090}
+command = { type = gain_tech which = 14100}
+command = { type = gain_tech which = 12000}
+command = { type = gain_tech which = 12010}
+command = { type = gain_tech which = 12020}
+command = { type = gain_tech which = 12030}
+command = { type = gain_tech which = 12040}
+command = { type = gain_tech which = 12050}
+command = { type = gain_tech which = 12060}
+command = { type = gain_tech which = 12100}
+command = { type = gain_tech which = 12110}
+command = { type = gain_tech which = 12120}
+command = { type = gain_tech which = 12130}
+command = { type = gain_tech which = 12140}
+command = { type = gain_tech which = 12150}
+command = { type = gain_tech which = 16000}
+command = { type = gain_tech which = 16010}
+command = { type = gain_tech which = 16020}
+command = { type = gain_tech which = 16030}
+command = { type = gain_tech which = 18000}
+command = { type = gain_tech which = 18010}
+	}
+	action_b = {
+		name = "Don't Need It"
+		ai_chance = 100
+		command = { }
+	}
+}
+event = {
+	id = 80130
+	random = yes
+	
+	name = "Construct Infrastructure"
+	desc = "Our engineers have toiled all day and night without overtime pay to create infrastructure for our nation!"
+	picture = "factory"
+	style = 0
+	
+	action = {
+		name = "Build the infrastructure!"
+		ai_chance = 0
+			            command = { type = construct which = infrastructure where = -1 value = 100 }
+						command = { type = construct which = infrastructure where = -1 value = 100 }
+						command = { type = construct which = infrastructure where = -1 value = 100 }
+						command = { type = construct which = infrastructure where = -1 value = 100 }
+						command = { type = construct which = infrastructure where = -1 value = 100 }
+						command = { type = construct which = infrastructure where = -1 value = 100 }
+						command = { type = construct which = infrastructure where = -1 value = 100 }
+						command = { type = construct which = infrastructure where = -1 value = 100 }
+						command = { type = construct which = infrastructure where = -1 value = 100 }
+						command = { type = construct which = infrastructure where = -1 value = 100 }
+						command = { type = construct which = infrastructure where = -1 value = 100 }
+						command = { type = construct which = infrastructure where = -1 value = 100 }
+				}
+	action = {
+		name = "Don't need it."
+		ai_chance = 100
+			command = { }
+			}
+}
+event = {
+	id = 80140
+	random = yes
+	
+	name = "Manpower Modifiers!"
+	desc = "We now have the ability to either give or take from the manpower pool!  Make a choice!"
+	picture = "reinforcements"
+	style = 0
+	
+	action = {
+		name = "Big booster! 1000 manpower"
+		command = { type = manpowerpool value = 1000 }
+		}
+	action = {
+		name = "Moderate booster! 250 manpower"
+		command = { type = manpowerpool value = 250 }
+		}
+	action = {
+		name = "Small booster! 100 manpower"
+		command = { type = manpowerpool value = 100 }
+		}
+	action = {
+		name = "Small removal! -100 manpower"
+		command = { type = manpowerpool value = -100 }
+		}
+	action = {
+		name = "Moderate removal! 250 manpower"
+		command = { type = manpowerpool value = -250 }
+		}
+	}
+event = {
+    id = 80131
+    random = yes
+    persistent = yes
+    date = { day = 27 month = june year = 1914 }
+    offset = 30000
+    deathdate = { day = 30 month = december year = 1963 }
+    
+    name = "Belligerence raised!!"
+    desc = "Some pokey jounalist has gone on the radio to spread malicious lies about our nation!!  The world thinks we're that much more awful now!!"
+    style = 0
+    
+    action_a = {
+            name = "DAMN!"
+            ai_chance = 100
+                command = {type = belligerence value = 10}
+            }
+    action_b = {
+            name = "Sod off!!"
+            ai_chance = 0
+                command = { }
+            }
+}
+event = {
+	id = 80200
+	random = yes
+
+	name = "Spawn Modern Land Units"
+	desc = "You have been granted some modern land units, the generals will be pleased."
+	picture = "german_reinforcment_4"
+	style = 0
+
+	action_a = {
+		name = "Spawn The Tank Units"
+		ai_chance = 0
+			command = { type = add_division which = "1st Modern Armour" value = armor when = 7 where = sp_artillery }
+			command = { type = add_division which = "2nd Modern Armour" value = armor when = 7 where = heavy_armor }
+			command = { type = add_division which = "3rd Modern Armour" value = armor when = 7 where = tank_destroyer }
+			}
+		action_b = {
+		name = "Spawn The Motorized Units"
+		ai_chance = 0
+			command = { type = add_division which = "1st Modern Motorized" value = motorized when = 5 where = sp_artillery }
+			command = { type = add_division which = "2nd Modern Motorized" value = motorized when = 5 where = armored_car }
+			command = { type = add_division which = "3rd Modern Motorized" value = motorized when = 5 where = tank_destroyer }
+			}
+	action_c = {
+		name = "Don't Need It"
+		ai_chance = 100
+			command = { }
+			}
+}

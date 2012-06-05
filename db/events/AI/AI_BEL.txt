@@ -1,0 +1,213 @@
+####################################
+# Belgium AI events by Lothos
+####################################
+# Behavior Flags
+#	BELDDay		= Load DDay AI
+################
+# Minister of Security Section
+#############################################
+event = { # Philippe Van Isacker takes power
+	id = 3015001
+	random = no 
+	country = BEL
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 70100 # Philippe Van Isacker
+		NOT = { InCabinet = 70100 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ministerofsecurity which = 70100 }
+		command = { type = dissent value = -1 }
+	}
+}
+
+################
+# Armament Minister Section
+#############################################
+event = { # Hendrik de Man takes power
+	id = 3015002
+	random = no 
+	country = BEL
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 70033 # Hendrik de Man
+		NOT = { InCabinet = 70033 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = armamentminister which = 70033 }
+		command = { type = dissent value = -1 }
+	}
+}
+event = { # Alexandre Galopin takes power
+	id = 3015003
+	random = no 
+	country = BEL
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 70135 # Alexandre Galopin
+		NOT = { InCabinet = 70135 }
+		NOT = { minister = 70033 } # Hendrik de Man
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = armamentminister which = 70135 }
+		command = { type = dissent value = -1 }
+	}
+}
+################
+# Chief of Air Minister Section
+#############################################
+event = { # Jules Iserentant takes power
+	id = 3015004
+	random = no 
+	country = BEL
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 70085 # Jules Iserentant
+		NOT = { InCabinet = 70085 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = chiefofair which = 70085 }
+		command = { type = dissent value = -1 }
+	}
+}
+
+
+
+
+
+
+
+#############################################
+# Regular AI Events
+#############################################
+################
+# Load D-Day AI
+#############################################
+event = {
+	id = 3015005
+	random = no 
+	country = BEL
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		flag = DDay
+		NOT = { local_flag = BELDDay }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = local_setflag which = BELDDay }
+		command = { type = ai which = "switch/Minor_DDay_ENG.ai" }
+	}
+}
+event = {
+	id = 3015006
+	random = no 
+	country = BEL
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		atwar = yes
+		NOT = { flag = DDay }
+		local_flag = BELDDay
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = local_clrflag which = BELDDay }
+		command = { type = ai which = "switch/Minor_DDay_Retrack.ai" }
+	}
+}
+################
+# BEL moves their capital
+#############################################
+event = {
+	id = 3015007
+	random = no
+	country = BEL
+
+	trigger = {
+		ai = yes
+		war = { country = GER country = BEL }
+		control = { province = 899 data = -1 } # Léopoldville
+		NOT = { 
+			control = { province = 115 data = BEL } # Antwerpen
+			control = { province = 108 data = BEL } # Liege
+			control = { province = 114 data = BEL } # Brugge
+			control = { province = 116 data = BEL } # Burssel
+		}
+	}
+
+	name = "AI_EVENT"
+	desc = "AI_EVENT"
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action_a = { 
+		command = { type = capital which = 899 } # LŽopoldville
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 70001 }
+		command = { type = headofgovernment which = 70017 }
+		command = { type = foreignminister which = 70023 }
+		command = { type = armamentminister which = 70034 }
+		command = { type = ministerofsecurity which = 70053 }
+		command = { type = ministerofintelligence which = 70064 }
+	}
+}

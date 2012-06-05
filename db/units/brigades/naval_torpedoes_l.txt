@@ -1,0 +1,164 @@
+detachable = yes
+
+# 0 - Early Float plane 1911
+model = {
+	cost 				= 1
+	buildtime			= 90
+	manpower 			= 0
+	surfacedetectioncapability	= 1
+	airdetectioncapability		= 1
+	subdetectioncapability		= 1
+	airdefence			= 0
+	seaattack			= 0
+	convoyattack			= 0
+	subattack			= 0
+	airattack			= 0
+	shorebombardment		= 0
+	distance			= 0
+	supplyconsumption 		= 0.1
+	fuelconsumption			= 0.1
+	upgrade_time_factor 		= 1.0
+	upgrade_cost_factor 		= 1.0
+}
+# 1 - Early GW Float plane 1914
+model = {
+	cost 				= 1
+	buildtime			= 90
+	manpower 			= 0
+	surfacedetectioncapability	= 2
+	airdetectioncapability		= 1
+	subdetectioncapability		= 1
+	airdefence			= 0
+	seaattack			= 0
+	convoyattack			= 0
+	subattack			= 0
+	airattack			= 0
+	shorebombardment		= 0
+	distance			= 0.05
+	supplyconsumption 		= 0.1
+	fuelconsumption			= 0.1
+	upgrade_time_factor 		= 1.0
+	upgrade_cost_factor 		= 1.0
+}
+# 2 - GW Float plane 1918
+model = {
+	cost 				= 1
+	buildtime			= 90
+	manpower 			= 0
+	surfacedetectioncapability	= 3
+	airdetectioncapability		= 1
+	subdetectioncapability		= 1
+	airdefence			= 0
+	seaattack			= 1
+	convoyattack			= 1
+	subattack			= 0
+	airattack			= 0
+	shorebombardment		= 0
+	distance			= 0.05
+	supplyconsumption 		= 0.1
+	fuelconsumption			= 0.1
+	upgrade_time_factor 		= 1.0
+	upgrade_cost_factor 		= 1.0
+}
+# 3 - Interwar Float plane 1924
+model = {
+	cost 				= 1
+	buildtime			= 90
+	manpower 			= 0
+	surfacedetectioncapability	= 3
+	airdetectioncapability		= 1
+	subdetectioncapability		= 1
+	airdefence			= 0
+	seaattack			= 1
+	convoyattack			= 2
+	subattack			= 0
+	airattack			= 0
+	shorebombardment		= 0
+	distance			= 0.05
+	supplyconsumption 		= 0.2
+	fuelconsumption			= 0.1
+	upgrade_time_factor 		= 1.0
+	upgrade_cost_factor 		= 1.0
+}
+# 4 - Basic Float plane 1928
+model = {
+	cost 				= 1
+	buildtime			= 90
+	manpower 			= 0
+	surfacedetectioncapability	= 4
+	airdetectioncapability		= 2
+	subdetectioncapability		= 2
+	airdefence			= 0
+	seaattack			= 1
+	convoyattack			= 2
+	subattack			= 1
+	airattack			= 0
+	shorebombardment		= 0
+	distance			= 0.05
+	supplyconsumption 		= 0.2
+	fuelconsumption			= 0.1
+	upgrade_time_factor 		= 1.0
+	upgrade_cost_factor 		= 1.0
+}
+# 5 - Improved Float plane 1932
+model = {
+	cost 				= 1
+	buildtime			= 100
+	manpower 			= 0
+	surfacedetectioncapability	= 4
+	airdetectioncapability		= 2
+	subdetectioncapability		= 3
+	airdefence			= 0
+	seaattack			= 1
+	convoyattack			= 2
+	subattack			= 1
+	airattack			= 0
+	shorebombardment		= 0
+	distance			= 0.05
+	supplyconsumption 		= 0.2
+	fuelconsumption			= 0.2
+	upgrade_time_factor 		= 1.0
+	upgrade_cost_factor 		= 1.0
+}
+# 6 Semi-Modern Float plane 1937
+model = {
+	cost 				= 1
+	buildtime			= 120
+	manpower 			= 0
+	surfacedetectioncapability	= 4
+	airdetectioncapability		= 2
+	subdetectioncapability		= 4
+	airdefence			= 0
+	seaattack			= 1
+	convoyattack			= 2
+	subattack			= 2
+	airattack			= 0
+	shorebombardment		= 0
+	distance			= 0.05
+	supplyconsumption 		= 0.2
+	fuelconsumption			= 0.2
+	upgrade_time_factor 		= 1.0
+	upgrade_cost_factor 		= 1.0
+}
+# 7 Modern Float plane 1941
+model = {
+	cost 				= 1
+	buildtime			= 120
+	manpower 			= 0
+	surfacedetectioncapability	= 5
+	airdetectioncapability		= 2
+	subdetectioncapability		= 4
+	airdefence			= 0
+	seaattack			= 1
+	convoyattack			= 2
+	subattack			= 2
+	airattack			= 0
+	shorebombardment		= 0
+	distance			= 0.05
+	supplyconsumption 		= 0.2
+	fuelconsumption			= 0.2
+	upgrade_time_factor 		= 1.0
+	upgrade_cost_factor 		= 1.0
+}
+########################################
+

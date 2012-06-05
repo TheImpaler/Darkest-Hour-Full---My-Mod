@@ -1,0 +1,29 @@
+## Italy has joined entente, attack A-H
+event = {
+	id = 3006501
+	random = no
+	country = ITA
+	persistent = no		
+	
+	trigger = {
+		ai = yes
+		NOT = { flag = ITA1914_WarSetup }
+		flag = ITAEntente 
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 1
+	deathdate = { day = 30 month = december year = 1925 }
+
+	action_a = 
+		{
+			name = "AI_EVENT"
+			ai_chance = 100
+			command = { type = ai which = "switch/ITA_1914_WarSetup.ai" }
+			command = { type = setflag which = ITA1914_WarSetup }			
+		}
+}
+

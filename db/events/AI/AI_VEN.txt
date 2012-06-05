@@ -1,0 +1,265 @@
+####################################
+# Venezuela AI events by Lothos
+####################################
+################
+# Minister of Security Section
+#############################################
+event = { # Santiago Key Ayala takes power
+	id = 3037001
+	random = no 
+	country = VEN
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 180005 # Santiago Key Ayala
+		NOT = { InCabinet = 180005 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ministerofsecurity which = 180005 }
+		command = { type = dissent value = -1 }
+	}
+}
+event = { # Antonio Jose Villegas takes power
+	id = 3037002
+	random = no 
+	country = VEN
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 180027 # Antonio Jose Villegas
+		NOT = { InCabinet = 180027 }
+		NOT = { minister = 180005 } # Santiago Key Ayala
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ministerofsecurity which = 180027 }
+		command = { type = dissent value = -1 }
+	}
+}
+################
+# Chief of Staff Section
+#############################################
+event = { # Carlos Garcia Mendoza takes power
+	id = 3037003
+	random = no 
+	country = VEN
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 180044 # Carlos Garcia Mendoza
+		NOT = { InCabinet = 180044 }
+		OR = {
+			atwar = no
+			NOT = { manpower = 20 }
+			AND = {
+				atwar = yes
+				NOT = { minister = 180007 } # Isaias Medina Angarita
+			}
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = chiefofstaff which = 180044 }
+		command = { type = dissent value = -1 }
+	}
+}
+event = { # Isaias Medina Angarita
+	id = 3037004
+	random = no 
+	country = VEN
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		atwar = yes
+		manpower = 20
+		minister = 180007 # Isaias Medina Angarita
+		NOT = { InCabinet = 180007 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = chiefofstaff which = 180007 }
+		command = { type = dissent value = -1 }
+	}
+}
+################
+# Head of Intelligence Section
+#############################################
+event = { # Diogenes Escalante takes power
+	id = 3037005
+	random = no 
+	country = VEN
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 180036 # Diogenes Escalante
+		NOT = { InCabinet = 180036 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ministerofintelligence which = 180036 }
+		command = { type = dissent value = -1 }
+	}
+}
+event = { # Pedro Alcántara Laya takes power
+	id = 3037006
+	random = no 
+	country = VEN
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 180038 # Pedro Alcántara Laya
+		NOT = { InCabinet = 180038 }
+		NOT = { minister = 180036 } # Diogenes Escalante
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ministerofintelligence which = 180038 }
+		command = { type = dissent value = -1 }
+	}
+}
+################
+# Chief of the Army Section 
+#############################################
+event = { # Tomas Contreras Villalobos takes power
+	id = 3037007
+	random = no 
+	country = VEN
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 180048 # Tomas Contreras Villalobos
+		NOT = { InCabinet = 180048 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = chiefofarmy which = 180048 }
+		command = { type = dissent value = -1 }
+	}
+}
+################
+# Armament Minister Section
+#############################################
+event = { # Don Pedro Grases takes power
+	id = 3037008
+	random = no 
+	country = VEN
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 180019 # Don Pedro Grases
+		NOT = { InCabinet = 180019 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = armamentminister which = 180019 }
+		command = { type = dissent value = -1 }
+	}
+}
+
+
+
+
+
+
+
+#############################################
+# Regular AI Events 
+#############################################
+################
+# Shift Production
+#############################################
+event = {
+	id = 3037009
+	random = no 
+	country = VEN
+	
+	trigger = {
+		ai = yes
+		OR = {
+			atwar = yes
+			NOT = { ai = ARG }
+			NOT = { ai = BRA }
+			NOT = { ai = MEX }
+			NOT = { ai = COL }
+			lost_national = { country = USA value = 2 }
+			lost_national = { country = BRA value = 2 }
+			lost_national = { country = COL value = 2 }
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ai which = "switch/Minor_Gear_Up.ai" }
+	}
+}

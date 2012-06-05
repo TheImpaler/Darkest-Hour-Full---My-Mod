@@ -1,0 +1,52 @@
+# Darkest Hour 1914 Scenario
+
+# The nation specific historical events
+
+event = "db\events\1914\ALB - Albania.txt"
+event = "db\events\1914\BUL - Bulgaria.txt"
+event = "db\events\1914\ENG - UnitedKingdom.txt"
+event = "db\events\1914\FRA - France.txt"
+event = "db\events\1914\GRE - Greece.txt"
+event = "db\events\1914\ITA - Italy.txt"
+event = "db\events\1914\JAP - Japan.txt"
+event = "db\events\1914\MEX - Mexico.txt"
+event = "db\events\1914\OTT - Ottoman.txt"
+event = "db\events\1914\POL - Poland.txt"
+event = "db\events\1914\ROM - Romania.txt"
+event = "db\events\1914\RUS - Russia.txt"
+event = "db\events\1914\SER - Serbia.txt"
+event = "db\events\1914\SOV - Bolsheviks.txt"
+event = "db\events\1914\U08 - GermanEmpire.txt"
+event = "db\events\1914\U09 - AustriaHungary.txt"
+event = "db\events\1914\U50 - Hedjaz.txt"
+event = "db\events\1914\U57 U58 U59 - RevMex.txt"
+event = "db\events\1914\USA - USA.txt"
+event = "db\events\1914\peace_negociations.txt"
+event = "db\events\1914\GenericEvents.txt"
+event = "db\events\1914\White_Russias.txt"
+
+event = "db\events\death_events.txt"
+event = "db\events\generic_decisions.txt"
+event = "db\events\secret_weapon_events.txt"
+event = "db\events\Mobilization.txt"
+
+# AI Events
+event = "db\events\1914_AI\AI_GER_1914.txt"
+event = "db\events\1914_AI\AI_U09_1914.txt"
+event = "db\events\1914_AI\AI_RUS_1914.txt"
+event = "db\events\1914_AI\AI_FRA_1914.txt"
+event = "db\events\1914_AI\AI_ENG_1914.txt"
+event = "db\events\1914_AI\AI_SOV_1914.txt"
+event = "db\events\1914_AI\AI_OTT_1914.txt"
+event = "db\events\1914_AI\AI_BUL_1914.txt"
+event = "db\events\1914_AI\AI_ROM_1914.txt"
+event = "db\events\1914_AI\AI_AST_1914.txt"
+event = "db\events\1914_AI\AI_JAP_1914.txt"
+event = "db\events\1914_AI\AI_NZL_1914.txt"
+event = "db\events\1914_AI\AI_ITA_1914.txt"
+
+
+event = "db\events\AI\AI_mobi.txt"
+
+event = "db\events\Cheats.txt"
+event = "db\events\DHFBlueprints.txt"

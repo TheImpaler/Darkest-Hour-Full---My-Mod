@@ -1,0 +1,190 @@
+# French 1914 XIX Warplan Setup & Phase1
+# French  attacks Alsace-Lorraine and after winning that 
+# it stops the army
+#####################################
+# 0.49vrc2 by Spocky
+
+max_front_ratio = 1.2
+max_front_ratios = { 	
+	U08 = 5.0
+	U09 = 2.0
+	OTT = 2.0
+	
+}
+max_garrison_prop = 0.60
+min_garrison_prop = 0.20
+neutrality = 20.000 
+war = 50
+target = {  
+	# against Germany
+	104 = 100	
+	107 = 100
+	105 = 100
+	
+	
+	
+	
+	# against AEIOU
+	
+	
+	
+}
+
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+garrison = {
+	defend_overseas_beaches = no
+	home_multiplier 	= 1.0
+	overseas_multiplier 	= 1.0
+	home_peace_cap 		= 10
+	war_zone_odds 		= 2.0
+	key_point_prio_mult	= 0.0
+	revolt_risk_mult	= 0.1
+
+	# PRIORITIES:
+	beach			= 10	# Beach level 2
+	capital			= 100	# Our capital
+	human_border	= 0	# Ignored for allied human players
+	war_target		= 30	# The next country targeted for attack by this AI
+	reserves 		= 5	# bonus for provinces just behind a frontline.
+	
+	opposing_alliance	= 0	# For neutrals, all alliances are "opposing"
+	claim_threat		= 0	# If we are neutral, countries with claims on us get this
+	unstable_border		= 0	# Bordering countries at war with someone else get this
+
+	# Borders with specific countries
+	country_priorities = {
+		
+		U08 = 15
+		U09 = 10
+		
+	}
+		ignore = {
+		#Actual Beaches to Ignore
+		930 # Port Harcourt
+		951 # Porto Novo
+		950 # Lome
+		966  # Conakry
+		1001 # Madagaskar
+		1002 # Madagaskar
+		996 # Reunion
+		833 # Djihouti
+		1395 # Indo China
+		1396 # Indo China
+		1397 # Indo China
+		
+		108 
+		111 
+		112 
+		113 
+		114 
+		115 # Belgium 
+
+		
+	
+
+		#Libya
+		773   #Al Jaghbun
+		754   #Aujila
+		774  #Calanslo
+		129  #Kufra
+		128  #Murzuk
+		130  #Ghat
+		751   #Ghadames
+		755   #Sorno
+		
+		#Egypt/East Africa
+		800  #Siwa
+		120  #Great Sand Sea
+		789   #Qattara
+		801  #AinDalla
+		
+		806  #El Atiun
+		808  #El Obeid
+		809  #Waw
+		807  #Malakal
+		805  #Omdurman
+		833  #Djibouti
+		812  #Gallabal
+		811  #Kassala
+		843  #Marsabit
+
+		#Ethiopia
+		817  #Asmara
+		819  #Adwa
+		822  #Gonder
+		820  #Debre
+		829  #Gambela
+		830  #Jima
+		826  #Moyale
+		821  #Denakil
+		823  #Dese
+		818  #Diredawa
+		827  #Ogaden
+		837  #Bardera
+
+		#Belgian Congo
+		904  #Stanleyville
+		903  #Buta
+		905  #Costermanville
+		906  #Coquihatville
+		898  #Abertville
+		902  #Kindu-Port-Empain
+		901  #Leopoldville
+		908 926 919 923 917 907 # Border with Belgian Congo
+
+		#Libya Border
+		741 # Gabes
+		740 # Gafsa
+
+		# south america
+		2000 #cayenne
+
+		946 #Agadez (wtf)
+	}
+	
+	
+}
+front = { 
+
+	recklessness 		= 1 # 0-3
+	distrib_vs_ai 		= defensive
+	distrib_vs_human 	= defensive
+
+	base_attack_odds	= 1.3
+	min_attack_odds		= 1.1
+	max_attack_odds		= 3.0
+	reinforce_odds		= 1.3
+	withdraw_odds		= 0.6
+ 
+	enemy_handicap = {
+		
+	} 
+    passivity = {
+
+	}
+	province_priorities = {
+	
+	# against Germany
+	104 = 100	
+	107 = 100
+	105 = 100
+	
+	
+	
+	
+	# against AEIOU
+	
+	# belgian/german border
+		108 = 0		
+		111 = 0
+		113 = 0
+		115 = 0
+		117 = 0
+
+	}
+}
+
+
+###EOF

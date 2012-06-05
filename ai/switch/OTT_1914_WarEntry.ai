@@ -1,0 +1,148 @@
+
+
+# obsolet
+# OTT now checks for different warplanes at the beginning of the war
+
+# OTT AI File 1914 by jaegerfeld
+# OTT enters War 
+###################################
+# Diplomacy
+###################################
+combat = { ENG = 100 }
+
+# Special resistance against "influence" by the listed nations. Value range = [0 - 10]  
+resistance = {  
+	RUS = 5 
+	ENG = 4
+	FRA = 4
+	ITA = 5
+	USA = 2
+	U08 = 2
+}
+befriend = {
+	U08 = 100
+	U09 = 100
+}
+protect = { }
+target = {
+	# United Kingdom
+	388 = 150 # Cyprus
+
+	# Italy
+	379 = 50 # Rhodes
+	378 = 50 # Dodecanese
+
+	# RUS
+	702 = 50
+	708 = 50
+	713 = 100 # Baku
+} 
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+leader_ratio = {
+	land_field_marshal 	=0.02
+	land_general 		=0.031
+	land_lt_general 	=0.41
+
+	sea_grand_admiral 	=0.02
+	sea_admiral 		=0.061
+	sea_vice_admiral 	=0.401
+
+	air_marshal 		=0.02
+	air_general 		=0.091
+	air_lt_General 		=0.11
+}
+garrison = {
+	defend_overseas_beaches = yes
+	home_multiplier 	= 1.0
+	overseas_multiplier 	= 0.5
+	home_peace_cap 		= 40
+	war_zone_odds 		= 2.0
+	key_point_prio_mult	= 1.0
+	revolt_risk_mult	= 1.0
+
+	# PRIORITIES:
+	beach			= 100	# Beach level 2
+	capital			= 40	# Our capital
+	human_border		= 0	# Ignored for allied human players
+	war_target		= 50	# The next country targeted for attack by this AI
+	
+	opposing_alliance	= 50	# For neutrals, all alliances are "opposing"
+	claim_threat		= 0	# If we are neutral, countries with claims on us get this
+	unstable_border		= 0	# Bordering countries at war with someone else get this
+
+	# Borders with specific countries
+	country_priorities = {
+		
+		FRA = 5
+		ENG = 5
+		RUS = 20
+		SER = 10
+		BUL = 2
+		ROM = -1
+		GRE = 5
+	}
+	province_priorities = {
+
+	# Kaukasus
+		713 = 100	
+		702 = 100
+		710 = 100
+		
+	# Krim
+		641 = 100
+		
+	# Volga
+		706 = 100ä
+		
+	}
+	area_multiplier = { }
+}
+front = { 
+	recklessness 		= 3 # 0-3
+	distrib_vs_ai 		= offensive
+	distrib_vs_human 	= even
+
+	enemy_reinf_days	= 6
+	reserve_prop		= 0.1
+	panic_ratio_vs_ai	= 2.5
+	panic_ratio_vs_human	= 2.5
+	base_attack_odds	= 1.3
+	min_attack_odds		= 1.1
+	max_attack_odds		= 3.0
+	reinforce_odds		= 1.2
+	withdraw_odds		= 0.6
+
+	strength 	= 1.0
+	organisation 	= 1.0
+	soft_attack 	= 1.0
+	hard_attack 	= 1.0
+	ground_defense 	= 1.0
+	dig_in 		= 1.0 # Against defender
+
+	frozen_attack 	= 1.0
+	snow_attack 	= 1.0
+	blizzard_attack = 1.0
+	storm_attack 	= 1.0
+	muddy_attack 	= 1.0
+
+	
+	
+	occupied 	= 0.7
+	owned 		= 0.7
+
+	jungle_attack 	= 1.0
+	mountain_attack = 1.0
+	swamp_attack 	= 1.0
+	forest_attack 	= 1.0
+	hill_attack 	= 1.0
+	urban_attack 	= 1.0
+	river 		= 1.0
+
+      	enemy_handicap = { } 
+      	passivity = { } 
+} 
+
+
+

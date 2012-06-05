@@ -1,0 +1,173 @@
+####################################
+# Yugoslavia AI events by Lothos
+####################################
+
+################
+# Chief of Staff Section 
+#############################################
+event = { # Petar Kosic takes power
+	id = 3021001
+	random = no 
+	country = YUG
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 100007 # Petar Kosic
+		NOT = { InCabinet = 100007 }
+		OR = {
+			NOT = { manpower = 200 }
+			NOT = { minister = 100080 } # Mihailo Lukic
+			AND = {
+				atwar = no
+				manpower = 200
+			}
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = chiefofstaff which = 100007 }
+		command = { type = dissent value = -1 }
+	}
+}
+event = { # Mihailo Lukic takes power
+	id = 3021002
+	random = no 
+	country = YUG
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		atwar = yes
+		manpower = 200
+		minister = 100080 # Mihailo Lukic
+		NOT = { InCabinet = 100080 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = chiefofstaff which = 100080 }
+		command = { type = dissent value = -1 }
+	}
+}
+################
+# Head of Intelligence Section
+#############################################
+event = { # Djorde Petreli takes power
+	id = 3021003
+	random = no 
+	country = YUG
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 100044 # Djorde Petreli
+		NOT = { InCabinet = 100044 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ministerofintelligence which = 100044
+ }
+		command = { type = dissent value = -1 }
+	}
+}
+################
+# Chief of the Army Section
+#############################################
+event = { # Aleksandar Cincar-Markovic takes power
+	id = 3021004
+	random = no 
+	country = YUG
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 100008 # Aleksandar Cincar-Markovic
+		NOT = { InCabinet = 100008 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = chiefofarmy which = 100008 }
+		command = { type = dissent value = -1 }
+	}
+}
+################
+# Armament Minister Section 
+#############################################
+event = { # Edo Bogdan Markovic takes power
+	id = 3021005
+	random = no 
+	country = YUG
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 100029 # Edo Bogdan Markovic
+		NOT = { InCabinet = 100029 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = armamentminister which = 100029 }
+		command = { type = dissent value = -1 }
+	}
+}
+
+################
+# YUG joins Axis
+#############################################
+event = {
+	id = 3021006
+	random = no 
+	country = YUG
+	
+	trigger = {
+		alliance = { country = GER country = YUG }
+		event = 2021002
+		ai = yes
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		command = { type = ai which = "switch/YUG_Axis.ai" }
+	}
+}

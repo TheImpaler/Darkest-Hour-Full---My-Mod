@@ -1,0 +1,289 @@
+####################################
+# Manchuria AI events by Lothos
+####################################
+################
+# Minister of Security Section
+#############################################
+event = { # Soume Tcheng takes power
+	id = 3048001
+	random = no 
+	country = MAN
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 235034 # Soume Tcheng
+		NOT = { InCabinet = 235034 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ministerofsecurity which = 235034 }
+		command = { type = dissent value = -1 }
+	}
+}
+################
+# Chief of Staff Section
+#############################################
+event = { # Kawashima Yoshiko takes power
+	id = 3048002
+	random = no 
+	country = MAN
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 235048 # Kawashima Yoshiko
+		NOT = { InCabinet = 235048 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = chiefofstaff which = 235048 }
+		command = { type = dissent value = -1 }
+	}
+}
+################
+# Head of Intelligence Section
+#############################################
+event = { # Matsuyama Shinjiro takes power
+	id = 3048003
+	random = no 
+	country = MAN
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 235043 # Matsuyama Shinjiro
+		NOT = { InCabinet = 235043 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ministerofintelligence which = 235043 }
+		command = { type = dissent value = -1 }
+	}
+}
+################
+# Chief of the Army Section
+#############################################
+event = { # Kawashima Yoshiko takes power
+	id = 3048004
+	random = no 
+	country = MAN
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 235054 # Kawashima Yoshiko
+		NOT = { InCabinet = 235054 }
+		OR = {
+			atwar = no
+			NOT = { minister = 235008 } # Chi Hsing
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = chiefofarmy which = 235054 }
+		command = { type = dissent value = -1 }
+	}
+}
+event = { # Chi Hsing takes power
+	id = 3048005
+	random = no 
+	country = MAN
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 235008 # Chi Hsing
+		NOT = { InCabinet = 235008 }
+		OR = {
+			atwar = yes
+			NOT = { minister = 235054 } # Kawashima Yoshiko
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = chiefofarmy which = 235008 }
+		command = { type = dissent value = -1 }
+	}
+}
+################
+# Armament Minister Section
+#############################################
+event = { # Li Shao-keng takes power
+	id = 3048006
+	random = no 
+	country = MAN
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 235004 # Li Shao-keng
+		NOT = { InCabinet = 235004 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = armamentminister which = 235004 }
+		command = { type = dissent value = -1 }
+	}
+}
+################
+# Chief of Air Minister Section
+#############################################
+event = { # Isono Yuzo takes power
+	id = 3048007
+	random = no 
+	country = MAN
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 235066 # Isono Yuzo
+		NOT = { InCabinet = 235066 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = chiefofair which = 235066 }
+		command = { type = dissent value = -1 }
+	}
+}
+################
+# Chief of Navy Minister Section
+#############################################
+event = { # Yin Tsuo-chien takes power
+	id = 3048008
+	random = no 
+	country = MAN
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 235060 # Yin Tsuo-chien
+		NOT = { InCabinet = 235060 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = chiefofnavy which = 235060 }
+		command = { type = dissent value = -1 }
+	}
+}
+
+################
+# Manchuria sends EXP forces to Japan
+#############################################
+event = {
+	id = 3048009
+	random = no 
+	country = MAN
+	
+	trigger = {
+		ai = yes
+		OR = {
+			war = { country = JAP country = USA }
+			AND = {
+				NOT = { ai = CHI }
+				war = { country = JAP country = CHI }
+			}
+		}
+		alliance = { country = JAP country = MAN }
+		OR = {
+			ai = SOV
+			AND = {
+				NOT = { ai = SOV }
+				NOT = { war = { country = SOV country = MAN } }
+				OR = {
+					war = { country = SOV country = GER }
+					alliance = { country = SOV country = GER }
+				}
+			}
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ai which = "switch/EXP_80.ai" }
+	}
+}
+event = {
+	id = 3048010
+	random = no 
+	country = MAN
+	
+	trigger = {
+		ai = yes
+		war = { country = SOV country = MAN }
+		alliance = { country = JAP country = MAN }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ai which = "switch/EXP_100.ai" }
+	}
+}

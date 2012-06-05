@@ -1,0 +1,195 @@
+####################################
+# Dominican Republic AI events by Lothos
+####################################
+################
+# Minister of Security Section
+#############################################
+event = { # Alberto Garcia Vienda takes power
+	id = 3065001
+	random = no 
+	country = DOM
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 320045 # Alberto Garcia Vienda
+		NOT = { InCabinet = 320045 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ministerofsecurity which = 320045 }
+		command = { type = dissent value = -1 }
+	}
+}
+################
+# Chief of Staff Section
+#############################################
+event = { # Jesus da Costa-Ruiz takes power
+	id = 3065002
+	random = no 
+	country = DOM
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 320054 # Jesus da Costa-Ruiz
+		NOT = { InCabinet = 320054 }
+		OR = {
+			atwar = no
+			NOT = { minister = 320007 } # Rafél Trujillo
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = chiefofstaff which = 320054 }
+		command = { type = dissent value = -1 }
+	}
+}
+event = { # Rafél Trujillo takes power
+	id = 3065003
+	random = no 
+	country = DOM
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 320007 # Rafél Trujillo
+		NOT = { InCabinet = 320007 }
+		OR = {
+			atwar = yes
+			NOT = { minister = 320054 } # Jesus da Costa-Ruiz
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = chiefofstaff which = 320007 }
+		command = { type = dissent value = -1 }
+	}
+}
+################
+# Head of Intelligence Section
+#############################################
+event = { # Francisco Prats Ramirez takes power
+	id = 3065004
+	random = no 
+	country = DOM
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 320051 # Francisco Prats Ramirez
+		NOT = { InCabinet = 320051 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ministerofintelligence which = 320051 }
+		command = { type = dissent value = -1 }
+	}
+}
+event = { # Jesus da Costa Ruiz takes power
+	id = 3065005
+	random = no 
+	country = DOM
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 320006 # Jesus da Costa Ruiz
+		NOT = { InCabinet = 320006 }
+		NOT = { minister = 320051 } # Francisco Prats Ramirez
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ministerofintelligence which = 320006 }
+		command = { type = dissent value = -1 }
+	}
+}
+################
+# Chief of the Army Section
+#############################################
+event = { # Rafél Trujillo takes power
+	id = 3065006
+	random = no 
+	country = DOM
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 320008 # Rafél Trujillo
+		NOT = { InCabinet = 320008 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = chiefofarmy which = 320008 }
+		command = { type = dissent value = -1 }
+	}
+}
+################
+# Armament Minister Section
+#############################################
+event = { # Ignacio Bajordo takes power
+	id = 3065007
+	random = no 
+	country = DOM
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 320033 # Ignacio Bajordo
+		NOT = { InCabinet = 320033 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = armamentminister which = 320033 }
+		command = { type = dissent value = -1 }
+	}
+}

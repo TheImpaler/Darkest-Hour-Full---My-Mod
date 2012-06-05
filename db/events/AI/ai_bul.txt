@@ -1,0 +1,326 @@
+####################################
+# Bulgaria AI events by Lothos
+####################################
+################
+# Minister of Security Section 
+#############################################
+event = { # Nikolay Nikolaev takes power
+	id = 3020001
+	random = no 
+	country = BUL
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 95061 # Nikolay Nikolaev
+		NOT = { InCabinet = 95061 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ministerofsecurity which = 95061 }
+		command = { type = dissent value = -1 }
+	}
+}
+event = { # Georgi Sapov takes power
+	id = 3020002
+	random = no 
+	country = BUL
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 95005 # Georgi Sapov
+		NOT = { InCabinet = 95005 }
+		NOT = { minister = 95061 } # Nikolay Nikolaev
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ministerofsecurity which = 95005 }
+		command = { type = dissent value = -1 }
+	}
+}
+################
+# Chief of Staff Section
+#############################################
+event = { # Hristo Lukov takes power
+	id = 3020003
+	random = no 
+	country = BUL
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		atwar = yes
+		minister = 95007 # Hristo Lukov
+		NOT = { InCabinet = 95007 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = chiefofstaff which = 95007 }
+		command = { type = dissent value = -1 }
+	}
+}
+event = { # Teodosi Daskalov takes power
+	id = 3020004
+	random = no 
+	country = BUL
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		atwar = yes
+		minister = 95084 # Teodosi Daskalov
+		NOT = { InCabinet = 95084 }
+		NOT = { minister = 95007 } # Hristo Lukov
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = chiefofstaff which = 95084 }
+		command = { type = dissent value = -1 }
+	}
+}
+################
+# Head of Intelligence Section
+#############################################
+event = { # Atanas Burov takes power
+	id = 3020005
+	random = no 
+	country = BUL
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 95080 # Atanas Burov
+		NOT = { InCabinet = 95080 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ministerofintelligence which = 95080 }
+		command = { type = dissent value = -1 }
+	}
+}
+event = { # Sava Kirov takes power
+	id = 3020006
+	random = no 
+	country = BUL
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 95076 # Sava Kirov
+		NOT = { InCabinet = 95076 }
+		NOT = { minister = 95080 } # Atanas Burov
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ministerofintelligence which = 95076 }
+		command = { type = dissent value = -1 }
+	}
+}
+################
+# Chief of the Army Section 
+#############################################
+event = { # Iordan Peev takes power
+	id = 3020007
+	random = no 
+	country = BUL
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 95094 # Iordan Peev
+		NOT = { InCabinet = 95094 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = chiefofarmy which = 95094 }
+		command = { type = dissent value = -1 }
+	}
+}
+
+
+
+
+
+
+
+#############################################
+# Regular AI Events 
+# Invasion Flags
+#	BULInvadeYUG	= Invade Yugoslavia
+#############################################
+################
+# Bulgaria exp forces to Germany
+#############################################
+event = {
+	id = 3020008
+	random = no 
+	country = BUL
+	
+	trigger = {
+		ai = yes
+		ai = GER
+		alliance = { country = GER country = BUL }
+		OR = {
+			AND = {
+				war = { country = GER country = SOV }
+				war = { country = BUL country = SOV }
+			}
+			AND = {
+				war = { country = GER country = YUG }
+				war = { country = BUL country = YUG }
+			}
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 0 month = january year = 1936 }
+	offset = 4
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		#command = { type = ai which = "switch/EXP_Russia.ai" }
+		command = { type = ai which = "Air_Ground.ai" }
+	}
+}
+################
+# Bulgaria invades Yugoslavia
+#############################################
+event = {
+	id = 3020009
+	random = no 
+	country = BUL
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		ai = GER
+		exists = YUG
+		flag = InvYugoslavia
+		NOT = { local_flag = BULInvadeYUG }
+		NOT = { war = { country = GER country = SOV } }
+		NOT = { war = { country = BUL country = SOV } }
+		NOT = { war = { country = BUL country = GER } }		
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = local_setflag which = BULInvadeYUG }
+		command = { type = ai which = "switch/BUL_Invade_YUG_Buildup.ai" }
+	}
+}
+event = {
+	id = 3020010
+	random = no 
+	country = BUL
+	
+	trigger = {
+		ai = yes
+		local_flag = BULInvadeYUG
+		NOT = { flag = InvYugoslavia }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = war which = YUG }
+		command = { type = local_clrflag which = BULInvadeYUG }
+		command = { type = ai which = "switch/BUL_Invade_Release.ai" }
+	}
+}
+################
+# Bulgaria lowers neutrality to join Axis
+#############################################
+event = {
+	id = 3020011
+	random = no 
+	country = BUL
+	
+	trigger = {
+		ai = yes
+		atwar = no
+		OR = {
+			event = 2023003 # Soviets claimed Bessarabia
+			event = 2023004 # Vienna Diktat
+			event = 2023009 # Claim Constanta
+			war = { country = GER country = YUG }
+			AND = {
+				war = { country = GER country = ROM }
+				NOT = { alliance = { country = SOV country = ROM } }
+			}
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 14
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = { 
+		command = { type = ai which = "switch/Neutrality_Change.ai" }
+	}
+}

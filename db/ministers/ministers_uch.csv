@@ -1,0 +1,92 @@
+UCH;Ruling Cabinet - Start;Name;Start Year;End Year;Ideology;Personality;Loyalty;Picturename;X
+;Replacements;;;;;;;;X
+1325001;Head of State;Yuan Shicai;1914;1933;PA;Autocratic Charmer;High;3545;X
+1325002;Head of Government;Li Yuanhong;1914;1933;SC;Silent Workhorse;High;3546;X
+1325003;Foreign Minister;Sun Pao-ch'i;1914;1933;SC;Great Compromiser;High;3547;X
+1325004;Minister of Armament;Hsiung Hsi-ling;1914;1933;SC;Resource Industrialist;Medium;3548;X
+1325005;Head of Military Intelligence;Chou Tzu-ch'i;1914;1933;SC;Technical Specialist;Medium;3549;X
+1325006;Minister of Security;Liang Qichao;1914;1933;SC;Silent Lawyer;Medium;3550;X
+1325007;Chief of Staff;Huang Xing;1914;1933;SC;School of Mass Combat;Medium;3551;X
+1325008;Chief of Army;Huang Xing;1914;1933;SC;Decisive Battle Doctrine;Medium;3551;X
+1325009;Chief of Navy;Lin Jianzhang;1914;1933;SC;Open Seas Doctrine;Medium;5900;X
+1325010;Chief of Air Force;Zhao Buli;1916;1933;PA;Army Aviation Doctrine;Medium;unknown;X
+1325011;Head of State;Dr. Sun Yat-Sen;1914;1933;SD;Popular Figurehead;High;2343;X
+1325012;Head of Government;Wang Jingwei;1914;1933;SD;Ambitious Union Boss;Medium;M52041;X
+1325013;Foreign Minister;Wu Tingfang;1914;1933;SD;Ideological Crusader;High;2344;X
+1325014;Foreign Minister;Lou Tseng-Tsiang;1914;1933;SC;Apologetic Clerk;High;3552;X
+1325015;Foreign Minister;V. K. Wellington Koo;1914;1933;SC;Biased Intellectual;High;3553;X
+1325016;Foreign Minister;Wang Ch'ung-hui;1914;1933;SC;Great Compromiser;High;3554;X
+1325017;Head of Government;Hsiung Hsi-ling;1914;1933;PA;Corporate Suit;Medium;3548;X
+1325018;Head of Government;Hsu Hsi-ch'ang;1914;1933;PA;Silent Workhorse;Medium;3555;X
+1325019;Foreign Minister;Ts'ao Ju-lin;1914;1933;PA;Biased Intellectual;Very High;3556;X
+1325020;Minister of Armament;Chou Tzu-ch'i;1914;1933;PA;Infantry Proponent;Medium;3549;X
+1325021;Minister of Armament;Ch'en Ch'i-mei;1914;1933;SC;Infantry Proponent;Medium;3557;X
+1325022;Minister of Armament;Ch'en Chin-t'ao;1914;1933;SC;Resource Industrialist;Medium;7996;X
+1325023;Minister of Armament;Chao Ping-chun;1914;1933;PA;Resource Industrialist;Medium;7997;X
+1325024;Head of Military Intelligence;Tuan Ch'i-jui;1914;1933;PA;Political Specialist;Medium;3558;X
+1325025;Minister of Security;Ch'eng Te-ch'uan;1914;1933;SC;Crime Fighter;Medium;unknown;X
+1325026;Minister of Security;Yen Tun-yuan;1914;1933;PA;Crime Fighter;Medium;unknown;X
+1325027;Minister of Security;Chao Ping-chun;1914;1933;PA;Silent Lawyer;Medium;7997;X
+1325028;Chief of Staff;Li Yuanhong;1914;1933;PA;School of Mass Combat;Medium;3546;X
+1325029;Chief of Staff;Tuan Ch'i-jui;1914;1933;PA;School of Manoeuvre;Medium;3558;X
+1325030;Chief of Staff;Hsu Shao-chen;1914;1933;PA;School of Manoeuvre;Medium;unknown;X
+1325031;Chief of Navy;Liu Kuan-hsiung;1914;1933;PA;Decisive Naval Battle Doctrine;Medium;3559;X
+1325032;Chief of Navy;Huang Chung-yin;1914;1933;SC;Decisive Naval Battle Doctrine;Medium;unknown;X
+1325033;Head of State;Hung Hsien;1915;1933;PA;Pig-headed Isolationist;Medium;3560;X
+1325034;Head of Government;Hung Hsien;1915;1933;PA;Political Protege;Medium;3560;X
+1325035;Minister of Armament;Chou Hsueh-hsi;1915;1933;PA;Resource Industrialist;Medium;unknown;X
+1325036;Minister of Security;Wang I-Tang;1915;1933;PA;Silent Lawyer;Medium;5901;X
+1325037;Chief of Staff;Feng Kuo-chang;1915;1933;PA;School of Mass Combat;Medium;3561;X
+1325038;Chief of Army;Wang Shih-chen;1915;1933;PA;Guns and Butter Doctrine;Medium;3562;X
+1325039;Head of State;Li Yuanhong;1916;1933;PA;Resigned Generalissimo;High;3546;X
+1325040;Head of Government;Duan Qirui;1916;1933;PA;Silent Workhorse;High;5902;X
+1325041;Head of Government;Feng Guozhang;1916;1933;PA;Old General;High;3563;X
+1325042;Head of Government;Tuan Ch'i-jui;1916;1933;PA;Flamboyant Tough Guy;Medium;3558;X
+1325043;Foreign Minister;Tan Shao Yi;1916;1933;PA;Biased Intellectual;Very High;3564;X
+1325044;Foreign Minister;Wu T'ing-fang;1916;1933;PA;Biased Intellectual;Very High;2344;X
+1325045;Minister of Armament;Sun Pao-ch'i;1916;1933;PA;Resource Industrialist;Medium;3547;X
+1325046;Chief of Army;Tuan Ch'i-jui;1916;1933;PA;Decisive Battle Doctrine;Medium;3558;X
+1325047;Chief of Navy;Ch'eng Pi-kuang;1916;1933;PA;Decisive Naval Battle Doctrine;Medium;3565;X
+1325048;Head of State;Aisin-Gioro Puyi;1917;1933;NS;Popular Figurehead;High;2829;X
+1325049;Head of State;Feng Guozhang;1917;1933;PA;Resigned Generalissimo;High;3563;X
+1325050;Head of Government;Zhang Xun;1917;1933;NS;Backroom Backstabber;High;3566;X
+1325051;Head of Government;Li Ching-hsi;1917;1933;PA;Silent Workhorse;Medium;unknown;X
+1325052;Foreign Minister;Kang Youwei;1917;1933;NS;Iron Fisted Brute;High;3567;X
+1325053;Foreign Minister;Liang Tun-yen;1917;1933;PA;General Staffer;Very High;3568;X
+1325054;Minister of Armament;Chen Chin-tang;1917;1933;PA;Infantry Proponent;Medium;unknown;X
+1325055;Minister of Security;Fan Yuan-lien;1917;1933;PA;Crime Fighter;Medium;unknown;X
+1325056;Chief of Staff;Wang Shih-chen;1917;1933;PA;School of Mass Combat;Medium;3562;X
+1325057;Chief of Army;Tuan Chih-kuei;1917;1933;PA;Static Defence Doctrine;Medium;3569;X
+1325058;Chief of Navy;Sa Chen-ping;1917;1933;PA;Decisive Naval Battle Doctrine;Medium;3570;X
+1325059;Head of State;Xu Shichang;1918;1933;PA;Resigned Generalissimo;High;3571;X
+1325060;Head of State;Ts'ao K'un;1918;1933;PA;Resigned Generalissimo;Medium;3572;X
+1325061;Head of Government;Chien Neng-hsun;1918;1933;PA;Silent Workhorse;Medium;3573;X
+1325062;Foreign Minister;Ch'en Lu;1918;1933;PA;Undistinguished Suit;Very High;5903;X
+1325063;Minister of Armament;Ts'ao Ju-lin;1918;1933;PA;Resource Industrialist;Medium;3556;X
+1325064;Chief of Navy;Tu Hsi-kuei;1918;1933;PA;Decisive Naval Battle Doctrine;Medium;5905;X
+1325065;Head of Government;Chin Yun-Peng;1919;1933;PA;Old General;Medium;3574;X
+1325066;Minister of Security;Chang Chih-t'an;1919;1933;PA;Prince of Terror;Medium;unknown;X
+1325067;Chief of Staff;Chang Huai-chih;1919;1933;PA;School of Defence;Medium;3575;X
+1325068;Chief of Army;Chin Yun-Peng;1919;1933;PA;Guns and Butter Doctrine;Medium;3574;X
+1325069;Head of State;Wu Peifu;1920;1933;PA;Resigned Generalissimo;High;3576;X
+1325070;Minister of Armament;Li Ssu-hao;1920;1933;PA;Administrative Genius;Medium;unknown;X
+1325071;Head of Government;Yen Hui-ch'ing;1921;1933;PA;Happy Amateur;Medium;3577;X
+1325072;Chief of Army;Pao Kuei-ch'ing;1921;1933;PA;Decisive Battle Doctrine;Medium;unknown;X
+1325073;Minister of Security;Kao Ling-wei;1922;1933;PA;Crime Fighter;Medium;7998;X
+1325074;Chief of Staff;Li Lieh-chun;1922;1933;PA;School of Manoeuvre;Medium;3578;X
+1325075;Chief of Army;Wu Peifu;1922;1933;PA;Decisive Battle Doctrine;High;3576;X
+1325076;Head of State;Tuan Ch'i-jui;1924;1933;PA;Resigned Generalissimo;Medium;3558;X
+1325077;Head of Government;Xu Shichang;1916;1933;PA;Old General;High;3571;X
+1325078;Foreign Minister;Wang Chengbin;1916;1933;PA;Great Compromiser;High;3579;X
+1325079;Minister of Armament;Wang Kemin;1916;1933;PA;Resource Industrialist;Medium;M52012;X
+1325080;Head of Military Intelligence;Chen Guangyuan;1916;1933;PA;Logistics Specialist;Medium;3580;X
+1325081;Minister of Security;Sun Chuanfang;1916;1933;PA;Efficient Sociopath;Medium;3581;X
+1325082;Chief of Staff;Wu Peifu;1916;1933;PA;School of Psychology;Medium;3576;X
+1325083;Chief of Army;Qi Xieyuan;1916;1933;PA;Decisive Battle Doctrine;Medium;M52017;X
+1325084;Chief of Navy;Du Xigui;1916;1933;PA;Open Seas Doctrine;Medium;3582;X
+1325085;Minister of Armament;Wang Zhangyuan;1918;1933;PA;Corrupt Kleptocrat;Medium;3583;X
+1325086;Minister of Security;Feng Yuxiang;1916;1933;PA;Crooked Kleptocrat;Medium;3584;X
+1325087;Head of State;Cao Kun;1919;1933;PA;Resigned Generalissimo;High;3585;X
+1325088;Head of Government;Jin Yunpeng;1919;1933;PA;Old General;High;3586;X
+1325089;Chief of Staff;Wang Chengbin;1922;1933;PA;School of Defence;High;3579;X
+1325090;Chief of Army;Zhang Fulai;1922;1933;PA;Elastic Defence Doctrine;Medium;3587;X

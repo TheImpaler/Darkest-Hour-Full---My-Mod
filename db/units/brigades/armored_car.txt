@@ -1,0 +1,134 @@
+# 0 - Prewar
+model = {
+	cost 				= 3
+	buildtime	 		= 133
+	manpower 			= 3
+	defensiveness 		= 1
+	toughness 			= 1 
+	defaultorganisation = 4
+	softness			= -4
+	softattack			= 2
+	hardattack = 0
+	suppression		= 1
+	supplyconsumption 	= 0.4
+	fuelconsumption		= 0.2
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.25
+}# 1 - Great war
+model = {
+	cost 				= 3
+	buildtime	 		= 133
+	manpower 			= 3
+	defensiveness 		= 1
+	toughness 			= 2
+	defaultorganisation = 4
+	softness			= -5
+	softattack			= 2
+	hardattack = 0
+	suppression		= 1
+	supplyconsumption 	= 0.4
+	fuelconsumption		= 0.2
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.25
+}# 2 - Interwar
+model = {
+	cost 				= 3
+	buildtime	 		= 133
+	manpower 			= 3
+	defensiveness 		= 1
+	toughness 			= 3
+	defaultorganisation = 5
+	softness			= -5
+	softattack			= 2
+	hardattack = 0
+	suppression		= 1
+	supplyconsumption 	= 0.4
+	fuelconsumption		= 0.2
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.25
+}
+# 3 - Tankette
+model = {
+	cost 				= 3
+	buildtime	 		= 133
+	manpower 			= 3
+	defensiveness 		= 1
+	toughness 		= 4
+	defaultorganisation = 5
+	softness		= -5
+	softattack			= 3
+	hardattack = 0
+	suppression		= 1	
+	supplyconsumption 	= 0.4
+	fuelconsumption		= 0.3
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.25
+}
+# 4 - Basic
+model = {
+	cost 				= 3
+	buildtime	 		= 133
+	manpower 			= 3
+	defensiveness 		= 2
+	toughness 			= 5
+	defaultorganisation = 6
+	softness			= -5
+	softattack			= 3
+	hardattack			= 1
+	suppression		= 1
+	supplyconsumption 	= 0.4
+	fuelconsumption		= 0.3
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.25
+}
+# 5 - Improved
+model = {
+	cost 				= 3
+	buildtime	 		= 133
+	manpower 			= 3
+	defensiveness 		= 2
+	toughness 			= 6
+	defaultorganisation = 7
+	softness			= -5
+	softattack			= 3
+	hardattack			= 1
+	suppression		= 1
+	supplyconsumption 	= 0.4
+	fuelconsumption		= 0.3
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.25
+}
+# 6 -  Semi-Modern
+model = {
+	cost 				= 3
+	buildtime	 		= 133
+	manpower 			= 3
+	defensiveness 		= 2
+	toughness 			= 7
+	defaultorganisation = 8
+	softness			= -5
+	softattack			= 3
+	hardattack			= 1
+	suppression		= 1
+	supplyconsumption 	= 0.4
+	fuelconsumption		= 0.3
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.25
+}
+# 7 - Modern
+model = {
+	cost = 3
+	buildtime = 120
+	manpower = 3
+	defensiveness = 2
+	toughness = 8
+	defaultorganisation = 10
+	softness = -5
+	softattack = 4
+	hardattack = 1
+	suppression		= 1
+	supplyconsumption = 0.5
+	fuelconsumption = 0.3
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.25
+}

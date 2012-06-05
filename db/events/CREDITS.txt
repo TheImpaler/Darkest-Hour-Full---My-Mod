@@ -1,0 +1,20 @@
+
+CREDITS:
+
+Hearts of Iron II: Armageddon Wiki Cheats Page
+	For creating the original HoI:II ARMA cheats that can affect Darkest Hour when tweaked.
+
+Henrik Fåhraeus
+	For creating the original cheat codes for HoI:II ARMA
+
+Liam Riordan
+	For modifying the codes to be compatible with Darkest Hour engine and compatible mods
+
+Supeerme
+	For giving me the correct Darkest Hour technology ID's in one text file.  That helped a lot!
+
+mickro
+	For contributing the fix that enabled the Secret Weapons Blueprints cheat to operate correctly.  Thanks man!!
+
+Alexxx_
+	For contributing a fix so that the cheats will operate under Patch 1.02b2.  Cheers!

@@ -1,0 +1,15 @@
+MEN;Ruling Cabinet - Start;Name;Start Year;End Year;Ideology;Personality;Loyalty;Picturename;X
+;Replacements;;;;;;;;X
+700001;Head of State;De Noyan;1933;1964;FA;Pig-headed Isolationist;High;M513001;X
+700002;Head of Government;De Noyan;1933;1964;FA;Political Protege;High;M513001;X
+700003;Foreign Minister;Megata Toshiro;1933;1964;FA;General Staffer;High;M58032;X
+700004;Minister of Armament;Nakajima Kesago;1933;1964;FA;Air to Ground Proponent;Medium;M58051;X
+700005;Minister of Security;Damsurijan;1933;1964;FA;Man of the People;Medium;M513005;X
+700006;Head of Military Intelligence;Hung Zhehuang;1933;1964;FA;Logistics Specialist;Medium;M513006;X
+700007;Chief of Staff;De Noyan;1933;1964;FA;School of Psychology;Medium;M513001;X
+700008;Chief of Army;Yonimitsu Kasahara;1933;1964;FA;Guns and Butter Doctrine;Medium;L101079;X
+700009;Chief of Navy;Heinrich Hanke;1933;1964;FA;Decisive Naval Battle Doctrine;Medium;M513009;X
+700010;Chief of Air Force;Kyoiji Tomonaga;1933;1964;FA;Army Aviation Doctrine;Medium;L101336;X
+700011;Head of State;De Noyan;1933;1964;SC;Pig-headed Isolationist;High;5987;x
+700012;Head of Government;De Noyan;1933;1964;SC;Political Protege;High;5987;x
+700013;Chief of Staff;De Noyan;1933;1964;SC;School of Mass Combat;High;5987;x

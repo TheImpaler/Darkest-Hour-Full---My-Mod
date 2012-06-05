@@ -1,0 +1,434 @@
+
+########################################################## START OF REAL GERMANY AI 1914
+###############################################
+## Germany is at war with Entente
+## Austria-Hungary is allied with germany, italy is neutral
+## Germany has 5 great Warplans and chooses one of them to battle the entente
+## Plan 1/5  	Schlieffen/Hindenburg(2 armies to the east) war with belgium
+## Plan 2		Rupprecht ( through Switzerland) war with switzerland
+## Plan 3		Moltke  (battle Russia first) no war with belgium or switzerland
+## Plan 4		Kronprinz ( frontal attack ) no war with belgium or switzerland
+################################################
+
+
+event = {
+	id = 3191501
+	random = no
+	country = U08
+	persistent = yes		
+	
+	trigger = {
+		ai = yes
+		
+		NOT = { flag = GER1914StartupDone }
+		NOT = { flag = GER1914_bothAI  } 
+		war = { country = FRA country = U08 }
+		war = { country = RUS country = U08 }
+		NOT = { war = { country = U09 country = U08 } }		
+		NOT = { alliance = { country = U08  country = ITA } } 
+		
+		AND = {
+			exists = SCH
+			NOT = { war = { country = SCH country = U08 } }
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 1
+	deathdate = { day = 30 month = december year = 1925 }
+
+	action_a = 
+		{
+			name = "AI_EVENT"
+			ai_chance = 70
+			command = { type = trigger which = 3191502 }
+			command = { type = setflag which = GER1914StartupDone }
+			command = { type = setflag which = GER1914SchlieffenHindenburg }
+		}
+	action_b = 
+		{
+			name = "AI_EVENT"
+			ai_chance = 10
+			
+			command = { type = setflag which = GER1914Rupprecht }
+			command = { type = ai which = "switch/GER1914Rupprecht_setup.ai" }	
+			command = { type = setflag which = GER1914StartupDone }			
+		}
+	action_c = 
+		{
+			name = "AI_EVENT"
+			ai_chance = 10
+		
+			command = { type = setflag which = GER1914Moltke }
+			command = { type = ai which = "switch/GER1914Moltke_setup.ai" }			
+			command = { type = setflag which = GER1914StartupDone }
+		}
+			
+	action_d = {
+			name = "AI_EVENT"
+			ai_chance = 10
+	
+			command = { type = setflag which = GER1914Kronprinz }
+			command = { type = ai which = "switch/GER1914Kronprinz_setup.ai" }	
+			command = { type = setflag which = GER1914StartupDone }			
+			}
+}
+##########################
+# Decision Schlieffen or Hindenburg
+#
+event = {
+	id = 3191502
+	random = no
+	country = U08
+	persistent = yes
+	# Triggered by 970100
+	name = "AI_EVENT"
+	style = 0
+
+	action_a = {
+		name = "AI_EVENT"
+		ai_chance = 80		command = { type = ai which = "switch/GER1914Schlieffen_setup.ai" }
+		command = { type = setflag which = GER1914Schlieffen }
+		command = { type = war which = BEL }
+		command = { type = war which = LUX }
+		#command = { type = inherit which = LUX}
+		command = {	type = 	setflag which = GER1914_workaround} # workaround Ah takes command 	
+		#command = { type = add_corps which = "Spähtrupp Adler" value = land  where = 111 } 
+		#command = { type = add_division which = "Spähtrupp Adler" value = infantry when = 1  }
+		
+	}	
+	action_b = {
+		name = "AI_EVENT"	
+		ai_chance = 20
+		command = { type = ai which = "switch/GER1914Hindenburg_setup.ai" }
+		command = { type = setflag which = GER1914Hindenburg }
+		command = { type = war which = BEL }
+		command = { type = war which = LUX }
+		command = {	type = 	setflag which = GER1914_workaround} # workaround Ah takes command 	
+		#command = {	type = inherit which = LUX}
+		
+	}	
+}
+
+#########################################################
+###############################################
+## Germany starts war with Suisse to storm France
+##
+event = {
+	id = 3191503
+	random = no
+	country = U08
+	persistent = yes
+	trigger = {
+		ai = yes
+		flag = GER1914Rupprecht
+		NOT = { flag = GER1914RupprechtPhase2 }
+		NOT = { flag = GER1914_bothAI  } 
+		AND = {
+			exists = SCH
+			NOT = { war = { country = SCH country = U08 } }
+		}
+	}
+	name = "AI_EVENT"
+	style = 0
+	
+	date = { day = 1 month = september year = 1914 }
+	offset = 1
+	deathdate = { day = 15 month = november year = 1925 }
+	
+	action_a = {
+		
+		name = "AI_EVENT"
+		command = { type = war which = SCH }
+		
+		}
+	}
+	
+## Both AH and GEr are Ai controlled
+
+	event = {
+	id = 3191504
+	random = no
+	country = U08
+	persistent = no
+	trigger = {
+		ai = U09
+		ai = yes
+		NOT = { flag = GER1914_bothAI }
+		
+	}
+	name = "AI_EVENT"
+	style = 0
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 1
+	deathdate = { day = 15 month = november year = 1925 }
+	
+	action_a = {
+		
+		name = "AI_EVENT"
+		
+		command = {	type = setflag which = GER1914_bothAI} # workaround Ah takes command 	
+		
+		}
+}
+
+event = {
+	id = 3191514
+	random = no
+	country = U08
+	persistent = no
+	trigger = {
+		flag = GER1914_bothAI 
+		flag = GER1914StartupDone 	
+	}
+	name = "AI_EVENT"
+	style = 0
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 1
+	deathdate = { day = 15 month = november year = 1925 }
+	
+	action_a = {
+		
+		name = "AI_EVENT"
+		command = { type = military_control which = U08 where = U09 value = 1  }
+			
+		
+		}
+}
+
+
+########################################################## START OF REAL GERMANY AI 1914
+###############################################
+## Germmany and Austria Ungary are controlled by the AI
+## Germany is at war with Entente
+## Austria-Hungary is allied with germany, italy is neutral
+## Germany has 5 great Warplans and chooses one of them to battle the entente
+## Plan 1/5  	Schlieffen/Hindenburg(2 armies to the east) war with belgium
+## Plan 2		Rupprecht ( through Switzerland) war with switzerland
+## Plan 3		Moltke  (battle Russia first) no war with belgium or switzerland
+## Plan 4		Kronprinz ( frontal attack ) no war with belgium or switzerland
+################################################
+
+
+event = {
+	id = 3191505
+	random = no
+	country = U08
+	persistent = yes		
+	
+	trigger = {
+		ai = yes
+		
+		NOT = { flag = GER1914StartupDone }
+		war = { country = FRA country = U08 }
+		war = { country = RUS country = U08 }
+		NOT = { war = { country = U09 country = U08 } }		
+		NOT = { alliance = { country = U08  country = ITA } }
+		flag = GER1914_bothAI		
+		
+		AND = {
+			exists = SCH
+			NOT = { war = { country = SCH country = U08 } }
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 1
+	deathdate = { day = 30 month = december year = 1925 }
+
+	action_a = 
+		{
+			name = "AI_EVENT"
+			ai_chance = 70
+			command = { type = trigger which = 3191506 }
+			command = { type = setflag which = GER1914StartupDone }
+			command = { type = setflag which = GER1914SchlieffenHindenburg }
+		}
+	action_b = 
+		{
+			name = "AI_EVENT"
+			ai_chance = 10
+			
+			command = { type = setflag which = GER1914Rupprecht }
+			command = { type = ai which = "switch/GER1914Rupprecht_setupII.ai" }	
+			command = {	type = 	setflag which = GER1914_workaround} # workaround Ah takes command 	
+			command = { type = setflag which = GER1914StartupDone }			
+		}
+	action_c = 
+		{
+			name = "AI_EVENT"
+			ai_chance = 10
+		
+			command = { type = setflag which = GER1914Moltke }
+			command = { type = ai which = "switch/GER1914Moltke_setupII.ai" }			
+			command = { type = setflag which = GER1914StartupDone }
+			command = {	type = 	setflag which = GER1914_workaround} # workaround Ah takes command 	
+		}
+			
+	action_d = {
+			name = "AI_EVENT"
+			ai_chance = 10
+	
+			command = { type = setflag which = GER1914Kronprinz }
+			command = { type = ai which = "switch/GER1914Kronprinz_setupII.ai" }	
+			command = { type = setflag which = GER1914StartupDone }	
+			command = {	type = 	setflag which = GER1914_workaround} # workaround Ah takes command 			
+			}
+}
+##########################
+# Decision Schlieffen or Hindenburg
+### Germmany and Austria Ungary are controlled by the AI
+event = {
+	id = 3191506
+	random = no
+	country = U08
+	persistent = yes
+	# Triggered by 970100
+	name = "AI_EVENT"
+	style = 0
+
+	action_a = {
+		name = "AI_EVENT"
+		ai_chance = 80		
+		command = { type = ai which = "switch/GER1914Schlieffen_setupII.ai" }
+		command = { type = setflag which = GER1914Schlieffen }
+		command = { type = war which = BEL }
+		command = { type = war which = LUX }
+		#command = { type = inherit which = LUX}
+		command = {	type = 	setflag which = GER1914_workaround} # workaround Ah takes command 	
+		#command = { type = add_corps which = "Spähtrupp Adler" value = land  where = 111 } 
+		#command = { type = add_division which = "Spähtrupp Adler" value = infantry when = 1  }
+		
+	}	
+	action_b = {
+		name = "AI_EVENT"	
+		ai_chance = 20
+		command = { type = ai which = "switch/GER1914Hindenburg_setupII.ai" }
+		command = { type = setflag which = GER1914Hindenburg }
+		command = { type = war which = BEL }
+		command = { type = war which = LUX }
+		command = {	type = 	setflag which = GER1914_workaround} # workaround Ah takes command 	
+		#command = {	type = inherit which = LUX}
+		
+	}	
+}
+
+#########################################################
+###############################################
+## Germany starts war with Suisse to storm France
+#### Germany and Austria Hungary are controlled by the AI
+event = {
+	id = 3191507
+	random = no
+	country = U08
+	persistent = yes
+	trigger = {
+		ai = yes
+		flag = GER1914Rupprecht
+		flag = GER1914_bothAI
+		NOT = { flag = GER1914RupprechtPhase2 }
+		AND = {
+			exists = SCH
+			NOT = { war = { country = SCH country = U08 } }
+		}
+	}
+	name = "AI_EVENT"
+	style = 0
+	
+	date = { day = 1 month = september year = 1914 }
+	offset = 1
+	deathdate = { day = 15 month = november year = 1925 }
+	
+	action_a = {
+		
+		name = "AI_EVENT"
+		command = { type = war which = SCH }
+		command = { type = setflag which = GER1914RupprechtPhase2 }
+		
+		}
+	}
+	
+## Zar Nikolaus II is gone, now move more troops to france
+event = {
+	id = 3191508
+	random = no
+	country = U08
+	persistent = yes		
+	
+	trigger = {
+		flag = ZarFled 
+		NOT = { flag = GER1914FocusWesternFront }
+		ai = yes
+		war = { country = FRA country = U08 }
+		#war = { country = RUS country = U08 }
+	
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 1
+	deathdate = { day = 30 month = december year = 1925 }
+
+	action_a = 
+		{
+			name = "AI_EVENT"
+			ai_chance = 100
+			
+			command = { type = setflag which = GER1914FocusWesternFront }
+			command = { type = ai which = "switch/GER1914FocusWesternFront.ai" }	
+						
+		}
+}
+
+## Rests the flags to Pre War
+event = { 
+	id = 3191509
+	random = no
+	country = U08
+	persistent = yes		
+	
+	trigger = {
+		ai = yes
+		flag = German_EndWWI 
+		NOT = { war = { country = ENG country = U08 } }
+		NOT = { war = { country = FRA country = U08 } }
+		NOT = { war = { country = RUS country = U08 } }
+		NOT = { war = { country = SOV country = U08 } }
+
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 1
+	deathdate = { day = 30 month = december year = 1925 }
+
+	action_a = 
+		{
+			name = "AI_EVENT"
+			ai_chance = 10
+					
+			command = { type = clrflag which = German_EndWWI }
+			command = { type = clrflag which = GER1914SchlieffenHindenburg }
+			command = { type = clrflag which = GER1914Rupprecht }
+			command = { type = clrflag which = GER1914Moltke }
+			command = { type = clrflag which = GER1914Kronprinz }
+			command = { type = clrflag which = GER1914Schlieffen }
+			command = { type = clrflag which = GER1914Hindenburg }
+			command = { type = clrflag which = GER1914FocusWesternFront }
+					
+			command = { type = ai which = "switch/U08_1914_afterWWI.ai" }	
+						
+		}
+}

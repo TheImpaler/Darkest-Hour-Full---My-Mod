@@ -1,0 +1,128 @@
+###
+###  Mutinies and other nasty things (NONE - 000)
+###
+### By Rhysaxiel
+###
+### 2000500	Mutinies !
+### 2000501	War weariness 
+### 2000502	General Strikes for peace
+
+event = {
+	id = 2000500	# Mutinies !
+	persistent = yes
+	TAG =  { AFG ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIT LUX MAD MAL MAN MEN MEX MLY MON MOR MOZ MTN NAM NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TRA TRK TUN TUR UKR URU USA UZB VEN VIE WLL YEM YUG U01 U02 U03 U04 U08 U09 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U67 UTC UER UPE }   
+	
+
+	trigger = { 
+		atwar = yes
+		random = 10
+		army = 2
+		OR = {
+			dissent = 20 
+			AND = { 
+				dissent = 15
+				OR = {
+				lost_VP = { value = 5 }
+				lost_IC = { value = 5 }	
+				}
+			} 
+			AND = { 
+				dissent = 10
+				OR = {
+				lost_VP = { value = 15 }
+				lost_IC = { value = 15 }	
+				}
+			} 
+			OR = {
+				lost_VP = { value = 25 }
+				lost_IC = { value = 25 }	
+			}
+		}
+	}
+   
+	name = "EVT1914_2000500_NAME"
+	desc = "EVT1914_2000500_DESC" 
+	style = 2
+	picture = "news_paper" 
+
+	date = { day = 31 month = june year = 1915 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1925 }
+	
+	action = {
+		name = "EVT1914_2000500_ACTIONA" # Damn !
+		command = { type = dissent value = 1 }
+		command = { type = disorg_division which = -1 where = 20 } #Minimum disorg value
+		command = { trigger = { army = 5 } 	type = disorg_division which = -1 where = 20 }
+		command = { trigger = { army = 8 } 	type = disorg_division which = -1 where = 20 }
+		command = { trigger = { army = 10 } 	type = disorg_division which = -1 where = 20 }
+		command = { trigger = { army = 12 } 	type = disorg_division which = -1 where = 20 }
+		command = { trigger = { army = 15 }	type = disorg_division which = -1 where = 20 }
+		command = { trigger = { army = 18 } 	type = disorg_division which = -1 where = 20 }
+		command = { trigger = { army = 20 } 	type = disorg_division which = -1 where = 20 }
+		command = { trigger = { army = 22 }	type = disorg_division which = -1 where = 20 }
+		command = { trigger = { army = 25 }	type = disorg_division which = -1 where = 20 }
+		command = { trigger = { army = 28 }	type = disorg_division which = -1 where = 20 }
+		command = { trigger = { army = 30 }	type = disorg_division which = -1 where = 20 }
+		command = { trigger = { army = 33 }	type = disorg_division which = -1 where = 20 }
+		command = { trigger = { army = 35 }	type = disorg_division which = -1 where = 20 }
+		command = { trigger = { army = 37 }	type = disorg_division which = -1 where = 20 }
+		command = { trigger = { army = 40 }	type = disorg_division which = -1 where = 20 }
+		command = { trigger = { army = 42 }	type = disorg_division which = -1 where = 20 }
+		command = { trigger = { army = 45 }	type = disorg_division which = -1 where = 20 }
+	}
+}
+event = { 		
+	id = 2000501 # War weariness 
+	persistent = yes
+	TAG =  { AFG ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIT LUX MAD MAL MAN MEN MEX MLY MON MOR MOZ MTN NAM NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TRA TRK TUN TUR UKR URU USA UZB VEN VIE WLL YEM YUG U01 U02 U03 U04 U08 U09 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U67 UTC UER UPE }   
+	
+	trigger = { 
+		atwar = yes
+		random = 50
+	}
+   
+	name = "EVT1914_2000501_NAME"
+	desc = "EVT1914_2000501_DESC" 
+	style = 2
+	picture = "news_paper"
+	
+	date = { day = 25 month = december year = 1914 }
+	offset = 180
+	deathdate = { day = 30 month = december year = 1925 }
+		
+	action_a = { 		
+		name = "ACTION_NAME_DAMN" # Damn ! 		
+		command = { trigger = { NOT = {  OR = { lost_VP = { value = 10 } lost_IC = { value = 10 } } } } 
+					type = dissent value = 2 }		
+		command = { trigger = { OR = { lost_VP = { value = 10 } lost_IC = { value = 10 } } } 
+					type = dissent value = 4 }		
+		command = { trigger = { OR = { lost_VP = { value = 10 } lost_IC = { value = 10 } } }
+					type = domestic which = defense_lobby value = -1 } 		
+	} 		
+} 
+event = { 		
+	id = 2000502 # General Strikes for peace	
+	persistent = yes
+	TAG =  { AFG ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIT LUX MAD MAL MAN MEN MEX MLY MON MOR MOZ MTN NAM NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TRA TRK TUN TUR UKR URU USA UZB VEN VIE WLL YEM YUG U01 U02 U03 U04 U08 U09 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U67 UTC UER UPE }   
+	
+	trigger = { 
+		atwar = yes
+		random = 10
+		dissent = 15
+	}
+   
+	name = "EVT1914_2000502_NAME"
+	desc = "EVT1914_2000502_DESC" 
+	style = 2
+	picture = "news_paper"
+	
+	date = { day = 30 month = december year = 1915 }
+	offset = 60
+	deathdate = { day = 30 month = december year = 1925 }
+		
+	action_a = { 		
+		name = "EVT1914_2001502_ACTIONA" # Damn ! 		
+		command = { type = dissent value = 4 }	
+	} 		
+} 

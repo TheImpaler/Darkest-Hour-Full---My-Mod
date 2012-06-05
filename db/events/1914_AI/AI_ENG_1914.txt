@@ -1,0 +1,63 @@
+## Italy has joined entente, no spying in the future
+event = {
+	id = 3001501
+	random = no
+	country = ENG
+	persistent = no		
+	
+	trigger = {
+		ai = yes
+		
+		flag = ITAEntente 
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 1
+	deathdate = { day = 30 month = december year = 1925 }
+
+	action_a = 
+		{
+			name = "AI_EVENT"
+			ai_chance = 100
+			command = { type = ai which = "switch/ENG1914_ITAEntente.ai" }	
+		}
+}
+
+
+
+event = {
+	id = 3001502
+	random = no
+	country = ENG
+	persistent = yes		
+	
+	trigger = {
+		ai = yes
+		
+		NOT = { flag = ENG1914_Gallipolli }
+		war = { country = ENG country = U08}
+		war = { country = ENG country = OTT }
+		
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 1
+	deathdate = { day = 30 month = december year = 1925 }
+
+	action_a = 
+		{
+			name = "AI_EVENT"
+			ai_chance = 60
+			
+			command = { type = setflag which = ENG1914_Gallipolli }
+			command = { type = ai which = "switch/ENG1914_Gallipolli.ai" }
+		
+
+		}
+}

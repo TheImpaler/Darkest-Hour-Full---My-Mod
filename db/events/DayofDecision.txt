@@ -1,0 +1,3067 @@
+### 2049086  USA  First New Deal
+### 2049087  USA  Emergency Banking Act
+### 2049088  USA  Agricultural Adjustment Act
+### 2049089  USA  National Industrial Recovery Act
+### 2049090  USA  Take out a state loan
+### 2049091  USA  Tennessee Valley Authority
+### 2049092  USA  Unemployment rate down to 15 percent
+### 2049093  USA  Second New Deal
+### 2049094  USA  Industrial production back to 1928 levels
+### 2049095  USA  Join the War Against Communism
+### 2049096  USA  Recognition of the Soviet Union
+### 2049097  SOV  US Recognizes Soviet Russia
+### 2049098  USA  Fireside Chat
+### 2049099  USA  Fireside Chat
+### 2049100  USA  Fireside Chat
+### 2049101  USA  Dust Bowl
+### 2011038  JAP  Economic Recovery Policy
+### 2011042  JAP  Sanriku Earthquake
+### 2011043  CHI  Anti-Japanese Actions in Inner Mongolia
+### 2011044  JAP  Anti-Japanese Actions in Inner Mongolia
+### 2011047  MAN  Anti-Japanese Actions in Inner Mongolia
+### 2011045  CHI  Anti-Japanese Actions in Manchuria
+### 2011046  JAP  Anti-Japanese Actions in Manchuria
+### 2011048  MAN  Anti-Japanese Actions in Manchuria
+### 2003136  GER  Economic Recovery Policy
+### 2003130  GER  General Elections
+### 2003131  GER  Prohibit Weimar Republic Flag
+### 2003132  GER  The Autobahn Network
+### 2003133  GER  The Autobahn Network
+### 2003134  GER  Saar Plebiscite
+### 2003135  GER  Unemployment rate down to 5 percent
+### 2003137  GER  Hindenburg Death
+### 2003138  GER  Night of the Long Knives
+### 2003139  GER  Create the Wehrmacht
+### 2003140  GER  Withdraw from League of Nations
+### 2003141  GER  Attempt a Coup in Austria
+### 2003142  AUS  Nazi Coup Attempt
+### 2003143  GER  Issue MEFO Bills
+### 2003144  GER  Pass Enabling Act
+### 2003150  DDR  Alliance Proposition from Stalin
+### 2003151  DDR  Economic Recovery Policy
+### 2003152  DDR  The Autobahn Network
+### 2003153  DDR  The Autobahn Network
+### 2003155  DDR  Unemployment rate down to 5 percent
+### 2003156  DDR  Spread the Revolution Abroad
+### 2003157  YUG  Communist Coup Attempt
+### 2003158  HUN  Communist Coup Attempt
+### 2003159  POL  Communist Coup Attempt
+### 2003160  AUS  Communist Coup Attempt
+### 2003161  FIN  Communist Coup Attempt
+### 2003162  SWE  Communist Coup Attempt
+### 2003163  DEN  Communist Coup Attempt
+### 2003164  BUL  Communist Coup Attempt
+### 2003165  ROM  Communist Coup Attempt
+### 2003166  CZE  Communist Coup Attempt
+### 2003167  TUR  Communist Coup Attempt
+### 2003168  DDR  The Final Struggle
+### 2002076  FRA  Economic Recovery Policy
+### 2002077  FRA  Unemployment rate down to 10 percent
+### 2002078  FRA  Saar Plebiscite
+### 2002079  FRA  Stavisky Affair
+### 2002080  FRA  6 February 1934 crisis
+### 2002081  FRA  The Communist Threat
+### 2002082  FRA  Magistrate Albert Prince found dead
+### 2002083  FRA  Assassination of Louis Barthou
+### 2002084  FRA  Franco-Soviet Treaty of Mutual Assistance
+### 2002085  SOV  Franco-Soviet Treaty of Mutual Assistance
+### 2002086  FRA  Request Sanctions Against Italy
+### 2002087  FRA  Vote on French Resolution
+### 2001090  ENG  Economic Recovery Policy
+### 2001091  ENG  Unemployment rate down to 10 percent
+### 2001092  ENG  The Communist Threat
+### 2001093  ENG  End Newfoundland Responsible Government
+### 2001094  ENG  The Arab revolt in Palestine
+### 2007103  SOV  Propose an Alliance to Communist Germany
+### 2007104  SOV  Soviet-Italian Non-aggresion Pact
+### 2007105  ITA  Soviet-Italian Non-aggresion Pact
+### 2007107  SOV  Join the League of Nations
+### 2007108  SOV  First Political Purges
+### 2007109  SOV  Promote Tukhachevsky as Marshal
+### 2006026  ITA  Economic Recovery Policy
+### 2006027  ITA  Unemployment rate down to 10 percent
+### 2006028  ITA  Second Italo-Abyssinian War
+### 2006029  ITA  League of Nations Sanctions Lifted
+### 
+############################
+# United States of America
+############################
+###### First New Deal
+event = {
+	id = 2049086
+	random = no
+	country = USA
+	save_date = yes
+	
+	decision = {
+			headofstate = 240001 # FDR
+	}
+	decision_trigger = { }	
+	trigger = {
+			headofstate = 240001 # FDR
+	}
+	
+	name = "2049086name"
+	desc = "2049086desc"
+	style = 2
+	picture = "new_deal"
+	decision_picture = "decision_new_deal"
+
+	date = { day = 1 month = january year = 1933 }
+	offset = 15
+	deathdate = { day = 30 month = december year = 1935 }
+
+	action = {
+		name = "2049086a"
+		command = { type = dissent value = -5 }
+		command = { type = domestic which = free_market value = -1 }
+	
+	}
+}
+# Emergency Banking Act
+event = {
+	id = 2049087
+	random = no
+	country = USA
+	
+	decision = {
+			event = 2049086 # First New Deal
+			headofstate = 240001 # FDR
+	}
+	decision_trigger = { 
+			event = 2049086 # First New Deal
+			headofstate = 240001 # FDR
+	}	
+	trigger = {
+			event = 2049086 # First New Deal
+			headofstate = 240001 # FDR
+	}
+	
+	name = "2049087name"
+	desc = "2049087desc"
+	style = 2
+	picture = "congress"
+	decision_picture = "decision_congress"
+
+	date = { day = 1 month = january year = 1933 }
+	offset = 15
+	deathdate = { day = 30 month = december year = 1964 }
+
+	action = {
+		name = "2049087a"
+      		command = { type = industrial_modifier which = total value = 5 }
+	
+	}
+}
+# Agricultural Adjustment Act
+event = {
+	id = 2049088
+	random = no
+	country = USA
+	
+	decision = {
+			event = 2049086
+			headofstate = 240001 # FDR
+	}
+	decision_trigger = { 
+			event = { id = 2049086 days = 90 }
+			money = 1000
+			headofstate = 240001 # FDR
+	}	
+	trigger = {
+			event = { id = 2049086 days = 90 }
+			headofstate = 240001 # FDR
+	}
+	
+	name = "2049088name"
+	desc = "2049088desc"
+	style = 2
+	picture = "congress"
+	decision_picture = "decision_congress"
+
+	date = { day = 1 month = january year = 1933 }
+	offset = 15
+	deathdate = { day = 30 month = december year = 1964 }
+
+	action = {
+		name = "2049088a"
+      		command = { type = industrial_modifier which = total value = 5 }
+		command = { trigger = { ai = no } type = money value = -1000 }
+	
+	}
+}
+# National Industrial Recovery Act
+event = {
+	id = 2049089
+	random = no
+	country = USA
+	
+	decision = {
+			event = { id = 2049086 days = 120 }
+			headofstate = 240001 # FDR
+	}
+	decision_trigger = { 
+			event = { id = 2049086 days = 180 }
+			money = 1000
+			headofstate = 240001 # FDR
+	}	
+	trigger = {
+			event = { id = 2049086 days = 180 }
+			headofstate = 240001 # FDR
+	}
+	
+	name = "2049089name"
+	desc = "2049089desc"
+	style = 2
+	picture = "congress"
+	decision_picture = "decision_congress"
+
+	date = { day = 1 month = january year = 1933 }
+	offset = 15
+	deathdate = { day = 30 month = december year = 1964 }
+
+	action = {
+		name = "2049089a"
+      		command = { type = industrial_modifier which = total value = 5 }
+		command = { trigger = { ai = no } type = money value = -1000 }
+	
+	}
+}
+# Take out a loan through financial institutions
+event = {
+	id = 2049090
+	random = no
+	country = USA
+	
+	decision = {
+			event = 2049086
+			headofstate = 240001 # FDR
+	}
+	decision_trigger = { 
+			event = 2049086
+			headofstate = 240001 # FDR
+	}	
+	trigger = {
+			event = 2049086
+			random = 30
+			headofstate = 240001 # FDR
+	}
+	
+	name = "2049090name"
+	desc = "2049090desc"
+	style = 2
+	picture = "money_devaluation"
+	decision_picture = "decision_money_devaluation"
+
+	date = { day = 1 month = january year = 1933 }
+	offset = 15
+	deathdate = { day = 30 month = december year = 1964 }
+
+	action = {
+		name = "2049090a"
+		command = { type = money value = 10000 }
+		command = { trigger = { ai = no } type = dissent value = 5 }
+	
+	}
+}
+# Tennessee Valley Authority
+event = {
+	id = 2049091
+	random = no
+	country = USA
+	
+	trigger = {
+			event = 2049087
+			event = 2049088
+			event = 2049089
+			random = 10
+			headofstate = 240001 # FDR
+	}
+	
+	name = "2049091name"
+	desc = "2049091desc"
+	style = 2
+	picture = "TVA"
+
+	date = { day = 1 month = january year = 1933 }
+	offset = 15
+	deathdate = { day = 30 month = december year = 1964 }
+
+	action = {
+		name = "2049091a"
+		command = { type = construct which = infrastructure where = 1940 value = 20 }
+		command = { type = construct which = infrastructure where = 1943 value = 20 }
+		command = { type = construct which = infrastructure where = 1955 value = 20 }
+		command = { type = construct which = IC where = 1940 value = 1 }
+	
+	}
+}
+# Unemployment rate down to 15 percent
+event = {
+	id = 2049092
+	random = no
+	country = USA
+	
+	trigger = {
+			event = 2049087
+			event = 2049088
+			event = 2049089
+			random = 5
+			headofstate = 240001 # FDR
+	}
+	
+	name = "2049092name"
+	desc = "2049092desc"
+	style = 2
+	picture = "Unemployment_rate"
+
+	date = { day = 1 month = january year = 1933 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1964 }
+
+	action = {
+		name = "2049092a"
+		command = { type = dissent value = -2 }
+     		command = { type = industrial_modifier which = total value = 5 }
+	
+	}
+}
+
+##### Second New Deal
+event = {
+	id = 2049093
+	random = no
+	country = USA
+	
+	decision = {
+			event = 2049092
+			headofstate = 240001 # FDR
+	}
+	decision_trigger = {
+			event = 2049092
+			money = 1000
+			headofstate = 240001 # FDR
+	}
+	trigger = {
+			event = 2049092
+			headofstate = 240001 # FDR
+	}
+	
+	name = "2049093name"
+	desc = "2049093desc"
+	style = 2
+	picture = "new_deal"
+	decision_picture = "decision_new_deal"
+
+	date = { day = 1 month = january year = 1933 }
+	offset = 15
+	deathdate = { day = 30 month = december year = 1964 }
+
+	action = {
+		name = "2049093a"
+		command = { type = dissent value = -2 }
+		command = { trigger = { ai = no } type = money value = -1000 }
+     		command = { type = industrial_modifier which = total value = 10 }
+		command = { type = domestic which = free_market value = -1 }
+		command = { type = domestic which = political_left value = 1 }
+	
+	}
+}
+# Industrial production back to 1928 levels
+event = {
+	id = 2049094
+	random = no
+	country = USA
+
+	trigger = {
+			event = 2049093
+			random = 5
+			headofstate = 240001 # FDR
+	}
+	
+	name = "2049094name"
+	desc = "2049094desc"
+	style = 2
+	picture = "public_jobs"
+
+	date = { day = 1 month = january year = 1933 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1964 }
+
+	action = {
+		name = "2049094a"
+		command = { type = dissent value = -2 }
+     		command = { type = industrial_modifier which = total value = 10 }
+	
+	}
+}
+# Join the War Against Communism
+event = {
+	id = 2049095
+	random = no
+	country = USA
+	
+	decision = {
+			event = 2003168
+			war = { country = ENG country = DDR }
+	}
+	decision_trigger = {
+			relation = { which = ENG value = 100 }
+	}
+	trigger = {
+			war = { country = ENG country = DDR }
+			event = 2003168
+			random = 20
+	}
+	
+	name = "2049095name"
+	desc = "2049095desc"
+	style = 2
+	picture = "congress"
+	decision_picture = "decision_congress"
+
+	date = { day = 1 month = january year = 1933 }
+	offset = 15
+	deathdate = { day = 30 month = december year = 1964 }
+
+	action = {
+		name = "2049095a"
+		command = { type = alliance which = ENG }
+		command = { type = domestic which = interventionism value = 3 }
+	
+	}
+}
+
+# Recognition of the Soviet Union
+event = {
+	id = 2049096
+	random = no
+	country = USA
+	decision = {
+		atwar = no
+		NOT = { exists = DDR }
+	}
+	decision_trigger = { }
+	trigger = {
+		atwar = no
+		NOT = { exists = DDR }
+	}
+	name = "2049096name"
+	desc = "2049096desc"
+	style = 2
+       	date = { day = 16 month = november year = 1933 }
+	offset = 15
+	deathdate = { day = 30 month = december year = 1935 }
+	picture = "news_paper"
+	action = {
+		name = "ACTION_NAME_OK"
+		command = { type = relation which = SOV value = 10 }
+		command = { type = dissent value = 1 }
+		command = { type = money value = 75 }
+		command = { type = trigger which = 2049097 } # SOV
+	}
+}
+
+event = {
+	id = 2049097
+	random = no
+	country = SOV
+	name = "2049097name"
+	desc = "2049096desc"
+	style = 2
+	picture = "news_paper"
+	action_a = {
+		name = "ACTION_NAME_OK"
+		command = { type = relation which = USA value = 10 }
+		command = { type = money value = -75 }
+		command = { type = dissent value = -1 } # prestige
+	}
+}
+# Fireside Chats
+event = {
+	id = 2049098
+	random = no
+	country = USA
+	decision = {
+			event = 2049086 # First New Deal
+			headofstate = 240001 # FDR
+	}
+	decision_trigger = {
+			event = 2049086 # First New Deal
+			headofstate = 240001 # FDR
+			money = 50
+	}
+	trigger = {
+			dissent = 1
+			event = 2049086 # First New Deal
+			headofstate = 240001 # FDR
+	}
+	name = "2049098name"
+	desc = "2049098desc"
+	style = 2
+       	date = { day = 1 month = april year = 1933 }
+	offset = 15
+	deathdate = { day = 30 month = december year = 1933 }
+	picture = "fireside_chat"
+	decision_picture = "decision_fireside_chat"
+	action = {
+		name = "2049098a"
+		command = { type = dissent value = -1 }
+		command = { trigger = { ai = no } type = money value = -50 }
+	}
+}
+# Fireside Chats
+event = {
+	id = 2049099
+	random = no
+	country = USA
+	decision = {
+			event = 2049086 # First New Deal
+			headofstate = 240001 # FDR
+	}
+	decision_trigger = {
+			event = 2049086 # First New Deal
+			headofstate = 240001 # FDR
+			money = 50
+	}
+	trigger = {
+			dissent = 1
+			event = 2049086 # First New Deal
+			headofstate = 240001 # FDR
+	}
+	name = "2049098name"
+	desc = "2049098desc"
+	style = 2
+       	date = { day = 1 month = january year = 1934 }
+	offset = 15
+	deathdate = { day = 30 month = december year = 1934 }
+	picture = "fireside_chat"
+	decision_picture = "decision_fireside_chat"
+	action = {
+		name = "2049098a"
+		command = { type = dissent value = -1 }
+		command = { trigger = { ai = no } type = money value = -50 }
+	}
+}
+# Fireside Chats
+event = {
+	id = 2049100
+	random = no
+	country = USA
+	decision = {
+			event = 2049086 # First New Deal
+			headofstate = 240001 # FDR
+	}
+	decision_trigger = {
+			event = 2049086 # First New Deal
+			headofstate = 240001 # FDR
+			money = 50
+	}
+	trigger = {
+			dissent = 1
+			event = 2049086 # First New Deal
+			headofstate = 240001 # FDR
+	}
+	name = "2049098name"
+	desc = "2049098desc"
+	style = 2
+       	date = { day = 1 month = january year = 1935 }
+	offset = 15
+	deathdate = { day = 30 month = december year = 1935 }
+	picture = "fireside_chat"
+	decision_picture = "decision_fireside_chat"
+	action = {
+		name = "2049098a"
+		command = { type = dissent value = -1 }
+		command = { trigger = { ai = no } type = money value = -50 }
+	}
+}
+# Dust Bowl
+event = {
+	id = 2049101
+	random = no
+	country = USA
+	trigger = {
+			random = 1
+	}
+	name = "2049101name"
+	desc = "2049101desc"
+	style = 2
+       	date = { day = 1 month = january year = 1933 }
+	offset = 15
+	deathdate = { day = 30 month = december year = 1963 }
+	picture = "dust_bowl"
+	action = {
+		name = "2049101a"
+		command = { type = dissent value = 5 }
+		command = { trigger = { ai = no } type = money value = -100 }
+	}
+}
+########################
+# Japan
+########################
+# Economic Recovery Policy
+event = {
+	id = 2011038
+	random = no
+	country = JAP
+	
+	
+	decision = {
+	}
+	decision_trigger = {
+			money = 500
+	}
+	trigger = {	
+			random = 10
+	}
+	
+	name = "2011038name"
+	desc = "2011038desc"
+	style = 2
+	picture = "new_deal"
+	decision_picture = "decision_new_deal"
+
+	date = { day = 1 month = january year = 1933 }
+	offset = 15
+	deathdate = { day = 30 month = december year = 1935 }
+
+	action = {
+		name = "2011038a"
+		command = { type = peacetime_ic_mod value = 20 }
+		command = { type = dissent value = -2 }
+		command = { trigger = { ai = no } type = money value = -500 }
+		command = { type = domestic which = free_market value = -1 }
+		command = { type = domestic which = defense_lobby value = 1 }
+	
+	}
+}
+# Sanriku Earthquake
+event = {
+	id = 2011042
+	random = no
+	country = JAP
+	
+	name = "2011042name"
+	desc = "2011042desc"
+	style = 2
+	picture = "earthquake"
+
+	date = { day = 4 month = march year = 1933 }
+
+	action = {
+		name = "2011042a"
+		command = { type = dissent value = 3 }
+		command = { type = construct which = infrastructure where = 1547 value = -10 }
+		command = { type = construct which = infrastructure where = 1549 value = -10 }
+		command = { type = construct which = infrastructure where = 1551 value = -10 }
+	
+	}
+}
+# Anti-Japanese Actions in Inner Mongolia
+event = {
+	id = 2011043
+	random = no
+	country = CHI
+
+	decision = {              
+				OR = {
+					control = { province = 1212 data = JAP }
+					control = { province = 1240 data = JAP }
+					AND = {
+                          control = { province = 1212 data = MAN }
+                          puppet = { country = MAN country = JAP }
+					}
+					AND = {
+                          control = { province = 1240 data = MAN }
+                          puppet = { country = MAN country = JAP }
+					}
+				}
+	}
+	decision_trigger = { money = 500 supplies = 1000 }
+	trigger = {
+				OR = {
+					control = { province = 1212 data = JAP }
+					control = { province = 1240 data = JAP }
+					AND = {
+                          control = { province = 1212 data = MAN }
+                          puppet = { country = MAN country = JAP }
+					}
+					AND = {
+                          control = { province = 1240 data = MAN }
+                          puppet = { country = MAN country = JAP }
+					}
+				}
+			random = 5
+	}
+	
+	name = "2011043name"
+	desc = "2011043desc"
+	style = 2
+	picture = "WW1_Offensive"
+	decision_picture = "decision_grand_offensive5"
+
+       	date = { day = 1 month = january year = 1933 }
+	offset = 15
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = "2006028a" # We will crush them!
+		command = { type = trigger which = 2011044 }
+		command = { trigger = { ai = no } type = money value = -500 }
+		command = { trigger = { ai = no } type = supplies value = -1000 }
+	
+	}
+}
+event = {
+	id = 2011044
+	random = no
+	country = JAP
+
+	name = "2011043name"
+	desc = "2011043desc"
+	style = 2
+	picture = "WW1_Offensive"
+
+	action = {
+		name = "2006028a" # We will crush them!
+		command = { trigger = { ai = no } type = dissent value = 2 }
+		command = { trigger = { control = { province = 1212 data = -1 } } type = revolt which = 1212 } # Yanji
+		command = { trigger = { control = { province = 1212 data = -1 } } type = revolt which = 1212 } # Yanji
+		command = { trigger = { control = { province = 1240 data = -1 } } type = revolt which = 1240 } # Sili-yin Qota
+		command = { trigger = { 
+						OR = { #MAN is puppet or allied with JAP
+							alliance = { country = MAN country = JAP }
+							puppet = { country = MAN country = JAP }
+						}
+						OR = { #MAN controls one of the two provinces
+							control = { province = 1212 data = MAN } # Yanji
+							control = { province = 1240 data = MAN } # Sili-yin Qota
+						}
+					} type = trigger which = 2011047 }
+	}
+}event = {
+	id = 2011047
+	random = no
+	country = MAN
+
+	name = "2011043name"
+	desc = "2011043desc"
+	style = 2
+	picture = "WW1_Offensive"
+
+	action = {
+		name = "2006028a" # We will crush them!
+		command = { trigger = { ai = no } type = dissent value = 2 }
+		command = { trigger = { control = { province = 1212 data = -1 } } type = revolt which = 1212 } # Yanji
+		command = { trigger = { control = { province = 1240 data = -1 } } type = revolt which = 1240 } # Sili-yin Qota
+		command = { trigger = { control = { province = 1240 data = -1 } } type = revolt which = 1240 } # Sili-yin Qota
+	
+	}
+}
+# Anti-Japanese Actions in Manchuria
+event = {
+	id = 2011045
+	random = no
+	country = CHI
+
+	decision = {  
+				OR = {
+					control = { province = 1212 data = JAP }
+					control = { province = 1211 data = JAP }
+					control = { province = 1207 data = JAP }
+					control = { province = 1214 data = JAP }
+					control = { province = 1205 data = JAP }
+					AND = {
+						control = { province = 1212 data = MAN }
+						puppet = { country = MAN country = JAP }
+					}
+					AND = {
+						control = { province = 1211 data = MAN }
+						puppet = { country = MAN country = JAP }
+					}
+
+					AND = {
+						control = { province = 1207 data = MAN }
+						puppet = { country = MAN country = JAP }
+					}
+					AND = {
+						control = { province = 1214 data = MAN }
+						puppet = { country = MAN country = JAP }
+					}
+
+					AND = {
+						control = { province = 1205 data = MAN }
+						puppet = { country = MAN country = JAP }
+					}
+				}
+	}
+	decision_trigger = { money = 1000 supplies = 2000 }
+	trigger = {
+				OR = {
+					control = { province = 1212 data = JAP }
+					control = { province = 1211 data = JAP }
+					control = { province = 1207 data = JAP }
+					control = { province = 1214 data = JAP }
+					control = { province = 1205 data = JAP }
+					AND = {
+						control = { province = 1212 data = MAN }
+						puppet = { country = MAN country = JAP }
+					}
+					AND = {
+						control = { province = 1211 data = MAN }
+						puppet = { country = MAN country = JAP }
+					}
+
+					AND = {
+						control = { province = 1207 data = MAN }
+						puppet = { country = MAN country = JAP }
+					}
+					AND = {
+						control = { province = 1214 data = MAN }
+						puppet = { country = MAN country = JAP }
+					}
+
+					AND = {
+						control = { province = 1205 data = MAN }
+						puppet = { country = MAN country = JAP }
+					}
+				}
+			random = 5
+	}
+	
+	name = "2003145name"
+	desc = "2011043desc"
+	style = 2
+	picture = "WW1_Offensive"
+	decision_picture = "decision_grand_offensive5"
+
+       	date = { day = 1 month = january year = 1935 }
+	offset = 15
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = "2006028a" # We will crush them!
+		command = { type = trigger which = 2011046 }
+		command = { trigger = { ai = no } type = money value = -1000 }
+		command = { trigger = { ai = no } type = supplies value = -2000 }
+	
+	}
+}
+event = {
+	id = 2011046
+	random = no
+	country = JAP
+
+	name = "2003145name"
+	desc = "2011043desc"
+	style = 2
+	picture = "WW1_Offensive"
+
+	action = {
+		name = "2006028a" # We will crush them!
+		command = { trigger = { ai = no } type = dissent value = 5 }
+		command = { trigger = { control = { province = 1212 data = -1 } } type = revolt which = 1212 } # Yanji
+		command = { trigger = { control = { province = 1211 data = -1 } } type = revolt which = 1211 } # Hunjang
+		command = { trigger = { control = { province = 1207 data = -1 } } type = revolt which = 1207 } # Jilin
+		command = { trigger = { control = { province = 1214 data = -1 } } type = revolt which = 1214 } # Shenyang
+		command = { trigger = { control = { province = 1205 data = -1 } } type = revolt which = 1205 } # Mudanjang
+		command = { trigger = { 
+					OR = { #MAN is puppet or allied with JAP
+						alliance = { country = MAN country = JAP }
+						puppet = { country = MAN country = JAP }
+					}
+					OR = { #MAN controls one of the two provinces
+						control = { province = 1212 data = MAN } # Yanji
+						control = { province = 1211 data = MAN } # Hunjang
+						control = { province = 1207 data = MAN } # Jilin
+						control = { province = 1214 data = MAN } # Shenyang
+						control = { province = 1205 data = MAN } # Mudanjang
+					}
+				} type = trigger which = 2011048 }	
+	
+	}
+}
+event = {
+	id = 2011048
+	random = no
+	country = MAN
+
+	name = "2003145name"
+	desc = "2011043desc"
+	style = 2
+	picture = "WW1_Offensive"
+
+	action = {
+		name = "2006028a" # We will crush them!
+		command = { trigger = { ai = no } type = dissent value = 5 }
+		command = { trigger = { control = { province = 1212 data = -1 } } type = revolt which = 1212 } # Yanji
+		command = { trigger = { control = { province = 1211 data = -1 } } type = revolt which = 1211 } # Hunjang
+		command = { trigger = { control = { province = 1207 data = -1 } } type = revolt which = 1207 } # Jilin
+		command = { trigger = { control = { province = 1214 data = -1 } } type = revolt which = 1214 } # Shenyang
+		command = { trigger = { control = { province = 1205 data = -1 } } type = revolt which = 1205 } # Mudanjang
+	}
+}
+########################
+# Germany
+########################
+# Economic Recovery Policy
+event = {
+	id = 2003136
+	random = no
+	country = GER	
+	
+	decision = {
+			headofgovernment = 22 # Hitler
+	}
+	decision_trigger = {
+			money = 500
+			headofgovernment = 22 # Hitler
+	}
+	trigger = {	
+			headofgovernment = 22 # Hitler
+			random = 10
+	}
+	
+	name = "2011038name"
+	desc = "2011038desc"
+	style = 2
+	picture = "new_deal"
+	decision_picture = "decision_new_deal"
+
+	date = { day = 1 month = january year = 1933 }
+	offset = 15
+	deathdate = { day = 30 month = december year = 1935 }
+
+	action = {
+		name = "2011038a"
+     		command = { type = industrial_modifier which = total value = 5 }
+		command = { type = dissent value = -3 }
+		command = { trigger = { ai = no } type = money value = -500 }
+		command = { type = domestic which = free_market value = -1 }
+		command = { type = domestic which = defense_lobby value = 1 }
+	
+	}
+}
+
+# General Elections
+event = {
+	id = 2003130
+	random = no
+	country = GER
+	trigger = {
+		headofgovernment = 22 # Hitler
+	}
+	date = { day = 4 month = march year = 1933 }
+	name = "2003130name"
+	desc = "2003130desc"
+	style = 2
+	picture = "Reichstag"
+	action = {
+		ai_chance = 100
+		name = "2003130a"
+		command = { type = dissent value = -1 }
+		command = { type = domestic which = political_left value = -1 }
+	}
+	action = {
+		ai_chance = 0
+		name = "2003130b"
+		command = { type = country which = DDR }
+		command = { type = domestic which = political_left value = 5 }
+		command = { type = domestic which = democratic value = -2 }
+		command = { type = dissent value = 40 }
+		command = { type = waketeam which = 625013 } #AEG
+		command = { type = waketeam which = 625014 } #Krupp
+		command = { type = waketeam which = 625015 } #I.G. Farben
+		command = { type = waketeam which = 625016 } #Siemens & Halske
+		command = { type = waketeam which = 625017 } #Werner Heisenberg
+		command = { type = waketeam which = 625018 } #Konrad Zuse
+		command = { type = waketeam which = 625019 } #Mauser Werke
+		command = { type = waketeam which = 625020 } #MAN
+		command = { type = waketeam which = 625021 } #Opel
+		command = { type = waketeam which = 625022 } #Rheinmetall
+		command = { type = waketeam which = 625023 } #Volkswagen
+		command = { type = waketeam which = 625024 } #Volksmarinewerft
+		command = { type = waketeam which = 625025 } #Blohm & Voss
+		command = { type = waketeam which = 625026 } #Luftschiffbau Zeppelin
+		command = { type = waketeam which = 625027 } #Gothaer Waggonfabrik
+		command = { type = waketeam which = 625028 } #Messerschmitt
+		command = { type = waketeam which = 625029 } #Focke-Wulf
+		command = { type = waketeam which = 625030 } #Arado
+		command = { type = waketeam which = 625031 } #Adolf Galland
+		command = { type = waketeam which = 625032 } #Jäger Kampfschule
+		#Cores on eastern provinces of Germany
+		command = { type = addcore which = 158 } #Stettin
+		command = { type = addcore which = 155 } #Stolp
+		command = { type = addcore which = 161 } #Deutsch Krone
+		command = { type = addcore which = 159 } #Meseritz
+		command = { type = addcore which = 165 } #Liegnitz
+		command = { type = addcore which = 167 } #Breslau
+		command = { type = addcore which = 164 } #Oppeln
+		command = { type = addcore which = 166 } #Waldenburg
+		command = { type = addcore which = 168 } #Gleiwitz
+		command = { type = addcore which = 183 } #Elbing
+		command = { type = addcore which = 184 } #Konigsberg
+		command = { type = addcore which = 182 } #Tilsit
+		command = { type = addcore which = 185 } #Allenstein
+		#cores on Poland and Lithuania
+		command = { type = addcore which = 221 } #Katowice
+		command = { type = addcore which = 224 } #Poznan
+		command = { type = addcore which = 225 } #Bygoszcz
+		command = { type = addcore which = 181 } #Danzig
+		command = { type = addcore which = 261 } #Klaipeda
+	}
+}
+# Prohibit Weimar Republic Flag
+event = {
+    	id = 2003131
+   	random = no
+    	country = GER
+    	decision = {
+		event = 2003130
+		headofgovernment = 22 # Hitler
+	}
+	decision_trigger = {
+		event = 2003130
+		headofgovernment = 22 # Hitler
+	}
+	trigger = {
+		event = 2003130
+		headofgovernment = 22 # Hitler
+	}
+	date = { day = 1 month = january year = 1933 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1964 }
+    name = "2003131name"
+    desc = "2003131desc"
+    style = 2
+    Picture = "weimar_flag"
+    action = {
+            name = "2003131a"
+		command = { type = flag_ext where = GER }
+		command = { type = dissent value = -1 }
+      		command = { type = domestic which = freedom value = -1 }
+    }
+}
+
+# The Autobahn Network
+event = {
+	id = 2003132
+	random = no
+	country = GER
+	trigger = {
+			event = 2003136 # Economic Recovery Policy
+		random = 5
+	}
+	date = { day = 1 month = january year = 1933 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1964 }
+	name = "2003132name"
+	desc = "2003132desc"
+	style = 2
+	picture = "Autobahn"
+	action = {
+		name = "2003132a"
+		command = { type = dissent value = -1 }
+     		command = { type = industrial_modifier which = total value = 5 }
+		command = { type = construct which = infrastructure where = 138 value = 10 }
+		command = { type = construct which = infrastructure where = 139 value = 20 }
+		command = { trigger = { ai = no } type = money value = -500 }
+	}
+}
+event = {
+	id = 2003133
+	random = no
+	country = GER
+	trigger = {
+			event = 2003136 # Economic Recovery Policy
+		random = 2
+	}
+	date = { day = 1 month = january year = 1933 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1964 }
+	name = "2003132name"
+	desc = "2003132desc"
+	style = 2
+	picture = "Autobahn"
+	action = {
+		name = "2003132a"
+		command = { type = dissent value = -1 }
+     		command = { type = industrial_modifier which = total value = 5 }
+		command = { type = construct which = infrastructure where = -1 value = 10 }
+		command = { type = construct which = infrastructure where = -1 value = 10 }
+		command = { type = construct which = infrastructure where = -1 value = 10 }
+		command = { type = construct which = infrastructure where = -1 value = 10 }
+		command = { trigger = { ai = no } type = money value = -500 }
+	}
+}
+# Saar Plebiscite
+event = {
+	id = 2003134
+	random = no
+	save_date = yes
+	country = GER
+	decision = {
+			headofstate = 1 # Hitler
+			atwar = no
+	}
+	decision_trigger = {
+			event = 2003140 # Withdraw from LoN
+			headofstate = 1 # Hitler
+			atwar = no
+	}
+	trigger = {	
+			event = 2003140 # Withdraw from LoN
+			headofstate = 1 # Hitler
+			atwar = no
+	}
+	date = { day = 1 month = january year = 1935 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1964 }
+	name = "2003134name"
+	desc = "2003134desc"
+	style = 2
+	picture = "news_paper"
+	decision_picture = "decision_anticominternpact"
+	action = {
+		name = "2003134a"
+		command = { type = dissent value = -5 }
+     		command = { type = industrial_modifier which = total value = 10 }
+		command = { type = trigger which = 2002078 }
+		}
+	}
+# Unemployment rate down to 5 percent
+event = {
+	id = 2003135
+	random = no
+	country = GER
+	
+	
+	trigger = {
+			event = 2003136 # Economic Recovery Policy
+			random = 2
+	}
+	
+	name = "2003135name"
+	desc = "2049092desc"
+	style = 2
+	picture = "Unemployment_rate"
+
+	date = { day = 1 month = january year = 1933 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1964 }
+
+	action = {
+		name = "2049092a"
+		command = { type = dissent value = -2 }
+     		command = { type = industrial_modifier which = total value = 10 }
+	
+	}
+}
+# Hindenburg Death
+event = {
+	id = 2003137
+	random = no
+	country = GER
+        date = { day = 1 month = august year = 1934 }
+	trigger = {
+		headofstate = 268 # Hindenburg
+	}
+	name = "2003137name"
+	desc = "2003137desc"
+	style = 2
+	picture = "hindenburg_death"
+	action_a = {
+		name = "2003137a"
+		command = { type = sleepminister which = 268 } # Hindenburg
+		command = { type = headofstate which = 1 } # Hitler
+		command = { type = headofgovernment which = 2 } # Hess
+		command = { type = foreignminister which = 3 } # Von Neurath
+      		command = { type = domestic which = political_left value = -1 }
+     		command = { type = domestic which = democratic value = -1 }
+      		command = { type = domestic which = freedom value = -1 }
+		
+	}
+}
+# Night of the Long Knives
+event = {
+	id = 2003138
+	random = no
+	country = GER
+	trigger = {
+		headofgovernment = 22 # Hitler
+	}
+	date = { day = 29 month = june year = 1934 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1935 }
+	name = "2003138name"
+	desc = "2003138desc"
+	style = 2
+	picture = "news_paper"
+	action_a = {
+		name = "2003138a"
+		command = { type = dissent value = 5 }
+		command = { type = manpowerpool value = -1 }
+      		command = { type = domestic which = political_left value = -1 }
+      		command = { type = domestic which = freedom value = -1 }
+	}
+}
+# Wehrmacht Creation
+event = {
+	id = 2003139
+	random = no
+	country = GER
+	decision = {
+			event = 2003134 # Saar Plebiscite
+			headofstate = 1 # Hitler
+			atwar = no
+	}
+	decision_trigger = {
+			event = { id = 2003134 days = 180 } # Saar Plebiscite
+			headofstate = 1 # Hitler
+			atwar = no
+	}
+	trigger = {	
+			event = { id = 2003134 days = 180 } # Saar Plebiscite
+			headofstate = 1 # Hitler
+			atwar = no
+	}
+	date = { day = 1 month = january year = 1935 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1964 }
+	name = "2003139name"
+	desc = "2003139desc"
+	style = 2
+	picture = "Wehrmacht"
+	decision_picture = "decision_Rhineland"
+	action = {
+		name = "2003139a"
+		command = { type = dissent value = -1 }
+		command = { type = activate_division which = 14500 value = 1001 when = 0 }
+		command = { type = activate_division which = 14500 value = 1002 when = 0 }
+		command = { type = activate_division which = 14500 value = 1003 when = 0 }
+		command = { type = activate_division which = 14500 value = 1004 when = 0 }
+		command = { type = activate_division which = 14500 value = 39 when = 0 }
+		command = { type = activate_division which = 14500 value = 40 when = 0 }
+		command = { type = activate_division which = 14500 value = 1005 when = 0 }
+		command = { type = activate_division which = 14500 value = 1006 when = 0 }
+		command = { type = activate_division which = 14500 value = 1007 when = 0 }
+		command = { type = activate_division which = 14500 value = 1008 when = 0 }
+		command = { type = activate_division which = 14500 value = 1009 when = 0 }
+		command = { type = activate_division which = 14500 value = 1010 when = 0 }
+		command = { type = activate_division which = 14500 value = 1011 when = 0 }
+		command = { type = activate_division which = 14500 value = 1012 when = 0 }
+		command = { type = activate_division which = 14500 value = 48 when = 0 }
+		command = { type = activate_division which = 14500 value = 1013 when = 0 }
+		command = { type = activate_division which = 14500 value = 1014 when = 0 }
+		command = { type = activate_division which = 14500 value = 1015 when = 0 }
+		command = { type = activate_division which = 14500 value = 50 when = 0 }
+		command = { type = activate_division which = 14500 value = 52 when = 0 }
+		command = { type = activate_division which = 14500 value = 56 when = 0 }
+		command = { type = activate_division which = 14500 value = 1016 when = 0 }
+		command = { type = activate_division which = 14500 value = 1017 when = 0 }
+		command = { type = activate_division which = 14500 value = 1018 when = 0 }
+		command = { type = activate_division which = 14500 value = 1019 when = 0 }
+		command = { type = activate_division which = 14500 value = 1020 when = 0 }
+		command = { type = activate_division which = 14500 value = 60 when = 0 }
+		command = { type = activate_division which = 14500 value = 1021 when = 0 }
+		command = { type = activate_division which = 14500 value = 1022 when = 0 }
+		command = { type = activate_division which = 14500 value = 1023 when = 0 }
+		command = { type = activate_division which = 14500 value = 1024 when = 0 }
+		command = { type = activate_division which = 14500 value = 62 when = 0 }
+		command = { type = activate_division which = 14500 value = 63 when = 0 }
+		command = { type = activate_division which = 14500 value = 64 when = 0 }
+		command = { type = activate_division which = 14500 value = 1025 when = 0 }
+		command = { type = activate_division which = 14500 value = 1026 when = 0 }
+		command = { type = activate_division which = 14500 value = 1027 when = 0 }
+		command = { type = activate_division which = 14500 value = 1028 when = 0 }
+		command = { type = activate_division which = 14500 value = 1029 when = 0 }
+		command = { type = activate_division which = 14500 value = 1030 when = 0 }
+		command = { type = activate_division which = 14500 value = 1031 when = 0 }
+		command = { type = activate_division which = 14500 value = 1032 when = 0 }
+		command = { type = activate_division which = 14500 value = 70 when = 0 }
+		command = { type = activate_division which = 14500 value = 72 when = 0 }
+		command = { type = activate_division which = 14500 value = 73 when = 0 }
+		command = { type = activate_division which = 14500 value = 75 when = 0 }
+		command = { type = activate_division which = 14500 value = 77 when = 0 }
+		command = { type = activate_division which = 14500 value = 1033 when = 0 }
+		command = { type = activate_division which = 14500 value = 1034 when = 0 }
+		command = { type = activate_division which = 14500 value = 1035 when = 0 }
+		command = { type = activate_division which = 14500 value = 79 when = 0 }
+		command = { type = activate_division which = 14500 value = 91 when = 0 }
+		command = { type = activate_division which = 14500 value = 1036 when = 0 }
+		command = { type = activate_division which = 14500 value = 1037 when = 0 }
+		command = { type = activate_division which = 14500 value = 1041 when = 0 }
+		command = { type = activate_division which = 14500 value = 1042 when = 0 }
+		command = { type = activate_division which = 14500 value = 1043 when = 0 }
+
+		}
+	}
+# Withdraw from League of Nations
+event = {
+	id = 2003140
+	random = no
+	country = GER
+	decision = {
+			event = 2003131 # Nazi flag
+			OR = { 
+				headofstate = 1 # Hitler
+				headofgovernment = 22 # Hitler
+			}
+			atwar = no
+	}
+	decision_trigger = {
+			money = 100
+			OR = { 
+				headofstate = 1 # Hitler
+				headofgovernment = 22 # Hitler
+			}
+			atwar = no
+	}
+	trigger = {	
+			event = 2003131 # Nazi flag
+			OR = { 
+				headofstate = 1 # Hitler
+				headofgovernment = 22 # Hitler
+			}
+			atwar = no
+	}
+	date = { day = 1 month = january year = 1933 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1964 }
+	name = "2003140name"
+	desc = "2003140desc"
+	style = 2
+	picture = "news_paper"
+	decision_picture = "decision_league_of_nations"
+	action = {
+		name = "2003140a"
+		command = { type = dissent value = -1 }
+		command = { trigger = { ai = no } type = money value = -100 }
+		command = { type = relation which = HOL value = -50 }
+		command = { type = relation which = BEL value = -50 }
+		command = { type = relation which = LUX value = -50 }
+		command = { type = relation which = FRA value = -50 }
+		command = { type = relation which = ENG value = -50 }
+		command = { type = relation which = POL value = -50 }
+		command = { type = relation which = DEN value = -50 }
+		command = { type = relation which = CZE value = -50 }
+		command = { type = relation which = ITA value = -50 }
+
+		}
+	}
+# Attempt a Coup in Austria
+event = {
+	id = 2003141
+	random = no
+	country = GER
+	decision = {
+			event = 2003140 # Withdraw from League of Nations
+			headofstate = 1 # Hitler
+			atwar = no
+	}
+	decision_trigger = {
+			money = 100
+			headofstate = 1 # Hitler
+			atwar = no
+	}
+	trigger = {	
+			event = 2003140 # Withdraw from League of Nations
+			random = 20
+			headofstate = 1 # Hitler
+			atwar = no
+	}
+	date = { day = 1 month = january year = 1934 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1964 }
+	name = "2003141name"
+	desc = "2003141desc"
+	style = 2
+	picture = "news_paper"
+	decision_picture = "decision_generic_mob"
+	action = {
+		name = "2003141a"
+		command = { type = trigger which = 2003142 }
+		command = { type = dissent value = -2 }
+		command = { trigger = { ai = no } type = money value = -100 }
+		command = { type = relation which = HOL value = -20 }
+		command = { type = relation which = BEL value = -20 }
+		command = { type = relation which = LUX value = -20 }
+		command = { type = relation which = FRA value = -20 }
+		command = { type = relation which = ENG value = -20 }
+		command = { type = relation which = POL value = -20 }
+		command = { type = relation which = DEN value = -20 }
+		command = { type = relation which = CZE value = -20 }
+		command = { type = relation which = ITA value = -20 }
+		}
+	}
+event = {
+	id = 2003142
+	random = no
+	country = AUS
+	name = "2003142name"
+	desc = "2003141desc"
+	style = 2
+	picture = "news_paper"
+	action = {
+		name = "2003142a"
+		command = { type = sleepminister which = 115150 } # Dollfuss
+		command = { type = headofgovernment which = 115002 } # Schuschnigg
+		command = { type = dissent value = 10 }
+		command = { type = domestic which = democratic value = -1 }
+		command = { type = relation which = GER value = 10 }
+		}
+	}
+# Issue MEFO Bills
+event = {
+	id = 2003143
+	random = no
+	country = GER	
+	
+	decision = {
+			headofgovernment = 22 # Hitler
+			event = 2003136 # Economic Recovery Policy
+			money = 101
+	}
+	decision_trigger = {
+			incabinet = 56 # Hjalmar Schacht
+			headofgovernment = 22 # Hitler
+			money = 1000
+	}
+	trigger = {	
+			headofgovernment = 22 # Hitler
+			event = 2003136 # Economic Recovery Policy
+			random = 10
+	}
+	
+	name = "2003143name"
+	desc = "2003143desc"
+	style = 2
+	picture = "issue_currency"
+	decision_picture = "decision_issue_currency"
+
+	date = { day = 1 month = january year = 1933 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1935 }
+
+	action = {
+		name = "2003143a"
+     		command = { type = industrial_modifier which = total value = 5 }
+		command = { type = dissent value = -1 }
+		command = { trigger = { ai = no } type = money value = -1000 }
+		command = { type = domestic which = free_market value = -1 }
+	}
+}
+# Pass Enabling Act
+event = {
+   	id = 2003144
+  	random = no
+   	country = GER
+	decision = {
+			event = 2003130 # General Elections
+			event = 2003131 # Prohibit Weimar Flag
+			OR = {
+				headofstate = 1 # Hitler
+				headofgovernment = 22 # Hitler
+			}
+	}
+	decision_trigger = {
+			OR = {
+				headofstate = 1 # Hitler
+				headofgovernment = 22 # Hitler
+			}
+	}
+	trigger = {	
+			random = 50
+			OR = {
+				headofstate = 1 # Hitler
+				headofgovernment = 22 # Hitler
+			}
+			event = 2003131 # Prohibit Weimar Flag
+			event = 2003130 # General Elections
+	}
+   
+	date = { day = 1 month = january year = 1933 }
+	offset = 15
+	deathdate = { day = 30 month = december year = 1963 }
+
+   	name = 2003144name
+  	desc = 2003144desc
+   	style = 2
+   	picture = "Reichstag"
+	decision_picture = "decision_anticominternpact"
+
+   	action = {
+      	name = 2003144a
+		command = { type = dissent value = -1 }
+      		command = { type = domestic which = democratic value = -2 }
+      		command = { type = domestic which = freedom value = -1 }
+   	}
+}
+########################
+# Communist Germany
+########################
+# Alliance Proposition from Stalin
+event = {
+	id = 2003150
+	random = no
+	country = DDR
+	name = "2003150name"
+	desc = "2003150desc"
+	style = 2
+	picture = "news_paper"
+	action_a = {
+		name = "2003150a"
+		command = { type = leave_alliance }
+		command = { type = alliance which = SOV }
+		
+	}
+}
+# Economic Recovery Policy
+event = {
+	id = 2003151
+	random = no
+	country = DDR
+	
+	decision = {
+	}
+	decision_trigger = {
+			money = 500
+	}
+	trigger = {	
+			random = 10
+	}
+	
+	name = "2011038name"
+	desc = "2011038desc"
+	style = 2
+	picture = "new_deal"
+	decision_picture = "decision_new_deal"
+
+	date = { day = 1 month = january year = 1933 }
+	offset = 15
+	deathdate = { day = 30 month = december year = 1935 }
+
+	action = {
+		name = "2011038a"
+     		command = { type = industrial_modifier which = total value = 10 }
+		command = { type = dissent value = -3 }
+		command = { trigger = { ai = no } type = money value = -500 }
+		command = { type = domestic which = free_market value = -1 }
+		command = { type = domestic which = defense_lobby value = 1 }
+	
+	}
+}
+# The Autobahn Network
+event = {
+	id = 2003152
+	random = no
+	country = DDR
+	trigger = {
+		event = 2003151
+		random = 5
+	}
+	date = { day = 1 month = january year = 1933 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1964 }
+	name = "2003132name"
+	desc = "2003152desc"
+	style = 2
+	picture = "Autobahn"
+	action = {
+		name = "2003132a"
+		command = { type = dissent value = -1 }
+     		command = { type = industrial_modifier which = total value = 10 }
+		command = { type = construct which = infrastructure where = 138 value = 10 }
+		command = { type = construct which = infrastructure where = 139 value = 20 }
+		command = { trigger = { ai = no } type = money value = -500 }
+	}
+}
+event = {
+	id = 2003153
+	random = no
+	country = DDR
+	trigger = {
+		event = 2003151
+		random = 2
+	}
+	date = { day = 1 month = january year = 1933 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1964 }
+	name = "2003132name"
+	desc = "2003152desc"
+	style = 2
+	picture = "Autobahn"
+	action = {
+		name = "2003132a"
+		command = { type = dissent value = -1 }
+     		command = { type = industrial_modifier which = total value = 10 }
+		command = { type = construct which = infrastructure where = -1 value = 10 }
+		command = { type = construct which = infrastructure where = -1 value = 10 }
+		command = { type = construct which = infrastructure where = -1 value = 10 }
+		command = { type = construct which = infrastructure where = -1 value = 10 }
+		command = { trigger = { ai = no } type = money value = -500 }
+	}
+}
+# Unemployment rate down to 5 percent
+event = {
+	id = 2003155
+	random = no
+	country = DDR
+	
+	
+	trigger = {
+			event = 2003151
+			random = 5
+	}
+	
+	name = "2003135name"
+	desc = "2049092desc"
+	style = 2
+	picture = "Unemployment_rate"
+
+	date = { day = 1 month = january year = 1933 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1964 }
+
+	action = {
+		name = "2049092a"
+		command = { type = dissent value = -2 }
+     		command = { type = industrial_modifier which = total value = 10 }
+	
+	}
+}
+# Spread the Revolution Abroad
+event = {
+   id = 2003156
+    random = no
+    country = DDR
+	decision = {
+		atwar = no
+		alliance = { country = SOV }
+	}
+	
+	decision_trigger = { 
+		event = 2003155
+		money = 1000
+	}
+	
+	trigger = {
+		event = 2003155
+		random = 20
+		atwar = no
+		alliance = { country = DDR country = SOV }
+	}
+	date = { day = 1 month = january year = 1933 }
+	offset = 20
+	deathdate = { day = 30 month = december year = 1963 }
+	
+	name = "2003156name"
+	desc = "2003156desc"
+	style = 2
+	picture = "spread_revolution"
+	decision_picture = "decision_spread_revolution"
+	
+	action = {
+		name = "2003156a"
+		command = { trigger = { ai = no } type = money value = -1000 }
+		command = { type = relation which = HOL value = -100 }
+		command = { type = relation which = BEL value = -100 }
+		command = { type = relation which = LUX value = -100 }
+		command = { type = relation which = FRA value = -100 }
+		command = { type = relation which = ENG value = -100 }
+		command = { type = relation which = USA value = -100 }
+		command = { type = trigger which = 2001092 } #ENG The Communist Threat
+		command = { type = trigger which = 2002081 } #FRA The Communist Threat
+	}
+}
+# Communist Coup Attempt
+event = {
+   id = 2003157
+    random = no
+    country = YUG
+    one_action = yes
+	
+	trigger = {
+		event = 2003156
+		random = 5
+		atwar = no
+		not = { alliance = { country = DDR } }
+		not = { war = { country = DDR } }
+	}
+	date = { day = 1 month = january year = 1933 }
+	offset = 20
+	deathdate = { day = 30 month = december year = 1963 }
+	
+	name = "2003157name"
+	desc = "2003157desc"
+	style = 2
+	picture = "spread_revolution"
+	
+	action = {
+		ai_chance = 80
+		name = "2003157a"
+		command = { type = set_domestic which = democratic value = 3 }
+		command = { type = set_domestic which = political_left value = 8 }
+		command = { type = dissent value = -5 }
+		command = { type = country which = U27 }
+		command = { type = set_relation which = DDR value = 200 }
+		command = { type = set_relation which = SOV value = 200 }
+		command = { type = alliance which = DDR }
+	}
+	action = {
+		ai_chance = 20
+		name = "2003157b"
+		command = { type = dissent value = 5 }
+	}
+}
+event = {
+   id = 2003158
+    random = no
+    country = HUN
+    one_action = yes
+	
+	trigger = {
+		event = 2003156
+		random = 5
+		atwar = no
+		not = { alliance = { country = DDR } }
+		not = { war = { country = DDR } }
+	}
+	date = { day = 1 month = january year = 1933 }
+	offset = 20
+	deathdate = { day = 30 month = december year = 1963 }
+	
+	name = "2003157name"
+	desc = "2003157desc"
+	style = 2
+	picture = "spread_revolution"
+	
+	action = {
+		ai_chance = 80
+		name = "2003157a"
+		command = { type = set_domestic which = democratic value = 3 }
+		command = { type = set_domestic which = political_left value = 8 }
+		command = { type = dissent value = -5 }
+		command = { type = country which = U13 }
+		command = { type = set_relation which = DDR value = 200 }
+		command = { type = set_relation which = SOV value = 200 }
+		command = { type = alliance which = DDR }
+	}
+	action = {
+		ai_chance = 20
+		name = "2003157b"
+		command = { type = dissent value = 5 }
+	}
+}
+event = {
+   id = 2003159
+    random = no
+    country = POL
+    one_action = yes
+	
+	trigger = {
+		event = 2003156
+		random = 5
+		atwar = no
+		not = { alliance = { country = DDR } }
+		not = { war = { country = DDR } }
+	}
+	date = { day = 1 month = january year = 1933 }
+	offset = 20
+	deathdate = { day = 30 month = december year = 1963 }
+	
+	name = "2003157name"
+	desc = "2003157desc"
+	style = 2
+	picture = "spread_revolution"
+	
+	action = {
+		ai_chance = 60
+		name = "2003157a"
+		command = { type = set_domestic which = democratic value = 3 }
+		command = { type = set_domestic which = political_left value = 8 }
+		command = { type = dissent value = -5 }
+		command = { type = country which = U32 }
+		command = { type = set_relation which = DDR value = 200 }
+		command = { type = set_relation which = SOV value = 200 }
+		command = { type = alliance which = DDR }
+		#correct cores
+		command = { type = removecore which = 155 } #Stolp
+		command = { type = removecore which = 158 } #Stettin
+		command = { type = removecore which = 161 } #DeutschKrone
+		command = { type = removecore which = 159 } #Meseritz
+		command = { type = removecore which = 165 } #Liegnitz
+		command = { type = removecore which = 167 } #Breslau
+		command = { type = removecore which = 164 } #Oppeln
+		command = { type = removecore which = 166 } #Waldenburg
+		command = { type = removecore which = 168 } #Gleiwitz
+		command = { type = removecore which = 183 } #Elbing
+		command = { type = removecore which = 185 } #Allenstein
+		command = { type = removecore which = 203 } #Tesin
+		command = { type = addcore which = 258 } #Wilno
+		command = { type = addcore which = 257 } #Glebokie
+		command = { type = addcore which = 255 } #Grodno
+		command = { type = addcore which = 256 } #Vilejka
+		command = { type = addcore which = 251 } #Nowogrodek
+		command = { type = addcore which = 253 } #Slonim
+		command = { type = addcore which = 247 } #Brest-Litovsk
+		command = { type = addcore which = 248 } #Pinsk
+		command = { type = addcore which = 249 } #Sarny
+		command = { type = addcore which = 245 } #Lutsk
+		command = { type = addcore which = 244 } #Rowne
+		command = { type = addcore which = 239 } #Prezmysl
+		command = { type = addcore which = 242 } #Lwow
+		command = { type = addcore which = 240 } #Tarnopol
+		command = { type = addcore which = 241 } #Stryj
+		command = { type = addcore which = 238 } #Stanislawow		
+	}
+	action = {
+		ai_chance = 40
+		name = "2003157b"
+		command = { type = dissent value = 5 }
+	}
+}
+event = {
+   id = 2003160
+    random = no
+    country = AUS
+    one_action = yes
+	
+	trigger = {
+		event = 2003156
+		random = 5
+		atwar = no
+		not = { alliance = { country = DDR } }
+		not = { war = { country = DDR } }
+	}
+	date = { day = 1 month = january year = 1933 }
+	offset = 20
+	deathdate = { day = 30 month = december year = 1963 }
+	
+	name = "2003157name"
+	desc = "2003157desc"
+	style = 2
+	picture = "spread_revolution"
+	
+	action = {
+		ai_chance = 20
+		name = "2003157a"
+		command = { type = set_domestic which = democratic value = 3 }
+		command = { type = set_domestic which = political_left value = 8 }
+		command = { type = dissent value = -5 }
+		command = { type = country which = U16 }
+		command = { type = set_relation which = DDR value = 200 }
+		command = { type = set_relation which = SOV value = 200 }
+		command = { type = alliance which = DDR }
+	}
+	action = {
+		ai_chance = 80
+		name = "2003157b"
+		command = { type = dissent value = 5 }
+	}
+}
+event = {
+   id = 2003161
+    random = no
+    country = FIN
+    one_action = yes
+	
+	trigger = {
+		event = 2003156
+		random = 5
+		atwar = no
+		not = { alliance = { country = DDR } }
+		not = { war = { country = DDR } }
+	}
+	date = { day = 1 month = january year = 1933 }
+	offset = 20
+	deathdate = { day = 30 month = december year = 1963 }
+	
+	name = "2003157name"
+	desc = "2003157desc"
+	style = 2
+	picture = "spread_revolution"
+	
+	action = {
+		ai_chance = 80
+		name = "2003157a"
+		command = { type = set_domestic which = democratic value = 3 }
+		command = { type = set_domestic which = political_left value = 8 }
+		command = { type = dissent value = -5 }
+		command = { type = country which = U20 }
+		command = { type = set_relation which = DDR value = 200 }
+		command = { type = set_relation which = SOV value = 200 }
+		command = { type = alliance which = DDR }
+	}
+	action = {
+		ai_chance = 20
+		name = "2003157b"
+		command = { type = dissent value = 5 }
+	}
+}
+event = {
+   id = 2003162
+    random = no
+    country = SWE
+    one_action = yes
+	
+	trigger = {
+		event = 2003156
+		random = 5
+		atwar = no
+		not = { alliance = { country = DDR } }
+		not = { war = { country = DDR } }
+	}
+	date = { day = 1 month = january year = 1933 }
+	offset = 20
+	deathdate = { day = 30 month = december year = 1963 }
+	
+	name = "2003157name"
+	desc = "2003157desc"
+	style = 2
+	picture = "spread_revolution"
+	
+	action = {
+		ai_chance = 60
+		name = "2003157a"
+		command = { type = set_domestic which = democratic value = 3 }
+		command = { type = set_domestic which = political_left value = 8 }
+		command = { type = dissent value = -5 }
+		command = { type = country which = U21 }
+		command = { type = set_relation which = DDR value = 200 }
+		command = { type = set_relation which = SOV value = 200 }
+		command = { type = alliance which = DDR }
+	}
+	action = {
+		ai_chance = 40
+		name = "2003157b"
+		command = { type = dissent value = 5 }
+	}
+}
+event = {
+   id = 2003163
+    random = no
+    country = DEN
+    one_action = yes
+	
+	trigger = {
+		event = 2003156
+		random = 5
+		atwar = no
+		not = { alliance = { country = DDR } }
+		not = { war = { country = DDR } }
+	}
+	date = { day = 1 month = january year = 1933 }
+	offset = 20
+	deathdate = { day = 30 month = december year = 1963 }
+	
+	name = "2003157name"
+	desc = "2003157desc"
+	style = 2
+	picture = "spread_revolution"
+	
+	action = {
+		ai_chance = 70
+		name = "2003157a"
+		command = { type = set_domestic which = democratic value = 3 }
+		command = { type = set_domestic which = political_left value = 8 }
+		command = { type = dissent value = -5 }
+		command = { type = country which = U22 }
+		command = { type = set_relation which = DDR value = 200 }
+		command = { type = set_relation which = SOV value = 200 }
+		command = { type = alliance which = DDR }
+	}
+	action = {
+		ai_chance = 30
+		name = "2003157b"
+		command = { type = dissent value = 5 }
+	}
+}
+event = {
+   id = 2003164
+    random = no
+    country = BUL
+    one_action = yes
+	
+	trigger = {
+		event = 2003156
+		random = 5
+		atwar = no
+		not = { alliance = { country = DDR } }
+		not = { war = { country = DDR } }
+	}
+	date = { day = 1 month = january year = 1933 }
+	offset = 20
+	deathdate = { day = 30 month = december year = 1963 }
+	
+	name = "2003157name"
+	desc = "2003157desc"
+	style = 2
+	picture = "spread_revolution"
+
+	action = {
+		ai_chance = 80
+		name = "2003157a"
+		command = { type = set_domestic which = democratic value = 3 }
+		command = { type = set_domestic which = political_left value = 8 }
+		command = { type = dissent value = -5 }
+		command = { type = country which = U29 }
+		command = { type = set_relation which = DDR value = 200 }
+		command = { type = set_relation which = SOV value = 200 }
+		command = { type = alliance which = DDR }
+	}
+	action = {
+		ai_chance = 20
+		name = "2003157b"
+		command = { type = dissent value = 5 }
+	}
+}
+event = {
+   id = 2003165
+    random = no
+    country = ROM
+    one_action = yes
+	
+	trigger = {
+		event = 2003156
+		random = 5
+		atwar = no
+		not = { alliance = { country = DDR } }
+		not = { war = { country = DDR } }
+	}
+	date = { day = 1 month = january year = 1933 }
+	offset = 20
+	deathdate = { day = 30 month = december year = 1963 }
+	
+	name = "2003157name"
+	desc = "2003157desc"
+	style = 2
+	picture = "spread_revolution"
+	
+	action = {
+		ai_chance = 50
+		name = "2003157a"
+		command = { type = set_domestic which = democratic value = 3 }
+		command = { type = set_domestic which = political_left value = 8 }
+		command = { type = dissent value = -5 }
+		command = { type = country which = U30 }
+		command = { type = set_relation which = DDR value = 200 }
+		command = { type = set_relation which = SOV value = 200 }
+		command = { type = alliance which = DDR }
+	}
+	action = {
+		ai_chance = 50
+		name = "2003157b"
+		command = { type = dissent value = 5 }
+	}
+}
+event = {
+   id = 2003166
+    random = no
+    country = CZE
+    one_action = yes
+	
+	trigger = {
+		event = 2003156
+		random = 5
+		atwar = no
+		not = { alliance = { country = DDR } }
+		not = { war = { country = DDR } }
+	}
+	date = { day = 1 month = january year = 1933 }
+	offset = 20
+	deathdate = { day = 30 month = december year = 1963 }
+	
+	name = "2003157name"
+	desc = "2003157desc"
+	style = 2
+	picture = "spread_revolution"
+	
+	action = {
+		ai_chance = 70
+		name = "2003157a"
+		command = { type = set_domestic which = democratic value = 3 }
+		command = { type = set_domestic which = political_left value = 8 }
+		command = { type = dissent value = -5 }
+		command = { type = country which = U31 }
+		command = { type = set_relation which = DDR value = 200 }
+		command = { type = set_relation which = SOV value = 200 }
+		command = { type = alliance which = DDR }
+	}
+	action = {
+		ai_chance = 30
+		name = "2003157b"
+		command = { type = dissent value = 5 }
+	}
+}
+event = {
+   id = 2003167
+    random = no
+    country = TUR
+    one_action = yes
+	
+	trigger = {
+		event = 2003156
+		random = 5
+		atwar = no
+		not = { alliance = { country = DDR } }
+		not = { war = { country = DDR } }
+	}
+	date = { day = 1 month = january year = 1933 }
+	offset = 20
+	deathdate = { day = 30 month = december year = 1963 }
+	
+	name = "2003157name"
+	desc = "2003157desc"
+	style = 2
+	picture = "spread_revolution"
+	
+	action = {
+		ai_chance = 30
+		name = "2003157a"
+		command = { type = set_domestic which = democratic value = 3 }
+		command = { type = set_domestic which = political_left value = 8 }
+		command = { type = dissent value = -5 }
+		command = { type = country which = U34 }
+		command = { type = set_relation which = DDR value = 200 }
+		command = { type = set_relation which = SOV value = 200 }
+		command = { type = alliance which = DDR }
+	}
+	action = {
+		ai_chance = 70
+		name = "2003157b"
+		command = { type = dissent value = 5 }
+	}
+}
+# The Final Struggle
+event = {
+   id = 2003168
+    random = no
+    country = DDR
+	decision = {
+		atwar = no
+		alliance = { country = SOV }
+		event = 2003156
+	}
+	
+	decision_trigger = { AND = {
+		OR = { 
+			alliance = { country = U34 } #Socialist Republic of Turkey
+			alliance = { country = U30 } #Romanian People's Republic
+			alliance = { country = U29 } #People's Republic of Bulgaria
+			alliance = { country = U27 } #Socialist Federal Republic of Yugoslavia
+			alliance = { country = U13 } #Hungarian Socialist Republic
+			alliance = { country = U31 } #Czechoslovak Socialist Republic
+		}
+		OR = { 
+			alliance = { country = U20 } #Finnish Democratic Republic
+			alliance = { country = U21 } #Swedish Socialist Union
+			alliance = { country = U22 } #People's Republic of Denmark
+			alliance = { country = U32 } #People's Republic of Poland
+			alliance = { country = U16 } #Austrian Democratic Republic
+		}
+			}
+	}
+	
+	trigger = {
+		event = 2003156
+		random = 20
+		atwar = no
+		alliance = { country = DDR country = SOV }
+	}
+	date = { day = 1 month = january year = 1933 }
+	offset = 20
+	deathdate = { day = 30 month = december year = 1963 }
+	
+	name = "20031686name"
+	desc = "20031686desc"
+	style = 2
+	picture = "spread_revolution"
+	decision_picture = "decision_spread_revolution"
+	
+	action = {
+		name = "20031686a"
+		command = { type = war which = HOL }
+		command = { type = war which = BEL }
+		command = { type = war which = ENG }
+		command = { type = war which = FRA }
+		command = { type = war which = LUX }
+		command = { type = war which = ITA }
+	}
+}
+########################
+# France
+########################
+# Economic Recovery Policy
+event = {
+	id = 2002076
+	random = no
+	country = FRA
+	
+	decision = {
+	}
+	decision_trigger = {
+			money = 500
+	}
+	trigger = {	
+			random = 10
+	}
+	
+	name = "2011038name"
+	desc = "2011038desc"
+	style = 2
+	picture = "new_deal"
+	decision_picture = "decision_new_deal"
+
+	date = { day = 1 month = january year = 1933 }
+	offset = 15
+	deathdate = { day = 30 month = december year = 1935 }
+
+	action = {
+		name = "2011038a"
+		command = { type = dissent value = -2 }
+     		command = { type = industrial_modifier which = total value = 2 }
+		command = { trigger = { ai = no } type = money value = -500 }
+		command = { type = domestic which = free_market value = -1 }
+	
+	}
+}
+# Unemployment rate down to 10 percent
+event = {
+	id = 2002077
+	random = no
+	country = FRA
+	
+	
+	trigger = {
+			event = 2002076
+			random = 2
+	}
+	
+	name = "2002077name"
+	desc = "2049092desc"
+	style = 2
+	picture = "Unemployment_rate"
+
+	date = { day = 1 month = january year = 1933 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1964 }
+
+	action = {
+		name = "2049092a"
+		command = { type = dissent value = -3 }
+     		command = { type = industrial_modifier which = total value = 8 }
+	
+	}
+}
+# Saar Plebiscite
+event = {
+	id = 2002078
+	random = no
+	country = FRA
+	name = "2003134name"
+	desc = "2003134desc"
+	style = 2
+	picture = "news_paper"
+	action = {
+		name = "2003134a"
+        	command = { type = secedeprovince which = GER value = 127 }
+		}
+	}
+# Stavisky Affair
+event = {
+	id = 2002079
+	random = no
+	country = FRA
+	
+	
+	trigger = { }
+	
+	name = "2002079name"
+	desc = "2002079desc"
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 7 month = january year = 1934 }
+
+	action = {
+		name = "2002079a"
+		command = { type = dissent value = 5 }
+		command = { type = headofgovernment which = 5020 } # Daladier
+	
+	}
+}
+# 6 February 1934 crisis
+event = {
+	id = 2002080
+	random = no
+	country = FRA
+	
+	
+	trigger = { event = 2002079 }
+	
+	name = "2002080name"
+	desc = "2002080desc"
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 5 month = february year = 1934 }
+
+	action = {
+		name = "2002080a"
+		command = { type = dissent value = 5 }
+		command = { type = headofgovernment which = 5286 } # Doumergue
+		command = { type = foreignminister which = 5277 } # Barthou
+	
+	}
+	#action = {
+	#	name = "2002080b"
+	#}
+}
+# The Communist Threat
+event = {
+	id = 2002081
+	random = no
+	country = FRA
+
+	name = 2002081name
+	desc = 2002081desc
+	style = 2
+  	picture = "news_paper"
+
+
+	action = {
+		name = "2002081a"
+		command = { type = domestic which = defense_lobby value = 2 }
+		command = { type = peacetime_ic_mod value = 20 }
+		command = { type = manpowerpool value = 15 }
+		command = { trigger = { ai = yes } type = ai which = "switch/low_construction_factor.ai" }
+	}
+}
+# Magistrate Albert Prince found dead
+event = {
+	id = 2002082
+	random = no
+	country = FRA
+	
+	
+	trigger = { event = 2002079 }
+	
+	name = "2002082name"
+	desc = "2002082desc"
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 19 month = february year = 1934 }
+
+	action = {
+		name = "EVT_362_ACTC" # He will be missed
+		command = { type = dissent value = 2 }
+	
+	}
+}
+# Assassination of Louis Barthou
+event = {
+	id = 2002083
+	random = no
+	country = FRA
+	
+	
+	trigger = { event = 2002079 }
+	
+	name = "2002083name"
+	desc = "2002083desc"
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 8 month = october year = 1934 }
+
+	action = {
+		name = "EVT_362_ACTC" # He will be missed
+		command = { type = dissent value = 2 }
+		command = { type = foreignminister which = 5039 } # Laval
+	
+	}
+}
+# French-Soviet Non-aggresion Pact
+event = {
+	id = 2002084
+	random = no
+	country = FRA
+	decision = {
+		event = 2003139 # Wehrmacht Creation
+		atwar = no
+		not = { exists = DDR }
+	}
+	decision_trigger = { 
+		relation = { which = SOV value = 50 }
+	}
+	trigger = {
+		event = 2003139 # Wehrmacht Creation
+		atwar = no
+		not = { exists = DDR }
+	}
+	style = 2
+	date = { day = 1 month = january year = 1933 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1938 }
+	picture = "news_paper"
+	decision_picture = "decision_anticominternpact"
+	name = "2002084name"
+	desc = "2002084desc"
+		action = {
+		name = "2002084a"
+		command = { type = money value = -30 } 
+		command = { type = trigger which = 2002085 }
+		}
+	}
+	
+event = {
+	id = 2002085
+	random = no
+	country = SOV
+	style = 2
+	picture = "news_paper"
+	name = "2002084name"
+	desc = "2002084desc"
+	action = {
+		name = "2003150a" # An excellent proposition
+		ai_chance = 70
+		command = { type = non_aggression which = SOV where = FRA }
+		command = { type = relation which = FRA value = 30 }
+		command = { type = money value = -30 } 
+		}
+		action = {
+		name = "2002085b"
+		ai_chance = 30
+		command = { type = relation which = FRA value = -30 }
+	}
+}
+# Request Embargo Against Italy
+event = {
+	id = 2002086
+	random = no
+	country = FRA
+	decision = { 
+		atwar = no
+		war = { country = ITA country = ETH }
+	}
+
+	decision_trigger = { 
+		money = 100
+		atwar = no
+		war = { country = ITA country = ETH }
+	}
+
+	trigger = {
+		war = { country = ITA country = ETH }
+		random = 10
+		atwar = no
+	}
+   
+	name = "2002086name"
+	desc = "2002086desc" 
+	style = 2
+	picture = "news_paper"
+	decision_picture = "decision_league_of_nations"
+
+	date = { day = 1 month = january year = 1933 }
+	offset = 180
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = "2002086a"
+		command = { type = trigger which = 2002087 }
+		command = { trigger = { ai = no } type = money value = -100 } 
+	}
+}
+event = {
+	id = 2002087
+	random = no
+	country = FRA
+	one_action = yes
+	name = "2002087name"
+	desc = "2002086desc" 
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		ai_chance = 30
+		name = "2002087a"
+		command = { type = dissent value = 2 }
+		command = { type = relation which = ITA value = -30 }
+		command = { type = embargo which = FRA where = ITA value = 1 }
+	}
+	action = {
+		ai_chance = 20
+		name = "2002087b"
+		command = { type = relation which = ITA value = -50 }
+		command = { type = embargo which = FRA where = ITA value = 1 }
+		command = { type = embargo which = ENG where = ITA value = 1 }
+		command = { type = embargo which = CZE where = ITA value = 1 }
+		command = { type = embargo which = BUL where = ITA value = 1 }
+		command = { type = embargo which = FIN where = ITA value = 1 }
+		command = { type = embargo which = BEL where = ITA value = 1 }
+		command = { type = embargo which = HUN where = ITA value = 1 }
+	}
+	action = {
+		ai_chance = 20
+		name = "2002087b"
+		command = { type = relation which = ITA value = -50 }
+		command = { type = embargo which = FRA where = ITA value = 1 }
+		command = { type = embargo which = GRE where = ITA value = 1 }
+		command = { type = embargo which = ARG where = ITA value = 1 }
+		command = { type = embargo which = HOL where = ITA value = 1 }
+		command = { type = embargo which = POR where = ITA value = 1 }
+		command = { type = embargo which = ROM where = ITA value = 1 }
+		command = { type = embargo which = SPR where = ITA value = 1 }
+		command = { type = embargo which = YUG where = ITA value = 1 }
+	}
+	action = {
+		ai_chance = 20
+		name = "2002087c"
+		command = { type = relation which = ITA value = -75 }
+		command = { type = embargo which = FRA where = ITA value = 1 }
+		command = { type = embargo which = ENG where = ITA value = 1 }
+		command = { type = embargo which = CZE where = ITA value = 1 }
+		command = { type = embargo which = BUL where = ITA value = 1 }
+		command = { type = embargo which = FIN where = ITA value = 1 }
+		command = { type = embargo which = BEL where = ITA value = 1 }
+		command = { type = embargo which = HUN where = ITA value = 1 }
+		command = { type = embargo which = GRE where = ITA value = 1 }
+		command = { type = embargo which = ARG where = ITA value = 1 }
+		command = { type = embargo which = HOL where = ITA value = 1 }
+		command = { type = embargo which = POR where = ITA value = 1 }
+		command = { type = embargo which = ROM where = ITA value = 1 }
+		command = { type = embargo which = SPR where = ITA value = 1 }
+		command = { type = embargo which = YUG where = ITA value = 1 }
+	}
+}
+# Fascist path
+########################
+# United Kingdom
+########################
+# Economic Recovery Policy
+event = {
+	id = 2001090
+	random = no
+	country = ENG
+	
+	
+	decision = {
+	}
+	decision_trigger = {
+			money = 500
+	}
+	trigger = {	
+			random = 10
+	}
+	
+	name = "2011038name"
+	desc = "2011038desc"
+	style = 2
+	picture = "new_deal"
+	decision_picture = "decision_new_deal"
+
+	date = { day = 1 month = january year = 1933 }
+	offset = 15
+	deathdate = { day = 30 month = december year = 1935 }
+
+	action = {
+		name = "2011038a"
+		command = { type = dissent value = -2 }
+     		command = { type = industrial_modifier which = total value = 5 }
+		command = { trigger = { ai = no } type = money value = -500 }
+		command = { type = domestic which = free_market value = -1 }
+	
+	}
+}
+# Unemployment rate down to 10 percent
+event = {
+	id = 2001091
+	random = no
+	country = ENG
+	
+	
+	trigger = {
+			event = 2001090
+			random = 2
+	}
+	
+	name = "2002077name"
+	desc = "2049092desc"
+	style = 2
+	picture = "Unemployment_rate"
+
+	date = { day = 1 month = january year = 1933 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1964 }
+
+	action = {
+		name = "2049092a"
+		command = { type = dissent value = -3 }
+     		command = { type = industrial_modifier which = total value = 10 }
+	
+	}
+}
+# The Communist Threat
+event = {
+	id = 2001092
+	random = no
+	country = ENG
+
+	name = 2002081name
+	desc = 2002081desc
+	style = 2
+  	picture = "news_paper"
+
+
+	action = {
+		name = "2002080a"
+		command = { type = domestic which = defense_lobby value = 2 }
+		command = { type = peacetime_ic_mod value = 10 }
+		command = { type = manpowerpool value = 10 }
+		command = { trigger = { ai = yes } type = ai which = "switch/low_construction_factor.ai" }
+	}
+}
+# End Newfoundland Responsible Government
+event = {
+	id = 2001093
+	random = no
+	country = ENG
+	
+	
+	decision = { exists = U60 atwar = no
+	}
+	decision_trigger = {
+			money = 100
+	}
+	trigger = {	exists = U60 atwar = no
+			random = 10
+	}
+	
+	name = "2001093name"
+	desc = "2001093desc"
+	style = 2
+	picture = "news_paper"
+	decision_picture = "decision_anticominternpact"
+
+	date = { day = 1 month = january year = 1934 }
+	offset = 15
+	deathdate = { day = 30 month = december year = 1935 }
+
+	action = {
+		name = "2001093a"
+		command = { type = dissent value = -1 }
+     		command = { type = addclaim which = 2167 }
+     		command = { type = addclaim which = 2168 }
+     		command = { type = addclaim which = 2169 }
+     		command = { type = inherit which = U60 }
+		command = { trigger = { ai = no } type = money value = -100 }
+	
+	}
+}
+# Arab Revolt in Palestine
+event = {
+	id = 2001094
+	random = no
+	country = ENG
+	
+	
+	trigger = {	random = 10
+	}
+	
+	name = "2001094name"
+	desc = "2001094desc"
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = january year = 1934 }
+	offset = 60
+	deathdate = { day = 30 month = december year = 1939 }
+
+	action = {
+		name = "2001094a"
+		command = { trigger = { ai = no OR = { control = { province = 1172 } control = { province = 1008 } control = { province = 1009 } } } type = dissent value = 3 }
+		command = { trigger = { control = { province = 1172 } ai = no } type = revolt which = 1172 }
+		command = { trigger = { control = { province = 1172 } } type = revolt which = 1172 }
+		command = { trigger = { control = { province = 1008 } ai = no } type = revolt which = 1008 }
+		command = { trigger = { control = { province = 1009 } ai = no } type = revolt which = 1009 }
+	
+	}
+}
+# Stresa Conference (alliance w Italy - gives a slice of Abyssinia to Italy + alliance, NAP and GOI, ETH = UK puppet)
+# A - We have nothing to offer to fascists pigs
+# B - Split Abyssinia apart
+# C - Abyssinia is yours
+# > how will this influence the rest of the game?
+########################
+# USSR
+########################
+# Alliance with Communist Germany
+event = {
+	id = 2007103
+	random = no
+	country = SOV
+	decision = {
+		exists = DDR
+		event = 2003130
+		NOT = { alliance = { country = SOV country = DDR } }
+		NOT = { ispuppet = SOV }
+		OR = {
+			NOT = { ispuppet = DDR }
+			puppet = { country = DDR country = SOV }
+		}
+	}
+	decision_trigger = {
+		relation = { which = DDR value = 100 }
+	}
+	trigger = {
+		exists = DDR
+		event = 2003130
+		random = 50
+		NOT = { alliance = { country = SOV country = DDR } }
+		NOT = { ispuppet = SOV }
+		OR = {
+			NOT = { ispuppet = DDR }
+			puppet = { country = DDR country = SOV }
+		}		
+	}
+	date = { day = 1 month = january year = 1933 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1964 }
+	name = "2007103name"
+	desc = "2007103desc"
+	style = 2
+	picture = "news_paper"
+	decision_picture = "decision_anticominternpact"
+	action = {
+		name = "2007103a"
+		command = { type = trigger which = 2003150 }
+	}
+}
+# Soviet-Italian Non-aggresion Pact
+event = {
+	id = 2007104
+	random = no
+	country = SOV
+	decision = {
+		atwar = no
+		not = { exists = DDR }
+	}
+	decision_trigger = { 
+		relation = { which = ITA value = 50 }
+	}
+	trigger = {
+		atwar = no
+		not = { exists = DDR }
+	}
+	style = 2
+	date = { day = 1 month = september year = 1933 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1935 }
+	picture = "news_paper"
+	decision_picture = "decision_anticominternpact"
+	name = "2007104name"
+	desc = "2007104desc"
+		action = {
+		name = "2007104a"
+		command = { type = money value = -30 } 
+		command = { type = trigger which = 2007105 }
+		}
+	}
+	
+event = {
+	id = 2007105
+	random = no
+	country = ITA
+	style = 2
+	picture = "news_paper"
+	name = "2007104name"
+	desc = "2007104desc"
+	action_a = {
+		name = "2003150a" # An excellent proposition
+		ai_chance = 70
+		command = { type = non_aggression which = SOV where = ITA }
+		command = { type = relation which = SOV value = 30 }
+		command = { type = money value = -30 } 
+		}
+		action = {
+		name = "2007105b"
+		ai_chance = 30
+		command = { type = relation which = SOV value = -30 }
+	}
+}
+# 2007106 used in Soviet.txt
+# Join the LON
+event = {
+	id = 2007107
+	random = no
+	country = SOV
+	decision = {
+		event = 2049096 # US Recognition of USSR
+		atwar = no
+		not = { exists = DDR }
+	}
+	decision_trigger = { 
+		money = 100
+	}
+	trigger = {
+		event = 2049096 # US Recognition of USSR
+		atwar = no
+		not = { exists = DDR }
+	}
+	style = 2
+	date = { day = 1 month = january year = 1933 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1935 }
+	picture = "news_paper"
+	decision_picture = "decision_league_of_nations"
+	name = "2007107name"
+	desc = "2007107desc"
+		action = {
+		name = "2007104a"
+		command = { trigger = { ai = no } type = money value = -100 } 
+		command = { type = relation which = ENG value = 30 }
+		command = { type = relation which = FRA value = 30 }
+		command = { type = relation which = CZE value = 30 }
+		command = { type = relation which = ROM value = 30 }
+		command = { type = relation which = YUG value = 30 }
+		command = { type = relation which = TUR value = 30 }
+		}
+	}
+# First Political Purges
+event = {
+	id = 2007108
+	random = no
+	country = SOV
+
+	trigger = {
+		OR = { 
+			AND = { year = 1933 random = 1 } 
+			AND = { year = 1934 random = 5 } 
+			AND = { year = 1935 random = 10 } 
+			year = 1936 
+		}
+		OR= { 
+			headofstate = 30002 # Iosif in charge
+			headofstate = 30011 # Iosif in charge
+		}
+	}
+
+	name = 2007108name
+	desc = 2007108desc
+	style = 2
+  	picture = "purge_army"
+
+	date = { day = 1 month = january year = 1933 }
+	offset = 15
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = "ACTIONNAME2609A" # Purge the traitors!
+		#command = { type = sleepminister which = 30095 } # Trostky
+		#command = { type = sleepminister which = 30099 } # Trostky
+		#command = { type = sleepminister which = 30103 } # Trostky
+		command = { type = sleepminister which = 30113 } # Bukharin
+		command = { type = sleepminister which = 30101 } # Kamenev
+		command = { type = sleepminister which = 30114 } # Rykov
+		command = { type = sleepminister which = 30116 } # Rykov
+		command = { type = sleepminister which = 30115 } # Obolensky
+		command = { type = sleepminister which = 30117 } # Petrovsky
+		command = { type = sleepminister which = 30102 } # Chicherin
+		command = { type = sleepminister which = 30097 } # Dybenko
+		command = { type = sleepminister which = 30096 } # Krylenko
+		command = { trigger = { ai = no } type = dissent value = 10 }
+		command = { trigger = { ai = yes ai = GER } type = dissent value = 10 }
+	}
+}
+# Promote Tukhachevsky
+event = {
+	id = 2007109
+	random = no
+	country = SOV
+
+	decision = { NOT = { event = 2007025 } } # Great Officer Purge
+	decision_trigger = { NOT = { event = 2007025 } } # Great Officer Purge
+
+	trigger = {
+		NOT = { event = 2007025 } # Great Officer Purge
+		OR = { 
+			AND = { year = 1933 random = 1 } 
+			AND = { year = 1934 random = 5 } 
+			AND = { year = 1935 random = 10 } 
+			year = 1936 
+		}
+	}
+
+	name = 2007109name
+	desc = 2007109desc
+	style = 2
+  	picture = "Tukhachevsky"
+	decision_picture = "decision_tukhachevsky"
+
+	date = { day = 1 month = april year = 1933 }
+	offset = 15
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action = {
+		name = 2007109a
+		command = { type = chiefofstaff which = 30007 } # Tukhachevsky
+		command = { type = add_leader_skill which = 30543 value = 1 } # Tukhachevsky
+		command = { type = gain_tech which = 2650 } # Post ww1 Tank IV 1934
+		command = { type = gain_tech which = 2030 } # Early Tank A9-A10, Pnz II, Hotchkiss H35, BT-5 1936
+		command = { type = gain_tech which = 1670 } # 1938 AIRBORNE INFANTRY
+		command = { type = dissent value = 2 } # Cavalry officers are opposed
+	}
+}
+########################
+# Italy
+########################
+# Economic Recovery Policy
+event = {
+	id = 2006026
+	random = no
+	country = ITA
+	
+	
+	decision = {
+	}
+	decision_trigger = {
+			money = 500
+	}
+	trigger = {	
+			random = 10
+	}
+	
+	name = "2011038name"
+	desc = "2011038desc"
+	style = 2
+	picture = "new_deal"
+	decision_picture = "decision_new_deal"
+
+	date = { day = 1 month = january year = 1933 }
+	offset = 15
+	deathdate = { day = 30 month = december year = 1935 }
+
+	action = {
+		name = "2011038a"
+		command = { type = dissent value = -2 }
+     		command = { type = industrial_modifier which = total value = 10 }
+		command = { trigger = { ai = no } type = money value = -500 }
+		command = { type = domestic which = free_market value = -1 }
+	
+	}
+}
+# Unemployment rate down to 10 percent
+event = {
+	id = 2006027
+	random = no
+	country = ITA
+	
+	
+	trigger = {
+			event = 2006026
+			random = 2
+	}
+	
+	name = "2002077name"
+	desc = "2049092desc"
+	style = 2
+	picture = "Unemployment_rate"
+
+	date = { day = 1 month = january year = 1933 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1964 }
+
+	action = {
+		name = "2049092a"
+		command = { type = dissent value = -3 }
+     		command = { type = industrial_modifier which = total value = 10 }
+	
+	}
+}
+# Second Italo-Abyssinian War (slept if Allied Italy)
+event = {
+	id = 2006028
+	random = no
+	country = ITA
+	
+	
+	decision = { not = { war = { country = ITA country = ETH } }
+			exists = ETH
+	}
+	decision_trigger = {
+			headofgovernment = 25002
+	}
+	trigger = {	
+			exists = ETH
+			headofgovernment = 25002
+			random = 5
+			not = { war = { country = ITA country = ETH } }
+	}
+	
+	name = "2006028name"
+	desc = "2006028desc"
+	style = 2
+	picture = "Mussolini"
+	decision_picture = "decision_rapallo_conference"
+
+	date = { day = 1 month = january year = 1935 }
+	offset = 15
+	deathdate = { day = 30 month = december year = 1964 }
+
+	action = {
+		name = "2006028a"
+		command = { type = war which = ETH }
+		command = { type = local_clrflag which = ItaEthPeace }	# Enable ITA AI event #3006005 after the war
+	}
+}
+# League of Nations Sanctions Lifted
+event = {
+	id = 2006029
+	random = no
+	country = ITA
+	
+	trigger = {	
+			not = { exists = ETH }
+			atwar = no
+			random = 5
+			event = 2002087 # France Requests Trade Embargo from LoN
+	}
+	
+	name = "2006029name"
+	desc = "2006029desc"
+	style = 2
+	picture = "Mussolini"
+
+	date = { day = 1 month = january year = 1935 }
+	offset = 15
+	deathdate = { day = 30 month = december year = 1964 }
+
+	action = {
+		name = "ACTION_NAME_EXCELLENT"
+		command = { type = dissent value = -2 }
+		command = { trigger = { embargo = { country = FRA country = ITA value = 1 } } type = embargo which = FRA where = ITA value = -1 }
+		command = { trigger = { embargo = { country = ENG country = ITA value = 1 } } type = embargo which = ENG where = ITA value = -1 }
+		command = { trigger = { embargo = { country = CZE country = ITA value = 1 } } type = embargo which = CZE where = ITA value = -1 }
+		command = { trigger = { embargo = { country = BUL country = ITA value = 1 } } type = embargo which = BUL where = ITA value = -1 }
+		command = { trigger = { embargo = { country = FIN country = ITA value = 1 } } type = embargo which = FIN where = ITA value = -1 }
+		command = { trigger = { embargo = { country = BEL country = ITA value = 1 } } type = embargo which = BEL where = ITA value = -1 }
+		command = { trigger = { embargo = { country = HUN country = ITA value = 1 } } type = embargo which = HUN where = ITA value = -1 }
+		command = { trigger = { embargo = { country = GRE country = ITA value = 1 } } type = embargo which = GRE where = ITA value = -1 }
+		command = { trigger = { embargo = { country = ARG country = ITA value = 1 } } type = embargo which = ARG where = ITA value = -1 }
+		command = { trigger = { embargo = { country = HOL country = ITA value = 1 } } type = embargo which = HOL where = ITA value = -1 }
+		command = { trigger = { embargo = { country = POR country = ITA value = 1 } } type = embargo which = POR where = ITA value = -1 }
+		command = { trigger = { embargo = { country = ROM country = ITA value = 1 } } type = embargo which = ROM where = ITA value = -1 }
+		command = { trigger = { embargo = { country = SPR country = ITA value = 1 } } type = embargo which = SPR where = ITA value = -1 }
+		command = { trigger = { embargo = { country = YUG country = ITA value = 1 } } type = embargo which = YUG where = ITA value = -1 }
+	
+	}
+}
+################
+# Ireland no longer allied
+# Belgium no longer allied
+#From 1830 and for 84 years, Belgium remained neutral in an era of intra-European wars until German troops overran the country during their attack on France in 1914. King Albert, the constitutional commander-in-chief of the armed forces, rallied what remained of his troops and, after joining the French Army, was able to retain a tiny corner of Flemish Belgium near the sea throughout the war. Some of the fiercest battles of World War I were fought on "Flanders' Fields.
+#The inter-war years saw an unprecedented blooming of Flemish culture in northern Belgium and a sharpening of ethnic rivalry between the northern Dutch-speaking Flemings and the southern French-speaking Walloons. Partly as a result, in 1936, Belgium reverted to its former policy of neutrality, trying not to provide Nazi Germany with an excuse to invade.

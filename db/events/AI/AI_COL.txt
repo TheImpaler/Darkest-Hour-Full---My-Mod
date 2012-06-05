@@ -1,0 +1,198 @@
+####################################
+# Columbia AI events by Lothos
+####################################
+################
+# Minister of Security Section
+#############################################
+event = { # Alberto Lleras Camargo takes power
+	id = 3036001
+	random = no 
+	country = COL
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 175072 # Alberto Lleras Camargo
+		NOT = { InCabinet = 175072 }
+		OR = {
+			manpower = 20
+			NOT = { minister = 175073 } # Francesco José Urrutia
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ministerofsecurity which = 175072 }
+		command = { type = dissent value = -1 }
+	}
+}
+event = { # Francesco José Urrutia takes power
+	id = 3036002
+	random = no 
+	country = COL
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 175073 # Francesco José Urrutia
+		NOT = { InCabinet = 175073 }
+		OR = {
+			NOT = { manpower = 20 }
+			NOT = { minister = 175072 } # Alberto Lleras Camargo
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ministerofsecurity which = 175073 }
+		command = { type = dissent value = -1 }
+	}
+}
+################
+# Chief of Staff Section
+#############################################
+event = { # Jorge Mercado Sanchez takes power
+	id = 3036003
+	random = no 
+	country = COL
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 175007 # Jorge Mercado Sanchez
+		NOT = { InCabinet = 175007 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = chiefofstaff which = 175007 }
+		command = { type = dissent value = -1 }
+	}
+}
+################
+# Head of Intelligence Section
+#############################################
+event = { # Fernando Londono y Londono takes power
+	id = 3036004
+	random = no 
+	country = COL
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 175006 # Fernando Londono y Londono
+		NOT = { InCabinet = 175006 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ministerofintelligence which = 175006 }
+		command = { type = dissent value = -1 }
+	}
+}
+################
+# Chief of the Army Section
+#############################################
+event = { # Ruben Piedrahita Arango takes power
+	id = 3036005
+	random = no 
+	country = COL
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 175113 # Ruben Piedrahita Arango
+		NOT = { InCabinet = 175113 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = chiefofarmy which = 175113 }
+		command = { type = dissent value = -1 }
+	}
+}
+################
+# Armament Minister Section
+#############################################
+event = { # Alain Adair Arriaga takes power
+	id = 3036006
+	random = no 
+	country = COL
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 175051 # Alain Adair Arriaga
+		NOT = { InCabinet = 175051 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = armamentminister which = 175051 }
+		command = { type = dissent value = -1 }
+	}
+}
+event = { # Joaquin Fernandez takes power
+	id = 3036007
+	random = no 
+	country = COL
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 175061 # Joaquin Fernandez
+		NOT = { InCabinet = 175061 }
+		NOT = { minister = 175051 } # Alain Adair Arriaga
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = armamentminister which = 175061 }
+		command = { type = dissent value = -1 }
+	}
+}
+
+
+

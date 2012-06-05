@@ -1,0 +1,642 @@
+###
+### Soviet events (SOV - 007)
+###
+### By Rhysaxiel
+###
+###  2007501  SOV  Revolution !
+###  2007502  SOV  Germany proposes an outrageous peace !
+###  2007503  SOV  Seek for peace (classic Brest Litovsk)
+###  2007506  SOV  Rise of the Volunteer Army
+###  2007507  SOV  The Basmachi uprising
+###  2007510  SOV  The Arkhangelsk Government
+###  2007511  SOV  Admiral Koltchak
+###  2007512  SOV  Cossacks' Uprising
+###  2007513  SOV  Mass Levy
+###  2007514  SOV  Mass Levy #2
+###  2007515  SOV  Red Terror
+###  2007516  SOV  Peace with Germany
+###  2007517  SOV  Treaty of Brest-Litvosk: initial conditions
+
+event = {
+	id = 2007501   # Revolution !
+	country = SOV
+
+	#triggered by RUS 2104530
+	
+	name = "EVT1914_2007501_NAME"
+	desc = "EVT1914_2007501_DESC" 
+	style = 1
+	picture = "news_paper"
+	
+	action = {
+		name = "EVT1914_2007501_ACTIONA" # Storm the Winter Palace !
+		command = { type = set_domestic which = democratic value = 2 } 
+		command = { type = set_domestic which = political_left value = 8 } #Leninist
+	  	command = { type = headofstate which = 30112 } #Yakov Sverdlov
+		command = { type = headofgovernment which = 30107 } #Vladimir Lenin
+		command = { type = foreignminister which = 30103 } #Leon Trotsky
+		command = { type = chiefofarmy which = 30095 } #Leon Trotsky		
+		command = { type = alliance where = 3 } #join the comintern
+	}
+}
+event = {
+	id = 2007502   # Germany proposes an outrageous peace !
+	country = SOV
+
+	#triggered by U08 2191534
+	
+	name = "EVT1914_2007502_NAME"
+	desc = "EVT1914_2007502_DESC" 
+	style = 1
+	picture = "news_paper"
+	
+	action_a = {
+		name = "EVT1914_2007502_ACTIONA" # No war - No peace (refuse)
+		ai_chance = 80
+		command = { type = dissent value = 5 }
+		command = { trigger = { NOT= { war = { country = U08 country = SOV } } } type = war which = U08 }
+	}
+	action_b = {
+		name = "EVT1914_2007502_ACTIONB" # Accept this outrageous proposal
+		ai_chance = 20
+		command = { type = dissent value = 20 }
+		command = { type = leave_alliance }
+		command = { type = peace which = U08 value = 1 }	
+		command = { type = peace which = U09 value = 1 }	
+		command = { type = strength which = land when = 1 where = 0 value = -0.10 } #land units lose 10% strenght (deserters)
+		command = { type = disorg_division which = -1 where = 50 }
+		command = { type = disorg_division which = -1 where = 50 }
+		command = { type = disorg_division which = -1 where = 50 }
+		command = { type = disorg_division which = -1 where = 50 }
+		command = { type = disorg_division which = -1 where = 50 }
+		command = { type = disorg_division which = -1 where = 50 }
+		command = { type = disorg_division which = -1 where = 50 }
+		command = { type = disorg_division which = -1 where = 50 }
+		command = { type = disorg_division which = -1 where = 50 }
+		command = { type = disorg_division which = -1 where = 50 }
+		command = { type = disorg_division which = -1 where = 50 }
+		command = { type = disorg_division which = -1 where = 50 }
+		command = { type = disorg_division which = -1 where = 50 }
+		command = { type = disorg_division which = -1 where = 50 }
+		command = { type = disorg_division which = -1 where = 50 }
+		command = { type = disorg_division which = -1 where = 50 }
+		command = { type = disorg_division which = -1 where = 50 }
+		command = { type = disorg_division which = -1 where = 50 }
+		command = { type = disorg_division which = -1 where = 50 }
+		command = { type = disorg_division which = -1 where = 50 }
+		command = { type = disorg_division which = -1 where = 50 }
+		command = { type = disorg_division which = -1 where = 50 }
+		command = { type = disorg_division which = -1 where = 50 }
+		command = { type = disorg_division which = -1 where = 50 }
+		command = { type = disorg_division which = -1 where = 50 }
+		command = { type = event which = 2007517 where = SOV when = 1 } #Treaty of Brest-Litvosk (first soft version)
+	}
+}
+
+event = {
+	id = 2007503   # Seek for peace (classic Brest Litovsk)
+	country = SOV
+
+	decision = { 
+		war = { country = U08 country = SOV } 
+	}
+	decision_trigger = { 
+		NOT = { control = { province = 232 data = -1 } }  # Warsaw
+		NOT = { control = { province = 258 data = -1 } }  # Wilno
+		NOT = { control = { province = 264 data = -1 } }  # Riga
+		NOT = { control = { province = 247 data = -1 } }  # Brest-Litewski
+		OR = {
+			NOT = { control = { province = 599 data = -1 } }  # Misnk
+			NOT = { control = { province = 617 data = -1 } }  # Kiev					
+		}
+	}
+
+	trigger = { 
+		random = 30 
+		war = { country = U08 country = SOV } 
+		NOT = { control = { province = 232 data = -1 } }  # Warsaw
+		NOT = { control = { province = 258 data = -1 } }  # Wilno
+		NOT = { control = { province = 264 data = -1 } }  # Riga
+		NOT = { control = { province = 247 data = -1 } }  # Brest-Litewski
+		NOT = { control = { province = 599 data = -1 } }  # Misnk
+		NOT = { control = { province = 617 data = -1 } }  # Kiev
+		OR = { 
+			NOT = { control = { province = 626 data = -1 } }  # Odessa
+			NOT = { control = { province = 572 data = -1 } }  # Moscow
+			NOT = { control = { province = 553 data = -1 } }  # Leningrad
+		}
+	}
+
+	name = "EVT1914_2007503_NAME"
+	desc = "EVT1914_2007503_DESC"
+	style = 2
+	picture = "news_paper"
+	
+	date = { day = 1 month = june year = 1914 }
+	offset = 10
+	deathdate = { day = 30 month = december year = 1925 }
+	
+	action = {
+		name = "EVT1914_2007503_ACTIONA" # Propose armistice to the germans
+		command = { type = trigger which = 2191535 }
+	}
+}
+event = {
+	id = 2007506
+	country = SOV
+	
+	trigger = { 
+		random = 15
+		event = 2104530 # Storm the Winter Palace ! (RUS turned into SOV)
+		control = { province = 644 data = SOV } #Rostov
+	}
+	
+	name = "EVT1914_2007506_NAME" # The Volunteer Army
+	desc = "EVT1914_2007506_DESC" 
+	style = 1
+	picture = "news_paper"
+	
+	date = { day = 1 month = june year = 1914 }
+	offset = 10
+	deathdate = { day = 30 month = december year = 1925 }
+	
+	action = {
+		name = "ACTION_NAME_DAMN" # Damn !
+		command = { trigger = { NOT = { exists = UTC} } type = independence which = UTC value = 0 when = 1 }
+		command = { type = secedeprovince which = UTC value = 552 } #North west, for Yudenitch
+		command = { type = secedeprovince which = UTC value = 566 }
+		command = { type = secedeprovince which = UTC value = 626 } #Odessa, for the Drozdovsky
+	}
+}
+event = {
+	id = 2007507
+	country = SOV
+	one_action = yes
+
+	trigger = { 
+		random = 15
+	}
+	
+	name = "EVT1914_2007507_NAME" # The Basmachi rebellion
+	desc = "EVT1914_2007507_DESC" 
+	style = 1
+	picture = "news_paper"
+	
+	date = { day = 1 month = june year = 1914 }
+	offset = 10
+	deathdate = { day = 30 month = december year = 1925 }
+	
+	action = {
+		ai_chance = 25
+		name = "ACTION_NAME_DAMN" # The Basmachi rebellion
+		command = { type = independence which = UPE value = 0 when = 1 }
+		command = { type = secedearea which = UPE value = "Turkmenistan" }
+		command = { type = secedearea which = UPE value = "Uzbekistan" }
+		command = { type = secedeprovince which = UPE value = 1105 }
+		command = { type = secedeprovince which = UPE value = 1118 }
+		command = { type = secedeprovince which = UPE value = 1114 }
+		command = { type = secedeprovince which = UPE value = 1113 }
+		command = { type = secedeprovince which = UPE value = 1134 }
+		command = { type = secedeprovince which = UPE value = 667 }
+		command = { type = secedeprovince which = UPE value = 666 } # Ghaaaaaaaaaaaarh ! ]:D
+		command = { type = secedeprovince which = UPE value = 660 }
+		command = { type = secedeprovince which = UPE value = 706 }
+		#Specific provinces
+		command = { type = secedeprovince which = UPE value = 1115 }
+		command = { type = secedeprovince which = UPE value = 501 }
+		command = { type = secedeprovince which = UPE value = 502 }
+		command = { type = secedeprovince which = UPE value = 499 }	  
+	}
+	action = {
+		ai_chance = 15
+		name = "ACTION_NAME_DAMN" # The Basmachi rebellion
+		command = { type = independence which = UPE value = 0 when = 1 }
+		command = { type = secedearea which = UPE value = "Turkmenistan" }
+		command = { type = secedearea which = UPE value = "Uzbekistan" }
+		command = { type = secedeprovince which = UPE value = 1105 }
+		command = { type = secedeprovince which = UPE value = 1118 }
+		command = { type = secedeprovince which = UPE value = 1114 }
+		command = { type = secedeprovince which = UPE value = 1113 }
+		command = { type = secedeprovince which = UPE value = 1134 }
+		command = { type = secedeprovince which = UPE value = 667 }
+		command = { type = secedeprovince which = UPE value = 666 } # Ghaaaaaaaaaaaarh ! ]:D
+		command = { type = secedeprovince which = UPE value = 660 }
+		command = { type = secedeprovince which = UPE value = 706 }
+		#Specific provinces
+		command = { type = secedeprovince which = UPE value = 1104 }
+		command = { type = secedeprovince which = UPE value = 1106 }
+		command = { type = secedeprovince which = UPE value = 1107 }  
+	}
+	action = {
+		ai_chance = 15
+		name = "ACTION_NAME_DAMN" # The Basmachi rebellion
+		command = { type = independence which = UPE value = 0 when = 1 }
+		command = { type = secedearea which = UPE value = "Turkmenistan" }
+		command = { type = secedearea which = UPE value = "Uzbekistan" }
+		command = { type = secedeprovince which = UPE value = 1105 }
+		command = { type = secedeprovince which = UPE value = 1118 }
+		command = { type = secedeprovince which = UPE value = 1114 }
+		command = { type = secedeprovince which = UPE value = 1113 }
+		command = { type = secedeprovince which = UPE value = 1134 }
+		command = { type = secedeprovince which = UPE value = 667 }
+		command = { type = secedeprovince which = UPE value = 666 } # Ghaaaaaaaaaaaarh ! ]:D
+		command = { type = secedeprovince which = UPE value = 660 }
+		command = { type = secedeprovince which = UPE value = 706 }
+		#Specific provinces
+		command = { type = secedearea which = UPE value = "Turkestan" }
+	}
+	action = {
+		ai_chance = 15
+		name = "ACTION_NAME_DAMN" # The Basmachi rebellion
+		command = { type = independence which = UPE value = 0 when = 1 }
+		command = { type = secedearea which = UPE value = "Turkmenistan" }
+		command = { type = secedearea which = UPE value = "Uzbekistan" }
+		command = { type = secedeprovince which = UPE value = 1105 }
+		command = { type = secedeprovince which = UPE value = 1118 }
+		command = { type = secedeprovince which = UPE value = 1114 }
+		command = { type = secedeprovince which = UPE value = 1113 }
+		command = { type = secedeprovince which = UPE value = 1134 }
+		command = { type = secedeprovince which = UPE value = 667 }
+		command = { type = secedeprovince which = UPE value = 666 } # Ghaaaaaaaaaaaarh ! ]:D
+		command = { type = secedeprovince which = UPE value = 660 }
+		command = { type = secedeprovince which = UPE value = 706 }
+		#Specific provinces
+		command = { type = secedearea which = UPE value = "Kazakstan" }
+	}
+	action = {
+		ai_chance = 15
+		name = "ACTION_NAME_DAMN" # The Basmachi rebellion
+		command = { type = independence which = UPE value = 0 when = 1 }
+		command = { type = secedearea which = UPE value = "Turkmenistan" }
+		command = { type = secedearea which = UPE value = "Uzbekistan" }
+		command = { type = secedeprovince which = UPE value = 1105 }
+		command = { type = secedeprovince which = UPE value = 1118 }
+		command = { type = secedeprovince which = UPE value = 1114 }
+		command = { type = secedeprovince which = UPE value = 1113 }
+		command = { type = secedeprovince which = UPE value = 1134 }
+		command = { type = secedeprovince which = UPE value = 667 }
+		command = { type = secedeprovince which = UPE value = 666 } # Ghaaaaaaaaaaaarh ! ]:D
+		command = { type = secedeprovince which = UPE value = 660 }
+		command = { type = secedeprovince which = UPE value = 706 }
+		#Specific provinces
+		command = { type = secedearea which = UPE value = "Melkosopotjnik" }
+	}
+	action = {
+		ai_chance = 15
+		name = "ACTION_NAME_DAMN" # The Basmachi rebellion
+		command = { type = independence which = UPE value = 0 when = 1 }
+		command = { type = secedearea which = UPE value = "Turkmenistan" }
+		command = { type = secedearea which = UPE value = "Uzbekistan" }
+		command = { type = secedeprovince which = UPE value = 1105 }
+		command = { type = secedeprovince which = UPE value = 1118 }
+		command = { type = secedeprovince which = UPE value = 1114 }
+		command = { type = secedeprovince which = UPE value = 1113 }
+		command = { type = secedeprovince which = UPE value = 1134 }
+		command = { type = secedeprovince which = UPE value = 667 }
+		command = { type = secedeprovince which = UPE value = 666 } # Ghaaaaaaaaaaaarh ! ]:D
+		command = { type = secedeprovince which = UPE value = 660 }
+		command = { type = secedeprovince which = UPE value = 706 }
+		#Specific provinces
+		command = { type = secedearea which = UPE value = "Kirgiz Steppe" }
+	}
+}
+event = {
+	id = 2007510
+	country = SOV
+
+	trigger = { 
+		random = 15
+		event = 2007511 # Admiral Koltchak
+	}
+	
+	name = "EVT1914_2007510_NAME" # The Arkhangelsk Government
+	desc = "EVT1914_2007510_DESC" 
+	style = 1
+	picture = "news_paper"
+	
+	date = { day = 1 month = june year = 1914 }
+	offset = 10
+	deathdate = { day = 30 month = december year = 1925 }
+	
+	action = {
+		name = "ACTION_NAME_DAMN" # Damn !
+		command = { type = independence which = UGS value = 0 when = 1 }
+		command = { type = secedeprovince which = UGS value = 537 } #Kem
+		command = { type = secedeprovince which = UGS value = 538 } #Segezha
+		command = { type = secedeprovince which = UGS value = 540 } #Kestenga
+		command = { type = secedeprovince which = UGS value = 541 } #Belomorsk
+		command = { type = secedeprovince which = UGS value = 542 } #Arkhangelsk
+		command = { type = secedeprovince which = UGS value = 545 } #Velsk
+		command = { type = secedeprovince which = UGS value = 546 } #Sudostroy
+		command = { type = secedeprovince which = UGS value = 688 } #Ukhta
+		command = { type = secedearea which = UGS value = "Kola" } #Kola, Murmansk, Kandalaksha
+	}
+}
+event = {
+	id = 2007511
+	country = SOV
+
+	trigger = { 
+		random = 15
+		event = 2007506 # Rise of the Volunteer Army
+	}
+	
+	name = "EVT1914_2007511_NAME" # The Ufa Directory
+	desc = "EVT1914_2007511_DESC" 
+	style = 1
+	picture = "news_paper"
+	
+	date = { day = 1 month = june year = 1914 }
+	offset = 10
+	deathdate = { day = 30 month = december year = 1925 }
+	
+	action = {
+		name = "ACTION_NAME_DAMN" # Damn !
+		command = { type = independence which = UER value = 0 when = 0 }
+		command = { type = secedeprovince which = UER value = 1168 } #Borzya
+		command = { type = secedeprovince which = UER value = 1169 } #Chita
+		command = { type = secedeprovince which = UER value = 1196 } #Nikolsk-Ussuriysky
+		command = { type = secedearea which = UER value = "Amur" }
+		command = { type = secedearea which = UER value = "Khabarovsk" }
+		command = { type = secedearea which = UER value = "Primorski" }
+	}
+}
+event = {
+	id = 2007512
+	country = SOV
+
+	trigger = {
+		exists = UTC
+		OR = { 
+			AND = {
+				random = 5
+				event = 2007510 #Must be the last large rebellion
+			}
+			AND = {
+				NOT = { 
+					control = { province = 644 data = SOV }
+					control = { province = 691 data = SOV }
+				}
+				random = 30
+			}
+		}
+	}
+	
+	name = "EVT1914_2007512_NAME" # The Cossack's Rebellion
+	desc = "EVT1914_2007512_DESC" 
+	style = 1
+	picture = "news_paper"
+	
+	date = { day = 1 month = june year = 1914 }
+	offset = 15
+	deathdate = { day = 30 month = december year = 1925 }
+	
+	action = {
+		name = "ACTION_NAME_DAMN" # Damn !
+		command = { type = dissent value = 5 }
+		command = { type = secedearea which = UTC value = "Rostov" }
+		command = { type = secedearea which = UTC value = "Stalingrad" }
+		command = { type = secedeprovince which = UTC value = 697 } #Volgodonsk
+		command = { type = trigger which = 2168503 } # Cossacks rise against the Bolsheviks #2173503 }
+	}
+}
+event = {
+	id = 2007513   # Mass Levy
+	country = SOV
+
+	decision = { atwar = yes }
+
+	decision_trigger = { 
+		money = 200 
+		supplies = 750 
+		NOT = { army = 20 dissent = 10 } 
+	}
+
+	trigger = { 
+		atwar = yes
+		money = 200 supplies = 500 NOT = { army = 20 dissent = 15 }
+		random = 33
+	}
+
+	name = "EVT1914_2007513_NAME"
+	desc = "EVT1914_2007513_DESC"
+	style = 2
+	picture = "news_paper"
+	
+	date = { day = 1 month = june year = 1914 }
+	offset = 10
+	deathdate = { day = 30 month = december year = 1925 }
+	
+	action = {
+		name = "EVT1914_2007513_ACTIONA" # Arm the peasants !
+		command = { type = supplies value = -500 }
+		command = { type = money  value = -200 }
+		command = { type = dissent value = 5 }
+		command = { type = add_division which = "1st Red Guards" value = infantry when = 3 }
+		command = { type = add_division which = "2nd Red Guards" value = infantry when = 3 }
+		command = { type = add_division which = "1st Militia" value = militia when = 3 }
+		command = { type = add_division which = "2nd Militia" value = militia when = 3 }
+		command = { type = add_division which = "3rd Militia" value = militia when = 3 }
+	}
+}
+event = {
+	id = 2007514   # Mass Levy #2
+	country = SOV
+
+	decision = { atwar = yes }
+
+	decision_trigger = { 
+		event = 2007513 # Mass Levy #1
+		money = 200 
+		supplies = 750 
+		NOT = { army = 20 dissent = 10 } 
+	}
+
+	trigger = { 
+		event = 2007513 # Mass Levy #1
+		atwar = yes
+		money = 250 
+		supplies = 750 
+		NOT = { army = 20 dissent = 15 }
+		random = 33
+	}
+
+	name = "EVT1914_2007513_NAME"
+	desc = "EVT1914_2007513_DESC"
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 1 month = june year = 1914 }
+	offset = 10
+	deathdate = { day = 30 month = december year = 1925 }
+
+	action = {
+		name = "EVT1914_2007513_ACTIONA" # Arm the peasants !
+		command = { type = supplies value = -500 }
+		command = { type = money  value = -200 }
+		command = { type = dissent value = 5 }
+		command = { type = add_division which = "3st Red Guards" value = infantry when = 3 }
+		command = { type = add_division which = "4nd Red Guards" value = infantry when = 3 }
+		command = { type = add_division which = "5nd Red Guards" value = infantry when = 3 }
+		command = { type = add_division which = "4th Militia" value = militia when = 3 }
+		command = { type = add_division which = "5th Militia" value = militia when = 3 }
+		command = { type = add_division which = "6th Militia" value = militia when = 3 }
+		command = { type = add_division which = "7th Militia" value = militia when = 3 }
+		command = { type = add_division which = "8th Militia" value = militia when = 3 }
+	}
+}
+event = {
+	id = 2007515
+	country = SOV
+	persistent = yes
+
+	trigger = { 
+		random = 8
+		OR = { 
+			exists = UER #The Ufa Directory
+			exists = UTC #Volunteers' Army
+			exists = UGS # The Arkhangelsk Government
+		}
+		atwar = yes
+	}
+	
+	name = "EVT1914_2007515_NAME" # Red Terror
+	desc = "EVT1914_2007515_DESC" 
+	style = 1
+	picture = "news_paper"
+	
+	date = { day = 1 month = june year = 1914 }
+	offset = 11
+	deathdate = { day = 30 month = december year = 1925 }
+	
+	action = {
+		name = "EVT1914_2007515_ACTIONA" # Peasants won't appeciate
+		command = { type = dissent value = 2 }
+	}
+}
+event = {
+	id = 2007516   # Peace with the Central Powers
+	country = SOV
+
+	#triggered by U08 2191534
+	
+	name = "EVT1914_2007516_NAME"
+	desc = "EVT1914_2007516_DESC" 
+	style = 1
+	picture = "news_paper"
+	
+	action = {
+		name = "ACTION_NAME_DAMN" #Damn !
+		command = { type = leave_alliance }
+		command = { type = peace which = U08 value = 1 }	
+		command = { type = peace which = U09 value = 1 }	
+		command = { type = strength which = land when = 1 where = 0 value = -0.10 } #land units lose 10% strenght (deserters)
+		command = { type = disorg_division which = -1 where = 50 }
+		command = { type = disorg_division which = -1 where = 50 }
+		command = { type = disorg_division which = -1 where = 50 }
+		command = { type = disorg_division which = -1 where = 50 }
+		command = { type = disorg_division which = -1 where = 50 }
+		command = { type = disorg_division which = -1 where = 50 }
+		command = { type = disorg_division which = -1 where = 50 }
+		command = { type = disorg_division which = -1 where = 50 }
+		command = { type = disorg_division which = -1 where = 50 }
+		command = { type = disorg_division which = -1 where = 50 }
+		command = { type = disorg_division which = -1 where = 50 }
+		command = { type = disorg_division which = -1 where = 50 }
+		command = { type = disorg_division which = -1 where = 50 }
+		command = { type = disorg_division which = -1 where = 50 }
+		command = { type = disorg_division which = -1 where = 50 }
+		command = { type = disorg_division which = -1 where = 50 }
+		command = { type = disorg_division which = -1 where = 50 }
+		command = { type = disorg_division which = -1 where = 50 }
+		command = { type = disorg_division which = -1 where = 50 }
+		command = { type = disorg_division which = -1 where = 50 }
+		command = { type = disorg_division which = -1 where = 50 }
+		command = { type = disorg_division which = -1 where = 50 }
+		command = { type = disorg_division which = -1 where = 50 }
+		command = { type = disorg_division which = -1 where = 50 }
+		command = { type = disorg_division which = -1 where = 50 }
+		command = { type = disorg_division which = -1 where = 50 }
+		command = { type = disorg_division which = -1 where = 50 }
+		command = { type = disorg_division which = -1 where = 50 }
+		command = { type = disorg_division which = -1 where = 50 }
+		command = { type = disorg_division which = -1 where = 50 }
+		command = { type = disorg_division which = -1 where = 50 }
+		command = { type = disorg_division which = -1 where = 50 }
+		command = { type = disorg_division which = -1 where = 50 }
+		command = { type = disorg_division which = -1 where = 50 }
+		command = { type = disorg_division which = -1 where = 50 }
+		command = { type = disorg_division which = -1 where = 50 }
+		command = { type = disorg_division which = -1 where = 50 }
+		command = { type = disorg_division which = -1 where = 50 }
+		command = { type = disorg_division which = -1 where = 50 }
+		command = { type = disorg_division which = -1 where = 50 }
+		command = { type = disorg_division which = -1 where = 50 }
+		command = { type = disorg_division which = -1 where = 50 }
+		command = { type = disorg_division which = -1 where = 50 }
+		command = { type = disorg_division which = -1 where = 50 }
+		command = { type = disorg_division which = -1 where = 50 }
+		command = { type = disorg_division which = -1 where = 50 }
+		command = { type = disorg_division which = -1 where = 50 }
+		command = { type = disorg_division which = -1 where = 50 }
+		command = { type = disorg_division which = -1 where = 50 }
+		command = { type = disorg_division which = -1 where = 50 }		
+	}
+}
+
+event = {
+	id = 2007517   # Treaty of Brest-Litvosk: initial conditions
+	country = SOV
+
+	#triggered by U08 2191534
+	
+	name = "EVT1914_2007517_NAME"
+	desc = "EVT1914_2007517_DESC" 
+	style = 1
+	picture = "news_paper"
+	
+	action = {
+		name = "EVT1914_2007517_ACTIONA" # Accept this outrageous proposal
+		#If Germany occupied territories owned by the Volunteers' Army, they are given back to Soviet Union
+		command = { trigger = { control = { province = 552 data = U08 } } type = secedeprovince which = SOV value = 552 when = 2 } #Gdov
+		command = { trigger = { control = { province = 566 data = U08 } } type = secedeprovince which = SOV value = 566 when = 2 } #Pskov
+		# Finland independance, if not already
+		command = { trigger = { NOT = { exists = FIN } } type = independence which = FIN value = 1 when = 1 }
+		command = { type = secederegion which = FIN value = "Finland" when = 2 }
+		#Germany gets Poland and Baltic States
+		command = { type = secederegion which = U08 value = "Poland" }
+		command = { type = secederegion which = U08 value = "Baltic States" }
+		# If Austria-Hun is still warring, it gets access to Black Sea
+		command = { trigger = { alliance = { country = U08 country = U09 }  NOT = { event = 2192513 } } type = secederegion which = U09 value = "Romania" }
+		# If not, German empire gains access to Black Sea
+		command = { trigger = { OR = { event = 2192513 NOT = { alliance = { country = U08 country = U09 } } } } type = secederegion which = U08 value = "Romania"  when = 1 }
+		command = { trigger = { OR = { event = 2192513 NOT = { alliance = { country = U08 country = U09 } } } } type = secedeprovince which = U08 value = 614 when = 2 } #Proskurov
+		command = { trigger = { OR = { event = 2192513 NOT = { alliance = { country = U08 country = U09 } } } } type = secedeprovince which = U08 value = 618 when = 2 } #Kamenets-Podolsky
+		#Ottoman Empire gets Kars
+		command = { trigger = { alliance = { country = U08 country = OTT } NOT = { OR = { event = 2145511 event = 2145502 } } } type = secedeprovince which = OTT value = 386 } #Kars		
+		#remove claims on Poland
+		command = { type = removeclaim which = 227 } #Czestochowa
+		command = { type = removeclaim which = 233 } #Sosnowiec
+		command = { type = removeclaim which = 223 } #Lodz
+		command = { type = removeclaim which = 231 } #Wlokawek
+		command = { type = removeclaim which = 230 } #Plock
+		command = { type = removeclaim which = 232 } #Warsaw
+		command = { type = removeclaim which = 234 } #Radom
+		command = { type = removeclaim which = 243 } #Lublin
+		command = { type = removeclaim which = 228 } #Siedlce
+		command = { type = removeclaim which = 229 } #Ostroleka
+		command = { type = removeclaim which = 246 } #Chelm
+		command = { type = removeclaim which = 250 } #Lomza
+		command = { type = removeclaim which = 254 } #Byalistok
+		command = { type = removeclaim which = 252 } #Swalki
+		command = { type = removeclaim which = 263 } #Alytus
+		#remove claims on Romania
+		command = { trigger = { NOT = { event = 2192513 } }type = removeclaim which = 306 } #Ismail
+		command = { trigger = { NOT = { event = 2192513 } }type = removeclaim which = 305 } #Cahul
+		command = { trigger = { NOT = { event = 2192513 } }type = removeclaim which = 304 } #Chisinau
+		command = { trigger = { NOT = { event = 2192513 } }type = removeclaim which = 303 } #Balti
+		command = { trigger = { NOT = { event = 2192513 } }type = removeclaim which = 302 } #Hotin
+		#remove claims on Istanbul
+		command = { type = removeclaim which = 409 } #Istanbul	  
+	}
+}

@@ -1,0 +1,339 @@
+####################################
+# Mexico AI events by Lothos
+####################################
+# Behavior Flags
+#	MEXDDay		= Load DDay AI
+################
+# Minister of Security Section 
+#############################################
+event = { # Andres F. Figueroa takes power
+	id = 3035001
+	random = no 
+	country = MEX
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 170050 # Andres F. Figueroa
+		NOT = { InCabinet = 170050 }
+		OR = {
+			manpower = 200
+			AND = {
+				NOT = { manpower = 200 }
+				NOT = { minister = 170005 } # Francisco U. Benavides
+			}
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ministerofsecurity which = 170050 }
+		command = { type = dissent value = -1 }
+	}
+}
+event = { # Francisco U. Benavides takes power
+	id = 3035002
+	random = no 
+	country = MEX
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 170005 # Francisco U. Benavides
+		NOT = { InCabinet = 170005 }
+		OR = {
+			NOT = { manpower = 200 }
+			AND = {
+				manpower = 200
+				NOT = { minister = 170050 } # Andres F. Figueroa
+			}
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ministerofsecurity which = 170005 }
+		command = { type = dissent value = -1 }
+	}
+}
+################
+# Chief of Staff Section
+#############################################
+event = { # Pablo Quiroga Escamillo takes power
+	id = 3035003
+	random = no 
+	country = MEX
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 170072 # Pablo Quiroga Escamillo
+		NOT = { InCabinet = 170072 }
+		OR = {
+			atwar = no
+			NOT = { manpower = 200 }
+			AND = {
+				manpower = 200
+				NOT = { minister = 170073 } # Gustavo Salinas Camina
+			}
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = chiefofstaff which = 170072 }
+		command = { type = dissent value = -1 }
+	}
+}
+event = { # Gustavo Salinas Camina takes power
+	id = 3035004
+	random = no 
+	country = MEX
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		atwar = yes
+		minister = 170073 # Gustavo Salinas Camina
+		NOT = { InCabinet = 170073 }
+		OR = {
+			manpower = 200
+			AND = {
+				NOT = { manpower = 200 }
+				NOT = { minister = 170072 } # Pablo Quiroga Escamillo
+			}
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = chiefofstaff which = 170073 }
+		command = { type = dissent value = -1 }
+	}
+}
+event = { # Benjamin G. Hill takes power
+	id = 3035005
+	random = no 
+	country = MEX
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		atwar = yes
+		minister = 170007 # Benjamin G. Hill
+		NOT = { InCabinet = 170007 }
+		NOT = { minister = 170073 } # Gustavo Salinas Camina
+		OR = {
+			manpower = 200
+			AND = {
+				NOT = { manpower = 200 }
+				NOT = { minister = 170072 } # Pablo Quiroga Escamillo
+			}
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = chiefofstaff which = 170007 }
+		command = { type = dissent value = -1 }
+	}
+}
+################
+# Head of Intelligence Section
+#############################################
+event = { # Victor Muñoz Cardenas takes power
+	id = 3035006
+	random = no 
+	country = MEX
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 170068 # Victor Muñoz Cardenas
+		NOT = { InCabinet = 170068 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ministerofintelligence which = 170068 }
+		command = { type = dissent value = -1 }
+	}
+}
+################
+# Chief of the Army Section
+#############################################
+event = { # Matias Santos Ramos takes power
+	id = 3035007
+	random = no 
+	country = MEX
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 170084 # Matias Santos Ramos
+		NOT = { InCabinet = 170084 }
+		OR = {
+			atwar = no
+			NOT = { minister = 170081 } # Gilberto Limon Marquez
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = chiefofarmy which = 170084 }
+		command = { type = dissent value = -1 }
+	}
+}
+event = { # Gilberto Limon Marquez takes power
+	id = 3035008
+	random = no 
+	country = MEX
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 170081 # Gilberto Limon Marquez
+		NOT = { InCabinet = 170081 }
+		OR = {
+			atwar = yes
+			NOT = { minister = 170084 } # Matias Santos Ramos
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = chiefofarmy which = 170081 }
+		command = { type = dissent value = -1 }
+	}
+}
+
+################
+# Load D-Day AI
+#############################################
+event = {
+	id = 3035009
+	random = no 
+	country = MEX
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		flag = DDay
+		NOT = { local_flag = MEXDDay }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = local_setflag which = MEXDDay }
+		command = { type = ai which = "switch/Minor_DDay_USA.ai" }
+	}
+}
+event = {
+	id = 3035010
+	random = no 
+	country = MEX
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		atwar = yes
+		NOT = { flag = DDay }
+		local_flag = MEXDDay
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = local_clrflag which = MEXDDay }
+		command = { type = ai which = "switch/Minor_DDay_Retrack.ai" }
+	}
+}
+################
+# Shift Production
+#############################################
+event = {
+	id = 3035011
+	random = no 
+	country = MEX
+	
+	trigger = {
+		ai = yes
+		OR = {
+			atwar = yes
+			atwar = GER
+			atwar = ENG
+			atwar = FRA
+			atwar = USA
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ai which = "switch/Minor_Gear_Up.ai" }
+	}
+}

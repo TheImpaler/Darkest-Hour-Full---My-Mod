@@ -1,0 +1,211 @@
+name       = "1914_SCENARIO"
+panel      = "scenarios/data/scenario_1914.bmp"
+header =
+{ name       = "Grand Campaign"
+  startdate  = { year = 1914 }
+  selectable = { AFG ALB ARG AST U09 BEL BHU BOL BRA BUL CAN UCH CHL COL COS CUB DEN DOM ECU ENG ETH FRA U08 GRE GUA HAI HOL HON ITA 
+		 JAP LIB LUX MEX MON MTN NEP NIC NOR NZL OMN OTT PAN PAR PER POR PRU ROM RUS SWE SAF SAL SAU SCH SIA SPA TIB URU USA VEN YEM 
+		 SER U02 U03 U05 U50 U51 U52 U53 U57 U58 U59 U91 LBY U60
+               }
+  ENG        = { }
+  FRA        = { picture = "scenarios\data\propaganda_FRA_WW1.bmp" }
+  RUS        = { picture = "scenarios\data\propaganda_RUS_WW1.bmp" }
+  ITA        = { picture = "scenarios\data\propaganda_ITA_WW1.bmp" }
+  U08        = { }
+  U09        = { }
+  OTT 	     = { picture = "scenarios\data\propaganda_OTT_WW1.bmp" }
+  USA        = { picture = "scenarios\data\propaganda_USA_WW1.bmp" }
+  JAP        = { picture = "scenarios\data\propaganda_JAP_WW1.bmp" }
+  UCH        = { }
+  CAN       = { picture = "scenarios\data\propaganda_CAN_WW1.bmp" }
+  BEL 	     = { picture = "scenarios\data\propaganda_BEL_WW1.bmp" }
+  SAF        = { picture = "scenarios\data\propaganda_SAF_WW1.bmp" }
+  GRE 	     = { picture = "scenarios\data\propaganda_GRE_WW1.bmp" }
+  SER 	     = { picture = "scenarios\data\propaganda_SER_WW1.bmp" }
+  ROM 	     = { }
+  AST 	     = { picture = "scenarios\data\propaganda_AST_WW1.bmp" }
+  BUL 	     = { }
+  U02	     = { }
+  SPA	     = { }
+}
+globaldata =
+{ startdate = { year = 1914 month = june day = 26 }
+  axis =
+  { id          = { type = 15000 id = 2 }
+    participant = { U08 }
+    name = "central"
+  }
+  allies =
+  { id          = { type = 15000 id = 1 }
+    participant = { FRA }
+    name = "entente"
+  }
+  comintern =
+  { id          = { type = 15000 id = 3 }
+    participant = {  }
+	name = "com1914"
+  }
+  alliance =
+  { id          = { type = 15000 id = 4 }
+    participant = { SER MTN }
+  }
+  alliance =
+  { id          = { type = 15000 id = 5 }
+    participant = { U09 ITA }
+  }
+  war =
+  { id        = { type = 15000 id = 6 }
+    date      = { year = 1911 month = january day = 0 }
+    enddate   = { year = 1914 month = june day = 26 }
+    attackers =
+    { id          = { type = 15000 id = 7 }
+      participant = { ITA }
+    }
+    defenders =
+    { id          = { type = 15000 id = 8 }
+      participant = { LBY }
+    }
+  }
+  war =
+  { id        = { type = 15000 id = 9 }
+    date      = { year = 1911 month = january day = 0 }
+    enddate   = { year = 1914 month = june day = 26 }
+    attackers =
+    { id          = { type = 15000 id = 10 }
+      participant = { U57 U58 U59 }
+    }
+    defenders =
+    { id          = { type = 15000 id = 11 }
+      participant = { MEX }
+    }
+  }
+  alliance =
+  { id          = { type = 15000 id = 12 }
+    participant = { U57 U58 U59 }
+  }
+  
+  enddate   = { year = 1921 month = january day = 0 }
+  
+  dormant_leaders = { 
+	#U50
+	1065007 1065008 1065009 1065010 #should be activated if UK supports Arab Revolt
+	1065011 1065012 				#activate if he swithes side, deactivate at Senussi
+	}  
+
+  dormant_ministers = { 
+	#OMN
+	400039 400040 400041			#activate when Oman gets full independence
+	# 400030 400035 400036 400037	#deactivate when Oman gets full independence
+	
+	#LBY
+	495046 495047					#should be only activated when Ottomans decide to help Senussi
+	
+	#YEM
+	# 445026						#Ottoman's governor, active until Yemen's independence
+	
+	#U50
+	#1065002 1065022												#active as long Hejaz is puppet of Ottomans
+	1065011 1065012													#should be activated if UK choose to support Arab Revolt
+	1065013 1065014 1065015 1065016 1065017 1065018 1065019 1065020	#installed by Ottomans when Arab Revolt is be oppressed
+	
+	#U51
+	1070010 1070011 1070012			#activate when Qatar becomes protectorate of UK
+	#1070008 1070006				#deactivate when Qatar becomes protectorate of UK
+	
+	#U91
+	1270022 1270027 1270028 1270032 1270037 1270038 1270042 1270047 1270048 1270052 1270057 1270058	#activate when Kuweit gets full independence
+	# 1270061 1270062 1270063 1270064 1270065 1270066 1270067 1270068								#deactivate when Kuweit gets full independence	
+	}
+	
+  dormant_teams = {
+	#U50
+	1065003		#should be activated if UK decides to support Arab Revolt
+	}
+}
+# ###################
+
+# Includes for global data
+include = "db\1914_events.txt"
+
+# Victory points distribution
+include = "scenarios\1914\vp.inc"
+
+# Include files for each country tag used in the scenario
+include = "scenarios\1914\afg_14.inc"
+include = "scenarios\1914\alb_14.inc"
+include = "scenarios\1914\arg_14.inc"
+include = "scenarios\1914\ast_14.inc"
+include = "scenarios\1914\Austria-Hungary.inc"
+include = "scenarios\1914\bel_14.inc"
+include = "scenarios\1914\bhu_14.inc"
+include = "scenarios\1914\bol_14.inc"
+include = "scenarios\1914\bra_14.inc"
+include = "scenarios\1914\bul_14.inc"
+include = "scenarios\1914\can_14.inc"
+include = "scenarios\1914\chi_14.inc"
+include = "scenarios\1914\chl_14.inc"
+include = "scenarios\1914\col_14.inc"
+include = "scenarios\1914\cos_14.inc"
+include = "scenarios\1914\cub_14.inc"
+include = "scenarios\1914\den_14.inc"
+include = "scenarios\1914\dom_14.inc"
+include = "scenarios\1914\ecu_14.inc"
+include = "scenarios\1914\uk.inc"
+include = "scenarios\1914\ethiopia.inc"
+include = "scenarios\1914\FRA - France.inc"
+include = "scenarios\1914\GER - Germany.inc"
+include = "scenarios\1914\greece.inc"
+include = "scenarios\1914\gua.inc"
+include = "scenarios\1914\hai.inc"
+include = "scenarios\1914\holland.inc"
+include = "scenarios\1914\hon.inc"
+include = "scenarios\1914\italy.inc"
+include = "scenarios\1914\japan.inc"
+include = "scenarios\1914\lib.inc"
+include = "scenarios\1914\lux.inc"
+include = "scenarios\1914\mexico.inc"
+include = "scenarios\1914\mon.inc"
+include = "scenarios\1914\newfoundland.inc"
+include = "scenarios\1914\nep.inc"
+include = "scenarios\1914\nic.inc"
+include = "scenarios\1914\norway.inc"
+include = "scenarios\1914\netherlands east indies.inc"
+include = "scenarios\1914\newzealand.inc"
+include = "scenarios\1914\MTN - Montenegro.inc"
+include = "scenarios\1914\omn.inc"
+include = "scenarios\1914\pan.inc"
+include = "scenarios\1914\paraguay.inc"
+include = "scenarios\1914\persia.inc"
+include = "scenarios\1914\portugal.inc"
+include = "scenarios\1914\peru.inc"
+include = "scenarios\1914\romania.inc"
+include = "scenarios\1914\SER - Serbia.inc"
+include = "scenarios\1914\southafrica.inc"
+include = "scenarios\1914\sal.inc"
+include = "scenarios\1914\saudi.inc"
+include = "scenarios\1914\swiss.inc"
+include = "scenarios\1914\siam.inc"
+include = "scenarios\1914\RUS - Russia.inc"
+include = "scenarios\1914\spain.inc"
+include = "scenarios\1914\sweden.inc"
+include = "scenarios\1914\tib.inc"
+include = "scenarios\1914\OTT - Ottoman Empire.inc"
+include = "scenarios\1914\U02.inc"
+include = "scenarios\1914\U03.inc"
+include = "scenarios\1914\uruguay.inc"
+include = "scenarios\1914\usa.inc"
+include = "scenarios\1914\venezuela.inc"
+include = "scenarios\1914\hejaz.inc"
+include = "scenarios\1914\jebelshammar.inc"
+include = "scenarios\1914\kuwait.inc"
+include = "scenarios\1914\qatar.inc"
+include = "scenarios\1914\senussi.inc"
+include = "scenarios\1914\trucial.inc"
+include = "scenarios\1914\yem_14.inc"
+include = "scenarios\1914\bases.inc"
+include = "scenarios\1914\U57 - RevMexConst.inc"
+include = "scenarios\1914\U58 - RevMexVill.inc"
+include = "scenarios\1914\U59 - RevMexZap.inc"
+include = "scenarios\1914\rebels.inc"
+
+

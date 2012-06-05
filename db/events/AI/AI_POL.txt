@@ -1,0 +1,279 @@
+####################################
+# Poland AI events by Lothos
+####################################
+################
+# Minister of Security Section
+#############################################
+event = { # Witold Grabowski takes power
+	id = 3013001
+	random = no 
+	country = POL
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 60081 # Witold Grabowski
+		NOT = { InCabinet = 60081 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ministerofsecurity which = 60081 }
+		command = { type = dissent value = -1 }
+	}
+}
+event = { # Adam Rose takes power
+	id = 3013002
+	random = no 
+	country = POL
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 60068 # Adam Rose
+		NOT = { InCabinet = 60068 }
+		NOT = { minister = 60081 } # Witold Grabowski
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ministerofsecurity which = 60068 }
+		command = { type = dissent value = -1 }
+	}
+}
+################
+# Chief of Staff Section
+#############################################
+event = { # Waclaw Stachiewicz takes power
+	id = 3013003
+	random = no 
+	country = POL
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		atwar = no
+		minister = 60092 # Waclaw Stachiewicz
+		NOT = { InCabinet = 60092 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = chiefofstaff which = 60092 }
+		command = { type = dissent value = -1 }
+	}
+}
+event = { # Wladyslaw Moczar takes power
+	id = 3013004
+	random = no 
+	country = POL
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		atwar = yes
+		minister = 60120 # Wladyslaw Moczar
+		NOT = { InCabinet = 60120 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = chiefofstaff which = 60120 }
+		command = { type = dissent value = -1 }
+	}
+}
+################
+# Head of Intelligence Section
+#############################################
+event = { # Wieslaw Domaniewski takes power
+	id = 3013005
+	random = no 
+	country = POL
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 60091 # Wieslaw Domaniewski
+		NOT = { InCabinet = 60091 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ministerofintelligence which = 60091 }
+		command = { type = dissent value = -1 }
+	}
+}
+
+################
+# Armament Minister Section
+#############################################
+event = { # Eugeniusz Kwiatkowski takes power
+	id = 3013006
+	random = no 
+	country = POL
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		minister = 60050 # Eugeniusz Kwiatkowski
+		NOT = { InCabinet = 60050 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = armamentminister which = 60050 }
+		command = { type = dissent value = -1 }
+	}
+}
+################
+# Chief of Air Minister Section
+#############################################
+event = { # Ludomil Rayski takes power	
+	id = 3013007
+	random = no 
+	country = POL
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		atwar = no
+		minister = 60110 # Ludomil Rayski
+		NOT = { InCabinet = 60110 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = chiefofair which = 60110 }
+		command = { type = dissent value = -1 }
+	}
+}
+event = { # Józef Zajac takes power
+	id = 3013008
+	random = no 
+	country = POL
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		atwar = yes
+		minister = 60010 # Józef Zajac 
+		NOT = { InCabinet = 60010 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = chiefofair which = 60010 }
+		command = { type = dissent value = -1 }
+	}
+}
+
+
+
+
+#############################################
+# Regular AI Events
+#############################################
+################
+# Shift Production
+#############################################
+event = {
+	id = 3013009
+	random = no 
+	country = POL
+	
+	trigger = {
+		ai = yes
+		OR = {
+			atwar = yes
+			atwar = GER
+			atwar = SOV
+			year = 1937
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ai which = "switch/Minor_Gear_Up.ai" }
+	}
+}
+################
+# Shift Upgrading
+#############################################
+event = {
+	id = 3013010
+	random = no 
+	country = POL
+	
+	trigger = {
+		ai = yes
+		OR = {
+			atwar = yes
+			year = 1938
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ai which = "switch/POL_Upg_War.ai" }
+	}
+}

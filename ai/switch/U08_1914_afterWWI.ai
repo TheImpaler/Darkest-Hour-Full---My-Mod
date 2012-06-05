@@ -1,0 +1,171 @@
+# Germany 1914 AI File by Jaegerfeld
+# 0.46v by Spocky
+
+switch = no # [yes/no]
+#max_front_ratio = 1.1
+max_garrison_prop = 0.75
+min_garrison_prop = 0.50
+
+claim_acceptance = -69
+neutrality = 90.000 
+war = 0
+
+
+
+target = { 
+	
+} 
+combat = { 
+
+}
+
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+
+garrison = {
+	defend_overseas_beaches = yes
+	home_multiplier 	= 1.0
+	overseas_multiplier 	= 1.0
+	home_peace_cap 		= 101
+	war_zone_odds 		= 2.0
+	key_point_prio_mult	= 0.5
+	revolt_risk_mult	= 0.4
+
+	# PRIORITIES:
+	beach			= 50	# Beach level 2
+	capital			= 75	# Our capital
+	human_border		= 100	# Ignored for allied human players
+	war_target		= 150	# The next country targeted for attack by this AI
+	
+	opposing_alliance	= 50	# For neutrals, all alliances are "opposing"
+	claim_threat		= 0	# If we are neutral, countries with claims on us get this
+	unstable_border		= 0	# Bordering countries at war with someone else get this
+
+	# Borders with specific countries
+	country_priorities = {
+		
+		FRA = 100
+		BEL = 100
+		RUS = 50
+		DEN = 1
+		HOL = 1
+		U09 = -1
+		SCH = -1 
+		DEN = -1
+	}
+	ignore = {
+	
+	}
+	province_priorities = {
+	
+	}
+	area_multiplier = {
+	
+	}	
+}
+ 
+###################################
+# Construction
+###################################
+#Default values
+construction = { 
+	ic_at_war = no
+	force_ic_until = 1921
+	ic_end_year = 1921
+	IC_provs = {
+		179 # Munchen
+		163 # Berlin
+		131 # Cologne
+		134 # Stuttgart
+		146 # Hannover
+		173 # Dresden
+	} 
+}
+military = { 
+	relative_build_scheme 	= no
+	max_batch_peace 		= 680 
+	max_batch_war 			= 320 
+	max_batch_home_front = 180
+	extra_convoys_war = 0.0500 
+	extra_convoys_peace = 0.0500 
+
+
+	#### Divisions etc...
+   	infantry     = 40
+	cavalry 		= 5
+	motorized 		= 0
+	mechanized 		= 0
+	light_armor 	= 0
+	armor 			= 0
+   	paratrooper   = 0 
+	marine 			= 0
+	bergsjaeger 	= 0
+	garrison		= 0
+    hq 				= 5
+	militia 		= 0
+#				50 %
+	interceptor 	= 8
+	multi_role 		= 0
+	cas 			= 0
+	strategic_bomber = 0
+	tactical_bomber = 7
+	naval_bomber 	= 0
+   	transport_plane = 0 
+	flying_bomb 	= 0
+	flying_rocket 	= 0
+#				15 %
+	battleship 		= 8
+	carrier 		= 0
+	escort_carrier		= 0
+   	destroyer     		= 6 
+   	light_cruiser 		= 6 
+	heavy_cruiser 		= 2
+	battlecruiser 		= 0
+	submarine 		= 8
+	nuclear_submarine = 0
+	transports 		= 5
+#				35 %
+
+	#### Brigades
+	artillery 		= 30
+	sp_artillery 		= 0
+	rocket_artillery	= 0 
+	sp_rct_artillery 	= 0
+   	anti_tank       = 5 
+   	tank_destroyer     = 0 
+	light_armor_brigade = 0
+	heavy_armor 		= 5
+	super_heavy_armor 	= 0
+	armored_car 		= 0
+	anti_air 			= 0
+	police 				= 0
+	engineer 			= 5 
+
+            cag = 100.000
+	    escort = 100.0000
+
+            naval_asw = 20.0000 
+            naval_anti_air_s = 20.0000 
+            naval_radar_s = 20.0000 
+            naval_fire_controll_s = 20.0000 
+            naval_improved_hull_s = 10.0000 
+            naval_torpedoes_s = 10.0000 
+            naval_anti_air_l = 0.0000 
+            naval_radar_l = 0.0000 
+            naval_fire_controll_l = 0.0000 
+            naval_improved_hull_l = 0.0000 
+            naval_torpedoes_l = 0.0000
+}
+technology = { 
+ 
+	armor 			= 1
+	infantry 		= 5
+	industry 		= 1
+	aircraft 		= 1
+	naval 			= 1
+	land_doctrines 	= 2
+	secret_weapons 	= 1
+	air_doctrines 	= 1
+	naval_doctrines = 1
+}

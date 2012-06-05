@@ -1,0 +1,153 @@
+# 0 - Great war Tank
+model = {
+	cost 				= 5
+	buildtime	 		= 133
+	manpower 			= 2
+	maxspeed 			= -1
+	defensiveness 		= 0
+	toughness 		= 1
+	defaultorganisation 	= 2
+	softness		= -8
+	hardattack			= 1
+	softattack			= 1
+	supplyconsumption 	= 0.5
+	fuelconsumption		= 0.5
+	upgrade_time_factor = 1.20
+	upgrade_cost_factor = 1.6
+}
+# 1 - Postwar Tank I
+model = {
+	cost 				= 5
+	buildtime	 		= 133
+	manpower 			= 2
+	maxspeed 			= -1
+	defensiveness 		= 0
+	toughness 		= 1
+	defaultorganisation 	= 2
+	softness		= -8
+	hardattack			= 1
+	softattack			= 1
+	supplyconsumption 	= 0.5
+	fuelconsumption		= 0.5
+	upgrade_time_factor = 1.20
+	upgrade_cost_factor = 1.6
+}
+# 2 - Postwar Tank II
+model = {
+	cost 				= 5
+	buildtime	 		= 133
+	manpower 			= 2
+	maxspeed 			= 0
+	defensiveness 		= 0
+	toughness 		= 1
+	defaultorganisation 	= 2
+	softness		= -8
+	hardattack			= 1
+	softattack			= 1
+	supplyconsumption 	= 0.5
+	fuelconsumption		= 0.5
+	upgrade_time_factor = 1.20
+	upgrade_cost_factor = 1.6
+}
+# 3 - Postwar Tank III
+model = {
+	cost 				= 5
+	buildtime	 		= 133
+	manpower 			= 2.5
+	maxspeed 			= 0
+	defensiveness 		= 0
+	toughness 		= 1
+	defaultorganisation 	= 2
+	softness		= -8
+	hardattack			= 1
+	softattack			= 1
+	supplyconsumption 	= 0.5
+	fuelconsumption		= 0.5
+	upgrade_time_factor = 1.20
+	upgrade_cost_factor = 1.6
+}
+# 4 - Postwar Tank IV
+model = {
+	cost 				= 5
+	buildtime	 		= 133
+	manpower 			= 2.5
+	maxspeed 			= 0
+	defensiveness 		= 0
+	toughness 		= 1
+	defaultorganisation 	= 2
+	softness		= -8
+	hardattack			= 1
+	softattack			= 2
+	supplyconsumption 	= 0.5
+	fuelconsumption		= 0.5
+	upgrade_time_factor = 1.20
+	upgrade_cost_factor = 1.6
+}
+# 5 - Early Light Tank
+model = {
+	cost 				= 6
+	buildtime	 		= 140
+	manpower 			= 2.5
+	maxspeed 			= 0
+	defensiveness 		= 2
+	toughness 			= 3
+	defaultorganisation = 5
+	softness			= -8
+	hardattack			= 2
+	softattack			= 2
+	supplyconsumption 	= 0.5
+	fuelconsumption		= 1.5
+	upgrade_time_factor = 1.20
+	upgrade_cost_factor = 1.6
+}
+# 6 - Basic Light Tank
+model = {
+	cost 				= 6.5
+	buildtime	 		= 140
+	manpower 			= 2.5
+	maxspeed 			= 0
+	defensiveness 		= 3
+	toughness 			= 4
+	defaultorganisation = 5
+	softness			= -8
+	hardattack			= 3
+	softattack			= 3
+	supplyconsumption 	= 0.5
+	fuelconsumption		= 1.5
+	upgrade_time_factor = 1.20
+	upgrade_cost_factor = 1.6
+}
+# 7 - Improved Light Tank
+model = {
+	cost 				= 7
+	buildtime	 		= 140
+	manpower 			= 2.5
+	maxspeed 			= 0
+	defensiveness 		= 3
+	toughness 			= 5
+	defaultorganisation = 5
+	softness			= -8
+	hardattack			= 3
+	softattack			= 4
+	supplyconsumption 	= 0.5
+	fuelconsumption		= 2.0
+	upgrade_time_factor = 1.20
+	upgrade_cost_factor = 1.6
+}
+# 8 - Advanced Light Tank Brigade
+model = {
+	cost 				= 8
+	buildtime	 		= 140
+	manpower 			= 2.5
+	maxspeed 			= 0
+	defensiveness 		= 5
+	toughness 			= 8
+	defaultorganisation = 10
+	softness			= -6
+	hardattack			= 5
+	softattack			= 5
+	supplyconsumption 	= 0.5
+	fuelconsumption		= 2.0
+	upgrade_time_factor = 1.20
+	upgrade_cost_factor = 1.6
+}

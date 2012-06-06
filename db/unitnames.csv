@@ -44634,15 +44634,27 @@ RHO;TP;7th Rhodesian Transport Division
 RHO;TP;8th Rhodesian Transport Division
 RHO;TP;9th Rhodesian Transport Division
 RHO;TP;10th Rhodesian Transport Division
-ROM;HQ;1. Armatâ Românesc
-ROM;HQ;2. Armatâ Românesc
-ROM;HQ;3. Armatâ Românesc
-ROM;HQ;4. Armatâ Românesc
-ROM;HQ;5. Armatâ Românesc
-ROM;HQ;6. Armatâ Românesc
-ROM;HQ;7. Armatâ Românesc
-ROM;HQ;8. Armatâ Românesc
-ROM;Inf;Divizie 1 Infanterie
+ROM;HQ;Armata I
+ROM;HQ;Armata II
+ROM;HQ;Armata III
+ROM;HQ;Armata IV
+ROM;HQ;Armata V
+ROM;HQ;Armata VI
+ROM;HQ;Armata VII
+ROM;HQ;Armata VIII
+ROM;HQ;Armata IX
+ROM;HQ;Armata X
+ROM;HQ;Armata XI
+ROM;HQ;Armata XII
+ROM;HQ;Armata XIII
+ROM;HQ;Armata XIV
+ROM;HQ;Armata XV
+ROM;HQ;Armata XVI
+ROM;HQ;Armata XVII
+ROM;HQ;Armata XVIII
+ROM;HQ;Armata XIX
+ROM;HQ;Armata XX
+ROM;Inf;Divizie 1 Infanterie 
 ROM;Inf;Divizie 2 Infanterie
 ROM;Inf;Divizie 3 Infanterie
 ROM;Inf;Divizie 4 Infanterie
@@ -44663,6 +44675,8 @@ ROM;Inf;Divizie 18 Infanterie
 ROM;Inf;Divizie 19 Infanterie
 ROM;Inf;Divizie 20 Infanterie
 ROM;Inf;Divizie 21 Infanterie
+ROM;Inf;Divizie 22 Infanterie
+ROM;Inf;Divizie 23 Infanterie
 ROM;Inf;Divizie 24 Infanterie
 ROM;Inf;Divizie 25 Infanterie
 ROM;Inf;Divizie 26 Infanterie
@@ -44670,13 +44684,9 @@ ROM;Inf;Divizie 27 Infanterie
 ROM;Inf;Divizie 30 Infanterie
 ROM;Inf;Divizie 31 Infanterie
 ROM;Inf;Divizie 32 Infanterie
-ROM;Inf;Divizie 1 Fortificatii
-ROM;Inf;Divizie 1 Graniceri
-ROM;Inf;Divizie 1 Garda
-ROM;Inf;Divizie 2 Garda
-ROM;Inf;Divizie 1 Paza
-ROM;Inf;Divizie 2 Paza
-ROM;Inf;Divizie 3 Paza
+ROM;Inf;Divizie 33 Infanterie
+ROM;Inf;Divizie 34 Infanterie
+ROM;Inf;Divizie 35 Infanterie
 ROM;Inf;Divizie 36 Infanterie
 ROM;Inf;Divizie 37 Infanterie
 ROM;Inf;Divizie 38 Infanterie
@@ -44697,33 +44707,113 @@ ROM;Inf;Divizie 52 Infanterie
 ROM;Inf;Divizie 53 Infanterie
 ROM;Inf;Divizie 54 Infanterie
 ROM;Inf;Divizie 55 Infanterie
+ROM;Inf;Divizie 1 Fortificatii
+ROM;Inf;Divizie 1 Graniceri
+ROM;Inf;Divizie 1 Garda
+ROM;Inf;Divizie 2 Garda
+ROM;Inf;Divizie 1 Paza
+ROM;Inf;Divizie 2 Paza
+ROM;Inf;Divizie 3 Paza
 ROM;Gar;Divizie 1 Fortificatii
-ROM;Gar;Divizie 1 Graniceri
-ROM;Gar;Divizie 1 Garda
-ROM;Gar;Divizie 2 Garda
-ROM;Gar;Divizie 1 Paza
-ROM;Gar;Divizie 2 Paza
-ROM;Gar;Divizie 3 Paza
-ROM;Gar;Divizie 36 Infanterie
-ROM;Gar;Divizie 37 Infanterie
-ROM;Gar;Divizie 38 Infanterie
-ROM;Gar;Divizie 39 Infanterie
-ROM;Gar;Divizie 40 Infanterie
-ROM;Gar;Divizie 41 Infanterie
-ROM;Gar;Divizie 42 Infanterie
-ROM;Gar;Divizie 43 Infanterie
-ROM;Gar;Divizie 44 Infanterie
-ROM;Gar;Divizie 45 Infanterie
-ROM;Gar;Divizie 46 Infanterie
-ROM;Gar;Divizie 47 Infanterie
-ROM;Gar;Divizie 48 Infanterie
-ROM;Gar;Divizie 49 Infanterie
-ROM;Gar;Divizie 50 Infanterie
-ROM;Gar;Divizie 51 Infanterie
-ROM;Gar;Divizie 52 Infanterie
-ROM;Gar;Divizie 53 Infanterie
-ROM;Gar;Divizie 54 Infanterie
-ROM;Gar;Divizie 55 Infanterie
+ROM;Gar;Divizie 2 Fortificatii
+ROM;Gar;Divizie 3 Fortificatii
+ROM;Gar;Divizie 4 Fortificatii
+ROM;Gar;Divizie 5 Fortificatii
+ROM;Gar;Divizie 6 Fortificatii
+ROM;Gar;Divizie 7 Fortificatii
+ROM;Gar;Divizie 8 Fortificatii
+ROM;Gar;Divizie 9 Fortificatii
+ROM;Gar;Divizie 10 Fortificatii
+ROM;Gar;Divizie 11 Fortificatii
+ROM;Gar;Divizie 12 Fortificatii
+ROM;Gar;Divizie 13 Fortificatii
+ROM;Gar;Divizie 14 Fortificatii
+ROM;Gar;Divizie 15 Fortificatii
+ROM;Gar;Divizie 16 Fortificatii
+ROM;Gar;Divizie 17 Fortificatii
+ROM;Gar;Divizie 18 Fortificatii
+ROM;Gar;Divizie 19 Fortificatii
+ROM;Gar;Divizie 20 Fortificatii
+ROM;Gar;Divizie 21 Fortificatii
+ROM;Gar;Divizie 22 Fortificatii
+ROM;Gar;Divizie 23 Fortificatii
+ROM;Gar;Divizie 24 Fortificatii
+ROM;Gar;Divizie 25 Fortificatii
+ROM;Gar;Divizie 26 Fortificatii
+ROM;Gar;Divizie 27 Fortificatii
+ROM;Gar;Divizie 28 Fortificatii
+ROM;Gar;Divizie 29 Fortificatii
+ROM;Gar;Divizie 30 Fortificatii
+ROM;Gar;Divizie 31 Fortificatii
+ROM;Gar;Divizie 32 Fortificatii
+ROM;Gar;Divizie 33 Fortificatii
+ROM;Gar;Divizie 34 Fortificatii
+ROM;Gar;Divizie 35 Fortificatii
+ROM;Gar;Divizie 36 Fortificatii
+ROM;Gar;Divizie 37 Fortificatii
+ROM;Gar;Divizie 38 Fortificatii
+ROM;Gar;Divizie 39 Fortificatii
+ROM;Gar;Divizie 40 Fortificatii
+ROM;Gar;Divizie 41 Fortificatii
+ROM;Gar;Divizie 42 Fortificatii
+ROM;Gar;Divizie 43 Fortificatii
+ROM;Gar;Divizie 44 Fortificatii
+ROM;Gar;Divizie 45 Fortificatii
+ROM;Gar;Divizie 46 Fortificatii
+ROM;Gar;Divizie 47 Fortificatii
+ROM;Gar;Divizie 48 Fortificatii
+ROM;Gar;Divizie 49 Fortificatii
+ROM;Gar;Divizie 50 Fortificatii
+ROM;Gar;Divizie 51 Fortificatii
+ROM;Gar;Divizie 52 Fortificatii
+ROM;Gar;Divizie 53 Fortificatii
+ROM;Gar;Divizie 54 Fortificatii
+ROM;Gar;Divizie 55 Fortificatii
+ROM;Gar;Divizie 56 Fortificatii
+ROM;Gar;Divizie 57 Fortificatii
+ROM;Gar;Divizie 58 Fortificatii
+ROM;Gar;Divizie 59 Fortificatii
+ROM;Gar;Divizie 60 Fortificatii
+ROM;Gar;Divizie 61 Fortificatii
+ROM;Gar;Divizie 62 Fortificatii
+ROM;Gar;Divizie 63 Fortificatii
+ROM;Gar;Divizie 64 Fortificatii
+ROM;Gar;Divizie 65 Fortificatii
+ROM;Gar;Divizie 66 Fortificatii
+ROM;Gar;Divizie 67 Fortificatii
+ROM;Gar;Divizie 68 Fortificatii
+ROM;Gar;Divizie 69 Fortificatii
+ROM;Gar;Divizie 70 Fortificatii
+ROM;Gar;Divizie 71 Fortificatii
+ROM;Gar;Divizie 72 Fortificatii
+ROM;Gar;Divizie 73 Fortificatii
+ROM;Gar;Divizie 74 Fortificatii
+ROM;Gar;Divizie 75 Fortificatii
+ROM;Gar;Divizie 76 Fortificatii
+ROM;Gar;Divizie 77 Fortificatii
+ROM;Gar;Divizie 78 Fortificatii
+ROM;Gar;Divizie 79 Fortificatii
+ROM;Gar;Divizie 80 Fortificatii
+ROM;Gar;Divizie 81 Fortificatii
+ROM;Gar;Divizie 82 Fortificatii
+ROM;Gar;Divizie 83 Fortificatii
+ROM;Gar;Divizie 84 Fortificatii
+ROM;Gar;Divizie 85 Fortificatii
+ROM;Gar;Divizie 86 Fortificatii
+ROM;Gar;Divizie 87 Fortificatii
+ROM;Gar;Divizie 88 Fortificatii
+ROM;Gar;Divizie 89 Fortificatii
+ROM;Gar;Divizie 90 Fortificatii
+ROM;Gar;Divizie 91 Fortificatii
+ROM;Gar;Divizie 92 Fortificatii
+ROM;Gar;Divizie 93 Fortificatii
+ROM;Gar;Divizie 94 Fortificatii
+ROM;Gar;Divizie 95 Fortificatii
+ROM;Gar;Divizie 96 Fortificatii
+ROM;Gar;Divizie 97 Fortificatii
+ROM;Gar;Divizie 98 Fortificatii
+ROM;Gar;Divizie 99 Fortificatii
+ROM;Gar;Divizie 100 Fortificatii
 ROM;Cav;Divizie 1 Cavalerie
 ROM;Cav;Divizie 5 Cavalerie
 ROM;Cav;Divizie 6 Cavalerie
@@ -44756,6 +44846,11 @@ ROM;Mot;Div. 12 Infanterie Motorizat
 ROM;Mot;Div. 13 Infanterie Motorizat
 ROM;Mot;Div. 14 Infanterie Motorizat
 ROM;Mot;Div. 15 Infanterie Motorizat
+ROM;Mot;Div. 16 Infanterie Motorizat
+ROM;Mot;Div. 17 Infanterie Motorizat
+ROM;Mot;Div. 18 Infanterie Motorizat
+ROM;Mot;Div. 19 Infanterie Motorizat
+ROM;Mot;Div. 20 Infanterie Motorizat
 ROM;Mec;Divizie 1 Motomecanizat
 ROM;Mec;Divizie 2 Motomecanizat
 ROM;Mec;Divizie 3 Motomecanizat
@@ -44771,6 +44866,11 @@ ROM;Mec;Divizie 12 Motomecanizat
 ROM;Mec;Divizie 13 Motomecanizat
 ROM;Mec;Divizie 14 Motomecanizat
 ROM;Mec;Divizie 15 Motomecanizat
+ROM;Mec;Divizie 16 Motomecanizat
+ROM;Mec;Divizie 17 Motomecanizat
+ROM;Mec;Divizie 18 Motomecanizat
+ROM;Mec;Divizie 19 Motomecanizat
+ROM;Mec;Divizie 20 Motomecanizat
 ROM;L ARM;Divizie 1 Armura
 ROM;L ARM;Divizie 2 Armura
 ROM;L ARM;Divizie 3 Armura
@@ -44790,7 +44890,7 @@ ROM;L ARM;Divizie 16 Armura
 ROM;L ARM;Divizie 17 Armura
 ROM;L ARM;Divizie 18 Armura
 ROM;L ARM;Divizie 19 Armura
-ROM;L ARM;Divizie 1 Armura Antrenament
+ROM;L ARM;Divizie 20 Armura
 ROM;Arm;Divizie 1 Armura
 ROM;Arm;Divizie 2 Armura
 ROM;Arm;Divizie 3 Armura
@@ -44810,7 +44910,7 @@ ROM;Arm;Divizie 16 Armura
 ROM;Arm;Divizie 17 Armura
 ROM;Arm;Divizie 18 Armura
 ROM;Arm;Divizie 19 Armura
-ROM;Arm;Divizie 1 Armura Antrenament
+ROM;Arm;Divizie 20 Armura
 ROM;Par;Divizie 1 Parasutisti
 ROM;Par;Divizie 2 Parasutisti
 ROM;Par;Divizie 3 Parasutisti
@@ -44821,6 +44921,16 @@ ROM;Par;Divizie 7 Parasutisti
 ROM;Par;Divizie 8 Parasutisti
 ROM;Par;Divizie 9 Parasutisti
 ROM;Par;Divizie 10 Parasutisti
+ROM;Par;Divizie 11 Parasutisti
+ROM;Par;Divizie 12 Parasutisti
+ROM;Par;Divizie 13 Parasutisti
+ROM;Par;Divizie 14 Parasutisti
+ROM;Par;Divizie 15 Parasutisti
+ROM;Par;Divizie 16 Parasutisti
+ROM;Par;Divizie 17 Parasutisti
+ROM;Par;Divizie 18 Parasutisti
+ROM;Par;Divizie 19 Parasutisti
+ROM;Par;Divizie 20 Parasutisti
 ROM;Mar;Divizie 1 Infanterie Marinar
 ROM;Mar;Divizie 2 Infanterie Marinar
 ROM;Mar;Divizie 3 Infanterie Marinar
@@ -44831,12 +44941,20 @@ ROM;Mar;Divizie 7 Infanterie Marinar
 ROM;Mar;Divizie 8 Infanterie Marinar
 ROM;Mar;Divizie 9 Infanterie Marinar
 ROM;Mar;Divizie 10 Infanterie Marinar
+ROM;Mar;Divizie 11 Infanterie Marinar
+ROM;Mar;Divizie 12 Infanterie Marinar
+ROM;Mar;Divizie 13 Infanterie Marinar
+ROM;Mar;Divizie 14 Infanterie Marinar
+ROM;Mar;Divizie 15 Infanterie Marinar
+ROM;Mar;Divizie 16 Infanterie Marinar
+ROM;Mar;Divizie 17 Infanterie Marinar
+ROM;Mar;Divizie 18 Infanterie Marinar
+ROM;Mar;Divizie 19 Infanterie Marinar
+ROM;Mar;Divizie 20 Infanterie Marinar
 ROM;Mtn;Div. 1 Infanterie Alpinisti
 ROM;Mtn;Div. 2 Infanterie Alpinisti
 ROM;Mtn;Div. 3 Infanterie Alpinisti
 ROM;Mtn;Div. 4 Infanterie Alpinisti
-ROM;Mtn;Div. 18 Infanterie Alpinisti
-ROM;Mtn;Div. 103 Infanterie Alpinisti
 ROM;Mtn;Div. 5 Infanterie Alpinisti
 ROM;Mtn;Div. 6 Infanterie Alpinisti
 ROM;Mtn;Div. 7 Infanterie Alpinisti
@@ -44852,6 +44970,17 @@ ROM;Mtn;Div. 16 Infanterie Alpinisti
 ROM;Mtn;Div. 17 Infanterie Alpinisti
 ROM;Mtn;Div. 18 Infanterie Alpinisti
 ROM;Mtn;Div. 19 Infanterie Alpinisti
+ROM;Mtn;Div. 20 Infanterie Alpinisti
+ROM;Mtn;Divizie 1 Garda 'Oamenii Regelui'
+ROM;Mtn;Divizie 2 Garda 'Oamenii Reginei'
+ROM;Mtn;Divizie 3 Garda 'Oamenii Printului Mostenitor'
+ROM;Mtn;Divizie 4 Garda 'Oamenii Primului Ministru'
+ROM;Mtn;Divizie 5 Garda 'Carol I'
+ROM;Mtn;Royal Scots Division
+ROM;Mtn;Legion Etrangere
+ROM;Mtn;Der Alpenkorps
+ROM;Mtn;Gurkha Division
+ROM;Mtn;Division de Chasseurs Alpins
 ROM;Mil;Div. 1 Infanterie Antrenament
 ROM;Mil;Div. 2 Infanterie Antrenament
 ROM;Mil;Div. 3 Infanterie Antrenament
@@ -44863,18 +44992,15 @@ ROM;Mil;Div. 8 Infanterie Antrenament
 ROM;Mil;Div. 9 Infanterie Antrenament
 ROM;Mil;Div. 10 Infanterie Antrenament
 ROM;Mil;Div. 11 Infanterie Antrenament
+ROM;Mil;Div. 12 Infanterie Antrenament
 ROM;Mil;Div. 13 Infanterie Antrenament
 ROM;Mil;Div. 14 Infanterie Antrenament
 ROM;Mil;Div. 15 Infanterie Antrenament
+ROM;Mil;Div. 16 Infanterie Antrenament
+ROM;Mil;Div. 17 Infanterie Antrenament
 ROM;Mil;Div. 18 Infanterie Antrenament
 ROM;Mil;Div. 19 Infanterie Antrenament
 ROM;Mil;Div. 20 Infanterie Antrenament
-ROM;Mil;Div. 21 Infanterie Antrenament
-ROM;Mil;Div. 1 Garda Antrenament
-ROM;Mil;Div. 33 Infanterie Rezerva
-ROM;Mil;Div. 34 Infanterie Rezerva
-ROM;Mil;Div. 35 Infanterie Rezerva
-ROM;Mil;Div. 4 Inf. Alpinisti Antrenament
 ROM;Fig;Grup 1 Avion de Vanatoare
 ROM;Fig;Grup 2 Avion de Vanatoare
 ROM;Fig;Grup 3 Avion de Vanatoare
@@ -44915,6 +45041,16 @@ ROM;Str;Grup 7 Strategic Bombardier
 ROM;Str;Grup 8 Strategic Bombardier
 ROM;Str;Grup 9 Strategic Bombardier
 ROM;Str;Grup 10 Strategic Bombardier
+ROM;Str;Grup 11 Strategic Bombardier
+ROM;Str;Grup 12 Strategic Bombardier
+ROM;Str;Grup 13 Strategic Bombardier
+ROM;Str;Grup 14 Strategic Bombardier
+ROM;Str;Grup 15 Strategic Bombardier
+ROM;Str;Grup 16 Strategic Bombardier
+ROM;Str;Grup 17 Strategic Bombardier
+ROM;Str;Grup 18 Strategic Bombardier
+ROM;Str;Grup 19 Strategic Bombardier
+ROM;Str;Grup 20 Strategic Bombardier
 ROM;Tac;Grup 1 Tactic Bombardier
 ROM;Tac;Grup 2 Tactic Bombardier
 ROM;Tac;Grup 3 Tactic Bombardier
@@ -44930,6 +45066,16 @@ ROM;Tac;Grup 12 Tactic Bombardier
 ROM;Tac;Grup 13 Tactic Bombardier
 ROM;Tac;Grup 14 Tactic Bombardier
 ROM;Tac;Grup 15 Tactic Bombardier
+ROM;Tac;Grup 16 Tactic Bombardier
+ROM;Tac;Grup 17 Tactic Bombardier
+ROM;Tac;Grup 18 Tactic Bombardier
+ROM;Tac;Grup 19 Tactic Bombardier
+ROM;Tac;Grup 20 Tactic Bombardier
+ROM;Tac;Grup 21 Tactic Bombardier
+ROM;Tac;Grup 22 Tactic Bombardier
+ROM;Tac;Grup 23 Tactic Bombardier
+ROM;Tac;Grup 24 Tactic Bombardier
+ROM;Tac;Grup 25 Tactic Bombardier
 ROM;CAS;Grup 1 Asalt
 ROM;CAS;Grup 2 Asalt
 ROM;CAS;Grup 3 Asalt
@@ -44940,6 +45086,16 @@ ROM;CAS;Grup 7 Asalt
 ROM;CAS;Grup 8 Asalt
 ROM;CAS;Grup 9 Asalt
 ROM;CAS;Grup 10 Asalt
+ROM;CAS;Grup 11 Asalt
+ROM;CAS;Grup 12 Asalt
+ROM;CAS;Grup 13 Asalt
+ROM;CAS;Grup 14 Asalt
+ROM;CAS;Grup 15 Asalt
+ROM;CAS;Grup 16 Asalt
+ROM;CAS;Grup 17 Asalt
+ROM;CAS;Grup 18 Asalt
+ROM;CAS;Grup 19 Asalt
+ROM;CAS;Grup 20 Asalt
 ROM;Nav;Grup 1 Hidroavioane
 ROM;Nav;Grup 2 Hidroavioane
 ROM;Nav;Grup 3 Hidroavioane
@@ -44965,57 +45121,124 @@ ROM;Trp;Grup 2 Aerostatie
 ROM;Trp;Grup 3 Aerostatie
 ROM;Trp;Grup 4 Aerostatie
 ROM;Trp;Grup 5 Aerostatie
-ROM;BB;NMS Constanta
-ROM;BB;NMS Tirgu Mures
-ROM;BB;NMS Cluj Napoca
-ROM;BC;NMS Constanta
-ROM;BC;NMS Tirgu Mures
-ROM;BC;NMS Cluj Napoca
+ROM;Trp;Grup 6 Aerostatie
+ROM;Trp;Grup 7 Aerostatie
+ROM;Trp;Grup 8 Aerostatie
+ROM;Trp;Grup 9 Aerostatie
+ROM;Trp;Grup 10 Aerostatie
+ROM;Trp;Grup 11 Aerostatie
+ROM;Trp;Grup 12 Aerostatie
+ROM;Trp;Grup 13 Aerostatie
+ROM;Trp;Grup 14 Aerostatie
+ROM;Trp;Grup 15 Aerostatie
+ROM;Trp;Grup 16 Aerostatie
+ROM;Trp;Grup 17 Aerostatie
+ROM;Trp;Grup 18 Aerostatie
+ROM;Trp;Grup 19 Aerostatie
+ROM;Trp;Grup 20 Aerostatie
 ROM;CV;NMS Romania
-ROM;CV;NMS Bucuresti
-ROM;CV;NMS Banat
+ROM;CV;NMS Bulgaria
+ROM;CV;NMS Ungaria
+ROM;CV;NMS Iugoslavia
+ROM;CV;NMS Grecia
+ROM;CV;NMS Cehoslovacia
+ROM;CV;NMS Albania
+ROM;CV;NMS Austria
+ROM;CV;NMS Elvetia
+ROM;CV;NMS Italia
+ROM;CV;NMS Germania
+ROM;CV;NMS Franta
+ROM;CV;NMS Anglia
+ROM;CV;NMS Scotia
+ROM;CV;NMS Tara Galilor
+ROM;CV;NMS Irlanda
+ROM;CV;NMS Spania
+ROM;CV;NMS Portugalia
+ROM;CV;NMS Turcia
+ROM;CV;NMS Arabia
+ROM;CV;NMS Egipt
+ROM;CV;NMS Libia
+ROM;CV;NMS Tunisia
+ROM;CV;NMS Algeria
+ROM;CV;NMS Maroc
+ROM;CV;NMS Polonia
+ROM;CV;NMS Lituania
+ROM;CV;NMS Letonia
+ROM;CV;NMS Estonia
+ROM;CV;NMS Ucraina
+ROM;CV;NMS Bielorusia
+ROM;BB;NMS Transilvania
+ROM;BB;NMS Moldova
+ROM;BB;NMS Muntenia
+ROM;BB;NMS Dobrogea
+ROM;BB;NMS Banat
+ROM;BB;NMS Silezia
+ROM;BB;NMS Boemia
+ROM;BB;NMS Tirol
+ROM;BB;NMS Veneto
+ROM;BB;NMS Lombardia
+ROM;BB;NMS Burgundia
+ROM;BB;NMS Picardia
+ROM;BB;NMS Normandia
+ROM;BB;NMS Wessex
+ROM;BB;NMS Essex
+ROM;BB;NMS Sussex
+ROM;BB;NMS Flandra
+ROM;BB;NMS Valonia
+ROM;BB;NMS Renania
+ROM;BB;NMS Bavaria
+ROM;BB;NMS Holstein
+ROM;BC;NMS Carol I
+ROM;BC;NMS Ferdinand I
+ROM;BC;NMS Burebista
+ROM;BC;NMS Ion C. Bratianu
+ROM;BC;NMS Ion I.C. Bratianu
 ROM;27;NMS Constanta
 ROM;27;NMS Mangalia
 ROM;27;NMS Sulina
 ROM;27;NMS Navodari
-ROM;CA;NMS Timosoara
-ROM;CA;NMS Arad
-ROM;CA;NMS Oradea
-ROM;CA;NMS Baia Mare
-ROM;CA;NMS Sighetu Marmatiei
-ROM;CA;NMS Bistrita
-ROM;CA;NMS Reghin
-ROM;CA;NMS Pitesti
-ROM;CA;NMS Rosiori de Vede
-ROM;CL;NMS Timosoara
-ROM;CL;NMS Arad
-ROM;CL;NMS Oradea
-ROM;CL;NMS Baia Mare
-ROM;CL;NMS Sighetu Marmatiei
-ROM;CL;NMS Bistrita
-ROM;CL;NMS Reghin
-ROM;CL;NMS Pitesti
-ROM;CL;NMS Rosiori de Vede
-ROM;DD;'NMS Regele Ferdinand' Flotila
-ROM;DD;'NMS Regina Maria' Flotila
-ROM;DD;'NMS Marasti' Floti Flotila
-ROM;DD;'NMS Marasesti' Flotila
-ROM;DD;'NMS Leu' Flotila
-ROM;DD;'NMS Tigru' Flotila
-ROM;DD;'NMS Gazela' Flotila
-ROM;DD;'NMS Bivol' Flotila
-ROM;DD;'NMS Sarpe' Flotila
-ROM;DD;'NMS Rinocer' Flotila
-ROM;SS;'NMS Delfinul' Flotila
-ROM;SS;'NMS Rechinul' Flotila
-ROM;SS;'NMS Marsuinul' Flotila
-ROM;SS;'NMS Stridie' Flotila
+ROM;CA;NMS Horea
+ROM;CA;NMS Closca
+ROM;CA;NMS Crisan
+ROM;CL;NMS Alfa
+ROM;CL;NMS Omega
+ROM;CL;NMS Decebal
+ROM;CL;NMS Traian
+ROM;CL;NMS Petru
+ROM;CL;NMS Asan
+ROM;CL;NMS Sf. Sava
+ROM;CL;NMS Karadjordjevici
+ROM;CL;NMS Mihail Kogalniceanu
+ROM;CL;NMS Vasile Alecsandri
+ROM;DD;NMS Smeul
+ROM;DD;NMS Sborul
+ROM;DD;NMS Naluca
+ROM;DD;NMS Marasti
+ROM;DD;NMS Marasesti
+ROM;DD;NMS Oituz
+ROM;DD;NMS Palosul
+ROM;DD;NMS Iataganul
+ROM;DD;NMS Sabia
+ROM;DD;NMS Crecy
+ROM;DD;NMS Agincourt
+ROM;DD;NMS Orleans
+ROM;DD;NMS Perseu
+ROM;DD;NMS Heracle
+ROM;DD;NMS Tezeu
+ROM;SS;NMS Delfinul
+ROM;SS;NMS Rechinul
+ROM;SS;NMS Marsuinul
+ROM;SS;NMS Stridie
 ROM;SS;CB 1 Flotila
 ROM;SS;CB 2 Flotila
 ROM;SS;CB 3 Flotila
 ROM;SS;CB 4 Flotila
 ROM;SS;CB 5 Flotila
 ROM;SS;CB 6 Flotila
+ROM;SS;CB 7 Flotila
+ROM;SS;CB 8 Flotila
+ROM;SS;CB 9 Flotila
+ROM;SS;CB 10 Flotila
 ROM;TP;'Elena' Flotila
 ROM;TP;'Oltul' Flotila
 ROM;TP;'Muresul' Flotila

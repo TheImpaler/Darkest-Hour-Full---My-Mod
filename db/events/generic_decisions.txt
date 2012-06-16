@@ -2636,7 +2636,7 @@ event = {
 	id = 9000029
 	random = no
 	persistent = yes
-	tag = { GER ITA JAP U08 U09 }
+	tag = { GER ITA JAP U08 U09 ROM }
 
 	decision = { 
 		money = 100
@@ -3212,7 +3212,7 @@ event = {
 	id = 9000037
 	random = no
 	persistent = yes
-	tag = { U08 FRA U09 ENG RUS ITA USA OTT CAN }
+	tag = { U08 FRA U09 ENG RUS ITA USA OTT CAN ROM }
 	decision = { 
 		NOT = { local_flag = war_bonds }
 		atwar = yes
